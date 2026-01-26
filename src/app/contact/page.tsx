@@ -84,16 +84,26 @@ export default function ContactPage() {
 
       {/* Hero Section */}
       <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/10 via-white to-[#FFE15D]/5"></div>
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-sm border border-gray-200">
+        {/* 大图横幅占位符 */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] opacity-90">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D] via-[#2D2D2D]/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center opacity-30">
+            <div className="text-center">
+              <Sparkles className="h-32 md:h-48 w-32 md:w-48 text-white/40 mx-auto" />
+              <p className="text-white/40 text-sm mt-4">联系我们横幅图片</p>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
+          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">
             <Sparkles className="h-4 w-4 text-[#FFE15D]" />
             专业服务 · 快速响应
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D2D2D]">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             联系我们
           </h1>
-          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
             告诉我们您的需求，我们为您提供专业的活动策划方案
           </p>
         </div>
@@ -156,6 +166,17 @@ export default function ContactPage() {
                 <p className="text-[#6B7280] text-sm">
                   位于杭州市西湖区之江板块，地铁6号线之江文化中心站直达，交通便利。
                 </p>
+              </div>
+
+              {/* 环境图片展示 */}
+              <div className="mt-6 aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl overflow-hidden shadow-lg relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <Building2 className="h-20 w-20 text-white/30 mx-auto" />
+                    <p className="text-white/40 text-sm mt-2">之江文化中心环境</p>
+                  </div>
+                </div>
               </div>
             </div>
 

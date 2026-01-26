@@ -65,16 +65,26 @@ export default function CustomEventsPage() {
 
       {/* Hero Section */}
       <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/10 via-white to-[#FFE15D]/5"></div>
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-sm border border-gray-200">
+        {/* 大图横幅占位符 */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] opacity-90">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D] via-[#2D2D2D]/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center opacity-30">
+            <div className="text-center">
+              <Sparkles className="h-32 md:h-48 w-32 md:w-48 text-white/40 mx-auto" />
+              <p className="text-white/40 text-sm mt-4">定制活动横幅图片</p>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
+          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">
             <Sparkles className="h-4 w-4 text-[#FFE15D]" />
             高端商务 · 尊享礼遇
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D2D2D]">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             定制活动
           </h1>
-          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
             注入文化魅力与高端格调，私人导览尊享体验
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -87,7 +97,7 @@ export default function CustomEventsPage() {
             </Link>
             <Link
               href="/cases"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all border-2 border-gray-200 hover:border-[#FFE15D]"
+              className="inline-flex items-center justify-center gap-2 bg-white/90 backdrop-blur hover:bg-white text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all border-2 border-white/30 hover:border-[#FFE15D]"
             >
               查看案例
             </Link>

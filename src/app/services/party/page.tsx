@@ -65,29 +65,38 @@ export default function PartyBuildingPage() {
 
       {/* Hero Section */}
       <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/10 via-white to-[#FFE15D]/5"></div>
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-sm border border-gray-200">
+        {/* 大图横幅占位符 */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] opacity-90">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#FFE15D]/90 via-[#FFE15D]/70 to-transparent"></div>
+          <div className="absolute inset-0 flex items-center justify-center opacity-30">
+            <div className="text-center">
+              <Star className="h-32 md:h-48 w-32 md:w-48 text-white/40 mx-auto" />
+              <p className="text-white/40 text-sm mt-4">主题党建横幅图片</p>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
+          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">
             <Star className="h-4 w-4 text-[#FFE15D]" />
             沉浸式党建体验 · 红色文化浸润
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D2D2D]">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             主题党建
           </h1>
-          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
             打破传统会议室模式，"党建+文化"沉浸式学习
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
               立即预约
               <ArrowRight className="h-5 w-5" />
             </Link>
             <Link
               href="/cases"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all border-2 border-gray-200 hover:border-[#FFE15D]"
+              className="inline-flex items-center justify-center gap-2 bg-[#2D2D2D]/20 backdrop-blur hover:bg-[#2D2D2D]/30 text-white px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all border-2 border-white/30"
             >
               查看案例
             </Link>
@@ -195,153 +204,183 @@ export default function PartyBuildingPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* 产品 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6">
-                <BookOpen className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <BookOpen className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">红色溯源</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                参观浙江省博物馆"浙江一万年"陈列，了解浙江红色革命历史，弘扬浙江精神
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>专业讲解服务</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>沉浸式导览体验</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>红色文化主题座谈</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色溯源</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  参观浙江省博物馆"浙江一万年"陈列，了解浙江红色革命历史，弘扬浙江精神
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专业讲解服务</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>沉浸式导览体验</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>红色文化主题座谈</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* 产品 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
-                <Users className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Users className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">红色剧本杀</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                沉浸式角色扮演，通过剧本演绎感悟革命精神，在互动中学习党史
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>专业剧本开发</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>沉浸式角色扮演</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>团队协作体验</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色剧本杀</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  沉浸式角色扮演，通过剧本演绎感悟革命精神，在互动中学习党史
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专业剧本开发</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>沉浸式角色扮演</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>团队协作体验</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* 产品 3 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
-                <Calendar className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Calendar className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">两山理论研学</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                余村实地调研，深入理解"两山"理论，领悟生态文明思想
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>实地走访调研</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>专家现场授课</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>分组研讨交流</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">两山理论研学</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  余村实地调研，深入理解"两山"理论，领悟生态文明思想
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>实地走访调研</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专家现场授课</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>分组研讨交流</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* 产品 4 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6">
-                <Star className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Star className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">红色主题展览</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                依托博物馆红色文化展区，开展主题展览学习，感受革命精神
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>主题展览讲解</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>互动体验环节</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>党史知识竞赛</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色主题展览</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  依托博物馆红色文化展区，开展主题展览学习，感受革命精神
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>主题展览讲解</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>互动体验环节</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>党史知识竞赛</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* 产品 5 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
-                <Award className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Award className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">革命精神学习</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                学习红船精神、浙江精神，在文化浸润中感悟初心使命
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>专题党课学习</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>红色文化讲座</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>初心使命研讨</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">革命精神学习</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  学习红船精神、浙江精神，在文化浸润中感悟初心使命
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专题党课学习</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>红色文化讲座</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>初心使命研讨</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* 产品 6 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
-                <Sparkles className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Sparkles className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">定制化党建方案</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                根据单位需求，量身定制特色党建活动方案
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>需求深度调研</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>专属方案设计</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>全程专业执行</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">定制化党建方案</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  根据单位需求，量身定制特色党建活动方案
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>需求深度调研</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专属方案设计</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>全程专业执行</span>
+                  </div>
                 </div>
               </div>
             </div>

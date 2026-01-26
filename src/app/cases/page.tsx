@@ -134,16 +134,25 @@ export default function CasesPage() {
 
       {/* Hero Section */}
       <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/10 via-white to-[#FFE15D]/5"></div>
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-sm border border-gray-200">
+        {/* 大图横幅占位符 */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] opacity-90">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#FFE15D]/90 via-[#FFE15D]/70 to-transparent"></div>
+          <div className="absolute inset-0 flex items-center justify-center opacity-30">
+            <div className="text-center">
+              <Award className="h-32 md:h-48 w-32 md:w-48 text-white/40 mx-auto" />
+              <p className="text-white/40 text-sm mt-4">精彩案例横幅图片</p>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
+          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">
             <Award className="h-4 w-4 text-[#FFE15D]" />
             成功案例 · 见证实力
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D2D2D]">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             精选案例
           </h1>
-          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
             见证我们的专业实力，打造高品质活动体验
           </p>
         </div>
