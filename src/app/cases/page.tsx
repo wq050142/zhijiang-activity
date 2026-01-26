@@ -8,7 +8,7 @@ export default function CasesPage() {
       title: '上海银行考古活动',
       type: 'VIP活动',
       year: '2024年度',
-      color: 'from-[#4A3728] to-[#2F4F4F]',
+      color: 'from-[#FFE15D] to-[#FF9F43]',
       icon: <BookOpen className="h-20 w-20" />,
       client: '上海银行',
       people: '50人',
@@ -30,7 +30,7 @@ export default function CasesPage() {
       title: '海康威视养生局',
       type: '团建活动',
       year: '2024年度',
-      color: 'from-[#8B4513] to-[#C9A86C]',
+      color: 'from-[#2D2D2D] to-[#4B5563]',
       icon: <Users className="h-20 w-20" />,
       client: '海康威视',
       people: '120人',
@@ -52,7 +52,7 @@ export default function CasesPage() {
       title: '蒙牛迈胜年会',
       type: '年会活动',
       year: '2023年度',
-      color: 'from-[#2F4F4F] to-[#C9A86C]',
+      color: 'from-[#6B7280] to-[#4B5563]',
       icon: <Calendar className="h-20 w-20" />,
       client: '蒙牛迈胜',
       people: '300人',
@@ -72,34 +72,34 @@ export default function CasesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F5F1E8]">
+    <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-[#4A3728]/10 z-50">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200/10 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <Building2 className="h-10 w-10 text-[#4A3728]" />
+            <Building2 className="h-10 w-10 text-[#2D2D2D]" />
             <div>
-              <span className="text-2xl font-bold text-[#4A3728]">之江文化中心</span>
-              <p className="text-xs text-[#C9A86C]">企业活动服务</p>
+              <span className="text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
+              <p className="text-xs text-[#FFE15D]">企业活动服务</p>
             </div>
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
-            <Link href="/about" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">关于我们</Link>
-            <Link href="/services/party" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">主题党建</Link>
-            <Link href="/services/team" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">团建拓展</Link>
-            <Link href="/services/training" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">访学培训</Link>
-            <Link href="/services/custom" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">定制活动</Link>
-            <Link href="/cases" className="text-[#C9A86C] font-medium">案例中心</Link>
-            <Link href="/contact" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">联系我们</Link>
+            <Link href="/about" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">关于我们</Link>
+            <Link href="/services/party" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">主题党建</Link>
+            <Link href="/services/team" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">团建拓展</Link>
+            <Link href="/services/training" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">访学培训</Link>
+            <Link href="/services/custom" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">定制活动</Link>
+            <Link href="/cases" className="text-[#FFE15D] font-medium">案例中心</Link>
+            <Link href="/contact" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">联系我们</Link>
           </div>
 
           <div className="flex items-center gap-4">
-            <a href="tel:191-0658-3798" className="hidden md:flex items-center gap-2 text-[#4A3728] font-medium">
+            <a href="tel:191-0658-3798" className="hidden md:flex items-center gap-2 text-[#2D2D2D] font-medium">
               <Phone className="h-4 w-4" />
               191-0658-3798
             </a>
-            <Link href="/contact" className="bg-[#4A3728] hover:bg-[#2F4F4F] text-white px-6 py-2 rounded-full transition-all hover:shadow-lg">
+            <Link href="/contact" className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] hover:bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] text-white px-6 py-2 rounded-full transition-all hover:shadow-lg">
               立即咨询
             </Link>
           </div>
@@ -107,10 +107,10 @@ export default function CasesPage() {
       </nav>
 
       {/* Banner区域 */}
-      <section className="pt-32 pb-12 px-6 bg-gradient-to-br from-[#4A3728] to-[#2F4F4F]">
+      <section className="pt-32 pb-12 px-6 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43]">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4">
-            <Award className="h-6 w-6 text-[#C9A86C]" />
+            <Award className="h-6 w-6 text-[#FFE15D]" />
             <span className="text-white/80 font-medium">成功案例</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
@@ -127,7 +127,7 @@ export default function CasesPage() {
         <div className="max-w-7xl mx-auto">
           <div className="space-y-20">
             {cases.map((caseItem, index) => (
-              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-xl border border-[#4A3728]/10">
+              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-200/10">
                 <div className="grid lg:grid-cols-2">
                   {/* 左侧图片区域 */}
                   <div className={`aspect-video lg:aspect-auto bg-gradient-to-br ${caseItem.color} flex items-center justify-center`}>
@@ -139,35 +139,35 @@ export default function CasesPage() {
                   {/* 右侧内容区域 */}
                   <div className="p-8 lg:p-12">
                     <div className="flex items-center gap-2 mb-4">
-                      <span className="px-3 py-1 bg-[#4A3728]/10 text-[#4A3728] text-xs font-medium rounded-full">
+                      <span className="px-3 py-1 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43]/10 text-[#2D2D2D] text-xs font-medium rounded-full">
                         {caseItem.type}
                       </span>
-                      <span className="text-sm text-[#4A3728]/50">{caseItem.year}</span>
+                      <span className="text-sm text-[#2D2D2D]/50">{caseItem.year}</span>
                     </div>
 
-                    <h2 className="text-3xl font-bold mb-3 text-[#4A3728]">{caseItem.title}</h2>
-                    <p className="text-xl text-[#C9A86C] font-medium mb-4">{caseItem.summary}</p>
+                    <h2 className="text-3xl font-bold mb-3 text-[#2D2D2D]">{caseItem.title}</h2>
+                    <p className="text-xl text-[#FFE15D] font-medium mb-4">{caseItem.summary}</p>
 
                     <div className="grid grid-cols-3 gap-4 mb-6">
                       <div>
-                        <p className="text-[#4A3728]/60 text-sm mb-1">客户名称</p>
-                        <p className="font-bold text-[#4A3728]">{caseItem.client}</p>
+                        <p className="text-[#2D2D2D]/60 text-sm mb-1">客户名称</p>
+                        <p className="font-bold text-[#2D2D2D]">{caseItem.client}</p>
                       </div>
                       <div>
-                        <p className="text-[#4A3728]/60 text-sm mb-1">参与人数</p>
-                        <p className="font-bold text-[#4A3728]">{caseItem.people}</p>
+                        <p className="text-[#2D2D2D]/60 text-sm mb-1">参与人数</p>
+                        <p className="font-bold text-[#2D2D2D]">{caseItem.people}</p>
                       </div>
                       <div>
-                        <p className="text-[#4A3728]/60 text-sm mb-1">活动地点</p>
-                        <p className="font-bold text-[#4A3728]">{caseItem.location}</p>
+                        <p className="text-[#2D2D2D]/60 text-sm mb-1">活动地点</p>
+                        <p className="font-bold text-[#2D2D2D]">{caseItem.location}</p>
                       </div>
                     </div>
 
-                    <p className="text-[#4A3728]/70 leading-relaxed mb-6">{caseItem.description}</p>
+                    <p className="text-[#2D2D2D]/70 leading-relaxed mb-6">{caseItem.description}</p>
 
                     <Link
                       href={`/cases/${caseItem.id}`}
-                      className="inline-flex items-center gap-2 text-[#C9A86C] font-medium hover:gap-4 transition-all"
+                      className="inline-flex items-center gap-2 text-[#FFE15D] font-medium hover:gap-4 transition-all"
                     >
                       查看详情
                       <ArrowRight className="h-4 w-4" />
@@ -181,7 +181,7 @@ export default function CasesPage() {
       </section>
 
       {/* CTA 区域 */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#4A3728] to-[#2F4F4F]">
+      <section className="py-20 px-6 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             期待与您合作
@@ -191,7 +191,7 @@ export default function CasesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 bg-[#C9A86C] hover:bg-[#8B4513] text-white px-10 py-4 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] hover:bg-gradient-to-br from-[#6B7280] to-[#4B5563] text-white px-10 py-4 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-xl hover:scale-105"
           >
             立即联系我们
             <ArrowRight className="h-5 w-5" />
@@ -200,7 +200,7 @@ export default function CasesPage() {
       </section>
 
       {/* 页脚 */}
-      <footer className="bg-[#4A3728] text-white py-12 px-6">
+      <footer className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] text-white py-12 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-white/50 text-sm">© 2024 浙江文化空间发展有限公司 | 版权所有</p>
         </div>
