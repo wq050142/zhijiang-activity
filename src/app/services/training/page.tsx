@@ -1,49 +1,51 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import { useState } from 'react';
-import { Building2, Phone, Mail, MapPin, BookOpen, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Building2, Phone, ArrowRight, BookOpen, GraduationCap, Sparkles, CheckCircle2, Calendar, Award, Users } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '访学培训 - 之江文化中心 | 企业活动服务',
+  description: '之江文化中心访学培训服务，名家讲座引领、专业课程赋能，聚焦浙江文化探源与现代治理，为企业提供高端培训课程。',
+  keywords: '访学培训,企业培训,杭州企业培训,文化课程培训,名家讲座',
+};
 
 export default function TrainingPage() {
-  const [formData, setFormData] = useState({
-    companyName: '',
-    contactName: '',
-    phone: '',
-    email: '',
-    activityType: 'training',
-    estimatedPeople: '',
-    estimatedDate: '',
-    requirements: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('感谢您的咨询，我们会尽快与您联系！');
-  };
-
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200/10 z-50">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
-                <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
-              </div>
+              <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
+            </div>
             <div>
               <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
-              <p className="text-xs text-[#FFE15D]">企业活动服务</p>
+              <p className="text-xs text-[#6B7280]">企业活动服务</p>
             </div>
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
-            <Link href="/about" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">关于我们</Link>
-            <Link href="/services/party" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">主题党建</Link>
-            <Link href="/services/team" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">团建拓展</Link>
-            <Link href="/services/training" className="text-[#FFE15D] font-medium">访学培训</Link>
-            <Link href="/services/custom" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">定制活动</Link>
-            <Link href="/cases" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">案例中心</Link>
-            <Link href="/contact" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">联系我们</Link>
+            <Link href="/about" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              关于我们
+            </Link>
+            <Link href="/services/party" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              主题党建
+            </Link>
+            <Link href="/services/team" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              团建拓展
+            </Link>
+            <Link href="/services/training" className="text-[#FFE15D] font-bold">
+              访学培训
+            </Link>
+            <Link href="/services/custom" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              定制活动
+            </Link>
+            <Link href="/cases" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              案例中心
+            </Link>
+            <Link href="/contact" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              联系我们
+            </Link>
           </div>
 
           <div className="flex items-center gap-4">
@@ -51,183 +53,418 @@ export default function TrainingPage() {
               <Phone className="h-4 w-4" />
               191-0658-3798
             </a>
-            <Link href="/contact" className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-4 py-1.5 md:px-6 md:py-2 rounded-full transition-all font-semibold hover:scale-105">
+            <Link
+              href="/contact"
+              className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
+            >
               立即咨询
             </Link>
           </div>
         </div>
       </nav>
 
-      {/* Banner区域 */}
-      <section className="pt-28 pb-12 px-4 md:px-6 bg-gradient-to-br from-[#6B7280] to-[#4A3728]">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white">
-            名家讲座引领 · 专业课程赋能
+      {/* Hero Section */}
+      <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/10 via-white to-[#FFE15D]/5"></div>
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-sm border border-gray-200">
+            <GraduationCap className="h-4 w-4 text-[#FFE15D]" />
+            名家讲座 · 专业课程
+          </div>
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D2D2D]">
+            访学培训
           </h1>
-          <p className="text-sm md:text-lg text-white/80 max-w-3xl mx-auto">
-            依托之江文化中心丰富的学术资源与专家网络，为企事业单位提供高质量的访学培训服务
+          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+            学在文化地标，聚焦浙江文化探源与现代治理
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            >
+              立即预约
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+            <Link
+              href="/cases"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all border-2 border-gray-200 hover:border-[#FFE15D]"
+            >
+              查看案例
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* 服务介绍 */}
-      <section className="py-12 px-4 md:px-6 md:py-16">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">服务介绍</h2>
-              <div className="space-y-4 text-[#2D2D2D]/80 leading-relaxed">
-                <p className="text-lg">
-                  依托之江文化中心丰富的学术资源与专家网络，
-                  为企事业单位提供高质量的访学培训服务。
+              <div className="inline-flex items-center gap-2 mb-4">
+                <BookOpen className="h-6 w-6 text-[#FFE15D]" />
+                <span className="text-[#FF9F43] font-semibold">服务特色</span>
+              </div>
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">
+                高端培训课程，专业赋能成长
+              </h2>
+              <div className="space-y-4 text-[#6B7280] leading-relaxed">
+                <p>
+                  依托之江文化中心图书馆、博物馆、文学馆等场馆资源，我们提供名家讲座、专业培训、行业交流等全方位培训服务。
                 </p>
                 <p>
-                  从前沿行业知识到人文素养提升，
-                  为企业人才发展提供全方位支持。
+                  聚焦浙江文化探源、文旅融合创新、现代治理等前沿课题，邀请知名专家学者授课，为企业和机构提供高端培训课程，助力组织发展。
                 </p>
               </div>
+
+              <div className="grid grid-cols-2 gap-4 mt-8">
+                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
+                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
+                  <span>名家讲座</span>
+                </div>
+                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
+                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
+                  <span>专业课程</span>
+                </div>
+                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
+                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
+                  <span>行业交流</span>
+                </div>
+                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
+                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
+                  <span>定制化培训</span>
+                </div>
+              </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg text-center border border-gray-200/10">
-                <div className="text-2xl md:text-3xl font-bold text-[#FFE15D] mb-1">500+</div>
-                <div className="text-sm text-[#2D2D2D]/60">培训课程</div>
-              </div>
-              <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg text-center border border-gray-200/10">
-                <div className="text-2xl md:text-3xl font-bold text-[#FFE15D] mb-1">97%</div>
-                <div className="text-sm text-[#2D2D2D]/60">满意度</div>
+            <div className="bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-8 border border-[#FFE15D]/20">
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <GraduationCap className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">高端课程</h3>
+                    <p className="text-[#6B7280] text-sm">
+                      知名专家学者授课，提供前沿知识和实用技能
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Users className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">行业交流</h3>
+                    <p className="text-[#6B7280] text-sm">
+                      搭建行业交流平台，促进企业间合作与学习
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Award className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">学习成果</h3>
+                    <p className="text-[#6B7280] text-sm">
+                      系统化学习体系，确保培训实效与成果落地
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* 课程体系 */}
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">课程体系</h2>
+      {/* 服务内容 */}
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-[#F8FAFC]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Sparkles className="h-6 w-6 text-[#FFE15D]" />
+              <span className="text-[#FF9F43] font-semibold">服务内容</span>
+            </div>
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+              核心服务产品
+            </h2>
+            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
+              多元化培训服务，满足不同学习需求
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-20">
-            <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200/10">
-              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] rounded-xl flex items-center justify-center mb-6">
-                <BookOpen className="h-6 w-6 md:h-8 md:w-8 text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* 产品 1 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6">
+                <BookOpen className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">名家讲座</h3>
-              <p className="text-[#2D2D2D]/70 leading-relaxed">
-                邀请知名学者、行业专家开展专题讲座，涵盖历史文化、艺术鉴赏、行业趋势等多个领域。
+              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">名家讲座</h3>
+              <p className="text-[#6B7280] mb-6 leading-relaxed">
+                邀请知名专家学者开展专题讲座，分享前沿知识与行业洞察
               </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>专家学者授课</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>前沿知识分享</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>互动问答交流</span>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200/10">
-              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mb-6">
-                <CheckCircle2 className="h-6 w-6 md:h-8 md:w-8 text-white" />
+            {/* 产品 2 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
+                <GraduationCap className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">专业培训</h3>
-              <p className="text-[#2D2D2D]/70 leading-relaxed">
-                根据企业需求定制培训课程，涵盖管理能力、专业技能、沟通技巧等方面。
+              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">专业课程培训</h3>
+              <p className="text-[#6B7280] mb-6 leading-relaxed">
+                针对特定行业或领域，提供系统化专业课程培训
               </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>课程体系完善</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>实战案例分析</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>课后跟踪辅导</span>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200/10">
-              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mb-6">
-                <BookOpen className="h-6 w-6 md:h-8 md:w-8 text-white" />
+            {/* 产品 3 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
+                <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">行业交流</h3>
-              <p className="text-[#2D2D2D]/70 leading-relaxed">
-                组织企业间的学习交流活动，搭建资源共享与经验交流平台。
+              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">行业交流论坛</h3>
+              <p className="text-[#6B7280] mb-6 leading-relaxed">
+                搭建行业交流平台，促进企业间合作与经验分享
               </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>企业经验分享</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>资源对接合作</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>人脉拓展交流</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 4 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6">
+                <Award className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">非遗与共同富裕</h3>
+              <p className="text-[#6B7280] mb-6 leading-relaxed">
+                探索非遗传承与乡村振兴、共同富裕的实践路径
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>非遗传承实践</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>乡村振兴案例</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>共同富裕路径</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 5 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
+                <Calendar className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">文旅融合创新</h3>
+              <p className="text-[#6B7280] mb-6 leading-relaxed">
+                学习"之江模式"的文旅融合创新经验与实践
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>之江模式解析</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>创新实践分享</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>实地走访调研</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 6 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
+                <Sparkles className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">定制化培训</h3>
+              <p className="text-[#6B7280] mb-6 leading-relaxed">
+                根据企业需求和特点，量身定制培训课程方案
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>需求深度调研</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>专属课程设计</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                  <span>全程专业执行</span>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* 特色优势 */}
-          <div className="grid md:grid-cols-4 gap-6">
+      {/* 服务流程 */}
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Calendar className="h-6 w-6 text-[#FFE15D]" />
+              <span className="text-[#FF9F43] font-semibold">服务流程</span>
+            </div>
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+              5步标准流程
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             {[
-              { title: '师资力量雄厚', desc: '汇聚知名学者与行业专家' },
-              { title: '课程体系完善', desc: '可根据需求定制培训方案' },
-              { title: '学习环境优越', desc: '文化场馆营造沉浸式学习氛围' },
-              { title: '后续服务跟进', desc: '提供学习资料与持续交流机会' }
-            ].map((advantage, index) => (
-              <div key={index} className="bg-gradient-to-br from-[#6B7280] to-[#4A3728] rounded-xl p-6 text-white">
-                <h3 className="text-lg font-bold mb-2">{advantage.title}</h3>
-                <p className="text-sm text-white/80">{advantage.desc}</p>
+              { step: '01', title: '需求对接', desc: '深入了解培训需求' },
+              { step: '02', title: '方案设计', desc: '量身定制培训方案' },
+              { step: '03', title: '确认签约', desc: '方案确认，签订合同' },
+              { step: '04', title: '执行落地', desc: '全程专业执行服务' },
+              { step: '05', title: '后续评价', desc: '培训总结，持续优化' }
+            ].map((item, index) => (
+              <div key={index} className="relative">
+                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-6 text-center">
+                  <div className="text-3xl font-bold text-white mb-4">{item.step}</div>
+                  <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                  <p className="text-sm text-white/90">{item.desc}</p>
+                </div>
+                {index < 4 && (
+                  <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                    <ArrowRight className="h-6 w-6 text-[#FFE15D]" />
+                  </div>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 获取策划方案 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">获取策划方案</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                  <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">公司名称 *</label>
-                    <input type="text" required className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入公司名称" value={formData.companyName} onChange={(e) => setFormData({ ...formData, companyName: e.target.value })} />
-                  </div>
-                  <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">联系人 *</label>
-                    <input type="text" required className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入联系人姓名" value={formData.contactName} onChange={(e) => setFormData({ ...formData, contactName: e.target.value })} />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                  <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">联系电话 *</label>
-                    <input type="tel" required className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入联系电话" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
-                  </div>
-                  <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">电子邮箱 *</label>
-                    <input type="email" required className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入电子邮箱" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-[#2D2D2D] font-medium mb-2">培训需求描述</label>
-                  <textarea rows={4} className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none resize-none" placeholder="请详细描述您的培训需求..." value={formData.requirements} onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}></textarea>
-                </div>
-
-                <button type="submit" className="w-full bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] hover:bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium transition-all shadow-lg">
-                  提交咨询
-                </button>
-              </form>
-            </div>
-
-            <div className="bg-[#F8FAFC] rounded-2xl p-8">
-              <h3 className="text-lg md:text-2xl font-bold mb-6 text-[#2D2D2D]">联系方式</h3>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <Phone className="h-6 w-6 text-[#2D2D2D] mt-1" />
-                  <div>
-                    <p className="text-[#2D2D2D]/60 text-sm mb-1">联系电话</p>
-                    <p className="text-xl font-bold text-[#2D2D2D]">191-0658-3798</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Mail className="h-6 w-6 text-[#2D2D2D] mt-1" />
-                  <div>
-                    <p className="text-[#2D2D2D]/60 text-sm mb-1">电子邮箱</p>
-                    <p className="text-xl font-bold text-[#2D2D2D]">service@zhijiang-culture.com</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <MapPin className="h-6 w-6 text-[#2D2D2D] mt-1" />
-                  <div>
-                    <p className="text-[#2D2D2D]/60 text-sm mb-1">场馆地址</p>
-                    <p className="text-xl font-bold text-[#2D2D2D]">浙江省杭州市西湖区之江文化中心研学中心</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* CTA */}
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
+            让培训更具深度和价值
+          </h2>
+          <p className="text-sm md:text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+            依托之江文化中心资源，为您打造高品质培训课程
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:scale-105"
+          >
+            立即预约
+            <ArrowRight className="h-5 w-5" />
+          </Link>
         </div>
       </section>
 
       {/* 页脚 */}
-      <footer className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] text-white py-12 px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-white/50 text-sm">© 2024 浙江文化空间发展有限公司 | 版权所有</p>
+      <footer className="bg-[#2D2D2D] text-white py-12 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center">
+                  <Building2 className="h-5 w-5 text-white" />
+                </div>
+                <div>
+                  <span className="text-xl font-bold">之江文化中心</span>
+                  <p className="text-xs text-[#FFE15D]">企业活动服务</p>
+                </div>
+              </div>
+              <p className="text-white/70 text-sm leading-relaxed">
+                依托四大场馆资源，为企业提供高品质、有文化深度的活动服务
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">服务内容</h3>
+              <ul className="space-y-2 text-white/70 text-sm">
+                <li><Link href="/services/party" className="hover:text-white transition-colors">主题党建</Link></li>
+                <li><Link href="/services/team" className="hover:text-white transition-colors">团建拓展</Link></li>
+                <li><Link href="/services/training" className="hover:text-white transition-colors">访学培训</Link></li>
+                <li><Link href="/services/custom" className="hover:text-white transition-colors">定制活动</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">关于我们</h3>
+              <ul className="space-y-2 text-white/70 text-sm">
+                <li><Link href="/about" className="hover:text-white transition-colors">品牌故事</Link></li>
+                <li><Link href="/about" className="hover:text-white transition-colors">场馆资源</Link></li>
+                <li><Link href="/cases" className="hover:text-white transition-colors">成功案例</Link></li>
+                <li><Link href="/contact" className="hover:text-white transition-colors">联系我们</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">联系方式</h3>
+              <ul className="space-y-3 text-white/70 text-sm">
+                <li className="flex items-start gap-2">
+                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
+                  <span>191-0658-3798</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Calendar className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
+                  <span>浙江省杭州市西湖区<br />之江文化中心研学中心</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-white/10 pt-8 text-center">
+            <p className="text-white/50 text-sm">
+              © 2024 浙江文化空间发展有限公司 | 之江文化中心企业活动服务 | 版权所有
+            </p>
+          </div>
         </div>
       </footer>
     </div>

@@ -1,49 +1,70 @@
 'use client';
 
-import Link from 'next/link';
 import { useState } from 'react';
-import { Building2, Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+import { Building2, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Calendar, Sparkles, Award } from 'lucide-react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    companyName: '',
-    contactName: '',
+    name: '',
+    company: '',
     phone: '',
     email: '',
-    activityType: '',
-    estimatedPeople: '',
-    estimatedDate: '',
-    requirements: ''
+    service: '',
+    message: ''
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('感谢您的咨询，我们会尽快与您联系！');
+    console.log('表单提交:', formData);
+    alert('感谢您的咨询！我们会尽快与您联系。');
+    setFormData({
+      name: '',
+      company: '',
+      phone: '',
+      email: '',
+      service: '',
+      message: ''
+    });
   };
 
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200/10 z-50">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
-                <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
-              </div>
+              <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
+            </div>
             <div>
               <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
-              <p className="text-xs text-[#FFE15D]">企业活动服务</p>
+              <p className="text-xs text-[#6B7280]">企业活动服务</p>
             </div>
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
-            <Link href="/about" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">关于我们</Link>
-            <Link href="/services/party" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">主题党建</Link>
-            <Link href="/services/team" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">团建拓展</Link>
-            <Link href="/services/training" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">访学培训</Link>
-            <Link href="/services/custom" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">定制活动</Link>
-            <Link href="/cases" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">案例中心</Link>
-            <Link href="/contact" className="text-[#FFE15D] font-medium">联系我们</Link>
+            <Link href="/about" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              关于我们
+            </Link>
+            <Link href="/services/party" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              主题党建
+            </Link>
+            <Link href="/services/team" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              团建拓展
+            </Link>
+            <Link href="/services/training" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              访学培训
+            </Link>
+            <Link href="/services/custom" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              定制活动
+            </Link>
+            <Link href="/cases" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+              案例中心
+            </Link>
+            <Link href="/contact" className="text-[#FFE15D] font-bold">
+              联系我们
+            </Link>
           </div>
 
           <div className="flex items-center gap-4">
@@ -51,230 +72,279 @@ export default function ContactPage() {
               <Phone className="h-4 w-4" />
               191-0658-3798
             </a>
-            <Link href="/contact" className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-4 py-1.5 md:px-6 md:py-2 rounded-full transition-all font-semibold hover:scale-105">
+            <Link
+              href="/contact"
+              className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
+            >
               立即咨询
             </Link>
           </div>
         </div>
       </nav>
 
-      {/* Banner区域 */}
-      <section className="pt-28 pb-12 px-4 md:px-6 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43]">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white">
+      {/* Hero Section */}
+      <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/10 via-white to-[#FFE15D]/5"></div>
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-sm border border-gray-200">
+            <Sparkles className="h-4 w-4 text-[#FFE15D]" />
+            专业服务 · 快速响应
+          </div>
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D2D2D]">
             联系我们
           </h1>
-          <p className="text-sm md:text-lg text-white/80 max-w-3xl mx-auto">
-            期待与您的合作，共同打造精彩活动
+          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+            告诉我们您的需求，我们为您提供专业的活动策划方案
           </p>
         </div>
       </section>
 
-      {/* 联系方式 */}
+      {/* 联系方式与表单 */}
       <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* 联系表单 */}
+            {/* 联系方式 */}
             <div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">在线留言</h2>
-              <p className="text-[#2D2D2D]/70 mb-8">
-                请填写以下信息，我们将尽快与您联系，为您提供专业的活动策划建议
-              </p>
+              <div className="inline-flex items-center gap-2 mb-4">
+                <Phone className="h-6 w-6 text-[#FFE15D]" />
+                <span className="text-[#FF9F43] font-semibold">联系方式</span>
+              </div>
+              <h2 className="text-2xl md:text-4xl font-bold mb-8 text-[#2D2D2D]">
+                随时为您服务
+              </h2>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                  <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">公司名称 *</label>
-                    <input
-                      type="text"
-                      required
-                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
-                      placeholder="请输入公司名称"
-                      value={formData.companyName}
-                      onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                    />
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">联系人 *</label>
+                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-1">咨询热线</h3>
+                    <p className="text-[#6B7280]">191-0658-3798</p>
+                    <p className="text-sm text-[#6B7280] mt-1">工作日 9:00-18:00</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Mail className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-1">电子邮箱</h3>
+                    <p className="text-[#6B7280]">service@zhijiang-culture.com</p>
+                    <p className="text-sm text-[#6B7280] mt-1">我们会尽快回复您</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-1">公司地址</h3>
+                    <p className="text-[#6B7280]">浙江省杭州市西湖区之江文化中心研学中心</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 地图占位 */}
+              <div className="mt-8 bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-6 border border-[#FFE15D]/20">
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="h-5 w-5 text-[#FFE15D]" />
+                  <span className="text-[#2D2D2D] font-semibold">之江文化中心位置</span>
+                </div>
+                <p className="text-[#6B7280] text-sm">
+                  位于杭州市西湖区之江板块，地铁6号线之江文化中心站直达，交通便利。
+                </p>
+              </div>
+            </div>
+
+            {/* 联系表单 */}
+            <div>
+              <div className="inline-flex items-center gap-2 mb-4">
+                <Sparkles className="h-6 w-6 text-[#FFE15D]" />
+                <span className="text-[#FF9F43] font-semibold">在线咨询</span>
+              </div>
+              <h2 className="text-2xl md:text-4xl font-bold mb-8 text-[#2D2D2D]">
+                告诉我们您的需求
+              </h2>
+
+              <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label className="block text-[#2D2D2D] font-semibold mb-2">
+                      联系人 <span className="text-red-500">*</span>
+                    </label>
                     <input
                       type="text"
                       required
-                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
-                      placeholder="请输入联系人姓名"
-                      value={formData.contactName}
-                      onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
+                      placeholder="请输入您的姓名"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-[#2D2D2D] font-semibold mb-2">
+                      公司名称
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.company}
+                      onChange={(e) => setFormData({...formData, company: e.target.value})}
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
+                      placeholder="请输入公司名称"
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">联系电话 *</label>
+                    <label className="block text-[#2D2D2D] font-semibold mb-2">
+                      联系电话 <span className="text-red-500">*</span>
+                    </label>
                     <input
                       type="tel"
                       required
-                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
-                      placeholder="请输入联系电话"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
+                      placeholder="请输入您的手机号"
                     />
                   </div>
+
                   <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">电子邮箱 *</label>
+                    <label className="block text-[#2D2D2D] font-semibold mb-2">
+                      电子邮箱 <span className="text-red-500">*</span>
+                    </label>
                     <input
                       type="email"
                       required
-                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
-                      placeholder="请输入电子邮箱"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
+                      placeholder="请输入您的邮箱"
                     />
                   </div>
                 </div>
 
-                <div>
-                  <label className="block text-[#2D2D2D] font-medium mb-2">活动类型</label>
+                <div className="mb-6">
+                  <label className="block text-[#2D2D2D] font-semibold mb-2">
+                    服务类型
+                  </label>
                   <select
-                    className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all bg-white"
-                    value={formData.activityType}
-                    onChange={(e) => setFormData({ ...formData, activityType: e.target.value })}
+                    value={formData.service}
+                    onChange={(e) => setFormData({...formData, service: e.target.value})}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all bg-white"
                   >
-                    <option value="">请选择活动类型</option>
-                    <option value="party">主题党建</option>
-                    <option value="team">团建拓展</option>
-                    <option value="training">访学培训</option>
-                    <option value="custom">定制活动</option>
-                    <option value="other">其他</option>
+                    <option value="">请选择服务类型</option>
+                    <option value="主题党建">主题党建</option>
+                    <option value="团建拓展">团建拓展</option>
+                    <option value="访学培训">访学培训</option>
+                    <option value="定制活动">定制活动</option>
+                    <option value="其他">其他</option>
                   </select>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                  <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">预计人数</label>
-                    <input
-                      type="text"
-                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
-                      placeholder="请输入预计人数"
-                      value={formData.estimatedPeople}
-                      onChange={(e) => setFormData({ ...formData, estimatedPeople: e.target.value })}
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[#2D2D2D] font-medium mb-2">预计时间</label>
-                    <input
-                      type="text"
-                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
-                      placeholder="请输入预计活动时间"
-                      value={formData.estimatedDate}
-                      onChange={(e) => setFormData({ ...formData, estimatedDate: e.target.value })}
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-[#2D2D2D] font-medium mb-2">活动需求描述</label>
+                <div className="mb-6">
+                  <label className="block text-[#2D2D2D] font-semibold mb-2">
+                    活动需求
+                  </label>
                   <textarea
-                    rows={5}
-                    className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all resize-none"
-                    placeholder="请详细描述您的活动需求、预算、时间等详细信息..."
-                    value={formData.requirements}
-                    onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}
+                    rows={4}
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all resize-none"
+                    placeholder="请简要描述您的活动需求、时间、人数等信息"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] hover:bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl"
+                  className="w-full bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-6 py-4 rounded-xl text-lg font-semibold transition-all shadow-lg hover:scale-105"
                 >
                   提交咨询
+                  <ArrowRight className="inline-block ml-2 h-5 w-5" />
                 </button>
+
+                <p className="text-sm text-[#6B7280] text-center mt-4">
+                  提交后我们会在24小时内与您联系
+                </p>
               </form>
-            </div>
-
-            {/* 联系信息 */}
-            <div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">联系方式</h2>
-
-              <div className="space-y-6 mb-12">
-                <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg border border-gray-200/10">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Phone className="h-7 w-7 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-[#2D2D2D]/60 text-sm mb-2">联系电话</p>
-                      <a href="tel:191-0658-3798" className="text-lg md:text-2xl font-bold text-[#2D2D2D] hover:text-[#FFE15D] transition-colors">
-                        191-0658-3798
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg border border-gray-200/10">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Mail className="h-7 w-7 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-[#2D2D2D]/60 text-sm mb-2">电子邮箱</p>
-                      <a href="mailto:service@zhijiang-culture.com" className="text-xl font-bold text-[#2D2D2D] hover:text-[#FFE15D] transition-colors">
-                        service@zhijiang-culture.com
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg border border-gray-200/10">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                      <MapPin className="h-7 w-7 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-[#2D2D2D]/60 text-sm mb-2">场馆地址</p>
-                      <p className="text-xl font-bold text-[#2D2D2D]">
-                        浙江省杭州市西湖区
-                        <br />
-                        之江文化中心研学中心
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-8 text-white">
-                <h3 className="text-lg md:text-2xl font-bold mb-4">营业时间</h3>
-                <div className="space-y-2 text-white/80">
-                  <div className="flex justify-between">
-                    <span>周一至周日</span>
-                    <span>9:00 - 18:00</span>
-                  </div>
-                </div>
-
-                <div className="border-t border-white/10 mt-6 pt-6">
-                  <p className="text-white/70 text-sm mb-4">
-                    我们的客服团队将在24小时内与您联系，为您提供专业的活动策划建议
-                  </p>
-                  <Link
-                    href="/services/party"
-                    className="inline-flex items-center gap-2 text-[#FFE15D] font-medium hover:gap-4 transition-all"
-                  >
-                    查看服务详情
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* 服务流程 */}
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Calendar className="h-6 w-6 text-[#FFE15D]" />
+              <span className="text-[#FF9F43] font-semibold">服务流程</span>
+            </div>
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+              5步标准流程
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            {[
+              { step: '01', title: '需求对接', desc: '深入了解您的活动需求' },
+              { step: '02', title: '方案设计', desc: '量身定制活动方案' },
+              { step: '03', title: '确认签约', desc: '方案确认，签订合同' },
+              { step: '04', title: '执行落地', desc: '全程专业执行服务' },
+              { step: '05', title: '后续评价', desc: '活动总结，持续优化' }
+            ].map((item, index) => (
+              <div key={index} className="relative">
+                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-6 text-center">
+                  <div className="text-3xl font-bold text-white mb-4">{item.step}</div>
+                  <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                  <p className="text-sm text-white/90">{item.desc}</p>
+                </div>
+                {index < 4 && (
+                  <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                    <ArrowRight className="h-6 w-6 text-[#FFE15D]" />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
+            让我们为您创造精彩
+          </h2>
+          <p className="text-sm md:text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+            依托之江文化中心资源，为您打造独一无二的活动体验
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:191-0658-3798"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:scale-105"
+            >
+              <Phone className="h-5 w-5" />
+              立即致电
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* 页脚 */}
-      <footer className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] text-white py-12 px-6">
+      <footer className="bg-[#2D2D2D] text-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <Building2 className="h-8 w-8 text-[#FFE15D]" />
+                <div className="w-8 h-8 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center">
+                  <Building2 className="h-5 w-5 text-white" />
+                </div>
                 <div>
                   <span className="text-xl font-bold">之江文化中心</span>
                   <p className="text-xs text-[#FFE15D]">企业活动服务</p>
@@ -311,10 +381,6 @@ export default function ContactPage() {
                 <li className="flex items-start gap-2">
                   <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
                   <span>191-0658-3798</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Mail className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
-                  <span>service@zhijiang-culture.com</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
