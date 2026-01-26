@@ -132,15 +132,13 @@ export default function Home() {
               </p>
               <div className="space-y-4 text-[#6B7280] leading-relaxed">
                 <p>
-                  之江文化中心位于杭州市西湖区之江板块，是浙江省重点打造的文化地标项目。
+                  之江文化中心位于杭州市西湖区之江板块，是浙江省重点打造的文化地标项目，总建筑面积达32万平方米，是目前全国体量最大的省级现代复合文化综合体。
                 </p>
                 <p>
-                  中心涵盖浙江省图书馆、浙江省博物馆、浙江省非物质文化遗产馆、浙江省文学馆
-                  四大文化场馆，总建筑面积达32万平方米。
+                  中心采用"四馆一中心"布局，涵盖浙江省图书馆、浙江省博物馆、浙江省非物质文化遗产馆、浙江省文学馆四大省级文化场馆，以及之江文化中心研学中心。
                 </p>
                 <p>
-                  由浙江文化空间发展有限公司运营，我们整合四大场馆独特资源，为企事业单位
-                  提供高品质、有文化深度的活动服务，让每一次活动都成为文化之旅。
+                  由浙江文化空间发展有限公司运营，我们整合"四馆一中心"独特资源，为企事业单位提供高品质、有文化深度的活动服务，让每一次活动都成为文化之旅。
                 </p>
               </div>
             </div>
@@ -157,26 +155,31 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* 四小图展示 */}
-              <div className="grid grid-cols-4 gap-3">
+              {/* 五小图展示 - 四馆一中心 */}
+              <div className="grid grid-cols-5 gap-2 md:gap-3">
                 <div className="aspect-square bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl overflow-hidden shadow-lg relative">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <BookOpen className="h-8 w-8 text-white/60" />
+                    <BookOpen className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
                   </div>
                 </div>
                 <div className="aspect-square bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl overflow-hidden shadow-lg relative">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <Award className="h-8 w-8 text-white/60" />
+                    <Award className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
                   </div>
                 </div>
                 <div className="aspect-square bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl overflow-hidden shadow-lg relative">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <Users className="h-8 w-8 text-white/60" />
+                    <Users className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
                   </div>
                 </div>
                 <div className="aspect-square bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl overflow-hidden shadow-lg relative">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <Star className="h-8 w-8 text-white/60" />
+                    <Star className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
+                  </div>
+                </div>
+                <div className="aspect-square bg-gradient-to-br from-[#FF9F43] to-[#FFE15D] rounded-xl overflow-hidden shadow-lg relative">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Building2 className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
                   </div>
                 </div>
               </div>

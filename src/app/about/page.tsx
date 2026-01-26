@@ -107,10 +107,10 @@ export default function AboutPage() {
                   之江文化中心位于杭州市西湖区之江板块，是浙江省重点打造的文化地标项目，总建筑面积达32万平方米，是目前全国体量最大的省级现代复合文化综合体。
                 </p>
                 <p>
-                  中心由浙江文化空间发展有限公司运营，依托浙江省图书馆、浙江省博物馆、浙江省非物质文化遗产馆、浙江省文学馆四大省级场馆，为企事业单位提供高品质、有文化深度的党建、团建、培训及定制活动服务。
+                  中心采用"四馆一中心"布局，由浙江文化空间发展有限公司运营。"四馆"包括浙江省图书馆、浙江省博物馆、浙江省非物质文化遗产馆、浙江省文学馆四大省级场馆，"一中心"指之江文化中心研学中心（注：目前无公共服务中心）。
                 </p>
                 <p>
-                  我们致力于打破传统活动模式，打造"文化+"沉浸式体验，让每一次活动都成为文化之旅，在文化地标中激发组织力量。
+                  我们整合"四馆一中心"独特资源，为企事业单位提供高品质、有文化深度的党建、团建、培训及定制活动服务，致力于打破传统活动模式，打造"文化+"沉浸式体验，让每一次活动都成为文化之旅。
                 </p>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 四大场馆介绍 */}
+      {/* 四馆一中心介绍 */}
       <section className="py-12 px-4 md:px-6 md:py-16 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -160,10 +160,10 @@ export default function AboutPage() {
               <span className="text-[#FF9F43] font-semibold">场馆资源</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
-              四大核心场馆
+              四馆一中心
             </h2>
             <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
-              每一座场馆都是文化的殿堂，为您活动提供独特文化空间
+              每一座场馆都是文化的殿堂，为您活动提供独特文化空间（注：目前无公共服务中心）
             </p>
           </div>
 
@@ -287,6 +287,51 @@ export default function AboutPage() {
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
                     <p>浙江作家群展区，感受浙派文学魅力</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 研学中心 - 单独展示 */}
+          <div className="mt-12">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group">
+              <div className="md:flex">
+                <div className="md:w-1/2">
+                  <div className="aspect-[16/9] md:aspect-auto md:h-full min-h-[300px] bg-gradient-to-br from-[#FF9F43] to-[#FFE15D] relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                      <Building2 className="h-32 w-32 text-white" />
+                    </div>
+                  </div>
+                </div>
+                <div className="md:w-1/2 p-6 md:p-8">
+                  <div className="inline-flex items-center gap-2 mb-4">
+                    <span className="bg-[#FF9F43] text-white text-xs font-semibold px-3 py-1 rounded-full">专属服务</span>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#2D2D2D]">之江文化中心研学中心</h3>
+                  <div className="space-y-3 text-sm text-[#6B7280]">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                      <p>专业研学活动场地，支持多样化教育体验项目</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                      <p>连接四大场馆资源，打造沉浸式研学体验</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                      <p>定制化研学课程，满足不同年龄段学习需求</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                      <p>配套专业导师团队，提供高质量研学指导</p>
+                    </div>
+                    <div className="mt-4 p-4 bg-[#FFE15D]/10 rounded-lg border border-[#FFE15D]/20">
+                      <p className="text-sm font-medium text-[#FF9F43]">
+                        <span className="font-bold">注：</span>之江文化中心研学中心为专业研学活动场地，非公共服务中心。目前中心内无公共服务中心设施。
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
