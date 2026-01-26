@@ -25,11 +25,13 @@ export default function TrainingPage() {
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200/10 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <Building2 className="h-10 w-10 text-[#2D2D2D]" />
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
+                <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
+              </div>
             <div>
-              <span className="text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
+              <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
               <p className="text-xs text-[#FFE15D]">企业活动服务</p>
             </div>
           </Link>
@@ -49,7 +51,7 @@ export default function TrainingPage() {
               <Phone className="h-4 w-4" />
               191-0658-3798
             </a>
-            <Link href="/contact" className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] hover:bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] text-white px-6 py-2 rounded-full transition-all hover:shadow-lg">
+            <Link href="/contact" className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-4 py-1.5 md:px-6 md:py-2 rounded-full transition-all font-semibold hover:scale-105">
               立即咨询
             </Link>
           </div>
@@ -57,23 +59,23 @@ export default function TrainingPage() {
       </nav>
 
       {/* Banner区域 */}
-      <section className="pt-32 pb-12 px-6 bg-gradient-to-br from-[#6B7280] to-[#4A3728]">
+      <section className="pt-28 pb-12 px-4 md:px-6 bg-gradient-to-br from-[#6B7280] to-[#4A3728]">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white">
             名家讲座引领 · 专业课程赋能
           </h1>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+          <p className="text-sm md:text-lg text-white/80 max-w-3xl mx-auto">
             依托之江文化中心丰富的学术资源与专家网络，为企事业单位提供高质量的访学培训服务
           </p>
         </div>
       </section>
 
       {/* 服务介绍 */}
-      <section className="py-20 px-6">
+      <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center mb-20">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-[#2D2D2D]">服务介绍</h2>
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">服务介绍</h2>
               <div className="space-y-4 text-[#2D2D2D]/80 leading-relaxed">
                 <p className="text-lg">
                   依托之江文化中心丰富的学术资源与专家网络，
@@ -87,48 +89,48 @@ export default function TrainingPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white rounded-2xl p-6 shadow-lg text-center border border-gray-200/10">
-                <div className="text-3xl font-bold text-[#FFE15D] mb-1">500+</div>
+              <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg text-center border border-gray-200/10">
+                <div className="text-2xl md:text-3xl font-bold text-[#FFE15D] mb-1">500+</div>
                 <div className="text-sm text-[#2D2D2D]/60">培训课程</div>
               </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg text-center border border-gray-200/10">
-                <div className="text-3xl font-bold text-[#FFE15D] mb-1">97%</div>
+              <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg text-center border border-gray-200/10">
+                <div className="text-2xl md:text-3xl font-bold text-[#FFE15D] mb-1">97%</div>
                 <div className="text-sm text-[#2D2D2D]/60">满意度</div>
               </div>
             </div>
           </div>
 
           {/* 课程体系 */}
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-[#2D2D2D]">课程体系</h2>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">课程体系</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-20">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200/10">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] rounded-xl flex items-center justify-center mb-6">
-                <BookOpen className="h-8 w-8 text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-20">
+            <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200/10">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] rounded-xl flex items-center justify-center mb-6">
+                <BookOpen className="h-6 w-6 md:h-8 md:w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">名家讲座</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">名家讲座</h3>
               <p className="text-[#2D2D2D]/70 leading-relaxed">
                 邀请知名学者、行业专家开展专题讲座，涵盖历史文化、艺术鉴赏、行业趋势等多个领域。
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200/10">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mb-6">
-                <CheckCircle2 className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200/10">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mb-6">
+                <CheckCircle2 className="h-6 w-6 md:h-8 md:w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">专业培训</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">专业培训</h3>
               <p className="text-[#2D2D2D]/70 leading-relaxed">
                 根据企业需求定制培训课程，涵盖管理能力、专业技能、沟通技巧等方面。
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200/10">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mb-6">
-                <BookOpen className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200/10">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mb-6">
+                <BookOpen className="h-6 w-6 md:h-8 md:w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">行业交流</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">行业交流</h3>
               <p className="text-[#2D2D2D]/70 leading-relaxed">
                 组织企业间的学习交流活动，搭建资源共享与经验交流平台。
               </p>
@@ -153,47 +155,47 @@ export default function TrainingPage() {
       </section>
 
       {/* 获取策划方案 */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-[#2D2D2D]">获取策划方案</h2>
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">获取策划方案</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-[#2D2D2D] font-medium mb-2">公司名称 *</label>
-                    <input type="text" required className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入公司名称" value={formData.companyName} onChange={(e) => setFormData({ ...formData, companyName: e.target.value })} />
+                    <input type="text" required className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入公司名称" value={formData.companyName} onChange={(e) => setFormData({ ...formData, companyName: e.target.value })} />
                   </div>
                   <div>
                     <label className="block text-[#2D2D2D] font-medium mb-2">联系人 *</label>
-                    <input type="text" required className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入联系人姓名" value={formData.contactName} onChange={(e) => setFormData({ ...formData, contactName: e.target.value })} />
+                    <input type="text" required className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入联系人姓名" value={formData.contactName} onChange={(e) => setFormData({ ...formData, contactName: e.target.value })} />
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-[#2D2D2D] font-medium mb-2">联系电话 *</label>
-                    <input type="tel" required className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入联系电话" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
+                    <input type="tel" required className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入联系电话" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
                   </div>
                   <div>
                     <label className="block text-[#2D2D2D] font-medium mb-2">电子邮箱 *</label>
-                    <input type="email" required className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入电子邮箱" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                    <input type="email" required className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none" placeholder="请输入电子邮箱" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                   </div>
                 </div>
 
                 <div>
                   <label className="block text-[#2D2D2D] font-medium mb-2">培训需求描述</label>
-                  <textarea rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none resize-none" placeholder="请详细描述您的培训需求..." value={formData.requirements} onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}></textarea>
+                  <textarea rows={4} className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] outline-none resize-none" placeholder="请详细描述您的培训需求..." value={formData.requirements} onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}></textarea>
                 </div>
 
-                <button type="submit" className="w-full bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] hover:bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] text-white px-8 py-4 rounded-lg font-medium transition-all shadow-lg">
+                <button type="submit" className="w-full bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] hover:bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium transition-all shadow-lg">
                   提交咨询
                 </button>
               </form>
             </div>
 
             <div className="bg-[#F8FAFC] rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-6 text-[#2D2D2D]">联系方式</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-6 text-[#2D2D2D]">联系方式</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <Phone className="h-6 w-6 text-[#2D2D2D] mt-1" />

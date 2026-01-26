@@ -25,11 +25,13 @@ export default function ContactPage() {
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200/10 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <Building2 className="h-10 w-10 text-[#2D2D2D]" />
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
+                <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
+              </div>
             <div>
-              <span className="text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
+              <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
               <p className="text-xs text-[#FFE15D]">企业活动服务</p>
             </div>
           </Link>
@@ -49,7 +51,7 @@ export default function ContactPage() {
               <Phone className="h-4 w-4" />
               191-0658-3798
             </a>
-            <Link href="/contact" className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] hover:bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] text-white px-6 py-2 rounded-full transition-all hover:shadow-lg">
+            <Link href="/contact" className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-4 py-1.5 md:px-6 md:py-2 rounded-full transition-all font-semibold hover:scale-105">
               立即咨询
             </Link>
           </div>
@@ -57,36 +59,36 @@ export default function ContactPage() {
       </nav>
 
       {/* Banner区域 */}
-      <section className="pt-32 pb-12 px-6 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43]">
+      <section className="pt-28 pb-12 px-4 md:px-6 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43]">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white">
             联系我们
           </h1>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+          <p className="text-sm md:text-lg text-white/80 max-w-3xl mx-auto">
             期待与您的合作，共同打造精彩活动
           </p>
         </div>
       </section>
 
       {/* 联系方式 */}
-      <section className="py-20 px-6">
+      <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* 联系表单 */}
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-[#2D2D2D]">在线留言</h2>
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">在线留言</h2>
               <p className="text-[#2D2D2D]/70 mb-8">
                 请填写以下信息，我们将尽快与您联系，为您提供专业的活动策划建议
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-[#2D2D2D] font-medium mb-2">公司名称 *</label>
                     <input
                       type="text"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入公司名称"
                       value={formData.companyName}
                       onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
@@ -97,7 +99,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入联系人姓名"
                       value={formData.contactName}
                       onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
@@ -105,13 +107,13 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-[#2D2D2D] font-medium mb-2">联系电话 *</label>
                     <input
                       type="tel"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入联系电话"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -122,7 +124,7 @@ export default function ContactPage() {
                     <input
                       type="email"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入电子邮箱"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -133,7 +135,7 @@ export default function ContactPage() {
                 <div>
                   <label className="block text-[#2D2D2D] font-medium mb-2">活动类型</label>
                   <select
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all bg-white"
+                    className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all bg-white"
                     value={formData.activityType}
                     onChange={(e) => setFormData({ ...formData, activityType: e.target.value })}
                   >
@@ -146,12 +148,12 @@ export default function ContactPage() {
                   </select>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-[#2D2D2D] font-medium mb-2">预计人数</label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入预计人数"
                       value={formData.estimatedPeople}
                       onChange={(e) => setFormData({ ...formData, estimatedPeople: e.target.value })}
@@ -161,7 +163,7 @@ export default function ContactPage() {
                     <label className="block text-[#2D2D2D] font-medium mb-2">预计时间</label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入预计活动时间"
                       value={formData.estimatedDate}
                       onChange={(e) => setFormData({ ...formData, estimatedDate: e.target.value })}
@@ -173,7 +175,7 @@ export default function ContactPage() {
                   <label className="block text-[#2D2D2D] font-medium mb-2">活动需求描述</label>
                   <textarea
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all resize-none"
+                    className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200/20 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all resize-none"
                     placeholder="请详细描述您的活动需求、预算、时间等详细信息..."
                     value={formData.requirements}
                     onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}
@@ -182,7 +184,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] hover:bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] text-white px-8 py-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl"
+                  className="w-full bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] hover:bg-gradient-to-br from-[#4B5563] to-[#2D2D2D] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl"
                 >
                   提交咨询
                 </button>
@@ -191,24 +193,24 @@ export default function ContactPage() {
 
             {/* 联系信息 */}
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-[#2D2D2D]">联系方式</h2>
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">联系方式</h2>
 
               <div className="space-y-6 mb-12">
-                <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200/10">
+                <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg border border-gray-200/10">
                   <div className="flex items-start gap-4">
                     <div className="w-14 h-14 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Phone className="h-7 w-7 text-white" />
                     </div>
                     <div>
                       <p className="text-[#2D2D2D]/60 text-sm mb-2">联系电话</p>
-                      <a href="tel:191-0658-3798" className="text-2xl font-bold text-[#2D2D2D] hover:text-[#FFE15D] transition-colors">
+                      <a href="tel:191-0658-3798" className="text-lg md:text-2xl font-bold text-[#2D2D2D] hover:text-[#FFE15D] transition-colors">
                         191-0658-3798
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200/10">
+                <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg border border-gray-200/10">
                   <div className="flex items-start gap-4">
                     <div className="w-14 h-14 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Mail className="h-7 w-7 text-white" />
@@ -222,7 +224,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200/10">
+                <div className="bg-white rounded-2xl p-4 md:p-6 shadow-lg border border-gray-200/10">
                   <div className="flex items-start gap-4">
                     <div className="w-14 h-14 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
                       <MapPin className="h-7 w-7 text-white" />
@@ -240,7 +242,7 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">营业时间</h3>
+                <h3 className="text-lg md:text-2xl font-bold mb-4">营业时间</h3>
                 <div className="space-y-2 text-white/80">
                   <div className="flex justify-between">
                     <span>周一至周日</span>

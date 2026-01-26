@@ -13,13 +13,13 @@ export default function Home() {
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
-              <Building2 className="h-6 w-6 text-white" />
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
+              <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
             </div>
             <div>
-              <span className="text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
+              <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
               <p className="text-xs text-[#6B7280]">企业活动服务</p>
             </div>
           </Link>
@@ -64,15 +64,15 @@ export default function Home() {
       </nav>
 
       {/* Hero 区域 */}
-      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-24 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/10 via-white to-[#FFE15D]/5"></div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-8 shadow-sm border border-gray-200">
+          <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-sm border border-gray-200">
             <Sparkles className="h-4 w-4 text-[#FFE15D]" />
             全国最大的省级文化综合体
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-[#2D2D2D] leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D2D2D] leading-tight">
             文化赋能 · 企业活动
             <br />
             <span className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] bg-clip-text text-transparent">
@@ -80,24 +80,24 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-[#6B7280] mb-4 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-base md:text-xl text-[#6B7280] mb-4 max-w-3xl mx-auto leading-relaxed font-medium">
             依托浙江省之江文化中心四大场馆资源
           </p>
-          <p className="text-lg text-[#6B7280] mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-[#6B7280] mb-8 max-w-3xl mx-auto leading-relaxed">
             打造独具文化深度的党建、团建、商务活动新范式
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
               立即获取策划方案
               <ArrowRight className="h-5 w-5" />
             </Link>
             <Link
               href="/services/party"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#2D2D2D] px-8 py-4 rounded-full text-lg font-medium transition-all border-2 border-gray-200 hover:border-[#FFE15D]"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all border-2 border-gray-200 hover:border-[#FFE15D]"
             >
               查看服务详情
             </Link>
@@ -106,18 +106,18 @@ export default function Home() {
       </section>
 
       {/* 品牌介绍 */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
                 <Building2 className="h-6 w-6 text-[#FFE15D]" />
                 <span className="text-[#FF9F43] font-semibold">关于我们</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#2D2D2D]">
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">
                 之江文化中心
               </h2>
-              <p className="text-xl text-[#6B7280] mb-6 font-semibold">
+              <p className="text-sm md:text-lg text-[#6B7280] mb-6 font-semibold">
                 全国最大的省级文化综合体
               </p>
               <div className="space-y-4 text-[#6B7280] leading-relaxed">
@@ -162,30 +162,30 @@ export default function Home() {
       </section>
 
       {/* 核心服务概览 */}
-      <section className="py-20 px-6">
+      <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
               <Calendar className="h-6 w-6 text-[#FFE15D]" />
               <span className="text-[#FF9F43] font-semibold">核心服务</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
               四大服务板块
             </h2>
-            <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
               依托四大场馆资源，提供全方位企业活动服务
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {/* 服务 1 */}
             <Link href="/services/party" className="group">
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Star className="h-8 w-8 text-white" />
+              <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Star className="h-6 w-6 md:h-8 md:w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">主题党建</h3>
-                <p className="text-[#6B7280] mb-6 leading-relaxed">
+                <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">主题党建</h3>
+                <p className="text-[#6B7280] mb-3 leading-relaxed">
                   沉浸式党建体验 · 红色文化浸润
                 </p>
                 <div className="space-y-2 text-sm text-[#6B7280]">
@@ -202,12 +202,12 @@ export default function Home() {
 
             {/* 服务 2 */}
             <Link href="/services/team" className="group">
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Users className="h-8 w-8 text-white" />
+              <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Users className="h-6 w-6 md:h-8 md:w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">团建拓展</h3>
-                <p className="text-[#6B7280] mb-6 leading-relaxed">
+                <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">团建拓展</h3>
+                <p className="text-[#6B7280] mb-3 leading-relaxed">
                   文化沉浸团建 · 非遗手作体验
                 </p>
                 <div className="space-y-2 text-sm text-[#6B7280]">
@@ -224,12 +224,12 @@ export default function Home() {
 
             {/* 服务 3 */}
             <Link href="/services/training" className="group">
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <BookOpen className="h-8 w-8 text-white" />
+              <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <BookOpen className="h-6 w-6 md:h-8 md:w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">访学培训</h3>
-                <p className="text-[#6B7280] mb-6 leading-relaxed">
+                <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">访学培训</h3>
+                <p className="text-[#6B7280] mb-3 leading-relaxed">
                   名家讲座引领 · 专业课程赋能
                 </p>
                 <div className="space-y-2 text-sm text-[#6B7280]">
@@ -246,12 +246,12 @@ export default function Home() {
 
             {/* 服务 4 */}
             <Link href="/services/custom" className="group">
-              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Calendar className="h-8 w-8 text-white" />
+              <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Calendar className="h-6 w-6 md:h-8 md:w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">定制活动</h3>
-                <p className="text-[#6B7280] mb-6 leading-relaxed">
+                <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">定制活动</h3>
+                <p className="text-[#6B7280] mb-3 leading-relaxed">
                   高端商务定制 · 尊享文化礼遇
                 </p>
                 <div className="space-y-2 text-sm text-[#6B7280]">
@@ -270,10 +270,10 @@ export default function Home() {
       </section>
 
       {/* 合作伙伴滚动 */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-10 md:py-16 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#2D2D2D] mb-2">值得信赖的合作伙伴</h2>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#2D2D2D] mb-2">值得信赖的合作伙伴</h2>
             <p className="text-[#6B7280]">已为众多知名企业提供服务</p>
           </div>
 
@@ -307,22 +307,22 @@ export default function Home() {
       </section>
 
       {/* 精选案例 */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
               <Award className="h-6 w-6 text-[#FFE15D]" />
               <span className="text-[#FF9F43] font-semibold">成功案例</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
               精选案例
             </h2>
-            <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
               见证我们的专业实力，打造高品质活动体验
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {/* 案例 1 */}
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
               <div className="aspect-video bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] flex items-center justify-center">
@@ -399,7 +399,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/cases"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
               查看更多案例
               <ArrowRight className="h-5 w-5" />
@@ -409,12 +409,12 @@ export default function Home() {
       </section>
 
       {/* CTA 区域 */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
             让文化赋能您的企业活动
           </h2>
-          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm md:text-lg text-white/80 mb-8 max-w-2xl mx-auto">
             依托之江文化中心四大场馆资源，为您打造独一无二的文化体验
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -430,7 +430,7 @@ export default function Home() {
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-10 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:scale-105"
+            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-6 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all shadow-lg hover:scale-105"
           >
             立即获取策划方案
             <ArrowRight className="h-5 w-5" />

@@ -25,13 +25,13 @@ export default function PartyPage() {
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
-              <Building2 className="h-6 w-6 text-white" />
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
+              <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
             </div>
             <div>
-              <span className="text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
+              <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
               <p className="text-xs text-[#6B7280]">企业活动服务</p>
             </div>
           </Link>
@@ -59,27 +59,27 @@ export default function PartyPage() {
       </nav>
 
       {/* Banner区域 */}
-      <section className="pt-32 pb-12 px-6 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
+      <section className="pt-28 pb-12 px-4 md:px-6 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4 bg-white/10 px-4 py-2 rounded-full">
             <Sparkles className="h-4 w-4 text-[#FFE15D]" />
             <span className="text-white/90 text-sm font-medium">主题党建</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white">
             沉浸式党建体验 · 红色文化浸润
           </h1>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+          <p className="text-sm md:text-lg text-white/80 max-w-3xl mx-auto">
             依托之江文化中心丰富的红色文化资源，为企事业单位提供创新的党建活动服务
           </p>
         </div>
       </section>
 
       {/* 服务介绍 */}
-      <section className="py-20 px-6">
+      <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center mb-20">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-[#2D2D2D]">服务介绍</h2>
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">服务介绍</h2>
               <div className="space-y-4 text-[#6B7280] leading-relaxed">
                 <p className="text-lg">
                   依托之江文化中心丰富的红色文化资源，为企事业单位提供创新的党建活动服务。
@@ -98,17 +98,17 @@ export default function PartyPage() {
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Users className="h-8 w-8 text-white" />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Users className="h-6 w-6 md:h-8 md:w-8 text-white" />
                   </div>
-                  <div className="text-2xl font-bold text-[#FFE15D] mb-1">1000+</div>
+                  <div className="text-lg md:text-2xl font-bold text-[#FFE15D] mb-1">1000+</div>
                   <div className="text-sm text-[#6B7280]">党建活动</div>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mx-auto mb-4">
                     <Star className="h-8 w-8 text-[#FFE15D]" />
                   </div>
-                  <div className="text-2xl font-bold text-[#FFE15D] mb-1">99%</div>
+                  <div className="text-lg md:text-2xl font-bold text-[#FFE15D] mb-1">99%</div>
                   <div className="text-sm text-[#6B7280]">满意度</div>
                 </div>
               </div>
@@ -116,21 +116,21 @@ export default function PartyPage() {
           </div>
 
           {/* 活动形式 */}
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-[#2D2D2D]">活动形式</h2>
-            <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">活动形式</h2>
+            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
               多种活动形式，满足不同党建需求
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-20">
             {/* 沉浸式党课 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mb-6">
-                <Star className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mb-6">
+                <Star className="h-6 w-6 md:h-8 md:w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">沉浸式党课</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
+              <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">沉浸式党课</h3>
+              <p className="text-[#6B7280] mb-3 leading-relaxed">
                 在博物馆展厅中，以文物为教材，以历史为课堂，
                 让党员在真实的历史场景中学习党史、感悟初心。
               </p>
@@ -151,12 +151,12 @@ export default function PartyPage() {
             </div>
 
             {/* 红色文化体验 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mb-6">
-                <Users className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mb-6">
+                <Users className="h-6 w-6 md:h-8 md:w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">红色文化体验</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
+              <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">红色文化体验</h3>
+              <p className="text-[#6B7280] mb-3 leading-relaxed">
                 通过观看红色主题展览、参与红色主题手作、
                 聆听红色故事讲述等形式，多维度感受红色文化魅力。
               </p>
@@ -177,12 +177,12 @@ export default function PartyPage() {
             </div>
 
             {/* 党建主题研学 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center mb-6">
-                <CheckCircle2 className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center mb-6">
+                <CheckCircle2 className="h-6 w-6 md:h-8 md:w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">党建主题研学</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
+              <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">党建主题研学</h3>
+              <p className="text-[#6B7280] mb-3 leading-relaxed">
                 组织党员干部走出会议室，在文化场馆中开展实地研学，
                 在行走中学习、在体验中思考、在实践中成长。
               </p>
@@ -204,14 +204,14 @@ export default function PartyPage() {
           </div>
 
           {/* 特色优势 */}
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-[#2D2D2D]">特色优势</h2>
-            <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">特色优势</h2>
+            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
               专业团队，资源丰富，创新形式
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
             {[
               {
                 icon: <Star className="h-6 w-6 text-[#FFE15D]" />,
@@ -247,26 +247,26 @@ export default function PartyPage() {
       </section>
 
       {/* 获取策划方案 */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* 表单 */}
             <div>
               <div className="mb-8">
-                <h2 className="text-4xl font-bold mb-4 text-[#2D2D2D]">获取策划方案</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">获取策划方案</h2>
                 <p className="text-[#6B7280]">
                   请填写您的需求，我们将为您提供专属的党建活动策划方案
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-[#2D2D2D] font-semibold mb-2">公司名称 *</label>
                     <input
                       type="text"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入公司名称"
                       value={formData.companyName}
                       onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
@@ -277,7 +277,7 @@ export default function PartyPage() {
                     <input
                       type="text"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入联系人姓名"
                       value={formData.contactName}
                       onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
@@ -285,13 +285,13 @@ export default function PartyPage() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-[#2D2D2D] font-semibold mb-2">联系电话 *</label>
                     <input
                       type="tel"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入联系电话"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -302,7 +302,7 @@ export default function PartyPage() {
                     <input
                       type="email"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入电子邮箱"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -310,12 +310,12 @@ export default function PartyPage() {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-[#2D2D2D] font-semibold mb-2">预计人数</label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入预计人数"
                       value={formData.estimatedPeople}
                       onChange={(e) => setFormData({ ...formData, estimatedPeople: e.target.value })}
@@ -325,7 +325,7 @@ export default function PartyPage() {
                     <label className="block text-[#2D2D2D] font-semibold mb-2">预计时间</label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all"
                       placeholder="请输入预计活动时间"
                       value={formData.estimatedDate}
                       onChange={(e) => setFormData({ ...formData, estimatedDate: e.target.value })}
@@ -337,7 +337,7 @@ export default function PartyPage() {
                   <label className="block text-[#2D2D2D] font-semibold mb-2">活动需求描述</label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all resize-none"
+                    className="w-full px-3 py-2.5 md:px-4 md:py-3 rounded-lg border border-gray-200 focus:border-[#FFE15D] focus:ring-2 focus:ring-[#FFE15D]/20 outline-none transition-all resize-none"
                     placeholder="请详细描述您的活动需求..."
                     value={formData.requirements}
                     onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}
@@ -346,7 +346,7 @@ export default function PartyPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-8 py-4 rounded-lg font-semibold transition-all shadow-lg hover:scale-[1.02]"
+                  className="w-full bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold transition-all shadow-lg hover:scale-[1.02]"
                 >
                   提交咨询
                 </button>
@@ -355,12 +355,12 @@ export default function PartyPage() {
 
             {/* 联系方式 */}
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-              <h3 className="text-2xl font-bold mb-6 text-[#2D2D2D]">联系方式</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-6 text-[#2D2D2D]">联系方式</h3>
 
-              <div className="space-y-6 mb-8">
+              <div className="space-y-4 md:space-y-6 mb-6 md:mb-8">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-white" />
+                    <Phone className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div>
                     <p className="text-[#6B7280] text-sm mb-1">联系电话</p>
@@ -370,7 +370,7 @@ export default function PartyPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-6 w-6 text-white" />
+                    <Mail className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div>
                     <p className="text-[#6B7280] text-sm mb-1">电子邮箱</p>
@@ -380,7 +380,7 @@ export default function PartyPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-white" />
+                    <MapPin className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div>
                     <p className="text-[#6B7280] text-sm mb-1">场馆地址</p>

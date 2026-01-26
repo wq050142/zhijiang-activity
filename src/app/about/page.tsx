@@ -12,13 +12,13 @@ export default function AboutPage() {
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
-              <Building2 className="h-6 w-6 text-white" />
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
+              <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
             </div>
             <div>
-              <span className="text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
+              <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
               <p className="text-xs text-[#6B7280]">企业活动服务</p>
             </div>
           </Link>
@@ -46,34 +46,34 @@ export default function AboutPage() {
       </nav>
 
       {/* 页面标题 */}
-      <section className="pt-32 pb-12 px-6 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
+      <section className="pt-28 pb-12 px-4 md:px-6 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4 bg-white/10 px-4 py-2 rounded-full">
             <Sparkles className="h-4 w-4 text-[#FFE15D]" />
             <span className="text-white/90 text-sm font-medium">关于我们</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white">
             关于我们
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-sm md:text-lg text-white/80">
             文化空间运营专家 · 打造有温度的活动体验
           </p>
         </div>
       </section>
 
       {/* 品牌故事 */}
-      <section className="py-20 px-6">
+      <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
                 <Building2 className="h-6 w-6 text-[#FFE15D]" />
                 <span className="text-[#FF9F43] font-semibold">品牌故事</span>
               </div>
-              <h2 className="text-4xl font-bold mb-6 text-[#2D2D2D]">
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">
                 浙江文化空间发展有限公司
               </h2>
-              <p className="text-xl text-[#6B7280] mb-6 font-semibold">
+              <p className="text-sm md:text-lg text-[#6B7280] mb-6 font-semibold">
                 文化空间运营专家
               </p>
               <div className="space-y-4 text-[#6B7280] leading-relaxed mb-8">
@@ -93,15 +93,15 @@ export default function AboutPage() {
               </div>
               <div className="grid grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#FFE15D] mb-1">500+</div>
+                  <div className="text-2xl md:text-3xl font-bold text-[#FFE15D] mb-1">500+</div>
                   <div className="text-sm text-[#6B7280]">服务企业</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#FFE15D] mb-1">1000+</div>
+                  <div className="text-2xl md:text-3xl font-bold text-[#FFE15D] mb-1">1000+</div>
                   <div className="text-sm text-[#6B7280]">活动案例</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#FFE15D] mb-1">98%</div>
+                  <div className="text-2xl md:text-3xl font-bold text-[#FFE15D] mb-1">98%</div>
                   <div className="text-sm text-[#6B7280]">客户满意度</div>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-6 w-6 text-white" />
+                    <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">专业团队</h3>
@@ -124,7 +124,7 @@ export default function AboutPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-6 w-6 text-white" />
+                    <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">资源整合</h3>
@@ -136,7 +136,7 @@ export default function AboutPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-6 w-6 text-white" />
+                    <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">创新形式</h3>
@@ -148,7 +148,7 @@ export default function AboutPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-6 w-6 text-white" />
+                    <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">品质保障</h3>
@@ -164,17 +164,17 @@ export default function AboutPage() {
       </section>
 
       {/* 场馆资源介绍 */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
               <Building2 className="h-6 w-6 text-[#FFE15D]" />
               <span className="text-[#FF9F43] font-semibold">场馆资源</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
               四大场馆资源
             </h2>
-            <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
               依托全国最大的省级文化综合体，提供独一无二的活动场地
             </p>
           </div>
@@ -187,7 +187,7 @@ export default function AboutPage() {
                   <BookOpen className="h-10 w-10 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">浙江省图书馆</h3>
+                  <h3 className="text-lg md:text-2xl font-bold mb-3">浙江省图书馆</h3>
                   <div className="flex items-center gap-2 mb-4 text-white/90">
                     <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">8.5万平方米</span>
                     <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">700万册藏书</span>
@@ -211,7 +211,7 @@ export default function AboutPage() {
                   <Award className="h-10 w-10 text-[#FFE15D]" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">浙江省博物馆</h3>
+                  <h3 className="text-lg md:text-2xl font-bold mb-3">浙江省博物馆</h3>
                   <div className="flex items-center gap-2 mb-4 text-white/90">
                     <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">国家一级博物馆</span>
                     <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">10万+文物</span>
@@ -235,7 +235,7 @@ export default function AboutPage() {
                   <Users className="h-10 w-10 text-[#FFE15D]" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">浙江省非遗馆</h3>
+                  <h3 className="text-lg md:text-2xl font-bold mb-3">浙江省非遗馆</h3>
                   <div className="flex items-center gap-2 mb-4 text-white/90">
                     <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">省级非遗馆</span>
                     <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">1000+项目</span>
@@ -259,7 +259,7 @@ export default function AboutPage() {
                   <Star className="h-10 w-10 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">浙江省文学馆</h3>
+                  <h3 className="text-lg md:text-2xl font-bold mb-3">浙江省文学馆</h3>
                   <div className="flex items-center gap-2 mb-4 text-white/90">
                     <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">文学殿堂</span>
                     <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">文化活动中心</span>
@@ -280,23 +280,23 @@ export default function AboutPage() {
       </section>
 
       {/* 团队介绍 */}
-      <section className="py-20 px-6">
+      <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
               <Users className="h-6 w-6 text-[#FFE15D]" />
               <span className="text-[#FF9F43] font-semibold">团队介绍</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
               专业团队
             </h2>
-            <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
               汇聚行业精英，打造卓越服务
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg text-center border border-gray-100 hover:shadow-xl transition-all">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+            <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg text-center border border-gray-100 hover:shadow-xl transition-all">
               <div className="w-20 h-20 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="h-10 w-10 text-white" />
               </div>
@@ -307,7 +307,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg text-center border border-gray-100 hover:shadow-xl transition-all">
+            <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg text-center border border-gray-100 hover:shadow-xl transition-all">
               <div className="w-20 h-20 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Award className="h-10 w-10 text-[#FFE15D]" />
               </div>
@@ -318,7 +318,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg text-center border border-gray-100 hover:shadow-xl transition-all">
+            <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg text-center border border-gray-100 hover:shadow-xl transition-all">
               <div className="w-20 h-20 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-full flex items-center justify-center mx-auto mb-6">
                 <BookOpen className="h-10 w-10 text-white" />
               </div>
@@ -333,14 +333,14 @@ export default function AboutPage() {
       </section>
 
       {/* 资质荣誉 */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
               <Award className="h-6 w-6 text-[#FFE15D]" />
               <span className="text-[#FF9F43] font-semibold">资质荣誉</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
               资质荣誉
             </h2>
           </div>
@@ -362,17 +362,17 @@ export default function AboutPage() {
       </section>
 
       {/* CTA 区域 */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
             期待与您合作
           </h2>
-          <p className="text-xl text-white/80 mb-8">
+          <p className="text-sm md:text-lg text-white/80 mb-8">
             让文化赋能您的企业活动，打造独一无二的文化体验
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-10 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:scale-105"
+            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-6 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all shadow-lg hover:scale-105"
           >
             立即联系我们
             <ArrowRight className="h-5 w-5" />
