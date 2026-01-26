@@ -1,475 +1,516 @@
 import type { Metadata } from 'next';
-import { Building2, Users, Calendar, Star, ArrowRight, Phone, Mail, MapPin, CheckCircle2 } from 'lucide-react';
+import Link from 'next/link';
+import { Building2, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Star, Users, Calendar, Award, BookOpen } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '之江文化中心 - 企业活动服务',
-  description: '之江文化中心提供专业的企业活动服务，包括VIP客户活动、企业年会、品牌发布会等全方位服务',
+  title: '之江文化中心 | 文化赋能 · 企业活动一站式解决方案',
+  description: '依托之江文化中心四大场馆资源，为企业提供党建、团建、培训、定制活动一站式服务，打造有文化深度的企业活动新范式。',
+  keywords: '之江文化中心,企业活动服务,党建活动,团建活动,杭州企业活动策划,浙江省文化场馆团建',
 };
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-[#F5F1E8]">
       {/* 顶部导航栏 */}
-      <nav className="fixed top-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 z-50">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-[#4A3728]/10 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Building2 className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              之江文化中心
-            </span>
-          </div>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#services" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              服务内容
-            </a>
-            <a href="#cases" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              服务案例
-            </a>
-            <a href="#vip" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              VIP活动
-            </a>
-            <a href="#contact" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <Link href="/" className="flex items-center gap-3">
+            <Building2 className="h-10 w-10 text-[#4A3728]" />
+            <div>
+              <span className="text-2xl font-bold text-[#4A3728]">之江文化中心</span>
+              <p className="text-xs text-[#C9A86C]">企业活动服务</p>
+            </div>
+          </Link>
+
+          <div className="hidden lg:flex items-center gap-8">
+            <Link href="/about" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">
+              关于我们
+            </Link>
+            <Link href="/services/party" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">
+              主题党建
+            </Link>
+            <Link href="/services/team" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">
+              团建拓展
+            </Link>
+            <Link href="/services/training" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">
+              访学培训
+            </Link>
+            <Link href="/services/custom" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">
+              定制活动
+            </Link>
+            <Link href="/cases" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">
+              案例中心
+            </Link>
+            <Link href="/contact" className="text-[#4A3728] hover:text-[#C9A86C] transition-colors font-medium">
               联系我们
+            </Link>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <a href="tel:191-0658-3798" className="hidden md:flex items-center gap-2 text-[#4A3728] font-medium">
+              <Phone className="h-4 w-4" />
+              191-0658-3798
             </a>
+            <Link
+              href="/contact"
+              className="bg-[#4A3728] hover:bg-[#2F4F4F] text-white px-6 py-2 rounded-full transition-all hover:shadow-lg"
+            >
+              立即咨询
+            </Link>
           </div>
         </div>
       </nav>
 
       {/* Hero 区域 */}
-      <section className="pt-32 pb-20 px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950 px-4 py-2 rounded-full text-blue-700 dark:text-blue-300 text-sm font-medium mb-8">
-            <Star className="h-4 w-4" />
-            专业文化活动服务提供商
+      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#4A3728]/5 to-[#C9A86C]/5"></div>
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <div className="inline-flex items-center gap-2 bg-[#4A3728]/5 px-4 py-2 rounded-full text-[#4A3728] text-sm font-medium mb-8">
+            <Star className="h-4 w-4 text-[#C9A86C]" />
+            全国最大的省级文化综合体
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-white dark:via-blue-400 dark:to-purple-400">
-            之江文化中心
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-[#4A3728] leading-tight">
+            文化赋能 · 企业活动
+            <br />
+            <span className="text-[#C9A86C]">一站式解决方案</span>
           </h1>
-          <p className="text-2xl md:text-3xl text-slate-600 dark:text-slate-300 mb-4 font-medium">
-            企业活动服务专家
+
+          <p className="text-xl md:text-2xl text-[#4A3728]/80 mb-4 max-w-3xl mx-auto leading-relaxed">
+            依托浙江省之江文化中心四大场馆资源
           </p>
-          <p className="text-lg text-slate-500 dark:text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-            为企业提供专业的一站式活动策划与执行服务，包括VIP客户活动、企业年会、品牌发布会、商务会议等各类活动，
-            助力企业打造独特品牌形象，提升客户体验
+          <p className="text-lg text-[#4A3728]/60 mb-12 max-w-3xl mx-auto leading-relaxed">
+            打造独具文化深度的党建、团建、商务活动新范式
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-[#4A3728] hover:bg-[#2F4F4F] text-white px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
-              立即咨询
+              立即获取策划方案
               <ArrowRight className="h-5 w-5" />
-            </a>
-            <a
-              href="#services"
-              className="inline-flex items-center justify-center gap-2 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 px-8 py-4 rounded-full text-lg font-medium transition-all border border-slate-200 dark:border-slate-700"
+            </Link>
+            <Link
+              href="/services/party"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-[#F5F1E8] text-[#4A3728] px-8 py-4 rounded-full text-lg font-medium transition-all border-2 border-[#4A3728]/20"
             >
-              了解服务
-            </a>
+              查看服务详情
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* 服务内容 */}
-      <section id="services" className="py-20 px-6 bg-white dark:bg-slate-900">
+      {/* 品牌介绍 */}
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
-              服务内容
-            </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              提供全方位的企业活动服务，满足各类活动需求
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* 服务卡片 1 */}
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100 dark:border-slate-800">
-              <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Users className="h-8 w-8 text-white" />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 mb-4">
+                <Building2 className="h-6 w-6 text-[#C9A86C]" />
+                <span className="text-[#C9A86C] font-medium">关于我们</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">
-                VIP客户活动
-              </h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                为企业VIP客户量身定制的专属活动，包括高端晚宴、艺术鉴赏、文化体验等，
-                增强客户忠诚度，深化合作关系
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#4A3728]">
+                之江文化中心
+              </h2>
+              <p className="text-xl text-[#4A3728]/70 mb-6 font-medium">
+                全国最大的省级文化综合体
               </p>
-              <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-blue-600" />
-                  定制化活动方案
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-blue-600" />
-                  高端场地支持
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-blue-600" />
-                  专属服务团队
-                </li>
-              </ul>
-            </div>
-
-            {/* 服务卡片 2 */}
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-950 dark:to-teal-950 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100 dark:border-slate-800">
-              <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Calendar className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">
-                企业年会
-              </h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                策划并执行企业年会活动，包括场地布置、节目编排、灯光音响等，
-                打造难忘的企业年度盛会
-              </p>
-              <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-green-600" />
-                  全程策划执行
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-green-600" />
-                  专业设备支持
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-green-600" />
-                  创意节目编排
-                </li>
-              </ul>
-            </div>
-
-            {/* 服务卡片 3 */}
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950 dark:to-red-950 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100 dark:border-slate-800">
-              <div className="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Building2 className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">
-                品牌发布会
-              </h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                为企业打造专业的品牌发布会，提供创意策划、媒体邀请、现场执行等
-                全方位服务，确保活动圆满成功
-              </p>
-              <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-orange-600" />
-                  创意策划方案
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-orange-600" />
-                  媒体资源整合
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-orange-600" />
-                  专业现场执行
-                </li>
-              </ul>
-            </div>
-
-            {/* 服务卡片 4 */}
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950 dark:to-pink-950 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100 dark:border-slate-800">
-              <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Calendar className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">
-                商务会议
-              </h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                提供专业的商务会议场地和服务，包括会议室租赁、设备支持、餐饮服务等，
-                满足各类商务会议需求
-              </p>
-              <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-purple-600" />
-                  多种规格会议室
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-purple-600" />
-                  先进会议设备
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-purple-600" />
-                  专业会务服务
-                </li>
-              </ul>
-            </div>
-
-            {/* 服务卡片 5 */}
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-950 dark:to-blue-950 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100 dark:border-slate-800">
-              <div className="w-16 h-16 bg-cyan-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Users className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">
-                团建活动
-              </h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                策划创意团建活动，包括户外拓展、文化体验、趣味运动会等，
-                增强团队凝聚力，提升员工归属感
-              </p>
-              <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-cyan-600" />
-                  多种活动形式
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-cyan-600" />
-                  专业教练团队
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-cyan-600" />
-                  安全保障体系
-                </li>
-              </ul>
-            </div>
-
-            {/* 服务卡片 6 */}
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-rose-50 to-orange-50 dark:from-rose-950 dark:to-orange-950 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100 dark:border-slate-800">
-              <div className="w-16 h-16 bg-rose-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Star className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">
-                文化展览
-              </h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                策划各类文化展览活动，包括艺术展览、主题展览、品牌展示等，
-                打造沉浸式文化体验
-              </p>
-              <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-rose-600" />
-                  专业策展团队
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-rose-600" />
-                  高品质展览空间
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-rose-600" />
-                  互动体验设计
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 服务案例 */}
-      <section id="cases" className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
-              服务案例
-            </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              精选优秀案例，见证我们的专业实力
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* 案例 1 */}
-            <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="aspect-video bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                <Calendar className="h-20 w-20 text-white/80" />
-              </div>
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-medium rounded-full">
-                    VIP活动
-                  </span>
-                  <span className="text-sm text-slate-500 dark:text-slate-400">
-                    2024年度
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">
-                  某大型银行VIP客户答谢会
-                </h3>
-                <p className="text-slate-600 dark:text-slate-400 mb-4">
-                  为银行高端客户策划的艺术鉴赏活动，包含大师讲座、VIP晚宴、专场参观等环节
+              <div className="space-y-4 text-[#4A3728]/80 leading-relaxed">
+                <p>
+                  之江文化中心位于杭州市西湖区之江板块，是浙江省重点打造的文化地标项目。
+                </p>
+                <p>
+                  中心涵盖浙江省图书馆、浙江省博物馆、浙江省非物质文化遗产馆、浙江省文学馆
+                  四大文化场馆，总建筑面积达32万平方米。
+                </p>
+                <p>
+                  由浙江文化空间发展有限公司运营，我们整合四大场馆独特资源，为企事业单位
+                  提供高品质、有文化深度的活动服务，让每一次活动都成为文化之旅。
                 </p>
               </div>
             </div>
 
-            {/* 案例 2 */}
-            <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="aspect-video bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center">
-                <Building2 className="h-20 w-20 text-white/80" />
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-gradient-to-br from-[#4A3728] to-[#2F4F4F] p-6 rounded-2xl text-white">
+                <BookOpen className="h-10 w-10 mb-4 text-[#C9A86C]" />
+                <h3 className="text-lg font-bold mb-2">浙江省图书馆</h3>
+                <p className="text-sm opacity-80">馆藏图书超700万册</p>
               </div>
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 text-xs font-medium rounded-full">
-                    企业年会
-                  </span>
-                  <span className="text-sm text-slate-500 dark:text-slate-400">
-                    2024年度
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">
-                  某科技集团年度盛典
-                </h3>
-                <p className="text-slate-600 dark:text-slate-400 mb-4">
-                  为科技企业打造的年度盛典，包含颁奖典礼、文艺汇演、互动游戏等丰富内容
-                </p>
+              <div className="bg-gradient-to-br from-[#8B4513] to-[#C9A86C] p-6 rounded-2xl text-white">
+                <Award className="h-10 w-10 mb-4" />
+                <h3 className="text-lg font-bold mb-2">浙江省博物馆</h3>
+                <p className="text-sm opacity-80">国家一级博物馆</p>
               </div>
-            </div>
-
-            {/* 案例 3 */}
-            <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="aspect-video bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
-                <Star className="h-20 w-20 text-white/80" />
+              <div className="bg-gradient-to-br from-[#2F4F4F] to-[#4A3728] p-6 rounded-2xl text-white">
+                <Users className="h-10 w-10 mb-4 text-[#C9A86C]" />
+                <h3 className="text-lg font-bold mb-2">浙江省非遗馆</h3>
+                <p className="text-sm opacity-80">1000余项非遗项目</p>
               </div>
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 text-xs font-medium rounded-full">
-                    品牌发布
-                  </span>
-                  <span className="text-sm text-slate-500 dark:text-slate-400">
-                    2024年度
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">
-                  某汽车品牌新品发布会
-                </h3>
-                <p className="text-slate-600 dark:text-slate-400 mb-4">
-                    为汽车品牌打造的新品发布活动，采用沉浸式体验设计，吸引众多媒体关注
-                </p>
+              <div className="bg-gradient-to-br from-[#C9A86C] to-[#8B4513] p-6 rounded-2xl text-white">
+                <Star className="h-10 w-10 mb-4" />
+                <h3 className="text-lg font-bold mb-2">浙江省文学馆</h3>
+                <p className="text-sm opacity-80">浙江文学殿堂</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* VIP客户活动 */}
-      <section id="vip" className="py-20 px-6 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+      {/* 核心服务概览 */}
+      <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              VIP客户活动
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Calendar className="h-6 w-6 text-[#C9A86C]" />
+              <span className="text-[#C9A86C] font-medium">核心服务</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#4A3728]">
+              四大服务板块
             </h2>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              尊享专属服务，打造极致体验
+            <p className="text-xl text-[#4A3728]/70 max-w-2xl mx-auto">
+              依托四大场馆资源，提供全方位企业活动服务
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Users className="h-6 w-6" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* 服务 1 */}
+            <Link href="/services/party" className="group">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-[#4A3728]/10">
+                <div className="w-16 h-16 bg-[#4A3728] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#C9A86C] transition-colors">
+                  <Star className="h-8 w-8 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">专属定制</h3>
-                  <p className="text-blue-100 leading-relaxed">
-                    根据企业品牌特点和客户需求，量身打造专属活动方案，确保活动独一无二
-                  </p>
+                <h3 className="text-2xl font-bold mb-4 text-[#4A3728]">主题党建</h3>
+                <p className="text-[#4A3728]/70 mb-6 leading-relaxed">
+                  沉浸式党建体验 · 红色文化浸润
+                </p>
+                <div className="space-y-2 text-sm text-[#4A3728]/60">
+                  <p>✓ 沉浸式党课</p>
+                  <p>✓ 红色文化体验</p>
+                  <p>✓ 党建主题研学</p>
                 </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Calendar className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">高端场地</h3>
-                  <p className="text-blue-100 leading-relaxed">
-                    提供之江文化中心等高端场馆资源，打造尊贵舒适的活动环境
-                  </p>
+                <div className="mt-6 text-[#C9A86C] font-medium flex items-center gap-2 group-hover:gap-4 transition-all">
+                  了解更多
+                  <ArrowRight className="h-4 w-4" />
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Star className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">贴心服务</h3>
-                  <p className="text-blue-100 leading-relaxed">
-                    专属服务团队全程跟进，提供从策划到执行的全方位服务
-                  </p>
-                </div>
-              </div>
-            </div>
+            </Link>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-6">活动类型</h3>
-              <ul className="space-y-4">
-                {[
-                  '高端晚宴与品鉴会',
-                  '艺术展览与鉴赏活动',
-                  '文化体验与互动工坊',
-                  '客户答谢与商务洽谈',
-                  '主题沙龙与论坛',
-                  '私密派对与定制活动'
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3 text-blue-100">
-                    <CheckCircle2 className="h-5 w-5 text-blue-200 flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+            {/* 服务 2 */}
+            <Link href="/services/team" className="group">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-[#4A3728]/10">
+                <div className="w-16 h-16 bg-[#8B4513] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#C9A86C] transition-colors">
+                  <Users className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-[#4A3728]">团建拓展</h3>
+                <p className="text-[#4A3728]/70 mb-6 leading-relaxed">
+                  文化沉浸团建 · 非遗手作体验
+                </p>
+                <div className="space-y-2 text-sm text-[#4A3728]/60">
+                  <p>✓ 文化沉浸体验</p>
+                  <p>✓ 非遗手作体验</p>
+                  <p>✓ 人文团队共创</p>
+                </div>
+                <div className="mt-6 text-[#C9A86C] font-medium flex items-center gap-2 group-hover:gap-4 transition-all">
+                  了解更多
+                  <ArrowRight className="h-4 w-4" />
+                </div>
+              </div>
+            </Link>
+
+            {/* 服务 3 */}
+            <Link href="/services/training" className="group">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-[#4A3728]/10">
+                <div className="w-16 h-16 bg-[#2F4F4F] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#C9A86C] transition-colors">
+                  <BookOpen className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-[#4A3728]">访学培训</h3>
+                <p className="text-[#4A3728]/70 mb-6 leading-relaxed">
+                  名家讲座引领 · 专业课程赋能
+                </p>
+                <div className="space-y-2 text-sm text-[#4A3728]/60">
+                  <p>✓ 名家讲座</p>
+                  <p>✓ 专业培训</p>
+                  <p>✓ 行业交流</p>
+                </div>
+                <div className="mt-6 text-[#C9A86C] font-medium flex items-center gap-2 group-hover:gap-4 transition-all">
+                  了解更多
+                  <ArrowRight className="h-4 w-4" />
+                </div>
+              </div>
+            </Link>
+
+            {/* 服务 4 */}
+            <Link href="/services/custom" className="group">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-[#4A3728]/10">
+                <div className="w-16 h-16 bg-[#C9A86C] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#4A3728] transition-colors">
+                  <Calendar className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-[#4A3728]">定制活动</h3>
+                <p className="text-[#4A3728]/70 mb-6 leading-relaxed">
+                  高端商务定制 · 尊享文化礼遇
+                </p>
+                <div className="space-y-2 text-sm text-[#4A3728]/60">
+                  <p>✓ 高端商务活动</p>
+                  <p>✓ 品牌发布会</p>
+                  <p>✓ VIP客户答谢</p>
+                </div>
+                <div className="mt-6 text-[#C9A86C] font-medium flex items-center gap-2 group-hover:gap-4 transition-all">
+                  了解更多
+                  <ArrowRight className="h-4 w-4" />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 合作伙伴滚动 */}
+      <section className="py-16 px-6 bg-[#4A3728]/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-[#4A3728] mb-2">值得信赖的合作伙伴</h2>
+            <p className="text-[#4A3728]/60">已为众多知名企业提供服务</p>
+          </div>
+
+          <div className="overflow-hidden">
+            <div className="flex items-center gap-8 animate-marquee whitespace-nowrap">
+              {[...Array(4)].map((_, i) => (
+                <div key={i} className="flex items-center gap-8">
+                  {[
+                    '浙江省教育厅',
+                    '海康威视',
+                    '厦门航空',
+                    '中国移动',
+                    '中国建设银行',
+                    '阿里巴巴',
+                    '浙江大学',
+                    '浙江省交通投资集团'
+                  ].map((partner, j) => (
+                    <div
+                      key={j}
+                      className="flex items-center gap-3 px-6 py-4 bg-white rounded-lg shadow-sm border border-[#4A3728]/10 hover:border-[#C9A86C] transition-colors"
+                    >
+                      <Building2 className="h-5 w-5 text-[#4A3728]" />
+                      <span className="text-[#4A3728] font-medium whitespace-nowrap">{partner}</span>
+                    </div>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* 联系我们 */}
-      <section id="contact" className="py-20 px-6 bg-white dark:bg-slate-900">
+      {/* 精选案例 */}
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
-              联系我们
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Award className="h-6 w-6 text-[#C9A86C]" />
+              <span className="text-[#C9A86C] font-medium">成功案例</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#4A3728]">
+              精选案例
             </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              期待与您的合作，共同打造精彩活动
+            <p className="text-xl text-[#4A3728]/70 max-w-2xl mx-auto">
+              见证我们的专业实力，打造高品质活动体验
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 border border-slate-100 dark:border-slate-800">
-              <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <Phone className="h-8 w-8 text-white" />
+            {/* 案例 1 */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-[#4A3728]/10">
+              <div className="aspect-video bg-gradient-to-br from-[#4A3728] to-[#2F4F4F] flex items-center justify-center">
+                <BookOpen className="h-20 w-20 text-white/40" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">联系电话</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-lg">400-888-8888</p>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-3 py-1 bg-[#4A3728]/10 text-[#4A3728] text-xs font-medium rounded-full">
+                    VIP活动
+                  </span>
+                  <span className="text-sm text-[#4A3728]/50">2024年度</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-[#4A3728]">上海银行考古活动</h3>
+                <p className="text-[#4A3728]/70 mb-4 text-sm leading-relaxed">
+                  探索千年文明 · 传承文化力量。组织VIP客户参与考古研学活动，
+                  通过文物修复体验、考古现场参观等形式，打造高端客户深度文化体验。
+                </p>
+                <Link href="/cases/shanghai-bank" className="text-[#C9A86C] font-medium flex items-center gap-2 group-hover:gap-4 transition-all">
+                  查看详情
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
             </div>
 
-            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-950 dark:to-teal-950 border border-slate-100 dark:border-slate-800">
-              <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <Mail className="h-8 w-8 text-white" />
+            {/* 案例 2 */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-[#4A3728]/10">
+              <div className="aspect-video bg-gradient-to-br from-[#8B4513] to-[#C9A86C] flex items-center justify-center">
+                <Users className="h-20 w-20 text-white/40" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">电子邮箱</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-lg">service@zhijiang-center.com</p>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-3 py-1 bg-[#8B4513]/10 text-[#8B4513] text-xs font-medium rounded-full">
+                    团建活动
+                  </span>
+                  <span className="text-sm text-[#4A3728]/50">2024年度</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-[#4A3728]">海康威视养生局</h3>
+                <p className="text-[#4A3728]/70 mb-4 text-sm leading-relaxed">
+                  中医文化溯源 · 健康生活探索。结合博物馆中医文化展区资源，
+                  为员工打造养生主题团建活动，在文化探索中关注健康生活。
+                </p>
+                <Link href="/cases/hikvision" className="text-[#C9A86C] font-medium flex items-center gap-2 group-hover:gap-4 transition-all">
+                  查看详情
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
             </div>
 
-            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950 dark:to-red-950 border border-slate-100 dark:border-slate-800">
-              <div className="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <MapPin className="h-8 w-8 text-white" />
+            {/* 案例 3 */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-[#4A3728]/10">
+              <div className="aspect-video bg-gradient-to-br from-[#2F4F4F] to-[#C9A86C] flex items-center justify-center">
+                <Calendar className="h-20 w-20 text-white/40" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">场馆地址</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-lg">杭州市之江文化中心</p>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="px-3 py-1 bg-[#2F4F4F]/10 text-[#2F4F4F] text-xs font-medium rounded-full">
+                    年会活动
+                  </span>
+                  <span className="text-sm text-[#4A3728]/50">2023年度</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-[#4A3728]">蒙牛迈胜年会</h3>
+                <p className="text-[#4A3728]/70 mb-4 text-sm leading-relaxed">
+                  品牌文化融合 · 年度盛典呈现。将蒙牛品牌文化与传统艺术元素深度融合，
+                  打造独具特色的年度盛典，彰显企业文化底蕴与品牌实力。
+                </p>
+                <Link href="/cases/mengniu" className="text-[#C9A86C] font-medium flex items-center gap-2 group-hover:gap-4 transition-all">
+                  查看详情
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
             </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/cases"
+              className="inline-flex items-center justify-center gap-2 bg-[#4A3728] hover:bg-[#2F4F4F] text-white px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-xl"
+            >
+              查看更多案例
+              <ArrowRight className="h-5 w-5" />
+            </Link>
           </div>
         </div>
       </section>
 
+      {/* CTA 区域 */}
+      <section className="py-20 px-6 bg-gradient-to-br from-[#4A3728] to-[#2F4F4F]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            让文化赋能您的企业活动
+          </h2>
+          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            依托之江文化中心四大场馆资源，为您打造独一无二的文化体验
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <div className="flex items-center gap-2 text-white/90">
+              <Phone className="h-5 w-5 text-[#C9A86C]" />
+              <span className="text-lg font-medium">191-0658-3798</span>
+            </div>
+            <div className="hidden sm:block w-px h-6 bg-white/30"></div>
+            <div className="flex items-center gap-2 text-white/90">
+              <Mail className="h-5 w-5 text-[#C9A86C]" />
+              <span className="text-lg">service@zhijiang-culture.com</span>
+            </div>
+          </div>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center gap-2 bg-[#C9A86C] hover:bg-[#8B4513] text-white px-10 py-4 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-xl hover:scale-105"
+          >
+            立即获取策划方案
+            <ArrowRight className="h-5 w-5" />
+          </Link>
+        </div>
+      </section>
+
       {/* 页脚 */}
-      <footer className="py-12 px-6 bg-slate-900 text-white">
+      <footer className="bg-[#4A3728] text-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-3">
-              <Building2 className="h-8 w-8" />
-              <span className="text-xl font-bold">之江文化中心</span>
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <Building2 className="h-8 w-8 text-[#C9A86C]" />
+                <div>
+                  <span className="text-xl font-bold">之江文化中心</span>
+                  <p className="text-xs text-[#C9A86C]">企业活动服务</p>
+                </div>
+              </div>
+              <p className="text-white/70 text-sm leading-relaxed">
+                依托四大场馆资源，为企业提供高品质、有文化深度的活动服务
+              </p>
             </div>
-            <div className="flex items-center gap-6 text-slate-400">
-              <a href="#services" className="hover:text-white transition-colors">服务内容</a>
-              <a href="#cases" className="hover:text-white transition-colors">服务案例</a>
-              <a href="#vip" className="hover:text-white transition-colors">VIP活动</a>
-              <a href="#contact" className="hover:text-white transition-colors">联系我们</a>
+
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-[#C9A86C]">服务内容</h3>
+              <ul className="space-y-2 text-white/70 text-sm">
+                <li><Link href="/services/party" className="hover:text-white transition-colors">主题党建</Link></li>
+                <li><Link href="/services/team" className="hover:text-white transition-colors">团建拓展</Link></li>
+                <li><Link href="/services/training" className="hover:text-white transition-colors">访学培训</Link></li>
+                <li><Link href="/services/custom" className="hover:text-white transition-colors">定制活动</Link></li>
+              </ul>
             </div>
-            <p className="text-slate-400 text-sm">
-              © 2024 之江文化中心. 保留所有权利.
+
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-[#C9A86C]">关于我们</h3>
+              <ul className="space-y-2 text-white/70 text-sm">
+                <li><Link href="/about" className="hover:text-white transition-colors">品牌故事</Link></li>
+                <li><Link href="/about" className="hover:text-white transition-colors">场馆资源</Link></li>
+                <li><Link href="/cases" className="hover:text-white transition-colors">成功案例</Link></li>
+                <li><Link href="/contact" className="hover:text-white transition-colors">联系我们</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-[#C9A86C]">联系方式</h3>
+              <ul className="space-y-3 text-white/70 text-sm">
+                <li className="flex items-start gap-2">
+                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#C9A86C]" />
+                  <span>191-0658-3798</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Mail className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#C9A86C]" />
+                  <span>service@zhijiang-culture.com</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#C9A86C]" />
+                  <span>浙江省杭州市西湖区<br />之江文化中心研学中心</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-white/10 pt-8 text-center">
+            <p className="text-white/50 text-sm">
+              © 2024 浙江文化空间发展有限公司 | 之江文化中心企业活动服务 | 版权所有
             </p>
           </div>
         </div>
       </footer>
+
+      <style>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+      `}</style>
     </div>
   );
 }
