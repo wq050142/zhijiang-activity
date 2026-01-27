@@ -149,20 +149,40 @@ export default function Home() {
 
               {/* 五小图展示 - 四馆一中心 */}
               <div className="grid grid-cols-5 gap-2 md:gap-3">
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省图书馆.png")' }}></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-2 left-0 right-0 text-center">
+                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">图书馆</span>
+                  </div>
                 </div>
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省博物馆.png")' }}></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-2 left-0 right-0 text-center">
+                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">博物馆</span>
+                  </div>
                 </div>
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省非遗馆.png")' }}></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-2 left-0 right-0 text-center">
+                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">非遗馆</span>
+                  </div>
                 </div>
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省文学馆.png")' }}></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-2 left-0 right-0 text-center">
+                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">文学馆</span>
+                  </div>
                 </div>
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-2 left-0 right-0 text-center">
+                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">研学中心</span>
+                  </div>
                 </div>
               </div>
             </div>

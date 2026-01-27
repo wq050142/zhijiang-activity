@@ -171,6 +171,11 @@ export default function AboutPage() {
               <div className="aspect-[16/9] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省图书馆.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                    浙江省图书馆
+                  </span>
+                </div>
               </div>
               <div className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省图书馆（之江馆）</h3>
@@ -200,6 +205,11 @@ export default function AboutPage() {
               <div className="aspect-[16/9] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省博物馆.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                    浙江省博物馆
+                  </span>
+                </div>
               </div>
               <div className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省博物馆（之江馆）</h3>
@@ -229,6 +239,11 @@ export default function AboutPage() {
               <div className="aspect-[16/9] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省非遗馆.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                    浙江省非遗馆
+                  </span>
+                </div>
               </div>
               <div className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省非物质文化遗产馆</h3>
@@ -258,6 +273,11 @@ export default function AboutPage() {
               <div className="aspect-[16/9] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省文学馆.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                    浙江省文学馆
+                  </span>
+                </div>
               </div>
               <div className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省文学馆</h3>
@@ -291,6 +311,11 @@ export default function AboutPage() {
                   <div className="aspect-[16/9] md:aspect-auto md:h-full min-h-[300px] relative overflow-hidden">
                     <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                        之江文化中心研学中心
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <div className="md:w-1/2 p-6 md:p-8">
