@@ -15,47 +15,49 @@ export default function AboutPage() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
-              <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
-            </div>
+            <img
+              src="/assets/之江文化中心logo_画板 1.png"
+              alt="之江文化中心 logo"
+              className="h-8 md:h-10 w-auto"
+            />
             <div>
-              <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
-              <p className="text-xs text-[#6B7280]">企业活动服务</p>
+              <span className="text-lg md:text-2xl font-bold text-[#333333]">之江文化中心</span>
+              <p className="text-xs text-[#666666]">企业活动服务</p>
             </div>
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
-            <Link href="/about" className="text-[#FFE15D] font-bold">
+            <Link href="/about" className="text-[#FFC107] font-bold">
               关于我们
             </Link>
-            <Link href="/services/party" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+            <Link href="/services/party" className="text-[#333333] hover:text-[#FFC107] transition-colors font-medium">
               主题党建
             </Link>
-            <Link href="/services/team" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+            <Link href="/services/team" className="text-[#333333] hover:text-[#FFC107] transition-colors font-medium">
               团建拓展
             </Link>
-            <Link href="/services/training" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+            <Link href="/services/training" className="text-[#333333] hover:text-[#FFC107] transition-colors font-medium">
               访学培训
             </Link>
-            <Link href="/services/custom" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+            <Link href="/services/custom" className="text-[#333333] hover:text-[#FFC107] transition-colors font-medium">
               定制活动
             </Link>
-            <Link href="/cases" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+            <Link href="/cases" className="text-[#333333] hover:text-[#FFC107] transition-colors font-medium">
               案例中心
             </Link>
-            <Link href="/contact" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
+            <Link href="/contact" className="text-[#333333] hover:text-[#FFC107] transition-colors font-medium">
               联系我们
             </Link>
           </div>
 
           <div className="flex items-center gap-4">
-            <a href="tel:191-0658-3798" className="hidden md:flex items-center gap-2 text-[#2D2D2D] font-medium">
+            <a href="tel:191-0658-3798" className="hidden md:flex items-center gap-2 text-[#333333] font-medium">
               <Phone className="h-4 w-4" />
               191-0658-3798
             </a>
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
+              className="bg-[#FFC107] hover:shadow-lg text-white px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
             >
               立即咨询
             </Link>
@@ -66,9 +68,9 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
         {/* 大图横幅占位符 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] opacity-90">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D] via-[#2D2D2D]/70 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] opacity-95">
+          <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-30">
             <div className="text-center">
               <Building2 className="h-32 md:h-48 w-32 md:w-48 text-white/40 mx-auto" />
@@ -96,13 +98,13 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-8 items-center mb-16">
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
-                <Building2 className="h-6 w-6 text-[#FFE15D]" />
+                <Building2 className="h-6 w-6 text-[#FFC107]" />
                 <span className="text-[#FF9F43] font-semibold">关于之江文化中心</span>
               </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#333333]">
                 国有文化企业的专业担当
               </h2>
-              <div className="space-y-4 text-[#6B7280] leading-relaxed">
+              <div className="space-y-4 text-[#666666] leading-relaxed">
                 <p>
                   之江文化中心位于杭州市西湖区之江板块，是浙江省重点打造的文化地标项目，总建筑面积达32万平方米，是目前全国体量最大的省级现代复合文化综合体。
                 </p>
@@ -156,13 +158,13 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
-              <Award className="h-6 w-6 text-[#FFE15D]" />
+              <Award className="h-6 w-6 text-[#FFC107]" />
               <span className="text-[#FF9F43] font-semibold">场馆资源</span>
             </div>
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#333333]">
               四馆一中心
             </h2>
-            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-[#666666] max-w-2xl mx-auto">
               每一座场馆都是文化的殿堂，为您活动提供独特文化空间（注：目前无公共服务中心）
             </p>
           </div>
@@ -177,8 +179,8 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">浙江省图书馆（之江馆）</h3>
-                <div className="space-y-3 text-sm text-[#6B7280]">
+                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省图书馆（之江馆）</h3>
+                <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
                     <p>8.5万平方米智慧图书馆，藏书超700万册</p>
@@ -208,8 +210,8 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">浙江省博物馆（之江馆）</h3>
-                <div className="space-y-3 text-sm text-[#6B7280]">
+                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省博物馆（之江馆）</h3>
+                <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
                     <p>10万平方米现代化空间，国家一级博物馆</p>
@@ -239,8 +241,8 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">浙江省非物质文化遗产馆</h3>
-                <div className="space-y-3 text-sm text-[#6B7280]">
+                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省非物质文化遗产馆</h3>
+                <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
                     <p>全国首座大型区域综合性非遗馆</p>
@@ -270,8 +272,8 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#2D2D2D]">浙江省文学馆</h3>
-                <div className="space-y-3 text-sm text-[#6B7280]">
+                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省文学馆</h3>
+                <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
                     <p>规模仅次于中国现代文学馆，浙江文学殿堂</p>
@@ -309,8 +311,8 @@ export default function AboutPage() {
                   <div className="inline-flex items-center gap-2 mb-4">
                     <span className="bg-[#FF9F43] text-white text-xs font-semibold px-3 py-1 rounded-full">专属服务</span>
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#2D2D2D]">之江文化中心研学中心</h3>
-                  <div className="space-y-3 text-sm text-[#6B7280]">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#333333]">之江文化中心研学中心</h3>
+                  <div className="space-y-3 text-sm text-[#666666]">
                     <div className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
                       <p>专业研学活动场地，支持多样化教育体验项目</p>
@@ -345,44 +347,44 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
-              <TrendingUp className="h-6 w-6 text-[#FFE15D]" />
+              <TrendingUp className="h-6 w-6 text-[#FFC107]" />
               <span className="text-[#FF9F43] font-semibold">配套设施</span>
             </div>
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#333333]">
               完善的配套设施
             </h2>
-            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-[#666666] max-w-2xl mx-auto">
               集空间、内容、产业于一体的一站式服务
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-8 border border-[#FFE15D]/20">
-              <div className="w-14 h-14 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mb-6">
+            <div className="bg-gradient-to-br from-[#FFC107]/10 to-[#FFC107]/5 rounded-2xl p-8 border border-[#FFC107]/20">
+              <div className="w-14 h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-6">
                 <Building2 className="h-7 w-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-[#2D2D2D]">多功能报告厅</h3>
-              <p className="text-[#6B7280] leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-[#333333]">多功能报告厅</h3>
+              <p className="text-[#666666] leading-relaxed">
                 专业的会议、论坛、发布会场地，配备先进的音视频设备
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-8 border border-[#FFE15D]/20">
-              <div className="w-14 h-14 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mb-6">
+            <div className="bg-gradient-to-br from-[#FFC107]/10 to-[#FFC107]/5 rounded-2xl p-8 border border-[#FFC107]/20">
+              <div className="w-14 h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-6">
                 <Users className="h-7 w-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-[#2D2D2D]">会议室</h3>
-              <p className="text-[#6B7280] leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-[#333333]">会议室</h3>
+              <p className="text-[#666666] leading-relaxed">
                 多种规格会议室，适合培训、研讨、沙龙等不同规模活动
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-8 border border-[#FFE15D]/20">
-              <div className="w-14 h-14 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center mb-6">
+            <div className="bg-gradient-to-br from-[#FFC107]/10 to-[#FFC107]/5 rounded-2xl p-8 border border-[#FFC107]/20">
+              <div className="w-14 h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-6">
                 <Calendar className="h-7 w-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-[#2D2D2D]">高品质餐饮</h3>
-              <p className="text-[#6B7280] leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-[#333333]">高品质餐饮</h3>
+              <p className="text-[#666666] leading-relaxed">
                 知味观、星巴克等知名品牌，提供茶歇、用餐服务
               </p>
             </div>
@@ -395,44 +397,44 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
-              <Sparkles className="h-6 w-6 text-[#FFE15D]" />
-              <span className="text-[#FFE15D] font-semibold">核心优势</span>
+              <Sparkles className="h-6 w-6 text-[#FFC107]" />
+              <span className="text-[#FFC107] font-semibold">核心优势</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">
               选择我们的理由
             </h2>
-            <p className="text-sm md:text-lg text-white/80 max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-white/90 max-w-2xl mx-auto">
               专业团队 · 一站式服务 · 高端定制
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="w-14 h-14 bg-[#FFE15D] rounded-xl flex items-center justify-center mb-6">
-                <Award className="h-7 w-7 text-[#2D2D2D]" />
+              <div className="w-14 h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-6">
+                <Award className="h-7 w-7 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">地标级场馆</h3>
-              <p className="text-white/80 leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 全国体量最大的省级公共文化设施集聚群，独特的文化地标，彰显活动品质
               </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="w-14 h-14 bg-[#FFE15D] rounded-xl flex items-center justify-center mb-6">
-                <Users className="h-7 w-7 text-[#2D2D2D]" />
+              <div className="w-14 h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-6">
+                <Users className="h-7 w-7 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">一站式服务</h3>
-              <p className="text-white/80 leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 国有文化企业专业团队统筹，提供从策划到执行的全案服务，解决多供应商对接烦恼
               </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="w-14 h-14 bg-[#FFE15D] rounded-xl flex items-center justify-center mb-6">
-                <Sparkles className="h-7 w-7 text-[#2D2D2D]" />
+              <div className="w-14 h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-6">
+                <Sparkles className="h-7 w-7 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">高端定制</h3>
-              <p className="text-white/80 leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 打破传统模式，提供"文化+"沉浸式体验，涵盖艺术展览、非遗手作、学术研讨等多场景
               </p>
             </div>
@@ -441,7 +443,7 @@ export default function AboutPage() {
           <div className="text-center mt-12">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:shadow-xl text-[#FFC107] px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:scale-105 border-2 border-white"
             >
               立即咨询
               <ArrowRight className="h-5 w-5" />

@@ -15,9 +15,11 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
-              <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
-            </div>
+            <img
+              src="/assets/之江文化中心logo_画板 1.png"
+              alt="之江文化中心 logo"
+              className="h-8 md:h-10 w-auto"
+            />
             <div>
               <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
               <p className="text-xs text-[#6B7280]">企业活动服务</p>
@@ -55,7 +57,7 @@ export default function Home() {
             </a>
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
+              className="bg-[#FFC107] hover:shadow-lg text-white px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
             >
               立即咨询
             </Link>
@@ -66,9 +68,9 @@ export default function Home() {
       {/* Hero 区域 */}
       <section className="pt-24 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
         {/* 大图横幅占位符 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] opacity-90">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D] via-[#2D2D2D]/70 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] opacity-95">
+          <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-30">
             <div className="text-center">
               <Building2 className="h-32 md:h-48 w-32 md:w-48 text-white/40 mx-auto" />
@@ -100,14 +102,14 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:shadow-xl text-[#FFC107] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:scale-105 border-2 border-[#FFC107]"
             >
               立即获取策划方案
               <ArrowRight className="h-5 w-5" />
             </Link>
             <Link
               href="/services/party"
-              className="inline-flex items-center justify-center gap-2 bg-white/90 backdrop-blur hover:bg-white text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all border-2 border-white/30 hover:border-[#FFE15D]"
+              className="inline-flex items-center justify-center gap-2 bg-[#FFC107]/90 backdrop-blur hover:bg-[#FFC107] text-white px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all"
             >
               查看服务详情
             </Link>
@@ -121,16 +123,16 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
-                <Building2 className="h-6 w-6 text-[#FFE15D]" />
+                <Building2 className="h-6 w-6 text-[#FFC107]" />
                 <span className="text-[#FF9F43] font-semibold">关于我们</span>
               </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">
+              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#333333]">
                 之江文化中心
               </h2>
-              <p className="text-sm md:text-lg text-[#6B7280] mb-6 font-semibold">
+              <p className="text-sm md:text-lg text-[#666666] mb-6 font-semibold">
                 全国最大的省级文化综合体
               </p>
-              <div className="space-y-4 text-[#6B7280] leading-relaxed">
+              <div className="space-y-4 text-[#666666] leading-relaxed">
                 <p>
                   之江文化中心位于杭州市西湖区之江板块，是浙江省重点打造的文化地标项目，总建筑面积达32万平方米，是目前全国体量最大的省级现代复合文化综合体。
                 </p>
@@ -196,10 +198,10 @@ export default function Home() {
               <Calendar className="h-6 w-6 text-[#FFE15D]" />
               <span className="text-[#FF9F43] font-semibold">核心服务</span>
             </div>
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#333333]">
               四大服务板块
             </h2>
-            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-[#666666] max-w-2xl mx-auto">
               依托四大场馆资源，提供全方位企业活动服务
             </p>
           </div>
@@ -215,16 +217,16 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">主题党建</h3>
-                  <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
+                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#333333]">主题党建</h3>
+                  <p className="text-[#666666] mb-3 leading-relaxed text-sm">
                     沉浸式党建体验 · 红色文化浸润
                   </p>
-                  <div className="space-y-2 text-xs text-[#6B7280]">
+                  <div className="space-y-2 text-xs text-[#666666]">
                     <p>✓ 沉浸式党课</p>
                     <p>✓ 红色文化体验</p>
                     <p>✓ 党建主题研学</p>
                   </div>
-                  <div className="mt-6 text-[#FF9F43] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                  <div className="mt-6 text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -242,16 +244,16 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">团建拓展</h3>
-                  <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
+                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#333333]">团建拓展</h3>
+                  <p className="text-[#666666] mb-3 leading-relaxed text-sm">
                     文化沉浸团建 · 非遗手作体验
                   </p>
-                  <div className="space-y-2 text-xs text-[#6B7280]">
+                  <div className="space-y-2 text-xs text-[#666666]">
                     <p>✓ 文化沉浸体验</p>
                     <p>✓ 非遗手作体验</p>
                     <p>✓ 人文团队共创</p>
                   </div>
-                  <div className="mt-6 text-[#FF9F43] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                  <div className="mt-6 text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -269,16 +271,16 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">访学培训</h3>
-                  <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
+                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#333333]">访学培训</h3>
+                  <p className="text-[#666666] mb-3 leading-relaxed text-sm">
                     名家讲座引领 · 专业课程赋能
                   </p>
-                  <div className="space-y-2 text-xs text-[#6B7280]">
+                  <div className="space-y-2 text-xs text-[#666666]">
                     <p>✓ 名家讲座</p>
                     <p>✓ 专业培训</p>
                     <p>✓ 行业交流</p>
                   </div>
-                  <div className="mt-6 text-[#FF9F43] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                  <div className="mt-6 text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -296,16 +298,16 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#2D2D2D]">定制活动</h3>
-                  <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
+                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#333333]">定制活动</h3>
+                  <p className="text-[#666666] mb-3 leading-relaxed text-sm">
                     高端商务定制 · 尊享文化礼遇
                   </p>
-                  <div className="space-y-2 text-xs text-[#6B7280]">
+                  <div className="space-y-2 text-xs text-[#666666]">
                     <p>✓ 高端商务活动</p>
                     <p>✓ 品牌发布会</p>
                     <p>✓ VIP客户答谢</p>
                   </div>
-                  <div className="mt-6 text-[#FF9F43] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                  <div className="mt-6 text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -320,8 +322,8 @@ export default function Home() {
       <section className="py-10 md:py-16 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#2D2D2D] mb-2">值得信赖的合作伙伴</h2>
-            <p className="text-[#6B7280]">已为众多知名企业提供服务</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-2">值得信赖的合作伙伴</h2>
+            <p className="text-[#666666]">已为众多知名企业提供服务</p>
           </div>
 
           <div className="overflow-hidden">
@@ -358,13 +360,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
-              <Award className="h-6 w-6 text-[#FFE15D]" />
+              <Award className="h-6 w-6 text-[#FFC107]" />
               <span className="text-[#FF9F43] font-semibold">成功案例</span>
             </div>
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#333333]">
               精选案例
             </h2>
-            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-[#666666] max-w-2xl mx-auto">
               见证我们的专业实力，打造高品质活动体验
             </p>
           </div>
@@ -378,18 +380,18 @@ export default function Home() {
                   <BookOpen className="h-24 w-24 text-white" />
                 </div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur text-[#2D2D2D] text-xs font-bold rounded-full">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-xs font-bold rounded-full">
                     VIP活动
                   </span>
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">上海银行考古活动</h3>
-                <p className="text-[#6B7280] mb-4 text-xs md:text-sm leading-relaxed">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#333333]">上海银行考古活动</h3>
+                <p className="text-[#666666] mb-4 text-xs md:text-sm leading-relaxed">
                   探索千年文明 · 传承文化力量。组织VIP客户参与考古研学活动，
                   通过文物修复体验、考古现场参观等形式，打造高端客户深度文化体验。
                 </p>
-                <Link href="/cases/shanghai-bank" className="text-[#FF9F43] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                <Link href="/cases/shanghai-bank" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
                   查看详情
                   <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -404,18 +406,18 @@ export default function Home() {
                   <Users className="h-24 w-24 text-white" />
                 </div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur text-[#2D2D2D] text-xs font-bold rounded-full">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-xs font-bold rounded-full">
                     团建活动
                   </span>
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">海康威视养生局</h3>
-                <p className="text-[#6B7280] mb-4 text-xs md:text-sm leading-relaxed">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#333333]">海康威视养生局</h3>
+                <p className="text-[#666666] mb-4 text-xs md:text-sm leading-relaxed">
                   中医文化溯源 · 健康生活探索。结合博物馆中医文化展区资源，
                   为员工打造养生主题团建活动，在文化探索中关注健康生活。
                 </p>
-                <Link href="/cases/hikvision" className="text-[#FF9F43] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                <Link href="/cases/hikvision" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
                   查看详情
                   <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -430,18 +432,18 @@ export default function Home() {
                   <Calendar className="h-24 w-24 text-white" />
                 </div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur text-[#2D2D2D] text-xs font-bold rounded-full">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-xs font-bold rounded-full">
                     年会活动
                   </span>
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">蒙牛迈胜年会</h3>
-                <p className="text-[#6B7280] mb-4 text-xs md:text-sm leading-relaxed">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#333333]">蒙牛迈胜年会</h3>
+                <p className="text-[#666666] mb-4 text-xs md:text-sm leading-relaxed">
                   品牌文化融合 · 年度盛典呈现。将蒙牛品牌文化与传统艺术元素深度融合，
                   打造独具特色的年度盛典，彰显企业文化底蕴与品牌实力。
                 </p>
-                <Link href="/cases/mengniu" className="text-[#FF9F43] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                <Link href="/cases/mengniu" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
                   查看详情
                   <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -462,28 +464,28 @@ export default function Home() {
       </section>
 
       {/* CTA 区域 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#FFC107] to-[#FF9F43]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
             让文化赋能您的企业活动
           </h2>
-          <p className="text-sm md:text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm md:text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             依托之江文化中心四大场馆资源，为您打造独一无二的文化体验
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <div className="flex items-center gap-2 text-white/90">
-              <Phone className="h-5 w-5 text-[#FFE15D]" />
+            <div className="flex items-center gap-2 text-white">
+              <Phone className="h-5 w-5 text-white" />
               <span className="text-lg font-medium">191-0658-3798</span>
             </div>
-            <div className="hidden sm:block w-px h-6 bg-white/30"></div>
-            <div className="flex items-center gap-2 text-white/90">
-              <Mail className="h-5 w-5 text-[#FFE15D]" />
+            <div className="hidden sm:block w-px h-6 bg-white/50"></div>
+            <div className="flex items-center gap-2 text-white">
+              <Mail className="h-5 w-5 text-white" />
               <span className="text-lg">service@zhijiang-culture.com</span>
             </div>
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-6 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all shadow-lg hover:scale-105"
+            className="inline-flex items-center justify-center gap-2 bg-white hover:shadow-xl text-[#FFC107] px-6 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all shadow-lg hover:scale-105 border-2 border-white"
           >
             立即获取策划方案
             <ArrowRight className="h-5 w-5" />
@@ -492,17 +494,19 @@ export default function Home() {
       </section>
 
       {/* 页脚 */}
-      <footer className="bg-[#2D2D2D] text-white py-12 px-6">
+      <footer className="bg-[#333333] text-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center">
-                  <Building2 className="h-5 w-5 text-white" />
-                </div>
+                <img
+                  src="/assets/之江文化中心logo_画板 1.png"
+                  alt="之江文化中心 logo"
+                  className="h-8 w-auto"
+                />
                 <div>
                   <span className="text-xl font-bold">之江文化中心</span>
-                  <p className="text-xs text-[#FFE15D]">企业活动服务</p>
+                  <p className="text-xs text-[#FFC107]">企业活动服务</p>
                 </div>
               </div>
               <p className="text-white/70 text-sm leading-relaxed">
@@ -511,7 +515,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">服务内容</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">服务内容</h3>
               <ul className="space-y-2 text-white/70 text-sm">
                 <li><Link href="/services/party" className="hover:text-white transition-colors">主题党建</Link></li>
                 <li><Link href="/services/team" className="hover:text-white transition-colors">团建拓展</Link></li>
@@ -521,7 +525,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">关于我们</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">关于我们</h3>
               <ul className="space-y-2 text-white/70 text-sm">
                 <li><Link href="/about" className="hover:text-white transition-colors">品牌故事</Link></li>
                 <li><Link href="/about" className="hover:text-white transition-colors">场馆资源</Link></li>
@@ -531,18 +535,18 @@ export default function Home() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">联系方式</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">联系方式</h3>
               <ul className="space-y-3 text-white/70 text-sm">
                 <li className="flex items-start gap-2">
-                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
+                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
                   <span>191-0658-3798</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Mail className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
+                  <Mail className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
                   <span>service@zhijiang-culture.com</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
+                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
                   <span>浙江省杭州市西湖区<br />之江文化中心研学中心</span>
                 </li>
               </ul>
