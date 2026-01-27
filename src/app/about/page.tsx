@@ -18,7 +18,7 @@ export default function AboutPage() {
             <img
               src="/之江文化中心logo_画板 1.png"
               alt="之江文化中心 logo"
-              className="h-8 md:h-10 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
             <div>
               <span className="text-lg md:text-2xl font-bold text-[#333333]">之江文化中心</span>

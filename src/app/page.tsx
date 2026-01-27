@@ -18,7 +18,7 @@ export default function Home() {
             <img
               src="/之江文化中心logo_画板 1.png"
               alt="之江文化中心 logo"
-              className="h-8 md:h-10 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
             <div>
               <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
@@ -502,7 +502,7 @@ export default function Home() {
                 <img
                   src="/之江文化中心logo_画板 1.png"
                   alt="之江文化中心 logo"
-                  className="h-8 w-auto"
+                  className="h-10 w-auto"
                 />
                 <div>
                   <span className="text-xl font-bold">之江文化中心</span>
