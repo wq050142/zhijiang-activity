@@ -118,20 +118,16 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-4">
-              {/* 主图片占位符 */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-3xl overflow-hidden shadow-2xl relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <Building2 className="h-24 w-24 text-white/30 mx-auto" />
-                    <p className="text-white/40 text-sm mt-4">之江文化中心建筑外观</p>
-                  </div>
+              {/* 主图片 */}
+              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/之江文化中心全景.png")' }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/10 via-transparent to-[#FF9F43]/10"></div>
                 </div>
               </div>
 
               {/* 数据展示 */}
               <div className="grid grid-cols-4 gap-3">
-                <div className="aspect-square bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
+                <div className="aspect-square bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
                   <span className="text-lg md:text-xl font-bold">32.1万</span>
                   <span className="text-xs opacity-90">㎡</span>
                 </div>
@@ -143,7 +139,7 @@ export default function AboutPage() {
                   <span className="text-lg md:text-xl font-bold">1000+</span>
                   <span className="text-xs opacity-90">企业</span>
                 </div>
-                <div className="aspect-square bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
+                <div className="aspect-square bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
                   <span className="text-lg md:text-xl font-bold">100%</span>
                   <span className="text-xs opacity-90">满意度</span>
                 </div>
@@ -172,29 +168,27 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* 浙江省图书馆 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/9] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省图书馆.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <BookOpen className="h-24 w-24 text-white" />
-                </div>
               </div>
               <div className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省图书馆（之江馆）</h3>
                 <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>8.5万平方米智慧图书馆，藏书超700万册</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>高端研讨空间，配备先进的会议设施</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>浓厚学术氛围，适合高端培训与知识分享</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>特色文创空间，可定制化活动场地</p>
                   </div>
                 </div>
@@ -203,29 +197,27 @@ export default function AboutPage() {
 
             {/* 浙江省博物馆 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/9] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省博物馆.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Award className="h-24 w-24 text-white" />
-                </div>
               </div>
               <div className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省博物馆（之江馆）</h3>
                 <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>10万平方米现代化空间，国家一级博物馆</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>"浙江一万年"等历史文化陈列，底蕴深厚</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>适合历史溯源与党性教育，红色文化浸润</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>专业讲解服务，沉浸式导览体验</p>
                   </div>
                 </div>
@@ -234,29 +226,27 @@ export default function AboutPage() {
 
             {/* 浙江省非遗馆 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/9] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省非遗馆.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Users className="h-24 w-24 text-white" />
-                </div>
               </div>
               <div className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省非物质文化遗产馆</h3>
                 <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>全国首座大型区域综合性非遗馆</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>展示1000余项非遗项目，技艺传承活态呈现</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>非遗手作体验，传统技艺沉浸式学习</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>大师工作室，非遗匠人面对面交流</p>
                   </div>
                 </div>
@@ -265,29 +255,27 @@ export default function AboutPage() {
 
             {/* 浙江省文学馆 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/9] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省文学馆.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Star className="h-24 w-24 text-white" />
-                </div>
               </div>
               <div className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省文学馆</h3>
                 <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>规模仅次于中国现代文学馆，浙江文学殿堂</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>文学沙龙空间，人文素养课程</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>诗歌朗诵、文学创作 workshop</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>浙江作家群展区，感受浙派文学魅力</p>
                   </div>
                 </div>
@@ -300,11 +288,9 @@ export default function AboutPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group">
               <div className="md:flex">
                 <div className="md:w-1/2">
-                  <div className="aspect-[16/9] md:aspect-auto md:h-full min-h-[300px] bg-gradient-to-br from-[#FF9F43] to-[#FFE15D] relative overflow-hidden">
+                  <div className="aspect-[16/9] md:aspect-auto md:h-full min-h-[300px] relative overflow-hidden">
+                    <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                      <Building2 className="h-32 w-32 text-white" />
-                    </div>
                   </div>
                 </div>
                 <div className="md:w-1/2 p-6 md:p-8">
@@ -314,22 +300,22 @@ export default function AboutPage() {
                   <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#333333]">之江文化中心研学中心</h3>
                   <div className="space-y-3 text-sm text-[#666666]">
                     <div className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                       <p>专业研学活动场地，支持多样化教育体验项目</p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                       <p>连接四大场馆资源，打造沉浸式研学体验</p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                       <p>定制化研学课程，满足不同年龄段学习需求</p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-[#FFE15D] mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
                       <p>配套专业导师团队，提供高质量研学指导</p>
                     </div>
-                    <div className="mt-4 p-4 bg-[#FFE15D]/10 rounded-lg border border-[#FFE15D]/20">
+                    <div className="mt-4 p-4 bg-[#FFC107]/10 rounded-lg border border-[#FFC107]/20">
                       <p className="text-sm font-medium text-[#FF9F43]">
                         <span className="font-bold">注：</span>之江文化中心研学中心为专业研学活动场地，非公共服务中心。目前中心内无公共服务中心设施。
                       </p>
@@ -458,12 +444,12 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-[#FFC107] rounded-lg flex items-center justify-center">
                   <Building2 className="h-5 w-5 text-white" />
                 </div>
                 <div>
                   <span className="text-xl font-bold">之江文化中心</span>
-                  <p className="text-xs text-[#FFE15D]">企业活动服务</p>
+                  <p className="text-xs text-[#FFC107]">企业活动服务</p>
                 </div>
               </div>
               <p className="text-white/70 text-sm leading-relaxed">
@@ -472,7 +458,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">服务内容</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">服务内容</h3>
               <ul className="space-y-2 text-white/70 text-sm">
                 <li><Link href="/services/party" className="hover:text-white transition-colors">主题党建</Link></li>
                 <li><Link href="/services/team" className="hover:text-white transition-colors">团建拓展</Link></li>
@@ -482,7 +468,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">关于我们</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">关于我们</h3>
               <ul className="space-y-2 text-white/70 text-sm">
                 <li><Link href="/about" className="hover:text-white transition-colors">品牌故事</Link></li>
                 <li><Link href="/about" className="hover:text-white transition-colors">场馆资源</Link></li>
@@ -492,14 +478,14 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">联系方式</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">联系方式</h3>
               <ul className="space-y-3 text-white/70 text-sm">
                 <li className="flex items-start gap-2">
-                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
+                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
                   <span>191-0658-3798</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
+                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
                   <span>浙江省杭州市西湖区<br />之江文化中心研学中心</span>
                 </li>
               </ul>

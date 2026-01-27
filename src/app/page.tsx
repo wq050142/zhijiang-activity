@@ -140,43 +140,29 @@ export default function Home() {
             </div>
 
             <div className="space-y-4">
-              {/* 主图片占位符 */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-3xl overflow-hidden shadow-2xl relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <Building2 className="h-24 w-24 text-white/30 mx-auto" />
-                    <p className="text-white/40 text-sm mt-4">之江文化中心全景图</p>
-                  </div>
+              {/* 主图片 */}
+              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/之江文化中心全景.png")' }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/10 via-transparent to-[#FF9F43]/10"></div>
                 </div>
               </div>
 
               {/* 五小图展示 - 四馆一中心 */}
               <div className="grid grid-cols-5 gap-2 md:gap-3">
-                <div className="aspect-square bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl overflow-hidden shadow-lg relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <BookOpen className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
-                  </div>
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                  <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省图书馆.png")' }}></div>
                 </div>
-                <div className="aspect-square bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl overflow-hidden shadow-lg relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Award className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
-                  </div>
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                  <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省博物馆.png")' }}></div>
                 </div>
-                <div className="aspect-square bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl overflow-hidden shadow-lg relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Users className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
-                  </div>
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                  <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省非遗馆.png")' }}></div>
                 </div>
-                <div className="aspect-square bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl overflow-hidden shadow-lg relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Star className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
-                  </div>
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                  <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省文学馆.png")' }}></div>
                 </div>
-                <div className="aspect-square bg-gradient-to-br from-[#FF9F43] to-[#FFE15D] rounded-xl overflow-hidden shadow-lg relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Building2 className="h-6 md:h-8 w-6 md:w-8 text-white/60" />
-                  </div>
+                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                  <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
                 </div>
               </div>
             </div>
