@@ -16,7 +16,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/assets/之江文化中心logo_画板 1.png"
+              src="/之江文化中心logo_画板 1.png"
               alt="之江文化中心 logo"
               className="h-8 md:h-10 w-auto"
             />
@@ -500,7 +500,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img
-                  src="/assets/之江文化中心logo_画板 1.png"
+                  src="/之江文化中心logo_画板 1.png"
                   alt="之江文化中心 logo"
                   className="h-8 w-auto"
                 />
