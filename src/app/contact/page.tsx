@@ -85,30 +85,15 @@ export default function ContactPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
-        {/* 大图横幅占位符 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] opacity-90">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D] via-[#2D2D2D]/70 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
-          <div className="absolute inset-0 flex items-center justify-center opacity-30">
-            <div className="text-center">
-              <Sparkles className="h-32 md:h-48 w-32 md:w-48 text-white/40 mx-auto" />
-              <p className="text-white/40 text-sm mt-4">联系我们横幅图片</p>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
-          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">
-            <Sparkles className="h-4 w-4 text-[#FFE15D]" />
-            专业服务 · 快速响应
-          </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+      <section className="pt-24 pb-8 px-4 md:px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D2D2D]">
             联系我们
           </h1>
-          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium mb-8">
             告诉我们您的诉求
           </p>
-          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium">
             我们为您定制专属活动方案
           </p>
         </div>
@@ -157,7 +142,7 @@ export default function ContactPage() {
                 <div className="mt-3 md:mt-4 bg-white rounded-2xl p-3 md:p-4 shadow-md border border-gray-100">
                   <p className="text-center text-xs md:text-sm text-[#6B7280] mb-2 md:mb-3">微信二维码</p>
                   <div className="aspect-square max-w-[150px] md:max-w-[200px] mx-auto bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                    <p className="text-xs text-[#999]">二维码占位</p>
+                    <img src="/xiaoxuemei.jpg" alt="微信二维码" className="w-full h-full object-cover" />
                   </div>
                   <p className="text-center text-[10px] md:text-xs text-[#6B7280] mt-2">扫描添加微信</p>
                 </div>
@@ -183,7 +168,7 @@ export default function ContactPage() {
                 </div>
                 <div className="aspect-video w-full">
                   <iframe
-                    src="https://www.amap.com/iframe?mode=map&uid=2F000004053067&point=120.103518,30.201353&zoom=15&srch=1&referer=wb_sh"
+                    src="https://www.amap.com/iframe?mode=map&uid=2F000004053067&point=120.103518,30.201353&zoom=17&srch=1&referer=wb_sh"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
