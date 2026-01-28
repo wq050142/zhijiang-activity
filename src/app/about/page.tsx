@@ -359,126 +359,210 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {/* 文化体验资源 */}
-            <div className="bg-gradient-to-br from-[#FFC107]/5 to-[#FF9F43]/5 rounded-2xl p-5 md:p-6 border-2 border-[#FFC107]/20 hover:border-[#FFC107]/40 hover:shadow-xl transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex items-center justify-center mb-4 shadow-lg">
-                <Award className="h-6 w-6 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+              {/* 主图 */}
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省博物馆.png")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-xl md:text-2xl font-bold text-white">文化体验资源</h3>
+                </div>
               </div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#333333]">文化体验资源</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">博物馆展览</p>
-                    <p className="text-xs text-[#666666] mt-0.5">丰富的历史文化展览，激发文化认同</p>
+
+              {/* 6张小图 */}
+              <div className="p-4">
+                <div className="grid grid-cols-3 gap-2 mb-4">
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省图书馆.png" alt="文化体验" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省非遗馆.png" alt="文化体验" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省文学馆.png" alt="文化体验" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省博物馆.png" alt="文化体验" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/之江文化中心全景.png" alt="文化体验" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省图书馆.png" alt="文化体验" className="w-full h-full object-cover" />
                   </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">文学沙龙</p>
-                    <p className="text-xs text-[#666666] mt-0.5">专业的文学交流空间，提升人文素养</p>
+
+                {/* 资源列表 */}
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">博物馆展览</span> - 丰富的历史文化展览，激发文化认同</p>
                   </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">非遗手作工坊</p>
-                    <p className="text-xs text-[#666666] mt-0.5">传统手工艺体验，感受非遗魅力</p>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">文学沙龙</span> - 专业的文学交流空间，提升人文素养</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">非遗手作工坊</span> - 传统手工艺体验，感受非遗魅力</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* 学术教育资源 */}
-            <div className="bg-gradient-to-br from-[#2D2D2D]/5 to-[#4B5563]/5 rounded-2xl p-5 md:p-6 border-2 border-[#2D2D2D]/20 hover:border-[#2D2D2D]/40 hover:shadow-xl transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mb-4 shadow-lg">
-                <BookOpen className="h-6 w-6 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+              {/* 主图 */}
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省图书馆.png")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-xl md:text-2xl font-bold text-white">学术教育资源</h3>
+                </div>
               </div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#333333]">学术教育资源</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">研讨空间</p>
-                    <p className="text-xs text-[#666666] mt-0.5">舒适的学术交流环境，促进深度交流</p>
+
+              {/* 6张小图 */}
+              <div className="p-4">
+                <div className="grid grid-cols-3 gap-2 mb-4">
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省博物馆.png" alt="学术教育" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省非遗馆.png" alt="学术教育" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省文学馆.png" alt="学术教育" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省图书馆.png" alt="学术教育" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/之江文化中心全景.png" alt="学术教育" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省博物馆.png" alt="学术教育" className="w-full h-full object-cover" />
                   </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">党史专家讲座</p>
-                    <p className="text-xs text-[#666666] mt-0.5">专业党史知识分享，强化党建学习</p>
+
+                {/* 资源列表 */}
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">研讨空间</span> - 舒适的学术交流环境，促进深度交流</p>
                   </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">专业研学课程</p>
-                    <p className="text-xs text-[#666666] mt-0.5">定制化培训项目，提升团队能力</p>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">党史专家讲座</span> - 专业党史知识分享，强化党建学习</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">专业研学课程</span> - 定制化培训项目，提升团队能力</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* 会议活动资源 */}
-            <div className="bg-gradient-to-br from-[#6B7280]/5 to-[#4B5563]/5 rounded-2xl p-5 md:p-6 border-2 border-[#6B7280]/20 hover:border-[#6B7280]/40 hover:shadow-xl transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center mb-4 shadow-lg">
-                <Building2 className="h-6 w-6 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+              {/* 主图 */}
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/之江文化中心全景.png")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-xl md:text-2xl font-bold text-white">会议活动资源</h3>
+                </div>
               </div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#333333]">会议活动资源</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">多功能报告厅</p>
-                    <p className="text-xs text-[#666666] mt-0.5">多种规格会议室，满足不同规模需求</p>
+
+              {/* 6张小图 */}
+              <div className="p-4">
+                <div className="grid grid-cols-3 gap-2 mb-4">
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省图书馆.png" alt="会议活动" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省博物馆.png" alt="会议活动" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省非遗馆.png" alt="会议活动" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省文学馆.png" alt="会议活动" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/之江文化中心全景.png" alt="会议活动" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省图书馆.png" alt="会议活动" className="w-full h-full object-cover" />
                   </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">会议空间</p>
-                    <p className="text-xs text-[#666666] mt-0.5">灵活组合的会议场地，适应多样化场景</p>
+
+                {/* 资源列表 */}
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">多功能报告厅</span> - 多种规格会议室，满足不同规模需求</p>
                   </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">户外景观公园</p>
-                    <p className="text-xs text-[#666666] mt-0.5">自然环境会议室，提供户外活动空间</p>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">会议空间</span> - 灵活组合的会议场地，适应多样化场景</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">户外景观公园</span> - 自然环境会议室，提供户外活动空间</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* 综合服务资源 */}
-            <div className="bg-gradient-to-br from-[#FFC107]/5 to-[#FF9F43]/5 rounded-2xl p-5 md:p-6 border-2 border-[#FFC107]/20 hover:border-[#FFC107]/40 hover:shadow-xl transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex items-center justify-center mb-4 shadow-lg">
-                <Calendar className="h-6 w-6 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+              {/* 主图 */}
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-xl md:text-2xl font-bold text-white">综合服务资源</h3>
+                </div>
               </div>
-              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#333333]">综合服务资源</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">餐饮茶歇</p>
-                    <p className="text-xs text-[#666666] mt-0.5">高品质餐饮服务，提供多样化餐饮选择</p>
+
+              {/* 6张小图 */}
+              <div className="p-4">
+                <div className="grid grid-cols-3 gap-2 mb-4">
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省图书馆.png" alt="综合服务" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省博物馆.png" alt="综合服务" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省非遗馆.png" alt="综合服务" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/浙江省文学馆.png" alt="综合服务" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/之江文化中心全景.png" alt="综合服务" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/研学中心.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">交通协调</p>
-                    <p className="text-xs text-[#666666] mt-0.5">便捷的交通指引，确保活动顺利进行</p>
+
+                {/* 资源列表 */}
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">餐饮茶歇</span> - 高品质餐饮服务，提供多样化餐饮选择</p>
                   </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-[#333333]">专业活动统筹团队</p>
-                    <p className="text-xs text-[#666666] mt-0.5">全流程活动管理，提供一站式服务</p>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">交通协调</span> - 便捷的交通指引，确保活动顺利进行</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-xs text-[#333333]"><span className="font-semibold">专业活动统筹团队</span> - 全流程活动管理，提供一站式服务</p>
                   </div>
                 </div>
               </div>
