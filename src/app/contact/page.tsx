@@ -85,7 +85,7 @@ export default function ContactPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-12 px-4 md:px-6 relative overflow-hidden">
+      <section className="pt-28 md:pt-32 pb-12 px-4 md:px-6 relative overflow-hidden">
         {/* 背景图片 */}
         <div className="absolute inset-0">
           <img
@@ -95,7 +95,7 @@ export default function ContactPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
         </div>
-        <div className="max-w-7xl mx-auto text-center relative z-10">
+        <div className="max-w-7xl mx-auto text-center relative z-10 pt-4 md:pt-8">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">
             联系我们
           </h1>
@@ -175,8 +175,12 @@ export default function ContactPage() {
                     <span className="text-[#2D2D2D] font-semibold">之江文化中心位置</span>
                   </div>
                 </div>
-                <div className="aspect-video w-full bg-gradient-to-br from-[#FFE15D]/20 to-[#FF9F43]/20 flex items-center justify-center">
-                  <p className="text-[#6B7280] text-sm">地图图片（待更新）</p>
+                <div className="aspect-video w-full">
+                  <img
+                    src="/contact-map.png"
+                    alt="之江文化中心地图"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -369,10 +373,10 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:191-0658-3798"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all shadow-lg hover:scale-105"
+              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-3 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-base font-semibold transition-all shadow-lg hover:scale-105"
             >
               <Phone className="h-4 w-4" />
-              立即致电
+              <span className="hidden sm:inline">立即致电</span>
             </a>
           </div>
         </div>
