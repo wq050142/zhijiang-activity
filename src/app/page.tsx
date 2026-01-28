@@ -371,39 +371,33 @@ export default function Home() {
       <section className="py-10 md:py-16 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-2">值得信赖的合作伙伴</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-2">合作伙伴</h2>
             <p className="text-[#666666]">已为众多知名企业提供服务</p>
           </div>
 
-          <div className="overflow-hidden">
-            <div className="flex items-center gap-4 md:gap-6 lg:gap-8 animate-marquee whitespace-nowrap">
-              {[...Array(6)].map((_, i) => (
-                <div key={i} className="flex items-center gap-4 md:gap-6 lg:gap-8">
-                  {[
-                    { name: '浙江省教育厅', icon: '🏛️' },
-                    { name: '海康威视', icon: '📷' },
-                    { name: '厦门航空', icon: '✈️' },
-                    { name: '中国移动', icon: '📱' },
-                    { name: '中国建设银行', icon: '🏦' },
-                    { name: '阿里巴巴', icon: '🛒' },
-                    { name: '浙江大学', icon: '🎓' },
-                    { name: '浙江省交通投资集团', icon: '🚗' },
-                    { name: '吉利控股集团', icon: '🚙' },
-                    { name: '网易', icon: '🎮' },
-                    { name: '华为', icon: '💻' },
-                    { name: '腾讯', icon: '💬' }
-                  ].map((partner, j) => (
-                    <div
-                      key={j}
-                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-3 md:py-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
-                    >
-                      <span className="text-2xl md:text-3xl">{partner.icon}</span>
-                      <span className="text-[#2D2D2D] font-medium text-sm md:text-base whitespace-nowrap">{partner.name}</span>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
+            {[
+              { name: '浙江省教育厅', icon: '🏛️' },
+              { name: '海康威视', icon: '📷' },
+              { name: '厦门航空', icon: '✈️' },
+              { name: '中国移动', icon: '📱' },
+              { name: '中国建设银行', icon: '🏦' },
+              { name: '阿里巴巴', icon: '🛒' },
+              { name: '浙江大学', icon: '🎓' },
+              { name: '浙江省交通投资集团', icon: '🚗' },
+              { name: '吉利控股集团', icon: '🚙' },
+              { name: '网易', icon: '🎮' },
+              { name: '华为', icon: '💻' },
+              { name: '腾讯', icon: '💬' }
+            ].map((partner, j) => (
+              <div
+                key={j}
+                className="flex flex-col items-center justify-center gap-2 md:gap-3 px-4 md:px-6 py-4 md:py-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all"
+              >
+                <span className="text-3xl md:text-4xl">{partner.icon}</span>
+                <span className="text-[#2D2D2D] font-medium text-xs md:text-sm text-center whitespace-nowrap">{partner.name}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
