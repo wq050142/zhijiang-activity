@@ -364,7 +364,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
               {/* 主图 */}
               <div className="aspect-[16/9] relative overflow-hidden">
-                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省博物馆.png")' }}></div>
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/文化体验资源主图.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3 className="text-xl md:text-2xl font-bold text-white">文化体验资源</h3>
