@@ -513,11 +513,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
             {/* 案例 1 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img
+                  src="/上海银行考古总动员.jpg"
+                  alt="上海银行考古总动员"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50">
-                  <BookOpen className="h-16 w-16 md:h-20 md:w-20 text-white" />
-                </div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
                   <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     儿童节活动
@@ -538,11 +540,13 @@ export default function Home() {
 
             {/* 案例 2 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img
+                  src="/厦门航空自然VR科技秀.png"
+                  alt="厦门航空自然VR科技秀"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50">
-                  <Sparkles className="h-16 w-16 md:h-20 md:w-20 text-white" />
-                </div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
                   <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     儿童节活动
@@ -563,11 +567,13 @@ export default function Home() {
 
             {/* 案例 4 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#F472B6] to-[#EC4899] relative overflow-hidden">
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img
+                  src="/浙江省财政厅女生节活动.png"
+                  alt="浙江省财政厅女神节活动"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50">
-                  <Star className="h-16 w-16 md:h-20 md:w-20 text-white" />
-                </div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
                   <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     妇女节团建活动
@@ -588,11 +594,13 @@ export default function Home() {
 
             {/* 案例 5 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#34D399] to-[#10B981] relative overflow-hidden">
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img
+                  src="/AITO问界车主活动.png"
+                  alt="AITO问界车主活动"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50">
-                  <Users className="h-16 w-16 md:h-20 md:w-20 text-white" />
-                </div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
                   <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     VIP客户活动
@@ -613,11 +621,13 @@ export default function Home() {
 
             {/* 案例 6 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#60A5FA] to-[#3B82F6] relative overflow-hidden">
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img
+                  src="/海康威视脆皮打工人养生局.png"
+                  alt="海康威视脆皮打工人养生局"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50">
-                  <Calendar className="h-16 w-16 md:h-20 md:w-20 text-white" />
-                </div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
                   <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     养生团建
