@@ -517,7 +517,7 @@ export default function Home() {
                 <img
                   src="/上海银行考古总动员.png"
                   alt="上海银行考古总动员"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover brightness-[1.15]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
@@ -544,7 +544,7 @@ export default function Home() {
                 <img
                   src="/厦门航空自然VR科技秀.png"
                   alt="厦门航空自然VR科技秀"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover brightness-[1.15]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
@@ -571,7 +571,7 @@ export default function Home() {
                 <img
                   src="/浙江省财政厅女生节活动.png"
                   alt="浙江省财政厅女神节活动"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover brightness-[1.15]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
@@ -598,7 +598,7 @@ export default function Home() {
                 <img
                   src="/AITO问界车主活动.png"
                   alt="AITO问界车主活动"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover brightness-[1.15]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
@@ -625,7 +625,7 @@ export default function Home() {
                 <img
                   src="/海康威视脆皮打工人养生局.png"
                   alt="海康威视脆皮打工人养生局"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover brightness-[1.15]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
