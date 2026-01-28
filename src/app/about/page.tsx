@@ -359,7 +359,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* 文化体验资源 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
               {/* 主图 */}
@@ -572,9 +572,9 @@ export default function AboutPage() {
       </section>
 
       {/* 核心优势 */}
-      <section className="py-6 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
+      <section className="py-12 px-4 md:px-6 md:py-20 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-4 md:mb-12">
+          <div className="text-center mb-8 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-1 md:mb-4">
               <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-[#FFC107]" />
               <span className="text-[#FFC107] font-semibold text-sm md:text-base">核心优势</span>
