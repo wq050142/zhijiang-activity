@@ -66,14 +66,14 @@ export default function Home() {
       </nav>
 
       {/* Hero 区域 */}
-      <section className="pt-24 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden min-h-[500px] md:min-h-[600px]">
+      <section className="pt-24 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden min-h-[420px] md:min-h-[480px]">
         {/* 大图横幅背景 */}
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/10 via-transparent to-[#FFC107]/10"></div>
         </div>
-        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+        <div className="max-w-7xl mx-auto text-center relative z-10 pt-8 md:pt-12">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-5 text-white leading-tight">
             文化赋能 · 企业活动
             <br />
             <span className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] bg-clip-text text-transparent">
@@ -81,10 +81,10 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="text-base md:text-xl lg:text-2xl text-white/90 mb-4 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-base md:text-xl lg:text-2xl text-white/90 mb-3 max-w-3xl mx-auto leading-relaxed font-medium">
             依托之江文化中心，全国最大的省级文化综合体
           </p>
-          <p className="text-base md:text-lg lg:text-xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
             打造独具文化深度的党建、团建、商务活动新范式
           </p>
 

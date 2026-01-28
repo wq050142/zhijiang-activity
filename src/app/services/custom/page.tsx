@@ -15,9 +15,11 @@ export default function CustomEventsPage() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center">
-              <Building2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
-            </div>
+            <img
+              src="/之江文化中心logo_画板 1.png"
+              alt="之江文化中心 logo"
+              className="h-12 md:h-16 w-auto"
+            />
             <div>
               <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
               <p className="text-xs text-[#6B7280]">企业活动服务</p>
