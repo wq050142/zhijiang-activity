@@ -24,8 +24,8 @@ export default function CasesPage() {
       client: '厦门航空',
       title: '自然VR科技秀',
       category: '儿童节活动',
-      mainImage: '/厦门航空自然VR科技秀.png',
-      subImages: ['/浙江省博物馆.png', '/浙江省非遗馆.png', '/浙江省图书馆.png'],
+      mainImage: '/厦门航空自然VR科技秀1.jpg',
+      subImages: ['/厦门航空自然VR科技秀2.jpg', '/厦门航空自然VR科技秀3.jpg', '/厦门航空自然VR科技秀4.jpg'],
       description: '将自然生态科普与前沿VR技术完美融合，为厦门航空亲子家庭打造一场"赛博自然"探索之旅。以科技手段解锁自然奥秘，激发青少年的探索欲与科学兴趣。',
       highlights: ['自然科普', 'VR技术', '科技融合', '激发兴趣']
     },
