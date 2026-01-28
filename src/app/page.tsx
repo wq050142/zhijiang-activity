@@ -514,19 +514,19 @@ export default function Home() {
             {/* 案例 1 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50">
                   <BookOpen className="h-16 w-16 md:h-20 md:w-20 text-white" />
                 </div>
-                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 right-2 md:right-4">
-                  <span className="px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full">
+                <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
+                  <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     儿童节活动
                   </span>
+                  <h3 className="text-white text-lg md:text-xl font-bold line-clamp-2 drop-shadow-md">上海银行考古总动员</h3>
                 </div>
               </div>
               <div className="p-3 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2 text-[#333333]">上海银行考古总动员</h3>
-                <p className="text-[#666666] mb-2 md:mb-3 text-[10px] md:text-xs leading-relaxed line-clamp-2">
+                <p className="text-[#666666] mb-2 md:mb-3 text-xs md:text-sm leading-relaxed line-clamp-2">
                   依托博物馆馆藏资源，打造沉浸式"小小考古学家"体验，通过模拟探方挖掘与文物修复，让亲子家庭在动手实践中触碰历史。
                 </p>
                 <Link href="/cases/shanghai-bank" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-xs md:text-sm">
@@ -539,19 +539,19 @@ export default function Home() {
             {/* 案例 2 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50">
                   <Sparkles className="h-16 w-16 md:h-20 md:w-20 text-white" />
                 </div>
-                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 right-2 md:right-4">
-                  <span className="px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full">
+                <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
+                  <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     儿童节活动
                   </span>
+                  <h3 className="text-white text-lg md:text-xl font-bold line-clamp-2 drop-shadow-md">厦门航空自然VR科技秀</h3>
                 </div>
               </div>
               <div className="p-3 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2 text-[#333333]">厦门航空自然VR科技秀</h3>
-                <p className="text-[#666666] mb-2 md:mb-3 text-[10px] md:text-xs leading-relaxed line-clamp-2">
+                <p className="text-[#666666] mb-2 md:mb-3 text-xs md:text-sm leading-relaxed line-clamp-2">
                   将自然生态科普与前沿VR技术完美融合，为亲子家庭打造"赛博自然"探索之旅，以科技手段解锁自然奥秘。
                 </p>
                 <Link href="/cases/xiamen-airlines" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-xs md:text-sm">
@@ -564,19 +564,19 @@ export default function Home() {
             {/* 案例 3 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50">
                   <Award className="h-16 w-16 md:h-20 md:w-20 text-white" />
                 </div>
-                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 right-2 md:right-4">
-                  <span className="px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full">
+                <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
+                  <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     儿童节活动
                   </span>
+                  <h3 className="text-white text-lg md:text-xl font-bold line-clamp-2 drop-shadow-md">省财政厅&农商银行联合活动</h3>
                 </div>
               </div>
               <div className="p-3 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2 text-[#333333]">省财政厅&农商银行联合活动</h3>
-                <p className="text-[#666666] mb-2 md:mb-3 text-[10px] md:text-xs leading-relaxed line-clamp-2">
+                <p className="text-[#666666] mb-2 md:mb-3 text-xs md:text-sm leading-relaxed line-clamp-2">
                   策划跨界联动的节日活动，融合非遗手作与现代科技体验，包含公益捐助项目，促进政企文化深度交流。
                 </p>
                 <Link href="/cases/finance-rural" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-xs md:text-sm">
@@ -589,19 +589,19 @@ export default function Home() {
             {/* 案例 4 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[4/3] bg-gradient-to-br from-[#F472B6] to-[#EC4899] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50">
                   <Star className="h-16 w-16 md:h-20 md:w-20 text-white" />
                 </div>
-                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 right-2 md:right-4">
-                  <span className="px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full">
+                <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
+                  <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     妇女节团建活动
                   </span>
+                  <h3 className="text-white text-lg md:text-xl font-bold line-clamp-2 drop-shadow-md">浙江省财政厅女神节活动</h3>
                 </div>
               </div>
               <div className="p-3 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2 text-[#333333]">浙江省财政厅女神节活动</h3>
-                <p className="text-[#666666] mb-2 md:mb-3 text-[10px] md:text-xs leading-relaxed line-clamp-2">
+                <p className="text-[#666666] mb-2 md:mb-3 text-xs md:text-sm leading-relaxed line-clamp-2">
                   专为女性职工定制的"美学疗愈"专场，将传统非遗技艺与现代数字艺术展陈相结合，展现新时代女性风采。
                 </p>
                 <Link href="/cases/finance-women" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-xs md:text-sm">
@@ -614,19 +614,19 @@ export default function Home() {
             {/* 案例 5 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[4/3] bg-gradient-to-br from-[#34D399] to-[#10B981] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50">
                   <Users className="h-16 w-16 md:h-20 md:w-20 text-white" />
                 </div>
-                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 right-2 md:right-4">
-                  <span className="px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full">
+                <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
+                  <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     VIP客户活动
                   </span>
+                  <h3 className="text-white text-lg md:text-xl font-bold line-clamp-2 drop-shadow-md">AITO问界车主专属非遗体验</h3>
                 </div>
               </div>
               <div className="p-3 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2 text-[#333333]">AITO问界车主专属非遗体验</h3>
-                <p className="text-[#666666] mb-2 md:mb-3 text-[10px] md:text-xs leading-relaxed line-clamp-2">
+                <p className="text-[#666666] mb-2 md:mb-3 text-xs md:text-sm leading-relaxed line-clamp-2">
                   针对高端车主群体打造的专属非遗体验，将品牌理念与传统工艺深度结合，强化车主对品牌的文化认同感。
                 </p>
                 <Link href="/cases/aito" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-xs md:text-sm">
@@ -639,19 +639,19 @@ export default function Home() {
             {/* 案例 6 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[4/3] bg-gradient-to-br from-[#60A5FA] to-[#3B82F6] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50">
                   <Calendar className="h-16 w-16 md:h-20 md:w-20 text-white" />
                 </div>
-                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 right-2 md:right-4">
-                  <span className="px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full">
+                <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
+                  <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
                     养生团建
                   </span>
+                  <h3 className="text-white text-lg md:text-xl font-bold line-clamp-2 drop-shadow-md">海康威视脆皮打工人养生局</h3>
                 </div>
               </div>
               <div className="p-3 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2 text-[#333333]">海康威视脆皮打工人养生局</h3>
-                <p className="text-[#666666] mb-2 md:mb-3 text-[10px] md:text-xs leading-relaxed line-clamp-2">
+                <p className="text-[#666666] mb-2 md:mb-3 text-xs md:text-sm leading-relaxed line-clamp-2">
                   针对互联网及科技行业高压人群，定制"身心除锈"的疗愈专场，融合音疗放松与非遗慢生活体验。
                 </p>
                 <Link href="/cases/hikvision" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-xs md:text-sm">
