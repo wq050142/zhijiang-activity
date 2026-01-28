@@ -67,16 +67,10 @@ export default function TrainingPage() {
 
       {/* Hero Section */}
       <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
-        {/* 大图横幅占位符 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#6B7280] to-[#4B5563] opacity-90">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#6B7280] via-[#6B7280]/70 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
-          <div className="absolute inset-0 flex items-center justify-center opacity-30">
-            <div className="text-center">
-              <GraduationCap className="h-32 md:h-48 w-32 md:w-48 text-white/40 mx-auto" />
-              <p className="text-white/40 text-sm mt-4">访学培训横幅图片</p>
-            </div>
-          </div>
+        {/* 大图横幅 */}
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/访学培训.png")' }}>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20"></div>
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
           <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">

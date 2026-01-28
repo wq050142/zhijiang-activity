@@ -227,11 +227,8 @@ export default function Home() {
             {/* 服务 1 */}
             <Link href="/services/party" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/主题党建.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-40">
-                    <Star className="h-20 w-20 text-white" />
-                  </div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">主题党建</h3>
                   </div>
@@ -256,11 +253,8 @@ export default function Home() {
             {/* 服务 2 */}
             <Link href="/services/team" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/团建拓展.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-40">
-                    <Users className="h-20 w-20 text-white" />
-                  </div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">团建拓展</h3>
                   </div>
@@ -285,11 +279,8 @@ export default function Home() {
             {/* 服务 3 */}
             <Link href="/services/training" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/访学培训.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-40">
-                    <BookOpen className="h-20 w-20 text-white" />
-                  </div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">访学培训</h3>
                   </div>
@@ -314,11 +305,8 @@ export default function Home() {
             {/* 服务 4 */}
             <Link href="/services/custom" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/定制活动.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-40">
-                    <Calendar className="h-20 w-20 text-white" />
-                  </div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">定制活动</h3>
                   </div>
