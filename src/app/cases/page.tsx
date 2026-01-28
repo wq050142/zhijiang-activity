@@ -34,8 +34,8 @@ export default function CasesPage() {
       client: '浙江省财政厅&农商银行',
       title: '联合活动',
       category: '儿童节活动',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/财政厅农商行联合活动1.jpg',
+      subImages: ['/财政厅农商行联合活动2.jpg', '/财政厅农商行联合活动3.jpg', '/财政厅农商行联合活动4.jpg'],
       description: '策划跨界联动的节日活动，巧妙融合非遗手作与现代科技体验。同时包含公益捐助项目，在传递社会正能量的同时，不仅丰富了职工子女的节日生活，更促进了政企文化的深度交流。',
       highlights: ['非遗手作', '科技体验', '公益捐助', '跨界联动']
     },
