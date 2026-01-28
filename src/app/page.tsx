@@ -88,10 +88,10 @@ export default function Home() {
             打造独具文化深度的党建、团建、商务活动新范式
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+          <div className="flex sm:flex-row gap-4 justify-center items-center">
             <Link
-              href="/services/party"
-              className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur hover:bg-white/30 text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full text-sm md:text-base font-medium transition-all border border-white/30"
+              href="#services"
+              className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur hover:bg-white/30 text-white px-5 py-2.5 md:px-8 md:py-3 rounded-full text-sm md:text-base font-medium transition-all border border-white/30"
             >
               查看服务详情
             </Link>
@@ -208,7 +208,7 @@ export default function Home() {
       </section>
 
       {/* 核心服务概览 */}
-      <section className="py-12 px-4 md:px-6 md:py-16">
+      <section id="services" className="py-12 px-4 md:px-6 md:py-16 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
