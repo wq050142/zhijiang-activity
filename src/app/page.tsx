@@ -385,7 +385,7 @@ export default function Home() {
           </div>
 
           <div className="overflow-hidden">
-            <div className="flex items-center gap-3 md:gap-4 lg:gap-5 animate-marquee-fast whitespace-nowrap">
+            <div className="flex items-center gap-2 md:gap-3 lg:gap-4 animate-marquee-fast whitespace-nowrap">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -399,22 +399,18 @@ export default function Home() {
                     '杭州市城管局',
                     '杭州市上城区法院',
                     '杭州市西湖区总工会'
-                  ].map((partner, j) => {
-                    const sizes = ['text-xs', 'text-[10px]', 'text-sm', 'text-xs', 'text-[10px]', 'text-sm', 'text-xs', 'text-[10px]', 'text-sm', 'text-xs'];
-                    const sizesMd = ['md:text-sm', 'md:text-xs', 'md:text-base', 'md:text-sm', 'md:text-xs', 'md:text-base', 'md:text-sm', 'md:text-xs', 'md:text-base', 'md:text-sm'];
-                    return (
-                      <div
-                        key={`${i}-${j}`}
-                        className="flex items-center gap-2 md:gap-2.5 px-2 md:px-3 py-1 md:py-1.5 min-w-max"
-                      >
-                        <span className={`text-[#666666] font-medium ${sizes[j % sizes.length]} ${sizesMd[j % sizesMd.length]} whitespace-nowrap`}>{partner}</span>
-                      </div>
-                    );
-                  })}
+                  ].map((partner, j) => (
+                    <div
+                      key={`${i}-${j}`}
+                      className="flex items-center gap-1.5 md:gap-2 px-1.5 md:px-2 py-1 md:py-1.5 min-w-max"
+                    >
+                      <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
+                    </div>
+                  ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-4 md:gap-6 lg:gap-7 animate-marquee-medium whitespace-nowrap mt-1">
+            <div className="flex items-center gap-3 md:gap-4 lg:gap-5 animate-marquee-medium whitespace-nowrap mt-1">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -428,22 +424,18 @@ export default function Home() {
                     '浙江数智交院',
                     '厦门航空',
                     '海康威视'
-                  ].map((partner, j) => {
-                    const sizes = ['text-sm', 'text-xs', 'text-[10px]', 'text-sm', 'text-xs', 'text-[10px]', 'text-sm', 'text-xs', 'text-[10px]', 'text-sm'];
-                    const sizesMd = ['md:text-base', 'md:text-sm', 'md:text-xs', 'md:text-base', 'md:text-sm', 'md:text-xs', 'md:text-base', 'md:text-sm', 'md:text-xs', 'md:text-base'];
-                    return (
-                      <div
-                        key={`reverse-${i}-${j}`}
-                        className="flex items-center gap-2.5 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 min-w-max"
-                      >
-                        <span className={`text-[#666666] font-medium ${sizes[j % sizes.length]} ${sizesMd[j % sizesMd.length]} whitespace-nowrap`}>{partner}</span>
-                      </div>
-                    );
-                  })}
+                  ].map((partner, j) => (
+                    <div
+                      key={`reverse-${i}-${j}`}
+                      className="flex items-center gap-2 md:gap-2.5 px-2 md:px-2.5 py-1 md:py-1.5 min-w-max"
+                    >
+                      <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
+                    </div>
+                  ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-5 md:gap-7 lg:gap-9 animate-marquee-slow whitespace-nowrap mt-1">
+            <div className="flex items-center gap-4 md:gap-5 lg:gap-6 animate-marquee-slow whitespace-nowrap mt-1">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -457,22 +449,18 @@ export default function Home() {
                     '富春山居集团',
                     '建发集团',
                     '中国移动'
-                  ].map((partner, j) => {
-                    const sizes = ['text-base', 'text-sm', 'text-xs', 'text-[10px]', 'text-base', 'text-sm', 'text-xs', 'text-[10px]', 'text-base', 'text-sm'];
-                    const sizesMd = ['md:text-lg', 'md:text-base', 'md:text-sm', 'md:text-xs', 'md:text-lg', 'md:text-base', 'md:text-sm', 'md:text-xs', 'md:text-lg', 'md:text-base'];
-                    return (
-                      <div
-                        key={`third-${i}-${j}`}
-                        className="flex items-center gap-3 md:gap-4 px-4 md:px-5 py-2 md:py-2.5 min-w-max"
-                      >
-                        <span className={`text-[#666666] font-medium ${sizes[j % sizes.length]} ${sizesMd[j % sizesMd.length]} whitespace-nowrap`}>{partner}</span>
-                      </div>
-                    );
-                  })}
+                  ].map((partner, j) => (
+                    <div
+                      key={`third-${i}-${j}`}
+                      className="flex items-center gap-2.5 md:gap-3 px-2.5 md:px-3 py-1 md:py-1.5 min-w-max"
+                    >
+                      <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
+                    </div>
+                  ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-3.5 md:gap-5 lg:gap-6 animate-marquee-extra-slow whitespace-nowrap mt-0.5">
+            <div className="flex items-center gap-2.5 md:gap-3.5 lg:gap-4.5 animate-marquee-extra-slow whitespace-nowrap mt-0.5">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -486,18 +474,14 @@ export default function Home() {
                     '中宏保险',
                     '南银法巴消费金融',
                     '更多合作伙伴'
-                  ].map((partner, j) => {
-                    const sizes = ['text-xs', 'text-sm', 'text-[10px]', 'text-xs', 'text-sm', 'text-[10px]', 'text-xs', 'text-sm', 'text-[10px]', 'text-xs'];
-                    const sizesMd = ['md:text-sm', 'md:text-base', 'md:text-xs', 'md:text-sm', 'md:text-base', 'md:text-xs', 'md:text-sm', 'md:text-base', 'md:text-xs', 'md:text-sm'];
-                    return (
-                      <div
-                        key={`fourth-${i}-${j}`}
-                        className="flex items-center gap-2 md:gap-3 px-2.5 md:px-3.5 py-1 md:py-1.5 min-w-max"
-                      >
-                        <span className={`text-[#666666] font-medium ${sizes[j % sizes.length]} ${sizesMd[j % sizesMd.length]} whitespace-nowrap`}>{partner}</span>
-                      </div>
-                    );
-                  })}
+                  ].map((partner, j) => (
+                    <div
+                      key={`fourth-${i}-${j}`}
+                      className="flex items-center gap-1.5 md:gap-2 px-1.5 md:px-2 py-1 md:py-1.5 min-w-max"
+                    >
+                      <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
+                    </div>
+                  ))}
                 </>
               ))}
             </div>
