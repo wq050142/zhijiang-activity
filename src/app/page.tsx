@@ -119,9 +119,9 @@ export default function Home() {
                 之江文化中心
                 <Link
                   href="/about"
-                  className="inline-flex items-center justify-center gap-1 ml-2 md:ml-3 bg-[#FFC107] hover:bg-[#FFD54F] text-white px-3 py-1.5 rounded-full text-xs md:text-sm font-semibold transition-all shadow-md hover:shadow-lg hover:scale-105"
+                  className="inline-flex items-center justify-center gap-1 ml-2 md:ml-3 bg-[#FFC107] hover:bg-[#FFD54F] text-white px-3 py-1 rounded-full text-xs md:text-sm font-semibold transition-all shadow-md hover:shadow-lg hover:scale-105 align-middle"
                 >
-                  更多
+                  了解更多
                   <ArrowRight className="h-3 w-3 md:h-4 md:w-4" />
                 </Link>
               </h2>
@@ -630,7 +630,7 @@ export default function Home() {
       {/* 页脚 */}
       <footer className="bg-[#333333] text-white py-8 px-6 md:py-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-6 md:mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img
@@ -655,16 +655,6 @@ export default function Home() {
                 <li><Link href="/services/team" className="hover:text-white transition-colors">团建拓展</Link></li>
                 <li><Link href="/services/training" className="hover:text-white transition-colors">访学培训</Link></li>
                 <li><Link href="/services/custom" className="hover:text-white transition-colors">定制活动</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">关于我们</h3>
-              <ul className="space-y-2 text-white/70 text-sm">
-                <li><Link href="/about" className="hover:text-white transition-colors">品牌故事</Link></li>
-                <li><Link href="/about" className="hover:text-white transition-colors">场馆资源</Link></li>
-                <li><Link href="/cases" className="hover:text-white transition-colors">成功案例</Link></li>
-                <li><Link href="/contact" className="hover:text-white transition-colors">联系我们</Link></li>
               </ul>
             </div>
 
