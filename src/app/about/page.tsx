@@ -304,7 +304,7 @@ export default function AboutPage() {
               <div className="md:flex">
                 <div className="md:w-1/2">
                   <div className="aspect-[16/9] md:aspect-auto md:h-full min-h-[300px] relative overflow-hidden">
-                    <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/公共服务中心.png")' }}></div>
+                    <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                     <div className="absolute top-4 left-4">
                       <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
