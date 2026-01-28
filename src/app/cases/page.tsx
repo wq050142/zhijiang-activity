@@ -1,12 +1,5 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Building2, Phone, ArrowRight, BookOpen, Users, Calendar, Award, Sparkles, MapPin, Star } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: '成功案例 - 之江文化中心 | 企业活动服务',
-  description: '之江文化中心成功案例展示，包括儿童节活动、妇女节团建、VIP客户活动、养生团建、学习培训、党建活动等众多知名企业合作案例。',
-  keywords: '企业活动案例,活动策划案例,杭州活动案例,党建活动案例,团建活动案例,VIP客户活动,非遗体验',
-};
 
 export default function CasesPage() {
   const cases = [
@@ -203,17 +196,8 @@ export default function CasesPage() {
   ];
 
   return (
-    <>
-      <style jsx>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
-      <div className="min-h-screen bg-[#F8FAFC]">
+    <div className="min-h-screen bg-[#F8FAFC]">
+      {/* 顶部导航栏 */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
@@ -291,7 +275,7 @@ export default function CasesPage() {
             {cases.map((caseItem) => (
               <div key={caseItem.id} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                 {/* 图片滚动区域 */}
-                <div className="relative overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                <div className="relative overflow-x-auto scroll-smooth snap-x snap-mandatory">
                   <div className="flex gap-3 p-3">
                     {/* 主图 */}
                     <div className="flex-shrink-0 w-[280px] snap-start">
@@ -442,7 +426,6 @@ export default function CasesPage() {
           </div>
         </div>
       </footer>
-      </div>
-    </>
+    </div>
   );
 }
