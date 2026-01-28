@@ -44,8 +44,8 @@ export default function CasesPage() {
       client: '浙江省财政厅',
       title: '女神节美学疗愈专场',
       category: '妇女节团建活动',
-      mainImage: '/浙江省财政厅女生节活动.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省博物馆.png'],
+      mainImage: '/浙江省财政厅女神节1.jpg',
+      subImages: ['/浙江省财政厅女神节2.jpg', '/浙江省财政厅女神节3.jpg', '/浙江省财政厅女神节4.jpg'],
       description: '专为女性职工定制的"美学疗愈"专场，将传统非遗技艺与现代数字艺术展陈相结合。通过高品质的文化体验，展现新时代女性风采，提升团队凝聚力。',
       highlights: ['非遗技艺', '数字艺术', '美学疗愈', '女性风采']
     },
@@ -54,8 +54,8 @@ export default function CasesPage() {
       client: '浙江省档案馆&农商银行',
       title: '三八共建活动',
       category: '妇女节团建活动',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/档案馆三八活动1.jpg',
+      subImages: ['/档案馆三八活动2.jpg', '/档案馆三八活动3.jpg', '/档案馆三八活动4.jpg'],
       description: '组织浙江省档案馆与农商银行两大单位共同走出办公楼，走进非遗馆开展跨界共建活动。让职工在沉浸式的非遗空间中体验传统技艺，通过文化纽带深化了双方单位的联谊与交流。',
       highlights: ['跨界共建', '非遗空间', '传统技艺', '文化交流']
     },
