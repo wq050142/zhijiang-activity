@@ -104,7 +104,10 @@ export default function ContactPage() {
             联系我们
           </h1>
           <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
-            告诉我们您的需求，我们为您提供专业的活动策划方案
+            告诉我们您的诉求
+          </p>
+          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+            我们为您定制专属活动方案
           </p>
         </div>
       </section>
@@ -123,59 +126,68 @@ export default function ContactPage() {
                 随时为您服务
               </h2>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-white" />
+              <div className="space-y-4 md:space-y-6">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-1">咨询热线</h3>
-                    <p className="text-[#6B7280]">191-0658-3798</p>
-                    <p className="text-sm text-[#6B7280] mt-1">工作日 9:00-18:00</p>
+                    <h3 className="text-base md:text-lg font-bold text-[#2D2D2D] mb-1">咨询热线</h3>
+                    <p className="text-sm md:text-base text-[#6B7280]">191-0658-3798</p>
+                    <p className="text-xs md:text-sm text-[#6B7280] mt-1">工作日 9:00-18:00</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-6 w-6 text-white" />
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="h-5 w-5 md:h-6 md:w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-1">电子邮箱</h3>
-                    <p className="text-[#6B7280]">service@zhijiang-culture.com</p>
-                    <p className="text-sm text-[#6B7280] mt-1">我们会尽快回复您</p>
+                    <h3 className="text-base md:text-lg font-bold text-[#2D2D2D] mb-1">微信</h3>
+                    <p className="text-sm md:text-base text-[#6B7280]">之学小助理</p>
+                    <p className="text-xs md:text-sm text-[#6B7280] mt-1">添加微信，快速沟通</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-white" />
+                {/* 微信二维码 */}
+                <div className="mt-3 md:mt-4 bg-white rounded-2xl p-3 md:p-4 shadow-md border border-gray-100">
+                  <p className="text-center text-xs md:text-sm text-[#6B7280] mb-2 md:mb-3">微信二维码</p>
+                  <div className="aspect-square max-w-[150px] md:max-w-[200px] mx-auto bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+                    <p className="text-xs text-[#999]">二维码占位</p>
+                  </div>
+                  <p className="text-center text-[10px] md:text-xs text-[#6B7280] mt-2">扫描添加微信</p>
+                </div>
+
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-1">公司地址</h3>
-                    <p className="text-[#6B7280]">浙江省杭州市西湖区之江文化中心研学中心</p>
+                    <h3 className="text-base md:text-lg font-bold text-[#2D2D2D] mb-1">地址</h3>
+                    <p className="text-sm md:text-base text-[#6B7280]">浙江省杭州市西湖区之江文化中心</p>
                   </div>
                 </div>
               </div>
 
-              {/* 地图占位 */}
-              <div className="mt-8 bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-6 border border-[#FFE15D]/20">
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="h-5 w-5 text-[#FFE15D]" />
-                  <span className="text-[#2D2D2D] font-semibold">之江文化中心位置</span>
-                </div>
-                <p className="text-[#6B7280] text-sm">
-                  位于杭州市西湖区之江板块，地铁6号线之江文化中心站直达，交通便利。
-                </p>
-              </div>
-
-              {/* 环境图片展示 */}
-              <div className="mt-6 aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl overflow-hidden shadow-lg relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FFE15D]/20 via-transparent to-[#FF9F43]/20"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <Building2 className="h-20 w-20 text-white/30 mx-auto" />
-                    <p className="text-white/40 text-sm mt-2">之江文化中心环境</p>
+              {/* 地图 */}
+              <div className="mt-8 bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl overflow-hidden border border-[#FFE15D]/20">
+                <div className="p-4 border-b border-[#FFE15D]/20">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-[#FFE15D]" />
+                    <span className="text-[#2D2D2D] font-semibold">之江文化中心位置</span>
                   </div>
+                </div>
+                <div className="aspect-video w-full">
+                  <iframe
+                    src="https://www.amap.com/iframe?mode=map&uid=2F000004053067&point=120.103518,30.201353&zoom=15&srch=1&referer=wb_sh"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    title="之江文化中心地图"
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -236,15 +248,14 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-[#2D2D2D] font-semibold mb-2">
-                      电子邮箱 <span className="text-red-500">*</span>
+                    <label className="block text-[#2D2D2D] font-semibold mb-2 text-sm md:text-base">
+                      电子邮箱
                     </label>
                     <input
                       type="email"
-                      required
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
+                      className="w-full px-3 py-2.5 md:px-4 md:py-3 text-sm md:text-base border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all bg-white"
                       placeholder="请输入您的邮箱"
                     />
                   </div>
@@ -311,7 +322,7 @@ export default function ContactPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
             {[
               { step: '01', title: '需求对接', desc: '深入了解您的活动需求' },
               { step: '02', title: '方案设计', desc: '量身定制活动方案' },
@@ -320,13 +331,13 @@ export default function ContactPage() {
               { step: '05', title: '后续评价', desc: '活动总结，持续优化' }
             ].map((item, index) => (
               <div key={index} className="relative">
-                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-6 text-center">
-                  <div className="text-3xl font-bold text-white mb-4">{item.step}</div>
-                  <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-sm text-white/90">{item.desc}</p>
+                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-4 md:p-6 text-center">
+                  <div className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">{item.step}</div>
+                  <h3 className="text-sm md:text-lg font-bold text-white mb-1 md:mb-2">{item.title}</h3>
+                  <p className="text-[10px] md:text-sm text-white/90">{item.desc}</p>
                 </div>
                 {index < 4 && (
-                  <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                  <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
                     <ArrowRight className="h-6 w-6 text-[#FFE15D]" />
                   </div>
                 )}
@@ -405,7 +416,7 @@ export default function ContactPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
-                  <span>浙江省杭州市西湖区<br />之江文化中心研学中心</span>
+                  <span>浙江省杭州市西湖区<br />之江文化中心</span>
                 </li>
               </ul>
             </div>

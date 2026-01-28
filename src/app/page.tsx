@@ -150,7 +150,7 @@ export default function Home() {
               </div>
 
               {/* 四馆一中心小图 - 右侧网格 */}
-              <div className="lg:col-span-2 grid grid-cols-2 gap-3">
+              <div className="lg:col-span-2 grid grid-cols-2 gap-3 relative">
                 {/* 浙江省图书馆 */}
                 <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省图书馆.png")' }}></div>
@@ -169,21 +169,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* 公共服务中心 - 圆形居中 */}
-                <div className="col-span-2 flex justify-center py-4">
-                  <div className="relative w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40">
-                    <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl border-4 border-white/90">
-                      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-full"></div>
-                    </div>
-                    <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
-                      <span className="text-white text-xs font-bold drop-shadow-md bg-black/50 px-3 py-1 rounded-full">
-                        公共服务中心
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
                 {/* 浙江省非遗馆 */}
                 <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省非遗馆.png")' }}></div>
@@ -199,6 +184,21 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-2 left-2 right-2">
                     <span className="text-white text-xs font-bold drop-shadow-md">浙江省文学馆</span>
+                  </div>
+                </div>
+
+                {/* 公共服务中心 - 圆形居中覆盖 */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                  <div className="relative w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32">
+                    <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl border-4 border-white/90">
+                      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-full"></div>
+                    </div>
+                    <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+                      <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md bg-black/50 px-2 py-1 rounded-full">
+                        公共服务中心
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
