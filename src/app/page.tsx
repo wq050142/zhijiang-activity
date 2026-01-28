@@ -236,7 +236,7 @@ export default function Home() {
             {/* 服务 1 */}
             <Link href="/services/party" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/主题党建.png")' }}>
+                <div className="aspect-[16/10] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/主题党建.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">主题党建</h3>
@@ -271,7 +271,7 @@ export default function Home() {
             {/* 服务 2 */}
             <Link href="/services/team" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/团建拓展.png")' }}>
+                <div className="aspect-[16/10] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/团建拓展.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">团建拓展</h3>
@@ -306,7 +306,7 @@ export default function Home() {
             {/* 服务 3 */}
             <Link href="/services/training" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/访学培训.png")' }}>
+                <div className="aspect-[16/10] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/访学培训.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">访学培训</h3>
@@ -341,7 +341,7 @@ export default function Home() {
             {/* 服务 4 */}
             <Link href="/services/custom" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/定制活动.png")' }}>
+                <div className="aspect-[16/10] bg-cover bg-center bg-no-repeat relative overflow-hidden" style={{ backgroundImage: 'url("/定制活动.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">定制活动</h3>
@@ -513,7 +513,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
             {/* 案例 1 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
                 <img
                   src="/上海银行考古.png"
                   alt="上海银行考古总动员"
@@ -540,7 +540,7 @@ export default function Home() {
 
             {/* 案例 2 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
                 <img
                   src="/厦门航空自然VR科技秀.png"
                   alt="厦门航空自然VR科技秀"
@@ -567,7 +567,7 @@ export default function Home() {
 
             {/* 案例 4 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
                 <img
                   src="/浙江省财政厅女生节活动.png"
                   alt="浙江省财政厅女神节活动"
@@ -594,7 +594,7 @@ export default function Home() {
 
             {/* 案例 5 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
                 <img
                   src="/AITO问界车主活动.png"
                   alt="AITO问界车主活动"
@@ -621,7 +621,7 @@ export default function Home() {
 
             {/* 案例 6 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-              <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
                 <img
                   src="/海康威视脆皮打工人养生局.png"
                   alt="海康威视脆皮打工人养生局"
