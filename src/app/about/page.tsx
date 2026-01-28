@@ -79,15 +79,17 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+            关于我们
+          </h1>
           <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">
             <Sparkles className="h-4 w-4 text-[#FFE15D]" />
             全国最大的省级文化综合体
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-            关于我们
-          </h1>
           <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium">
-            依托之江文化中心四大场馆资源，打造独具文化深度的企业活动服务
+            依托之江文化中心四大场馆资源
+            <br />
+            打造独具文化深度的企业活动服务
           </p>
         </div>
       </section>
