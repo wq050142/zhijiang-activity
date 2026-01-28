@@ -1,7 +1,14 @@
+'use client';
+
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Building2, Phone, ArrowRight, BookOpen, Users, Calendar, Award, Sparkles, MapPin, Star } from 'lucide-react';
+import { Building2, Phone, BookOpen, Users, Calendar, Award, Sparkles, MapPin, Star, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function CasesPage() {
+  const [expandedImages, setExpandedImages] = useState<{ [key: number]: { isOpen: boolean; currentIndex: number } }>({});
+  const scrollRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
+  const autoScrollTimers = useRef<{ [key: number]: NodeJS.Timeout | null }>({});
+
   const cases = [
     {
       id: 1,
@@ -195,6 +202,93 @@ export default function CasesPage() {
     }
   ];
 
+  // 获取所有图片
+  const getAllImages = (caseItem: any) => {
+    return [caseItem.mainImage, ...caseItem.subImages];
+  };
+
+  // 打开图片放大
+  const openImage = (caseId: number, index: number) => {
+    setExpandedImages(prev => ({
+      ...prev,
+      [caseId]: { isOpen: true, currentIndex: index }
+    }));
+  };
+
+  // 关闭图片放大
+  const closeImage = (caseId: number) => {
+    setExpandedImages(prev => ({
+      ...prev,
+      [caseId]: { isOpen: false, currentIndex: 0 }
+    }));
+  };
+
+  // 切换到上一张图片
+  const prevImage = (caseId: number) => {
+    setExpandedImages(prev => {
+      const current = prev[caseId];
+      if (!current) return prev;
+      const allImages = cases.find(c => c.id === caseId);
+      if (!allImages) return prev;
+      const images = getAllImages(allImages);
+      const newIndex = (current.currentIndex - 1 + images.length) % images.length;
+      return {
+        ...prev,
+        [caseId]: { isOpen: true, currentIndex: newIndex }
+      };
+    });
+  };
+
+  // 切换到下一张图片
+  const nextImage = (caseId: number) => {
+    setExpandedImages(prev => {
+      const current = prev[caseId];
+      if (!current) return prev;
+      const allImages = cases.find(c => c.id === caseId);
+      if (!allImages) return prev;
+      const images = getAllImages(allImages);
+      const newIndex = (current.currentIndex + 1) % images.length;
+      return {
+        ...prev,
+        [caseId]: { isOpen: true, currentIndex: newIndex }
+      };
+    });
+  };
+
+  // 自动轮播
+  useEffect(() => {
+    cases.forEach((caseItem) => {
+      const scrollContainer = scrollRefs.current[caseItem.id];
+      if (scrollContainer) {
+        // 清除之前的定时器
+        if (autoScrollTimers.current[caseItem.id]) {
+          clearInterval(autoScrollTimers.current[caseItem.id]!);
+        }
+
+        // 设置新的自动轮播
+        autoScrollTimers.current[caseItem.id] = setInterval(() => {
+          if (scrollContainer) {
+            const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+            const newScroll = scrollContainer.scrollLeft + scrollContainer.clientWidth;
+
+            if (newScroll >= maxScroll) {
+              scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+              scrollContainer.scrollTo({ left: newScroll, behavior: 'smooth' });
+            }
+          }
+        }, 3000); // 每3秒滚动一次
+      }
+    });
+
+    // 清理定时器
+    return () => {
+      Object.values(autoScrollTimers.current).forEach(timer => {
+        if (timer) clearInterval(timer);
+      });
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
@@ -272,107 +366,135 @@ export default function CasesPage() {
       <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {cases.map((caseItem) => (
-              <div key={caseItem.id} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                {/* 图片滚动区域 */}
-                <div className="relative overflow-x-auto scroll-smooth snap-x snap-mandatory">
-                  <div className="flex gap-3 p-3">
-                    {/* 主图 */}
-                    <div className="flex-shrink-0 w-[280px] snap-start">
-                      <div className="aspect-[16/10] rounded-xl overflow-hidden bg-gray-100">
-                        <img src={caseItem.mainImage} alt={caseItem.title} className="w-full h-full object-cover" />
+            {cases.map((caseItem) => {
+              const allImages = getAllImages(caseItem);
+              const expandedState = expandedImages[caseItem.id];
+
+              return (
+                <div key={caseItem.id} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                  {/* 图片滚动区域 */}
+                  <div
+                    ref={(el) => { scrollRefs.current[caseItem.id] = el; }}
+                    className="relative overflow-x-auto scroll-smooth snap-x snap-mandatory cursor-grab active:cursor-grabbing"
+                  >
+                    <div className="flex gap-3 p-3">
+                      {allImages.map((image, index) => (
+                        <div
+                          key={index}
+                          className="flex-shrink-0 w-[200px] snap-start cursor-pointer"
+                          onClick={() => openImage(caseItem.id, index)}
+                        >
+                          <div className="aspect-[16/10] rounded-xl overflow-hidden bg-gray-100 hover:opacity-90 transition-opacity">
+                            <img
+                              src={image}
+                              alt={`${caseItem.title} ${index + 1}`}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="px-3 py-1 bg-[#FFE15D]/20 text-[#2D2D2D] text-xs font-semibold rounded-full">
+                        {caseItem.category}
+                      </span>
+                    </div>
+                    <h3 className="text-lg font-bold mb-2 text-[#2D2D2D]">{caseItem.client} - {caseItem.title}</h3>
+                    <p className="text-[#6B7280] mb-4 text-sm leading-relaxed">
+                      {caseItem.description}
+                    </p>
+
+                    {/* 关键词横向排布 */}
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {caseItem.highlights.slice(0, 3).map((highlight, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-[#FFE15D]/20 text-[#2D2D2D] text-xs font-medium rounded-full"
+                        >
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* 图片放大模态框 */}
+                  {expandedState?.isOpen && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4">
+                      <button
+                        onClick={() => closeImage(caseItem.id)}
+                        className="absolute top-4 right-4 text-white hover:text-[#FFC107] transition-colors"
+                      >
+                        <X className="h-8 w-8" />
+                      </button>
+
+                      <button
+                        onClick={() => prevImage(caseItem.id)}
+                        className="absolute left-4 text-white hover:text-[#FFC107] transition-colors"
+                      >
+                        <ChevronLeft className="h-12 w-12" />
+                      </button>
+
+                      <div className="relative max-w-5xl max-h-[80vh]">
+                        <img
+                          src={allImages[expandedState.currentIndex]}
+                          alt={`${caseItem.title} ${expandedState.currentIndex + 1}`}
+                          className="max-w-full max-h-[80vh] object-contain"
+                        />
+                      </div>
+
+                      <button
+                        onClick={() => nextImage(caseItem.id)}
+                        className="absolute right-4 text-white hover:text-[#FFC107] transition-colors"
+                      >
+                        <ChevronRight className="h-12 w-12" />
+                      </button>
+
+                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                        {allImages.map((_, index) => (
+                          <button
+                            key={index}
+                            onClick={() => openImage(caseItem.id, index)}
+                            className={`w-2 h-2 rounded-full transition-colors ${
+                              index === expandedState.currentIndex ? 'bg-[#FFC107]' : 'bg-white/50'
+                            }`}
+                          />
+                        ))}
                       </div>
                     </div>
-                    {/* 3张辅图 */}
-                    {caseItem.subImages.map((subImage, index) => (
-                      <div key={index} className="flex-shrink-0 w-[120px] snap-start">
-                        <div className="aspect-square rounded-xl overflow-hidden bg-gray-100">
-                          <img src={subImage} alt={`${caseItem.title} ${index + 1}`} className="w-full h-full object-cover" />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                  )}
                 </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="px-3 py-1 bg-[#FFE15D]/20 text-[#2D2D2D] text-xs font-semibold rounded-full">
-                      {caseItem.category}
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-bold mb-2 text-[#2D2D2D]">{caseItem.client} - {caseItem.title}</h3>
-                  <p className="text-[#6B7280] mb-4 text-sm leading-relaxed">
-                    {caseItem.description}
-                  </p>
-                  <div className="space-y-2 mb-4">
-                    {caseItem.highlights.slice(0, 3).map((highlight, index) => (
-                      <div key={index} className="flex items-center gap-2 text-xs text-[#6B7280]">
-                        <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full" />
-                        <span>{highlight}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* 合作伙伴 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
+      {/* 为什么选择我们 */}
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
-              <Sparkles className="h-6 w-6 text-[#FFE15D]" />
-              <span className="text-[#FF9F43] font-semibold">合作伙伴</span>
+              <Sparkles className="h-6 w-6 text-[#FFC107]" />
+              <span className="text-[#FFC107] font-semibold text-sm md:text-base">核心优势</span>
             </div>
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+            <h2 className="text-2xl md:text-4xl font-bold text-white">
               值得信赖的合作伙伴
             </h2>
-            <p className="text-sm md:text-lg text-[#6B7280]">
+            <p className="text-sm md:text-lg text-[#6B7280] mt-4">
               已为众多知名企业提供服务
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              '浙江省教育厅',
-              '海康威视',
-              '厦门航空',
-              '中国移动',
-              '上海银行',
-              '吉利汽车',
-              '博世电动',
-              '中国建设银行'
-            ].map((partner, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-3 px-6 py-4 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:border-[#FFE15D] hover:shadow-md transition-all"
-              >
-                <Building2 className="h-5 w-5 text-[#2D2D2D]" />
-                <span className="text-[#2D2D2D] font-medium text-sm">{partner}</span>
+            {['浙江省教育厅', '海康威视', '厦门航空', '绿城地产', '浙商证券', '蒙牛', '建发', '西湖大学'].map((client, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
+                <span className="text-white text-sm md:text-base font-medium">{client}</span>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
-            让我们为您创造精彩
-          </h2>
-          <p className="text-sm md:text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            依托之江文化中心资源，为您打造独一无二的活动体验
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:scale-105"
-          >
-            立即咨询
-            <ArrowRight className="h-5 w-5" />
-          </Link>
         </div>
       </section>
 
@@ -385,41 +507,79 @@ export default function CasesPage() {
                 <img
                   src="/之江文化中心logo_画板 1.png"
                   alt="之江文化中心 logo"
-                  className="h-10 w-auto"
+                  className="h-10 md:h-12 w-auto"
                 />
                 <div>
-                  <span className="text-xl font-bold">之江文化中心</span>
-                  <p className="text-xs text-[#FFC107]">企业活动服务</p>
+                  <span className="text-base md:text-lg font-bold">之江文化中心</span>
+                  <p className="text-xs text-white/50">企业活动服务</p>
                 </div>
+              </div>
+              <p className="text-sm text-white/70 mb-4">
+                依托之江文化中心四大场馆资源，为企业提供党建、团建、培训、定制活动一站式服务
+              </p>
+              <div className="flex items-center gap-4">
+                <a href="tel:191-0658-3798" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#FFC107] transition-colors">
+                  <Phone className="h-4 w-4" />
+                  191-0658-3798
+                </a>
               </div>
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">服务内容</h3>
-              <ul className="space-y-2 text-white/70 text-sm">
-                <li><Link href="/services/party" className="hover:text-white transition-colors">主题党建</Link></li>
-                <li><Link href="/services/team" className="hover:text-white transition-colors">团建拓展</Link></li>
-                <li><Link href="/services/training" className="hover:text-white transition-colors">访学培训</Link></li>
-                <li><Link href="/services/custom" className="hover:text-white transition-colors">定制活动</Link></li>
+              <h4 className="font-semibold mb-3 text-[#FFC107]">服务</h4>
+              <ul className="space-y-2 text-sm text-white/70">
+                <li>
+                  <Link href="/services/party" className="hover:text-[#FFC107] transition-colors">
+                    主题党建
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/team" className="hover:text-[#FFC107] transition-colors">
+                    团建拓展
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/training" className="hover:text-[#FFC107] transition-colors">
+                    访学培训
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/custom" className="hover:text-[#FFC107] transition-colors">
+                    定制活动
+                  </Link>
+                </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">联系方式</h3>
-              <ul className="space-y-3 text-white/70 text-sm">
-                <li className="flex items-start gap-2">
-                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
-                  <span>191-0658-3798</span>
+              <h4 className="font-semibold mb-3 text-[#FFC107]">关于</h4>
+              <ul className="space-y-2 text-sm text-white/70">
+                <li>
+                  <Link href="/about" className="hover:text-[#FFC107] transition-colors">
+                    关于我们
+                  </Link>
                 </li>
-                <li className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
-                  <span>浙江省杭州市西湖区<br />之江文化中心</span>
+                <li>
+                  <Link href="/cases" className="hover:text-[#FFC107] transition-colors">
+                    案例中心
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-3 text-[#FFC107]">联系</h4>
+              <ul className="space-y-2 text-sm text-white/70">
+                <li>
+                  <Link href="/contact" className="hover:text-[#FFC107] transition-colors">
+                    联系我们
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-white/10 pt-8 text-center">
+          <div className="border-t border-white/10 pt-6 text-center">
             <p className="text-white/50 text-sm">
               © 2024 浙江文化空间发展有限公司 | 之江文化中心企业活动服务 | 版权所有
             </p>
