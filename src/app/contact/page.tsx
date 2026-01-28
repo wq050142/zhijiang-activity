@@ -106,13 +106,9 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="pt-28 md:pt-32 pb-12 px-4 md:px-6 relative overflow-hidden">
         {/* 背景图片 */}
-        <div className="absolute inset-0">
-          <img
-            src="/contact-hero.jpg"
-            alt="联系我们"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] opacity-95">
+          <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10 pt-4 md:pt-8">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">
