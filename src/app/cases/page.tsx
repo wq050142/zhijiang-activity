@@ -498,6 +498,9 @@ export default function CasesPage() {
                 <span className="text-white text-xs md:text-sm font-medium leading-relaxed">{client}</span>
               </div>
             ))}
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center hover:bg-white/15 transition-colors">
+              <span className="text-white text-xs md:text-sm font-medium leading-relaxed opacity-80">更多合作伙伴...</span>
+            </div>
           </div>
         </div>
       </section>
