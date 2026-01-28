@@ -464,22 +464,21 @@ export default function AboutPage() {
       </section>
 
       {/* 页脚 */}
-      <footer className="bg-[#2D2D2D] text-white py-12 px-6">
+      <footer className="bg-[#333333] text-white py-8 px-6 md:py-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 mb-6 md:mb-8">
+            <div className="col-span-2 md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-[#FFC107] rounded-lg flex items-center justify-center">
-                  <Building2 className="h-5 w-5 text-white" />
-                </div>
+                <img
+                  src="/之江文化中心logo_画板 1.png"
+                  alt="之江文化中心 logo"
+                  className="h-10 w-auto"
+                />
                 <div>
                   <span className="text-xl font-bold">之江文化中心</span>
                   <p className="text-xs text-[#FFC107]">企业活动服务</p>
                 </div>
               </div>
-              <p className="text-white/70 text-sm leading-relaxed">
-                依托四大场馆资源，为企业提供高品质、有文化深度的活动服务
-              </p>
             </div>
 
             <div>
@@ -493,16 +492,6 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">关于我们</h3>
-              <ul className="space-y-2 text-white/70 text-sm">
-                <li><Link href="/about" className="hover:text-white transition-colors">品牌故事</Link></li>
-                <li><Link href="/about" className="hover:text-white transition-colors">场馆资源</Link></li>
-                <li><Link href="/cases" className="hover:text-white transition-colors">成功案例</Link></li>
-                <li><Link href="/contact" className="hover:text-white transition-colors">联系我们</Link></li>
-              </ul>
-            </div>
-
-            <div>
               <h3 className="text-lg font-bold mb-4 text-[#FFC107]">联系方式</h3>
               <ul className="space-y-3 text-white/70 text-sm">
                 <li className="flex items-start gap-2">
@@ -511,7 +500,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
-                  <span>浙江省杭州市西湖区<br />之江文化中心研学中心</span>
+                  <span>浙江省杭州市西湖区<br />之江文化中心</span>
                 </li>
               </ul>
             </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, Phone, ArrowRight, Calendar, Sparkles, CheckCircle2, Award, Users, PartyPopper } from 'lucide-react';
+import { Building2, Phone, ArrowRight, Calendar, Sparkles, CheckCircle2, Award, Users, PartyPopper, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: '定制活动 - 之江文化中心 | 企业活动服务',
@@ -413,26 +413,25 @@ export default function CustomEventsPage() {
       </section>
 
       {/* 页脚 */}
-      <footer className="bg-[#2D2D2D] text-white py-12 px-6">
+      <footer className="bg-[#333333] text-white py-8 px-6 md:py-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 mb-6 md:mb-8">
+            <div className="col-span-2 md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center">
-                  <Building2 className="h-5 w-5 text-white" />
-                </div>
+                <img
+                  src="/之江文化中心logo_画板 1.png"
+                  alt="之江文化中心 logo"
+                  className="h-10 w-auto"
+                />
                 <div>
                   <span className="text-xl font-bold">之江文化中心</span>
-                  <p className="text-xs text-[#FFE15D]">企业活动服务</p>
+                  <p className="text-xs text-[#FFC107]">企业活动服务</p>
                 </div>
               </div>
-              <p className="text-white/70 text-sm leading-relaxed">
-                依托四大场馆资源，为企业提供高品质、有文化深度的活动服务
-              </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">服务内容</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">服务内容</h3>
               <ul className="space-y-2 text-white/70 text-sm">
                 <li><Link href="/services/party" className="hover:text-white transition-colors">主题党建</Link></li>
                 <li><Link href="/services/team" className="hover:text-white transition-colors">团建拓展</Link></li>
@@ -442,25 +441,15 @@ export default function CustomEventsPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">关于我们</h3>
-              <ul className="space-y-2 text-white/70 text-sm">
-                <li><Link href="/about" className="hover:text-white transition-colors">品牌故事</Link></li>
-                <li><Link href="/about" className="hover:text-white transition-colors">场馆资源</Link></li>
-                <li><Link href="/cases" className="hover:text-white transition-colors">成功案例</Link></li>
-                <li><Link href="/contact" className="hover:text-white transition-colors">联系我们</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFE15D]">联系方式</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">联系方式</h3>
               <ul className="space-y-3 text-white/70 text-sm">
                 <li className="flex items-start gap-2">
-                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
+                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
                   <span>191-0658-3798</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Calendar className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFE15D]" />
-                  <span>浙江省杭州市西湖区<br />之江文化中心研学中心</span>
+                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
+                  <span>浙江省杭州市西湖区<br />之江文化中心</span>
                 </li>
               </ul>
             </div>

@@ -85,15 +85,24 @@ export default function ContactPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-8 px-4 md:px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D2D2D]">
+      <section className="pt-24 pb-12 px-4 md:px-6 relative overflow-hidden">
+        {/* 背景图片 */}
+        <div className="absolute inset-0">
+          <img
+            src="/contact-hero.jpg"
+            alt="联系我们"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+        </div>
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">
             联系我们
           </h1>
-          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium mb-8">
+          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium">
             告诉我们您的诉求
           </p>
-          <p className="text-base md:text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium">
             我们为您定制专属活动方案
           </p>
         </div>
@@ -159,22 +168,15 @@ export default function ContactPage() {
               </div>
 
               {/* 地图 */}
-              <div className="mt-8 bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl overflow-hidden border border-[#FFE15D]/20">
-                <div className="p-4 border-b border-[#FFE15D]/20">
+              <div className="mt-8 bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                <div className="p-4 border-b border-gray-100">
                   <div className="flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-[#FFE15D]" />
+                    <MapPin className="h-5 w-5 text-[#FF9F43]" />
                     <span className="text-[#2D2D2D] font-semibold">之江文化中心位置</span>
                   </div>
                 </div>
-                <div className="aspect-video w-full">
-                  <iframe
-                    src="https://www.amap.com/iframe?mode=map&uid=2F000004053067&point=120.103518,30.201353&zoom=17&srch=1&referer=wb_sh"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    title="之江文化中心地图"
-                  ></iframe>
+                <div className="aspect-video w-full bg-gradient-to-br from-[#FFE15D]/20 to-[#FF9F43]/20 flex items-center justify-center">
+                  <p className="text-[#6B7280] text-sm">地图图片（待更新）</p>
                 </div>
               </div>
             </div>
