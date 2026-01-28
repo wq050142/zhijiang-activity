@@ -148,7 +148,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* 微信二维码 */}
-                <div className="mt-3 md:mt-4 bg-white rounded-2xl p-3 md:p-4 shadow-md border border-gray-100">
+                <div className="mt-3 md:mt-4 bg-white rounded-2xl p-3 md:p-4 border border-gray-100">
                   <p className="text-center text-xs md:text-sm text-[#6B7280] mb-2 md:mb-3">微信二维码</p>
                   <div className="aspect-square max-w-[150px] md:max-w-[200px] mx-auto bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                     <img src="/xiaoxuemei.jpg" alt="微信二维码" className="w-full h-full object-cover" />
@@ -311,19 +311,19 @@ export default function ContactPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6">
             {[
-              { step: '01', title: '需求对接', desc: '深入了解您的活动需求' },
-              { step: '02', title: '方案设计', desc: '量身定制活动方案' },
-              { step: '03', title: '确认签约', desc: '方案确认，签订合同' },
-              { step: '04', title: '执行落地', desc: '全程专业执行服务' },
-              { step: '05', title: '后续评价', desc: '活动总结，持续优化' }
+              { step: '01', title: '需求对接', desc: '深入了解需求' },
+              { step: '02', title: '方案设计', desc: '定制活动方案' },
+              { step: '03', title: '确认签约', desc: '方案确认签约' },
+              { step: '04', title: '执行落地', desc: '专业执行服务' },
+              { step: '05', title: '后续评价', desc: '活动总结优化' }
             ].map((item, index) => (
               <div key={index} className="relative">
-                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-4 md:p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">{item.step}</div>
-                  <h3 className="text-sm md:text-lg font-bold text-white mb-1 md:mb-2">{item.title}</h3>
-                  <p className="text-[10px] md:text-sm text-white/90">{item.desc}</p>
+                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl md:rounded-2xl p-2 md:p-6 text-center">
+                  <div className="text-lg md:text-3xl font-bold text-white mb-1 md:mb-4">{item.step}</div>
+                  <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2">{item.title}</h3>
+                  <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal">{item.desc}</p>
                 </div>
                 {index < 4 && (
                   <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
