@@ -4,8 +4,8 @@ import { Building2, Phone, ArrowRight, BookOpen, Award, Users, Star, MapPin, Cal
 
 export const metadata: Metadata = {
   title: '关于我们 - 之江文化中心 | 企业活动服务',
-  description: '了解之江文化中心四大场馆资源，包括浙江省图书馆、博物馆、非遗馆、文学馆，为企业活动提供独特文化空间。',
-  keywords: '之江文化中心,浙江省图书馆,浙江省博物馆,浙江省非遗馆,浙江省文学馆,杭州企业活动场地',
+  description: '了解之江文化中心四大场馆资源，包括浙江图书馆、博物馆、非遗馆、文学馆，为企业活动提供独特文化空间。',
+  keywords: '之江文化中心,浙江图书馆,浙江省博物馆,浙江省非物质文化遗产馆,浙江文学馆,杭州企业活动场地',
 };
 
 export default function AboutPage() {
@@ -109,7 +109,7 @@ export default function AboutPage() {
                   之江文化中心位于杭州市西湖区之江板块，是浙江省重点打造的文化地标项目，总建筑面积达32万平方米，是目前全国体量最大的省级现代复合文化综合体。
                 </p>
                 <p>
-                  中心采用"四馆一中心"布局，由浙江文化空间发展有限公司运营。"四馆"包括浙江省图书馆、浙江省博物馆、浙江省非物质文化遗产馆、浙江省文学馆四大省级场馆，"一中心"指之江文化中心研学中心（注：目前无公共服务中心）。
+                  中心采用"四馆一中心"布局，由浙江文化空间发展有限公司运营。"四馆"包括浙江图书馆、浙江省博物馆、浙江省非物质文化遗产馆、浙江文学馆四大省级场馆，"一中心"指之江文化中心研学中心（注：目前无公共服务中心）。
                 </p>
                 <p>
                   我们整合"四馆一中心"独特资源，为企事业单位提供高品质、有文化深度的党建、团建、培训及定制活动服务，致力于打破传统活动模式，打造"文化+"沉浸式体验，让每一次活动都成为文化之旅。
@@ -173,12 +173,12 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
-                    浙江省图书馆
+                    浙江图书馆
                   </span>
                 </div>
               </div>
               <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省图书馆（之江馆）</h3>
+                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江图书馆（之江馆）</h3>
                 <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
@@ -241,7 +241,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
-                    浙江省非遗馆
+                    浙江省非物质文化遗产馆
                   </span>
                 </div>
               </div>
@@ -275,12 +275,12 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
-                    浙江省文学馆
+                    浙江文学馆
                   </span>
                 </div>
               </div>
               <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省文学馆</h3>
+                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江文学馆</h3>
                 <div className="space-y-3 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />

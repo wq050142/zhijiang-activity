@@ -126,7 +126,7 @@ export default function Home() {
                   之江文化中心位于杭州市西湖区之江板块，是浙江省重点打造的文化地标项目，总建筑面积达32万平方米，是目前全国体量最大的省级现代复合文化综合体。
                 </p>
                 <p>
-                  中心采用"四馆一中心"布局，涵盖浙江省图书馆、浙江省博物馆、浙江省非物质文化遗产馆、浙江省文学馆四大省级文化场馆，以及之江文化中心研学中心。
+                  中心采用"四馆一中心"布局，涵盖浙江图书馆、浙江省博物馆、浙江省非物质文化遗产馆、浙江文学馆四大省级文化场馆，以及之江文化中心研学中心。
                 </p>
                 <p>
                   由浙江文化空间发展有限公司运营，我们整合"四馆一中心"独特资源，为企事业单位提供高品质、有文化深度的活动服务，让每一次活动都成为文化之旅。
@@ -151,12 +151,12 @@ export default function Home() {
 
               {/* 四馆一中心小图 - 右侧网格 */}
               <div className="lg:col-span-2 grid grid-cols-2 gap-3 relative">
-                {/* 浙江省图书馆 */}
+                {/* 浙江图书馆 */}
                 <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省图书馆.png")' }}></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-2 left-2 right-2">
-                    <span className="text-white text-xs font-bold drop-shadow-md">浙江省图书馆</span>
+                    <span className="text-white text-xs font-bold drop-shadow-md">浙江图书馆</span>
                   </div>
                 </div>
 
