@@ -198,7 +198,7 @@ export default function AboutPage() {
             {/* 浙江省博物馆 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/9] relative overflow-hidden">
-                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省博物馆.png")' }}></div>
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/文化体验资源主图.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
@@ -391,22 +391,22 @@ export default function AboutPage() {
                 {/* 6张小图 */}
                 <div className="grid grid-cols-3 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/浙江省图书馆.png" alt="文化体验" className="w-full h-full object-cover" />
+                    <img src="/文化体验资源1.png" alt="文化体验" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/浙江省非遗馆.png" alt="文化体验" className="w-full h-full object-cover" />
+                    <img src="/文化体验资源2.png" alt="文化体验" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/浙江省文学馆.png" alt="文化体验" className="w-full h-full object-cover" />
+                    <img src="/文化体验资源3.png" alt="文化体验" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/浙江省博物馆.png" alt="文化体验" className="w-full h-full object-cover" />
+                    <img src="/文化体验资源4.png" alt="文化体验" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/之江文化中心全景.png" alt="文化体验" className="w-full h-full object-cover" />
+                    <img src="/文化体验资源5.png" alt="文化体验" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/浙江省图书馆.png" alt="文化体验" className="w-full h-full object-cover" />
+                    <img src="/文化体验资源6.png" alt="文化体验" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
