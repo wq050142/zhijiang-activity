@@ -621,9 +621,9 @@ export default function Home() {
       </section>
 
       {/* 页脚 */}
-      <footer className="bg-[#333333] text-white py-12 px-6">
+      <footer className="bg-[#333333] text-white py-8 px-6 md:py-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-6 md:mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img
