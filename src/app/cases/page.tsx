@@ -313,9 +313,11 @@ export default function CasesPage() {
       {/* Hero Section */}
       <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
         {/* 背景图片 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] opacity-95">
-          <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/80 to-[#FF9F43]/80">
+            <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
+          </div>
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
           <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">

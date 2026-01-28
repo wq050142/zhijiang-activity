@@ -67,15 +67,11 @@ export default function AboutPage() {
 
       {/* Hero Section */}
       <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
-        {/* 大图横幅占位符 */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] opacity-95">
-          <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
-          <div className="absolute inset-0 flex items-center justify-center opacity-30">
-            <div className="text-center">
-              <Building2 className="h-32 md:h-48 w-32 md:w-48 text-white/40 mx-auto" />
-              <p className="text-white/40 text-sm mt-4">关于我们横幅图片</p>
-            </div>
+        {/* 背景图片 */}
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/80 to-[#FF9F43]/80">
+            <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
