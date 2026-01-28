@@ -305,57 +305,97 @@ export default function ContactPage() {
       {/* 服务流程 */}
       <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
               服务流程
             </h2>
           </div>
 
-          <div className="relative">
-            {/* 进度线 */}
-            <div className="hidden lg:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-[#FFE15D]/30 via-[#FFE15D] to-[#FF9F43]/30 z-0"></div>
-            
-            <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6 relative z-10">
-              {[
-                { step: '01', title: '需求对接', desc: '深入了解需求' },
-                { step: '02', title: '方案设计', desc: '定制活动方案' },
-                { step: '03', title: '确认签约', desc: '方案确认签约' },
-                { step: '04', title: '执行落地', desc: '专业执行服务' },
-                { step: '05', title: '后续评价', desc: '活动总结优化' }
-              ].map((item, index) => (
-                <div key={index} className="relative group">
-                  {/* 流程卡片 */}
-                  <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl md:rounded-2xl p-3 md:p-6 text-center relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
-                    {/* 装饰性圆点 */}
-                    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-white/50 rounded-full"></div>
-                    
-                    <div className="text-lg md:text-3xl font-bold text-white mb-1 md:mb-4 relative z-10">{item.step}</div>
-                    <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2 relative z-10">{item.title}</h3>
-                    <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal relative z-10">{item.desc}</p>
-                    
-                    {/* 渐变背景效果 */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  
-                  {/* 箭头 - 桌面端 */}
-                  {index < 4 && (
-                    <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
-                      <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-lg">
-                        <ArrowRight className="h-3.5 w-3.5 text-[#FF9F43]" />
-                      </div>
-                    </div>
-                  )}
-                  
-                  {/* 箭头 - 手机端（每行显示） */}
-                  {index % 2 === 0 && index < 4 && (
-                    <div className="lg:hidden absolute top-1/2 -right-2 transform -translate-y-1/2 z-10">
-                      <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center shadow-md">
-                        <ArrowRight className="h-2.5 w-2.5 text-[#FF9F43]" />
-                      </div>
-                    </div>
-                  )}
+          <div className="space-y-6 md:space-y-8">
+            {/* 第一行：01、02、03 */}
+            <div className="grid grid-cols-3 gap-3 md:gap-6">
+              <div className="relative group">
+                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl md:rounded-2xl p-3 md:p-6 text-center relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-white/50 rounded-full"></div>
+                  <div className="text-lg md:text-3xl font-bold text-white mb-1 md:mb-4 relative z-10">01</div>
+                  <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2 relative z-10">需求对接</h3>
+                  <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal relative z-10">深入了解需求</p>
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-              ))}
+                {/* 右箭头 */}
+                <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-lg">
+                    <ArrowRight className="h-3.5 w-3.5 text-[#FF9F43]" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group">
+                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl md:rounded-2xl p-3 md:p-6 text-center relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-white/50 rounded-full"></div>
+                  <div className="text-lg md:text-3xl font-bold text-white mb-1 md:mb-4 relative z-10">02</div>
+                  <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2 relative z-10">方案设计</h3>
+                  <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal relative z-10">定制活动方案</p>
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                {/* 右箭头 */}
+                <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-lg">
+                    <ArrowRight className="h-3.5 w-3.5 text-[#FF9F43]" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group">
+                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl md:rounded-2xl p-3 md:p-6 text-center relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-white/50 rounded-full"></div>
+                  <div className="text-lg md:text-3xl font-bold text-white mb-1 md:mb-4 relative z-10">03</div>
+                  <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2 relative z-10">确认签约</h3>
+                  <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal relative z-10">方案确认签约</p>
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                {/* 下箭头 */}
+                <div className="hidden md:block absolute -bottom-3 left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-lg">
+                    <ArrowRight className="h-3.5 w-3.5 text-[#FF9F43] rotate-90" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 第二行：04、05（居中） */}
+            <div className="flex justify-center gap-3 md:gap-6 max-w-lg mx-auto">
+              <div className="relative group flex-1">
+                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl md:rounded-2xl p-3 md:p-6 text-center relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-white/50 rounded-full"></div>
+                  <div className="text-lg md:text-3xl font-bold text-white mb-1 md:mb-4 relative z-10">04</div>
+                  <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2 relative z-10">执行落地</h3>
+                  <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal relative z-10">专业执行服务</p>
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                {/* 右箭头 */}
+                <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-lg">
+                    <ArrowRight className="h-3.5 w-3.5 text-[#FF9F43]" />
+                  </div>
+                </div>
+                {/* 手机端右箭头 */}
+                <div className="md:hidden absolute top-1/2 -right-2 transform -translate-y-1/2 z-10">
+                  <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <ArrowRight className="h-2.5 w-2.5 text-[#FF9F43]" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative group flex-1">
+                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl md:rounded-2xl p-3 md:p-6 text-center relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-white/50 rounded-full"></div>
+                  <div className="text-lg md:text-3xl font-bold text-white mb-1 md:mb-4 relative z-10">05</div>
+                  <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2 relative z-10">后续评价</h3>
+                  <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal relative z-10">活动总结优化</p>
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
