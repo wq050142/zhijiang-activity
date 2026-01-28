@@ -68,7 +68,7 @@ export default function CasesPage() {
     {
       id: 6,
       client: 'AITO问界汽车',
-      title: '车主专属非遗体验',
+      title: '车主活动',
       category: 'VIP客户活动',
       year: '2024',
       gradient: 'from-[#34D399] to-[#10B981]',
