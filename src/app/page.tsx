@@ -532,18 +532,9 @@ export default function Home() {
                   依托博物馆馆藏资源，打造沉浸式"小小考古学家"体验，通过模拟探方挖掘与文物修复，让亲子家庭在动手实践中触碰历史。
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>镇馆之宝</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>考古体验</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>文物修复</span>
-                  </div>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">镇馆之宝</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">考古体验</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">文物修复</span>
                 </div>
               </div>
             </div>
@@ -569,18 +560,9 @@ export default function Home() {
                   将自然生态科普与前沿VR技术完美融合，为亲子家庭打造"赛博自然"探索之旅，以科技手段解锁自然奥秘。
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>自然科普</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>VR技术</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>科技融合</span>
-                  </div>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">自然科普</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">VR技术</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">科技融合</span>
                 </div>
               </div>
             </div>
@@ -606,18 +588,9 @@ export default function Home() {
                   专为女性职工定制的"美学疗愈"专场，将传统非遗技艺与现代数字艺术展陈相结合，展现新时代女性风采。
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>非遗技艺</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>数字艺术</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>美学疗愈</span>
-                  </div>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">非遗技艺</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">数字艺术</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">美学疗愈</span>
                 </div>
               </div>
             </div>
@@ -643,18 +616,9 @@ export default function Home() {
                   针对高端车主群体打造的专属非遗体验，将品牌理念与传统工艺深度结合，强化车主对品牌的文化认同感。
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>非遗定制</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>品牌理念</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>尊享服务</span>
-                  </div>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">非遗定制</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">品牌理念</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">尊享服务</span>
                 </div>
               </div>
             </div>
@@ -680,18 +644,9 @@ export default function Home() {
                   针对互联网及科技行业高压人群，定制"身心除锈"的疗愈专场，融合音疗放松与非遗慢生活体验。
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>养生疗愈</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>音疗放松</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
-                    <span>非遗体验</span>
-                  </div>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">养生疗愈</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">音疗放松</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">非遗体验</span>
                 </div>
               </div>
             </div>
