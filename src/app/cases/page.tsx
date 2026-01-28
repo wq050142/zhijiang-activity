@@ -452,10 +452,50 @@ export default function CasesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {['浙江省教育厅', '海康威视', '厦门航空', '绿城地产', '浙商证券', '蒙牛', '建发', '西湖大学'].map((client, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                <span className="text-white text-sm md:text-base font-medium">{client}</span>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+            {[
+              '中共浙江省委党校',
+              '浙江省教育厅',
+              '浙江省财政厅',
+              '浙江省直属机关工会',
+              '浙江广播电视集团',
+              '浙江省大数据发展管理局',
+              '浙江省档案馆',
+              '杭州市城管局',
+              '杭州市上城区法院',
+              '杭州市西湖区总工会',
+              '杭州市萧山区团委',
+              '德清县关工委',
+              '浙江大学',
+              '西湖大学',
+              '浙江工业大学',
+              '光明日报',
+              '浙教集团',
+              '浙江数智交院',
+              '厦门航空',
+              '海康威视',
+              '博世电动',
+              '华为问界',
+              '北京奔驰',
+              '华润置地',
+              '银泰集团',
+              '绿城物业',
+              '宝龙集团',
+              '富春山居集团',
+              '建发集团',
+              '中国移动',
+              '传播大脑',
+              '上海市政院',
+              '交通银行',
+              '上海银行',
+              '农商银行',
+              '杭州联合银行',
+              '工商银行',
+              '中宏保险',
+              '南银法巴消费金融'
+            ].map((client, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center hover:bg-white/15 transition-colors">
+                <span className="text-white text-xs md:text-sm font-medium leading-relaxed">{client}</span>
               </div>
             ))}
           </div>
