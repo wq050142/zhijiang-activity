@@ -175,7 +175,7 @@ export default function CasesPage() {
       title: '余村两山理论红色行',
       category: '党建活动',
       mainImage: '/余村.png',
-      subImages: ['/红色剧本杀2.jpg', '/红色剧本杀3.jpg', '/红色剧本杀4.jpg'],
+      subImages: [],
       description: '组织高知群体深入"两山理论"发源地余村，开展实地调研与研学。将生态文明思想与现场教学紧密结合，在绿水青山间深刻领悟可持续发展的真谛。',
       highlights: ['两山理论', '实地调研', '生态文明', '可持续发展']
     },
