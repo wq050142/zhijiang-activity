@@ -115,9 +115,18 @@ export default function Home() {
                 <Building2 className="h-6 w-6 text-[#FFC107]" />
                 <span className="text-[#FF9F43] font-semibold">关于我们</span>
               </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#333333]">
-                之江文化中心
-              </h2>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+                <h2 className="text-2xl md:text-4xl font-bold text-[#333333]">
+                  之江文化中心
+                </h2>
+                <Link
+                  href="/about"
+                  className="inline-flex items-center justify-center gap-2 bg-[#FFC107] hover:bg-[#FFD54F] text-white px-6 py-2.5 rounded-full text-sm md:text-base font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                >
+                  了解更多
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
               <p className="text-sm md:text-lg text-[#666666] mb-6 font-semibold">
                 全国最大的省级文化综合体
               </p>
