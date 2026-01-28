@@ -73,11 +73,6 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/10 via-transparent to-[#FFC107]/10"></div>
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
-          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">
-            <Sparkles className="h-4 w-4 text-[#FFE15D]" />
-            全国最大的省级文化综合体
-          </div>
-
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
             文化赋能 · 企业活动
             <br />
@@ -87,25 +82,25 @@ export default function Home() {
           </h1>
 
           <p className="text-base md:text-xl lg:text-2xl text-white/90 mb-4 max-w-3xl mx-auto leading-relaxed font-medium">
-            依托浙江省之江文化中心四大场馆资源
+            依托之江文化中心，全国最大的省级文化综合体
           </p>
           <p className="text-base md:text-lg lg:text-xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
             打造独具文化深度的党建、团建、商务活动新范式
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:shadow-xl text-[#FFC107] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:scale-105 border-2 border-[#FFC107]"
-            >
-              立即获取策划方案
-              <ArrowRight className="h-5 w-5" />
-            </Link>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <Link
               href="/services/party"
-              className="inline-flex items-center justify-center gap-2 bg-[#FFC107]/90 backdrop-blur hover:bg-[#FFC107] text-white px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all"
+              className="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur hover:bg-white/30 text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full text-sm md:text-base font-medium transition-all border border-white/30"
             >
               查看服务详情
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-[#FFC107] hover:bg-[#FFB300] text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-3 rounded-full text-sm md:text-base font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            >
+              咨询联系
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -148,40 +143,43 @@ export default function Home() {
               </div>
 
               {/* 五小图展示 - 四馆一中心 */}
-              <div className="grid grid-cols-5 gap-2 md:gap-3">
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+                {/* 第一行 - 桌面端3个，移动端3个 */}
+                <div className="aspect-video md:aspect-video rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省图书馆.png")' }}></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-2 left-0 right-0 text-center">
-                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">图书馆</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-0 right-0 text-center">
+                    <span className="text-white text-xs md:text-sm font-bold drop-shadow-md">浙江省图书馆</span>
                   </div>
                 </div>
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
+                <div className="aspect-video md:aspect-video rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省博物馆.png")' }}></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-2 left-0 right-0 text-center">
-                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">博物馆</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-0 right-0 text-center">
+                    <span className="text-white text-xs md:text-sm font-bold drop-shadow-md">浙江省博物馆</span>
                   </div>
                 </div>
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
+                <div className="aspect-video md:aspect-video rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省非遗馆.png")' }}></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-2 left-0 right-0 text-center">
-                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">非遗馆</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-0 right-0 text-center">
+                    <span className="text-white text-xs md:text-sm font-bold drop-shadow-md">浙江省非遗馆</span>
                   </div>
                 </div>
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
+
+                {/* 第二行 - 桌面端2个居中，移动端3个 */}
+                <div className="col-start-2 aspect-video md:aspect-video rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省文学馆.png")' }}></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-2 left-0 right-0 text-center">
-                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">文学馆</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-0 right-0 text-center">
+                    <span className="text-white text-xs md:text-sm font-bold drop-shadow-md">浙江省文学馆</span>
                   </div>
                 </div>
-                <div className="aspect-square rounded-xl overflow-hidden shadow-lg relative group">
+                <div className="col-start-3 aspect-video md:aspect-video rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-2 left-0 right-0 text-center">
-                    <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md">研学中心</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-0 right-0 text-center">
+                    <span className="text-white text-xs md:text-sm font-bold drop-shadow-md">公共服务中心</span>
                   </div>
                 </div>
               </div>
