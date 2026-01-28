@@ -520,7 +520,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
               {/* 主图 */}
               <div className="aspect-[16/9] relative overflow-hidden">
-                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/综合服务资源主图.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3 className="text-xl md:text-2xl font-bold text-white">综合服务资源</h3>
@@ -547,22 +547,22 @@ export default function AboutPage() {
                 {/* 6张小图 */}
                 <div className="grid grid-cols-3 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/浙江省图书馆.png" alt="综合服务" className="w-full h-full object-cover" />
+                    <img src="/综合服务资源1.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/浙江省博物馆.png" alt="综合服务" className="w-full h-full object-cover" />
+                    <img src="/综合服务资源2.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/浙江省非遗馆.png" alt="综合服务" className="w-full h-full object-cover" />
+                    <img src="/综合服务资源5.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/浙江省文学馆.png" alt="综合服务" className="w-full h-full object-cover" />
+                    <img src="/综合服务资源6.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/之江文化中心全景.png" alt="综合服务" className="w-full h-full object-cover" />
+                    <img src="/综合服务资源1.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/研学中心.png" alt="综合服务" className="w-full h-full object-cover" />
+                    <img src="/综合服务资源2.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
