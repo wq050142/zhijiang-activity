@@ -144,8 +144,8 @@ export default function CasesPage() {
       client: '浙大继教院乡村工匠班',
       title: '传统非遗工艺的活化与创新',
       category: '学习培训',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/乡村工匠班1.jpg',
+      subImages: ['/乡村工匠班2.jpg', '/乡村工匠班3.jpg', '/乡村工匠班4.jpg'],
       description: '聚焦乡村振兴人才培养，探讨传统技艺的现代转化路径。通过案例教学激发工匠精神与创新思维，赋能传统手工艺人，助力非遗技艺"活"在当下。',
       highlights: ['非遗创新', '乡村振兴', '工匠精神', '现代转化']
     },
@@ -154,8 +154,8 @@ export default function CasesPage() {
       client: '浙商证券',
       title: '青年读书会',
       category: '学习培训',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/读书会1.jpg',
+      subImages: ['/读书会2.jpg', '/读书会3.jpg', '/读书会4.jpg'],
       description: '为企业青年员工搭建的深度思想交流平台，不仅是知识的输入，更是观点的碰撞。通过结构化的阅读分享，促进员工认知升级与学习型组织的建设。',
       highlights: ['读书会', '思想交流', '认知升级', '学习组织']
     },
