@@ -380,18 +380,16 @@ export default function Home() {
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
+                    { name: '中共浙江省委党校', icon: '🏛️' },
                     { name: '浙江省教育厅', icon: '🏛️' },
-                    { name: '海康威视', icon: '📷' },
-                    { name: '厦门航空', icon: '✈️' },
-                    { name: '中国移动', icon: '📱' },
-                    { name: '中国建设银行', icon: '🏦' },
-                    { name: '阿里巴巴', icon: '🛒' },
-                    { name: '浙江大学', icon: '🎓' },
-                    { name: '浙江省交通投资集团', icon: '🚗' },
-                    { name: '吉利控股集团', icon: '🚙' },
-                    { name: '网易', icon: '🎮' },
-                    { name: '华为', icon: '💻' },
-                    { name: '腾讯', icon: '💬' }
+                    { name: '浙江省财政厅', icon: '🏛️' },
+                    { name: '浙江省直属机关工会', icon: '🏛️' },
+                    { name: '浙江广播电视集团', icon: '📰' },
+                    { name: '浙江省大数据发展管理局', icon: '💻' },
+                    { name: '浙江省档案馆', icon: '🏛️' },
+                    { name: '杭州市城管局', icon: '🏛️' },
+                    { name: '杭州市上城区法院', icon: '⚖️' },
+                    { name: '杭州市西湖区总工会', icon: '🏛️' }
                   ].map((partner, j) => (
                     <div
                       key={`${i}-${j}`}
@@ -408,18 +406,16 @@ export default function Home() {
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
-                    { name: '浙江省教育厅', icon: '🏛️' },
-                    { name: '海康威视', icon: '📷' },
-                    { name: '厦门航空', icon: '✈️' },
-                    { name: '中国移动', icon: '📱' },
-                    { name: '中国建设银行', icon: '🏦' },
-                    { name: '阿里巴巴', icon: '🛒' },
+                    { name: '杭州市萧山区团委', icon: '🏛️' },
+                    { name: '德清县关工委', icon: '🏛️' },
                     { name: '浙江大学', icon: '🎓' },
-                    { name: '浙江省交通投资集团', icon: '🚗' },
-                    { name: '吉利控股集团', icon: '🚙' },
-                    { name: '网易', icon: '🎮' },
-                    { name: '华为', icon: '💻' },
-                    { name: '腾讯', icon: '💬' }
+                    { name: '西湖大学', icon: '🎓' },
+                    { name: '浙江工业大学', icon: '🎓' },
+                    { name: '光明日报', icon: '📰' },
+                    { name: '浙教集团', icon: '🎓' },
+                    { name: '浙江数智交院', icon: '💻' },
+                    { name: '厦门航空', icon: '✈️' },
+                    { name: '海康威视', icon: '📷' }
                   ].map((partner, j) => (
                     <div
                       key={`reverse-${i}-${j}`}
@@ -436,18 +432,16 @@ export default function Home() {
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
-                    { name: '浙江省教育厅', icon: '🏛️' },
-                    { name: '海康威视', icon: '📷' },
-                    { name: '厦门航空', icon: '✈️' },
-                    { name: '中国移动', icon: '📱' },
-                    { name: '中国建设银行', icon: '🏦' },
-                    { name: '阿里巴巴', icon: '🛒' },
-                    { name: '浙江大学', icon: '🎓' },
-                    { name: '浙江省交通投资集团', icon: '🚗' },
-                    { name: '吉利控股集团', icon: '🚙' },
-                    { name: '网易', icon: '🎮' },
-                    { name: '华为', icon: '💻' },
-                    { name: '腾讯', icon: '💬' }
+                    { name: '博世电动', icon: '⚡' },
+                    { name: '华为问界', icon: '🚗' },
+                    { name: '北京奔驰', icon: '🚗' },
+                    { name: '华润置地', icon: '🏢' },
+                    { name: '银泰集团', icon: '🏢' },
+                    { name: '绿城物业', icon: '🏢' },
+                    { name: '宝龙集团', icon: '🏢' },
+                    { name: '富春山居集团', icon: '🏢' },
+                    { name: '建发集团', icon: '🏢' },
+                    { name: '中国移动', icon: '📱' }
                   ].map((partner, j) => (
                     <div
                       key={`third-${i}-${j}`}
@@ -464,18 +458,16 @@ export default function Home() {
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
-                    { name: '浙江省教育厅', icon: '🏛️' },
-                    { name: '海康威视', icon: '📷' },
-                    { name: '厦门航空', icon: '✈️' },
-                    { name: '中国移动', icon: '📱' },
-                    { name: '中国建设银行', icon: '🏦' },
-                    { name: '阿里巴巴', icon: '🛒' },
-                    { name: '浙江大学', icon: '🎓' },
-                    { name: '浙江省交通投资集团', icon: '🚗' },
-                    { name: '吉利控股集团', icon: '🚙' },
-                    { name: '网易', icon: '🎮' },
-                    { name: '华为', icon: '💻' },
-                    { name: '腾讯', icon: '💬' }
+                    { name: '传播大脑', icon: '💻' },
+                    { name: '上海市政院', icon: '🏗️' },
+                    { name: '交通银行', icon: '🏦' },
+                    { name: '上海银行', icon: '🏦' },
+                    { name: '农商银行', icon: '🏦' },
+                    { name: '杭州联合银行', icon: '🏦' },
+                    { name: '工商银行', icon: '🏦' },
+                    { name: '中宏保险', icon: '🛡️' },
+                    { name: '南银法巴消费金融', icon: '🏦' },
+                    { name: '更多合作伙伴', icon: '➕' }
                   ].map((partner, j) => (
                     <div
                       key={`fourth-${i}-${j}`}
