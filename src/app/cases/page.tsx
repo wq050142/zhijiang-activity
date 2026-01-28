@@ -14,8 +14,8 @@ export default function CasesPage() {
       client: '上海银行',
       title: '童趣无限·考古总动员',
       category: '儿童节活动',
-      mainImage: '/上海银行考古.png',
-      subImages: ['/浙江省博物馆.png', '/浙江省非遗馆.png', '/浙江省文学馆.png'],
+      mainImage: '/上海银行考古总动员1.jpg',
+      subImages: ['/上海银行考古总动员2.png', '/上海银行考古总动员3.jpg', '/上海银行考古总动员4.jpg'],
       description: '依托博物馆馆藏资源，打造沉浸式"小小考古学家"体验。通过模拟探方挖掘与文物修复，让亲子家庭在动手实践中触碰历史，极大提升了客户粘性。',
       highlights: ['镇馆之宝', '考古体验', '探方挖掘', '文物修复']
     },
