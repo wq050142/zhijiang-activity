@@ -151,7 +151,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/之江文化中心全景.png")' }}></div>
                   <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/10 via-transparent to-[#FF9F43]/10"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-[#FFC107] text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg">
+                    <span className="text-white text-sm font-bold drop-shadow-md">
                       之江文化中心
                     </span>
                   </div>
@@ -590,7 +590,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/cases"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-5 py-3 md:px-8 md:py-3.5 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
               查看更多案例
               <ArrowRight className="h-5 w-5" />
@@ -632,7 +632,7 @@ export default function Home() {
       {/* 页脚 */}
       <footer className="bg-[#333333] text-white py-8 px-6 md:py-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8 mb-6 md:mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6 mb-6 md:mb-8">
             <div className="col-span-2 md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <img
