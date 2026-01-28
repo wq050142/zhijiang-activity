@@ -104,8 +104,8 @@ export default function CasesPage() {
       client: '绿城地产',
       title: 'MBTI青年交友活动',
       category: '浪漫之约',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/MBTI青年交友1.jpg',
+      subImages: ['/MBTI青年交友2.jpg', '/MBTI青年交友3.jpg', '/MBTI青年交友4.jpg'],
       description: '紧扣年轻人社交潮流，引入MBTI性格测试与即兴喜剧元素。打造轻松、幽默、高效的"快乐社交"场域，精准击中Z世代青年的社交痛点。',
       highlights: ['MBTI测试', '即兴喜剧', '快乐社交', 'Z世代']
     },
@@ -114,8 +114,8 @@ export default function CasesPage() {
       client: '海康威视',
       title: '脆皮打工人养生局',
       category: '养生团建',
-      mainImage: '/海康威视脆皮打工人养生局.png',
-      subImages: ['/浙江省博物馆.png', '/浙江省非遗馆.png', '/浙江省文学馆.png'],
+      mainImage: '/脆皮打工人养生局1.jpg',
+      subImages: ['/脆皮打工人养生局2.jpg', '/脆皮打工人养生局3.jpg', '/脆皮打工人养生局4.jpg'],
       description: '针对互联网及科技行业高压人群，定制"身心除锈"的疗愈专场。融合音疗放松与非遗慢生活体验，帮助员工释放职场压力，实现身心的深度充电。',
       highlights: ['养生疗愈', '音疗放松', '非遗体验', '释放压力']
     },
