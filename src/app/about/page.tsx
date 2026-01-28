@@ -553,16 +553,16 @@ export default function AboutPage() {
                     <img src="/综合服务资源2.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/综合服务资源3.jpg" alt="综合服务" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/综合服务资源4.jpg" alt="综合服务" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/综合服务资源5.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/综合服务资源6.png" alt="综合服务" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/综合服务资源1.png" alt="综合服务" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/综合服务资源2.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
