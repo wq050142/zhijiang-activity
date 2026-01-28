@@ -223,7 +223,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
             {/* 服务 1 */}
             <Link href="/services/party" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
@@ -233,16 +233,25 @@ export default function Home() {
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">主题党建</h3>
                   </div>
                 </div>
-                <div className="p-3 md:p-4">
-                  <p className="text-[#666666] mb-2 leading-relaxed text-xs">
+                <div className="p-4 md:p-5">
+                  <p className="text-[#666666] mb-3 leading-relaxed text-sm font-medium">
                     沉浸式党建体验 · 红色文化浸润
                   </p>
-                  <div className="space-y-1 text-[10px] text-[#666666]">
-                    <p>✓ 沉浸式党课</p>
-                    <p>✓ 红色文化体验</p>
-                    <p>✓ 党建主题研学</p>
+                  <div className="space-y-2 text-xs text-[#666666]">
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      沉浸式党课
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      红色文化体验
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      党建主题研学
+                    </p>
                   </div>
-                  <div className="mt-3 md:mt-4 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] font-bold flex items-center justify-center gap-2 py-2 rounded-xl transition-all hover:shadow-lg text-xs md:text-sm">
+                  <div className="mt-4 bg-white border-2 border-[#FFC107] text-[#FFC107] font-bold flex items-center justify-center gap-2 px-4 py-3 rounded-full transition-all hover:bg-[#FFC107] hover:text-white text-sm md:text-base">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -259,16 +268,25 @@ export default function Home() {
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">团建拓展</h3>
                   </div>
                 </div>
-                <div className="p-3 md:p-4">
-                  <p className="text-[#666666] mb-2 leading-relaxed text-xs">
+                <div className="p-4 md:p-5">
+                  <p className="text-[#666666] mb-3 leading-relaxed text-sm font-medium">
                     文化沉浸团建 · 非遗手作体验
                   </p>
-                  <div className="space-y-1 text-[10px] text-[#666666]">
-                    <p>✓ 文化沉浸体验</p>
-                    <p>✓ 非遗手作体验</p>
-                    <p>✓ 人文团队共创</p>
+                  <div className="space-y-2 text-xs text-[#666666]">
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      文化沉浸体验
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      非遗手作体验
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      人文团队共创
+                    </p>
                   </div>
-                  <div className="mt-3 md:mt-4 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] font-bold flex items-center justify-center gap-2 py-2 rounded-xl transition-all hover:shadow-lg text-xs md:text-sm">
+                  <div className="mt-4 bg-white border-2 border-[#FFC107] text-[#FFC107] font-bold flex items-center justify-center gap-2 px-4 py-3 rounded-full transition-all hover:bg-[#FFC107] hover:text-white text-sm md:text-base">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -285,16 +303,25 @@ export default function Home() {
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">访学培训</h3>
                   </div>
                 </div>
-                <div className="p-3 md:p-4">
-                  <p className="text-[#666666] mb-2 leading-relaxed text-xs">
+                <div className="p-4 md:p-5">
+                  <p className="text-[#666666] mb-3 leading-relaxed text-sm font-medium">
                     名家讲座引领 · 专业课程赋能
                   </p>
-                  <div className="space-y-1 text-[10px] text-[#666666]">
-                    <p>✓ 名家讲座</p>
-                    <p>✓ 专业培训</p>
-                    <p>✓ 行业交流</p>
+                  <div className="space-y-2 text-xs text-[#666666]">
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      名家讲座
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      专业培训
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      行业交流
+                    </p>
                   </div>
-                  <div className="mt-3 md:mt-4 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] font-bold flex items-center justify-center gap-2 py-2 rounded-xl transition-all hover:shadow-lg text-xs md:text-sm">
+                  <div className="mt-4 bg-white border-2 border-[#FFC107] text-[#FFC107] font-bold flex items-center justify-center gap-2 px-4 py-3 rounded-full transition-all hover:bg-[#FFC107] hover:text-white text-sm md:text-base">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -311,16 +338,25 @@ export default function Home() {
                     <h3 className="text-xl md:text-3xl font-bold text-white mb-2">定制活动</h3>
                   </div>
                 </div>
-                <div className="p-3 md:p-4">
-                  <p className="text-[#666666] mb-2 leading-relaxed text-xs">
+                <div className="p-4 md:p-5">
+                  <p className="text-[#666666] mb-3 leading-relaxed text-sm font-medium">
                     高端商务定制 · 尊享文化礼遇
                   </p>
-                  <div className="space-y-1 text-[10px] text-[#666666]">
-                    <p>✓ 高端商务活动</p>
-                    <p>✓ 品牌发布会</p>
-                    <p>✓ VIP客户答谢</p>
+                  <div className="space-y-2 text-xs text-[#666666]">
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      高端商务活动
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      品牌发布会
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#FFC107] flex-shrink-0" />
+                      VIP客户答谢
+                    </p>
                   </div>
-                  <div className="mt-3 md:mt-4 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] font-bold flex items-center justify-center gap-2 py-2 rounded-xl transition-all hover:shadow-lg text-xs md:text-sm">
+                  <div className="mt-4 bg-white border-2 border-[#FFC107] text-[#FFC107] font-bold flex items-center justify-center gap-2 px-4 py-3 rounded-full transition-all hover:bg-[#FFC107] hover:text-white text-sm md:text-base">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
