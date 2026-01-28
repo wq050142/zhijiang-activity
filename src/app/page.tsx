@@ -164,38 +164,38 @@ export default function Home() {
                 <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省博物馆.png")' }}></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-2 left-2 right-2">
+                  <div className="absolute bottom-2 left-auto right-2 text-right">
                     <span className="text-white text-xs font-bold drop-shadow-md">浙江省博物馆</span>
                   </div>
                 </div>
 
-                {/* 浙江省非遗馆 */}
+                {/* 浙江省非物质文化遗产馆 */}
                 <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省非遗馆.png")' }}></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-2 left-2 right-2">
-                    <span className="text-white text-xs font-bold drop-shadow-md">浙江省非遗馆</span>
+                    <span className="text-white text-xs font-bold drop-shadow-md">浙江省非物质文化遗产馆</span>
                   </div>
                 </div>
 
-                {/* 浙江省文学馆 */}
+                {/* 浙江文学馆 */}
                 <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省文学馆.png")' }}></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-2 left-2 right-2">
-                    <span className="text-white text-xs font-bold drop-shadow-md">浙江省文学馆</span>
+                  <div className="absolute bottom-2 left-auto right-2 text-right">
+                    <span className="text-white text-xs font-bold drop-shadow-md">浙江文学馆</span>
                   </div>
                 </div>
 
                 {/* 公共服务中心 - 圆形居中覆盖 */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                  <div className="relative w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32">
+                  <div className="relative w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48">
                     <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl border-4 border-white/90">
                       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-full"></div>
                     </div>
-                    <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
-                      <span className="text-white text-[10px] md:text-xs font-bold drop-shadow-md bg-black/50 px-2 py-1 rounded-full">
+                    <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+                      <span className="text-white text-xs md:text-sm font-bold drop-shadow-md bg-black/50 px-3 py-1.5 rounded-full">
                         公共服务中心
                       </span>
                     </div>
@@ -228,22 +228,24 @@ export default function Home() {
             <Link href="/services/party" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                 <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-40">
                     <Star className="h-20 w-20 text-white" />
                   </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-xl md:text-3xl font-bold text-white mb-2">主题党建</h3>
+                  </div>
                 </div>
-                <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#333333]">主题党建</h3>
-                  <p className="text-[#666666] mb-3 leading-relaxed text-sm">
+                <div className="p-3 md:p-4">
+                  <p className="text-[#666666] mb-2 leading-relaxed text-xs">
                     沉浸式党建体验 · 红色文化浸润
                   </p>
-                  <div className="space-y-2 text-xs text-[#666666]">
+                  <div className="space-y-1 text-[10px] text-[#666666]">
                     <p>✓ 沉浸式党课</p>
                     <p>✓ 红色文化体验</p>
                     <p>✓ 党建主题研学</p>
                   </div>
-                  <div className="mt-6 text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                  <div className="mt-3 md:mt-4 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] font-bold flex items-center justify-center gap-2 py-2 rounded-xl transition-all hover:shadow-lg text-xs md:text-sm">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -255,22 +257,24 @@ export default function Home() {
             <Link href="/services/team" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                 <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-40">
                     <Users className="h-20 w-20 text-white" />
                   </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-xl md:text-3xl font-bold text-white mb-2">团建拓展</h3>
+                  </div>
                 </div>
-                <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#333333]">团建拓展</h3>
-                  <p className="text-[#666666] mb-3 leading-relaxed text-sm">
+                <div className="p-3 md:p-4">
+                  <p className="text-[#666666] mb-2 leading-relaxed text-xs">
                     文化沉浸团建 · 非遗手作体验
                   </p>
-                  <div className="space-y-2 text-xs text-[#666666]">
+                  <div className="space-y-1 text-[10px] text-[#666666]">
                     <p>✓ 文化沉浸体验</p>
                     <p>✓ 非遗手作体验</p>
                     <p>✓ 人文团队共创</p>
                   </div>
-                  <div className="mt-6 text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                  <div className="mt-3 md:mt-4 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] font-bold flex items-center justify-center gap-2 py-2 rounded-xl transition-all hover:shadow-lg text-xs md:text-sm">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -282,22 +286,24 @@ export default function Home() {
             <Link href="/services/training" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                 <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-40">
                     <BookOpen className="h-20 w-20 text-white" />
                   </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-xl md:text-3xl font-bold text-white mb-2">访学培训</h3>
+                  </div>
                 </div>
-                <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#333333]">访学培训</h3>
-                  <p className="text-[#666666] mb-3 leading-relaxed text-sm">
+                <div className="p-3 md:p-4">
+                  <p className="text-[#666666] mb-2 leading-relaxed text-xs">
                     名家讲座引领 · 专业课程赋能
                   </p>
-                  <div className="space-y-2 text-xs text-[#666666]">
+                  <div className="space-y-1 text-[10px] text-[#666666]">
                     <p>✓ 名家讲座</p>
                     <p>✓ 专业培训</p>
                     <p>✓ 行业交流</p>
                   </div>
-                  <div className="mt-6 text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                  <div className="mt-3 md:mt-4 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] font-bold flex items-center justify-center gap-2 py-2 rounded-xl transition-all hover:shadow-lg text-xs md:text-sm">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -309,22 +315,24 @@ export default function Home() {
             <Link href="/services/custom" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
                 <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-40">
                     <Calendar className="h-20 w-20 text-white" />
                   </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-xl md:text-3xl font-bold text-white mb-2">定制活动</h3>
+                  </div>
                 </div>
-                <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-2xl font-bold mb-4 text-[#333333]">定制活动</h3>
-                  <p className="text-[#666666] mb-3 leading-relaxed text-sm">
+                <div className="p-3 md:p-4">
+                  <p className="text-[#666666] mb-2 leading-relaxed text-xs">
                     高端商务定制 · 尊享文化礼遇
                   </p>
-                  <div className="space-y-2 text-xs text-[#666666]">
+                  <div className="space-y-1 text-[10px] text-[#666666]">
                     <p>✓ 高端商务活动</p>
                     <p>✓ 品牌发布会</p>
                     <p>✓ VIP客户答谢</p>
                   </div>
-                  <div className="mt-6 text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                  <div className="mt-3 md:mt-4 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] font-bold flex items-center justify-center gap-2 py-2 rounded-xl transition-all hover:shadow-lg text-xs md:text-sm">
                     了解更多
                     <ArrowRight className="h-4 w-4" />
                   </div>
@@ -344,25 +352,29 @@ export default function Home() {
           </div>
 
           <div className="overflow-hidden">
-            <div className="flex items-center gap-8 animate-marquee whitespace-nowrap">
-              {[...Array(4)].map((_, i) => (
-                <div key={i} className="flex items-center gap-8">
+            <div className="flex items-center gap-4 md:gap-6 lg:gap-8 animate-marquee whitespace-nowrap">
+              {[...Array(6)].map((_, i) => (
+                <div key={i} className="flex items-center gap-4 md:gap-6 lg:gap-8">
                   {[
-                    '浙江省教育厅',
-                    '海康威视',
-                    '厦门航空',
-                    '中国移动',
-                    '中国建设银行',
-                    '阿里巴巴',
-                    '浙江大学',
-                    '浙江省交通投资集团'
+                    { name: '浙江省教育厅', icon: '🏛️' },
+                    { name: '海康威视', icon: '📷' },
+                    { name: '厦门航空', icon: '✈️' },
+                    { name: '中国移动', icon: '📱' },
+                    { name: '中国建设银行', icon: '🏦' },
+                    { name: '阿里巴巴', icon: '🛒' },
+                    { name: '浙江大学', icon: '🎓' },
+                    { name: '浙江省交通投资集团', icon: '🚗' },
+                    { name: '吉利控股集团', icon: '🚙' },
+                    { name: '网易', icon: '🎮' },
+                    { name: '华为', icon: '💻' },
+                    { name: '腾讯', icon: '💬' }
                   ].map((partner, j) => (
                     <div
                       key={j}
-                      className="flex items-center gap-3 px-6 py-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all"
+                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-3 md:py-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
                     >
-                      <Building2 className="h-5 w-5 text-[#2D2D2D]" />
-                      <span className="text-[#2D2D2D] font-medium whitespace-nowrap">{partner}</span>
+                      <span className="text-2xl md:text-3xl">{partner.icon}</span>
+                      <span className="text-[#2D2D2D] font-medium text-sm md:text-base whitespace-nowrap">{partner.name}</span>
                     </div>
                   ))}
                 </div>
@@ -388,81 +400,78 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
             {/* 案例 1 */}
-            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="aspect-[16/9] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+            <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50">
-                  <BookOpen className="h-24 w-24 text-white" />
+                  <BookOpen className="h-16 w-16 md:h-20 md:w-20 text-white" />
                 </div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-xs font-bold rounded-full">
+                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 right-2 md:right-4">
+                  <span className="px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full">
                     VIP活动
                   </span>
                 </div>
               </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#333333]">上海银行考古活动</h3>
-                <p className="text-[#666666] mb-4 text-xs md:text-sm leading-relaxed">
-                  探索千年文明 · 传承文化力量。组织VIP客户参与考古研学活动，
-                  通过文物修复体验、考古现场参观等形式，打造高端客户深度文化体验。
+              <div className="p-3 md:p-4">
+                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2 text-[#333333]">上海银行考古活动</h3>
+                <p className="text-[#666666] mb-2 md:mb-3 text-[10px] md:text-xs leading-relaxed line-clamp-2">
+                  探索千年文明 · 传承文化力量。组织VIP客户参与考古研学活动。
                 </p>
-                <Link href="/cases/shanghai-bank" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                <Link href="/cases/shanghai-bank" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-xs md:text-sm">
                   查看详情
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-3 w-3 md:h-4 md:w-4" />
                 </Link>
               </div>
             </div>
 
             {/* 案例 2 */}
-            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="aspect-[16/9] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+            <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50">
-                  <Users className="h-24 w-24 text-white" />
+                  <Users className="h-16 w-16 md:h-20 md:w-20 text-white" />
                 </div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-xs font-bold rounded-full">
+                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 right-2 md:right-4">
+                  <span className="px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full">
                     团建活动
                   </span>
                 </div>
               </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#333333]">海康威视养生局</h3>
-                <p className="text-[#666666] mb-4 text-xs md:text-sm leading-relaxed">
-                  中医文化溯源 · 健康生活探索。结合博物馆中医文化展区资源，
-                  为员工打造养生主题团建活动，在文化探索中关注健康生活。
+              <div className="p-3 md:p-4">
+                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2 text-[#333333]">海康威视养生局</h3>
+                <p className="text-[#666666] mb-2 md:mb-3 text-[10px] md:text-xs leading-relaxed line-clamp-2">
+                  中医文化溯源 · 健康生活探索。结合博物馆中医文化展区资源。
                 </p>
-                <Link href="/cases/hikvision" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                <Link href="/cases/hikvision" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-xs md:text-sm">
                   查看详情
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-3 w-3 md:h-4 md:w-4" />
                 </Link>
               </div>
             </div>
 
             {/* 案例 3 */}
-            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="aspect-[16/9] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+            <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50">
-                  <Calendar className="h-24 w-24 text-white" />
+                  <Calendar className="h-16 w-16 md:h-20 md:w-20 text-white" />
                 </div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-xs font-bold rounded-full">
+                <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 right-2 md:right-4">
+                  <span className="px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full">
                     年会活动
                   </span>
                 </div>
               </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#333333]">蒙牛迈胜年会</h3>
-                <p className="text-[#666666] mb-4 text-xs md:text-sm leading-relaxed">
-                  品牌文化融合 · 年度盛典呈现。将蒙牛品牌文化与传统艺术元素深度融合，
-                  打造独具特色的年度盛典，彰显企业文化底蕴与品牌实力。
+              <div className="p-3 md:p-4">
+                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2 text-[#333333]">蒙牛迈胜年会</h3>
+                <p className="text-[#666666] mb-2 md:mb-3 text-[10px] md:text-xs leading-relaxed line-clamp-2">
+                  品牌文化融合 · 年度盛典呈现。将蒙牛品牌文化与传统艺术元素。
                 </p>
-                <Link href="/cases/mengniu" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-sm">
+                <Link href="/cases/mengniu" className="text-[#FFC107] font-semibold flex items-center gap-2 group-hover:gap-4 transition-all text-xs md:text-sm">
                   查看详情
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-3 w-3 md:h-4 md:w-4" />
                 </Link>
               </div>
             </div>
