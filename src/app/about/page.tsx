@@ -619,10 +619,10 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="text-center mt-4 md:mt-12">
+          <div className="text-center mt-8 md:mt-16">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:shadow-xl text-[#FFC107] px-5 py-2 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:scale-105 border-2 border-white"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFC107] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:scale-105"
             >
               立即咨询
               <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
