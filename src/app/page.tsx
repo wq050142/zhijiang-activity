@@ -169,6 +169,21 @@ export default function Home() {
                   </div>
                 </div>
 
+                {/* 公共服务中心 - 圆形居中 */}
+                <div className="col-span-2 flex justify-center py-4">
+                  <div className="relative w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40">
+                    <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl border-4 border-white/90">
+                      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-full"></div>
+                    </div>
+                    <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+                      <span className="text-white text-xs font-bold drop-shadow-md bg-black/50 px-3 py-1 rounded-full">
+                        公共服务中心
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
                 {/* 浙江省非遗馆 */}
                 <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg relative group">
                   <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/浙江省非遗馆.png")' }}></div>
@@ -184,21 +199,6 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-2 left-2 right-2">
                     <span className="text-white text-xs font-bold drop-shadow-md">浙江省文学馆</span>
-                  </div>
-                </div>
-
-                {/* 公共服务中心 - 圆形居中 */}
-                <div className="col-span-2 flex justify-center py-4">
-                  <div className="relative w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40">
-                    <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl border-4 border-white/90">
-                      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-full"></div>
-                    </div>
-                    <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
-                      <span className="text-white text-xs font-bold drop-shadow-md bg-black/50 px-3 py-1 rounded-full">
-                        公共服务中心
-                      </span>
-                    </div>
                   </div>
                 </div>
               </div>
