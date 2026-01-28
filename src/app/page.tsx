@@ -615,12 +615,12 @@ export default function Home() {
               <span className="text-lg font-medium">191-0658-3798</span>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <span className="text-white text-lg">扫码添加微信咨询</span>
               <img
                 src="/xiaoxuemei.jpg"
                 alt="小助理微信二维码"
-                className="w-48 h-48 rounded-lg shadow-lg object-cover"
+                className="w-32 h-32 rounded-lg shadow-lg object-cover"
               />
+              <span className="text-white text-lg">立即咨询</span>
             </div>
           </div>
           <Link
