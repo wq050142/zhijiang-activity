@@ -346,12 +346,12 @@ export default function AboutPage() {
       {/* 丰富的资源体系 */}
       <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <Sparkles className="h-6 w-6 text-[#FFC107]" />
-              <span className="text-[#FF9F43] font-semibold">资源体系</span>
+          <div className="text-center mb-10 md:mb-14">
+            <div className="inline-flex items-center gap-2 mb-3 md:mb-4">
+              <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-[#FFC107]" />
+              <span className="text-[#FF9F43] font-semibold text-sm md:text-base">资源体系</span>
             </div>
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#333333]">
+            <h2 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4 text-[#333333]">
               丰富的资源体系
             </h2>
             <p className="text-sm md:text-lg text-[#666666] max-w-2xl mx-auto">
@@ -359,133 +359,127 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* 文化展览资源 */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex items-center justify-center mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+            {/* 文化体验资源 */}
+            <div className="bg-gradient-to-br from-[#FFC107]/5 to-[#FF9F43]/5 rounded-2xl p-5 md:p-6 border-2 border-[#FFC107]/20 hover:border-[#FFC107]/40 hover:shadow-xl transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex items-center justify-center mb-4 shadow-lg">
                 <Award className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-[#333333]">文化展览资源</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#333333]">文化体验资源</h3>
               <div className="space-y-3">
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">常设展</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• 浙江一万年</li>
-                    <li>• 伊人红妆</li>
-                    <li>• 越山向海</li>
-                    <li>• 山水之间</li>
-                  </ul>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">博物馆展览</p>
+                    <p className="text-xs text-[#666666] mt-0.5">丰富的历史文化展览，激发文化认同</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">临展特展</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• AIROBOX 机器人梦工厂</li>
-                    <li>• 两宋风华</li>
-                    <li>• 相无古今</li>
-                  </ul>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">文学沙龙</p>
+                    <p className="text-xs text-[#666666] mt-0.5">专业的文学交流空间，提升人文素养</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">非遗手作工坊</p>
+                    <p className="text-xs text-[#666666] mt-0.5">传统手工艺体验，感受非遗魅力</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* 场地空间资源 */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mb-4">
+            {/* 学术教育资源 */}
+            <div className="bg-gradient-to-br from-[#2D2D2D]/5 to-[#4B5563]/5 rounded-2xl p-5 md:p-6 border-2 border-[#2D2D2D]/20 hover:border-[#2D2D2D]/40 hover:shadow-xl transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                <BookOpen className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#333333]">学术教育资源</h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">研讨空间</p>
+                    <p className="text-xs text-[#666666] mt-0.5">舒适的学术交流环境，促进深度交流</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">党史专家讲座</p>
+                    <p className="text-xs text-[#666666] mt-0.5">专业党史知识分享，强化党建学习</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">专业研学课程</p>
+                    <p className="text-xs text-[#666666] mt-0.5">定制化培训项目，提升团队能力</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 会议活动资源 */}
+            <div className="bg-gradient-to-br from-[#6B7280]/5 to-[#4B5563]/5 rounded-2xl p-5 md:p-6 border-2 border-[#6B7280]/20 hover:border-[#6B7280]/40 hover:shadow-xl transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center mb-4 shadow-lg">
                 <Building2 className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-[#333333]">场地空间资源</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#333333]">会议活动资源</h3>
               <div className="space-y-3">
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">会议教室</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• 公共服务中心青年之家</li>
-                    <li>• 非遗传承体验中心</li>
-                    <li>• 文学馆报告厅</li>
-                  </ul>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">多功能报告厅</p>
+                    <p className="text-xs text-[#666666] mt-0.5">多种规格会议室，满足不同规模需求</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">特色空间</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• 西子院、江南院</li>
-                    <li>• 户外景观公园</li>
-                    <li>• 灵活组合场地</li>
-                  </ul>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">会议空间</p>
+                    <p className="text-xs text-[#666666] mt-0.5">灵活组合的会议场地，适应多样化场景</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            {/* 文化体验资源 */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center mb-4">
-                <Sparkles className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-[#333333]">文化体验资源</h3>
-              <div className="space-y-3">
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">核心体验平台</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• 非遗传承体验中心</li>
-                    <li>• AIROBOX 机器人梦工厂</li>
-                    <li>• 之间探方考古</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">特色活动</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• 文学沙龙</li>
-                    <li>• 党史专家讲座</li>
-                    <li>• 专业研学课程</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* 餐饮茶歇资源 */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex items-center justify-center mb-4">
-                <Calendar className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-[#333333]">餐饮茶歇资源</h3>
-              <div className="space-y-3">
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">特色餐饮</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• 百县千碗·浙里食局</li>
-                    <li>• 知味观、新燕忠餐厅</li>
-                    <li>• 肯德基、星巴克</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">茶饮甜点</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• 岛山空·松阳茶事</li>
-                    <li>• 牧白手作、题记茶汽水</li>
-                    <li>• 初透抹茶</li>
-                  </ul>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">户外景观公园</p>
+                    <p className="text-xs text-[#666666] mt-0.5">自然环境会议室，提供户外活动空间</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* 综合服务资源 */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow md:col-span-2 lg:col-span-1">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-white" />
+            <div className="bg-gradient-to-br from-[#FFC107]/5 to-[#FF9F43]/5 rounded-2xl p-5 md:p-6 border-2 border-[#FFC107]/20 hover:border-[#FFC107]/40 hover:shadow-xl transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                <Calendar className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-[#333333]">综合服务资源</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-[#333333]">综合服务资源</h3>
               <div className="space-y-3">
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">活动保障</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• 交通协调服务</li>
-                    <li>• 专业活动统筹团队</li>
-                    <li>• 全流程一站式管理</li>
-                  </ul>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">餐饮茶歇</p>
+                    <p className="text-xs text-[#666666] mt-0.5">高品质餐饮服务，提供多样化餐饮选择</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-sm font-semibold text-[#FF9F43] mb-2">文创礼品</h4>
-                  <ul className="text-xs text-[#666666] space-y-1">
-                    <li>• 知江南品牌文创</li>
-                    <li>• 浙江省域文创礼品</li>
-                  </ul>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">交通协调</p>
+                    <p className="text-xs text-[#666666] mt-0.5">便捷的交通指引，确保活动顺利进行</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#FF9F43] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-semibold text-[#333333]">专业活动统筹团队</p>
+                    <p className="text-xs text-[#666666] mt-0.5">全流程活动管理，提供一站式服务</p>
+                  </div>
                 </div>
               </div>
             </div>
