@@ -609,19 +609,16 @@ export default function Home() {
             <p>依托之江文化中心四大场馆资源</p>
             <p>为您打造独一无二的文化体验</p>
           </div>
-          <div className="flex flex-col items-center gap-6 mb-12">
+          <div className="flex flex-col items-center gap-6 mb-8">
             <div className="flex items-center gap-2 text-white">
               <Phone className="h-5 w-5 text-white" />
               <span className="text-lg font-medium">191-0658-3798</span>
             </div>
-            <div className="flex flex-col items-center gap-4">
-              <img
-                src="/xiaoxuemei.jpg"
-                alt="小助理微信二维码"
-                className="w-32 h-32 rounded-lg shadow-lg object-cover"
-              />
-              <span className="text-white text-lg">立即咨询</span>
-            </div>
+            <img
+              src="/xiaoxuemei.jpg"
+              alt="小助理微信二维码"
+              className="w-32 h-32 rounded-lg shadow-lg object-cover"
+            />
           </div>
           <Link
             href="/contact"
