@@ -515,7 +515,7 @@ export default function Home() {
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[4/3] relative overflow-hidden">
                 <img
-                  src="/上海银行考古总动员.jpg"
+                  src="/上海银行考古总动员.png"
                   alt="上海银行考古总动员"
                   className="w-full h-full object-cover"
                 />
