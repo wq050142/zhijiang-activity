@@ -380,12 +380,12 @@ export default function Home() {
             <img
               src="/logo.png"
               alt="合作伙伴logo墙"
-              className="w-full h-auto rounded-2xl shadow-lg"
+              className="w-full h-auto rounded-2xl"
             />
           </div>
 
           <div className="overflow-hidden">
-            <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-marquee-fast whitespace-nowrap">
+            <div className="flex items-center gap-4 md:gap-6 lg:gap-8 animate-marquee-fast whitespace-nowrap">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -402,15 +402,15 @@ export default function Home() {
                   ].map((partner, j) => (
                     <div
                       key={`${i}-${j}`}
-                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                      className="flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 min-w-max"
                     >
-                      <span className="text-[#2D2D2D] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
+                      <span className="text-[#666666] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-marquee-medium whitespace-nowrap mt-3">
+            <div className="flex items-center gap-4 md:gap-6 lg:gap-8 animate-marquee-medium whitespace-nowrap mt-2">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -427,15 +427,15 @@ export default function Home() {
                   ].map((partner, j) => (
                     <div
                       key={`reverse-${i}-${j}`}
-                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                      className="flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 min-w-max"
                     >
-                      <span className="text-[#2D2D2D] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
+                      <span className="text-[#666666] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-marquee-slow whitespace-nowrap mt-3">
+            <div className="flex items-center gap-4 md:gap-6 lg:gap-8 animate-marquee-slow whitespace-nowrap mt-2">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -452,15 +452,15 @@ export default function Home() {
                   ].map((partner, j) => (
                     <div
                       key={`third-${i}-${j}`}
-                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                      className="flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 min-w-max"
                     >
-                      <span className="text-[#2D2D2D] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
+                      <span className="text-[#666666] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-marquee-extra-slow whitespace-nowrap mt-3">
+            <div className="flex items-center gap-4 md:gap-6 lg:gap-8 animate-marquee-extra-slow whitespace-nowrap mt-2">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -477,9 +477,9 @@ export default function Home() {
                   ].map((partner, j) => (
                     <div
                       key={`fourth-${i}-${j}`}
-                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                      className="flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 min-w-max"
                     >
-                      <span className="text-[#2D2D2D] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
+                      <span className="text-[#666666] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
