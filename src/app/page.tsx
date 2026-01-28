@@ -410,7 +410,7 @@ export default function Home() {
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-4 md:gap-6 lg:gap-7 animate-marquee-medium whitespace-nowrap mt-1.5">
+            <div className="flex items-center gap-4 md:gap-6 lg:gap-7 animate-marquee-medium whitespace-nowrap mt-1">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -429,13 +429,13 @@ export default function Home() {
                       key={`reverse-${i}-${j}`}
                       className="flex items-center gap-2.5 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 min-w-max"
                     >
-                      <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
+                      <span className="text-[#666666] font-medium text-[10px] md:text-xs whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-5 md:gap-7 lg:gap-9 animate-marquee-slow whitespace-nowrap mt-2">
+            <div className="flex items-center gap-5 md:gap-7 lg:gap-9 animate-marquee-slow whitespace-nowrap mt-1">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -454,13 +454,13 @@ export default function Home() {
                       key={`third-${i}-${j}`}
                       className="flex items-center gap-3 md:gap-4 px-4 md:px-5 py-2 md:py-2.5 min-w-max"
                     >
-                      <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
+                      <span className="text-[#666666] font-medium text-sm md:text-lg whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-3.5 md:gap-5 lg:gap-6 animate-marquee-extra-slow whitespace-nowrap mt-1.5">
+            <div className="flex items-center gap-3.5 md:gap-5 lg:gap-6 animate-marquee-extra-slow whitespace-nowrap mt-0.5">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -479,7 +479,7 @@ export default function Home() {
                       key={`fourth-${i}-${j}`}
                       className="flex items-center gap-2 md:gap-3 px-2.5 md:px-3.5 py-1 md:py-1.5 min-w-max"
                     >
-                      <span className="text-[#666666] font-medium text-[10px] md:text-xs whitespace-nowrap">{partner}</span>
+                      <span className="text-[#666666] font-medium text-xs md:text-base whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
