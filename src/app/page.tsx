@@ -115,7 +115,7 @@ export default function Home() {
                 <Building2 className="h-6 w-6 text-[#FFC107]" />
                 <span className="text-[#FF9F43] font-semibold">关于我们</span>
               </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#333333]">
+              <h2 className="text-2xl md:text-4xl font-bold mb-3 text-[#333333]">
                 之江文化中心
               </h2>
               <p className="text-sm md:text-lg text-[#666666] mb-4 font-semibold">
@@ -602,12 +602,12 @@ export default function Home() {
       {/* CTA 区域 */}
       <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#FFC107] to-[#FF9F43]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
-            让文化赋能您的企业活动
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white text-center">
+            依托之江文化中心四大场馆资源
           </h2>
-          <p className="text-sm md:text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            依托之江文化中心四大场馆资源，为您打造独一无二的文化体验
-          </p>
+          <h2 className="text-2xl md:text-4xl font-bold mb-8 text-white text-center">
+            为您打造独一无二的文化体验
+          </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <div className="flex items-center gap-2 text-white">
               <Phone className="h-5 w-5 text-white" />
@@ -615,8 +615,8 @@ export default function Home() {
             </div>
             <div className="hidden sm:block w-px h-6 bg-white/50"></div>
             <div className="flex items-center gap-2 text-white">
-              <Mail className="h-5 w-5 text-white" />
-              <span className="text-lg">service@zhijiang-culture.com</span>
+              <span className="text-lg">小助理微信：</span>
+              <span className="text-lg font-medium">zhijiang-culture</span>
             </div>
           </div>
           <Link
@@ -632,7 +632,7 @@ export default function Home() {
       {/* 页脚 */}
       <footer className="bg-[#333333] text-white py-8 px-6 md:py-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-6 md:mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8 mb-6 md:mb-8">
             <div className="col-span-2 md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <img
@@ -645,9 +645,6 @@ export default function Home() {
                   <p className="text-xs text-[#FFC107]">企业活动服务</p>
                 </div>
               </div>
-              <p className="text-white/70 text-sm leading-relaxed">
-                依托四大场馆资源，为企业提供高品质、有文化深度的活动服务
-              </p>
             </div>
 
             <div>
