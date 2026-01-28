@@ -14,18 +14,37 @@ export default function ContactPage() {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('表单提交:', formData);
-    alert('感谢您的咨询！我们会尽快与您联系。');
-    setFormData({
-      name: '',
-      company: '',
-      phone: '',
-      email: '',
-      service: '',
-      message: ''
-    });
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert('感谢您的咨询！我们会尽快与您联系。');
+        setFormData({
+          name: '',
+          company: '',
+          phone: '',
+          email: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        alert(result.message || '提交失败，请稍后重试。');
+      }
+    } catch (error) {
+      console.error('表单提交错误:', error);
+      alert('网络错误，请稍后重试。');
+    }
   };
 
   return (
