@@ -124,8 +124,8 @@ export default function CasesPage() {
       client: '厦门航空',
       title: '后山草庐·身心修养',
       category: '养生团建',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/后山草庐1.jpg',
+      subImages: ['/后山草庐2.jpg', '/后山草庐3.jpg', '/后山草庐4.jpg'],
       description: '带领团队回归山野自然，结合传统武术修习与自然疗愈课程。在山水之间修身养性，通过动静结合的体验，重塑团队的内在能量与平衡。',
       highlights: ['山野自然', '武术修习', '自然疗愈', '身心平衡']
     },
@@ -134,8 +134,8 @@ export default function CasesPage() {
       client: '内蒙通辽市委宣传部/浙江工业大学',
       title: '公共文化空间一体化运营',
       category: '学习培训',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/一体化运营1.jpg',
+      subImages: ['/一体化运营2.jpg', '/一体化运营3.jpg', '/一体化运营4.jpg'],
       description: '依托之江文化中心运营经验，输出公共文化空间建设的"之江方案"。通过实地考察与深度授课，为学员提供可复制、可落地的先进管理模式与创新思路。',
       highlights: ['之江模式', '一体化运营', '管理模式', '创新思路']
     },
