@@ -355,7 +355,7 @@ export default function CasesPage() {
                             <img
                               src={image}
                               alt={`${caseItem.title} ${index + 1}`}
-                              className="w-full h-full object-cover"
+                              className="w-full h-full object-cover object-top"
                             />
                           </div>
                         </div>
