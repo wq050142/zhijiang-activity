@@ -371,9 +371,25 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* 6张小图 */}
+              {/* 资源列表 */}
               <div className="p-4">
-                <div className="grid grid-cols-3 gap-2 mb-4">
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">博物馆展览</span> - 丰富的历史文化展览，激发文化认同</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">文学沙龙</span> - 专业的文学交流空间，提升人文素养</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">非遗手作工坊</span> - 传统手工艺体验，感受非遗魅力</p>
+                  </div>
+                </div>
+
+                {/* 6张小图 */}
+                <div className="grid grid-cols-3 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/浙江省图书馆.png" alt="文化体验" className="w-full h-full object-cover" />
                   </div>
@@ -393,22 +409,6 @@ export default function AboutPage() {
                     <img src="/浙江省图书馆.png" alt="文化体验" className="w-full h-full object-cover" />
                   </div>
                 </div>
-
-                {/* 资源列表 */}
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">博物馆展览</span> - 丰富的历史文化展览，激发文化认同</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">文学沙龙</span> - 专业的文学交流空间，提升人文素养</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">非遗手作工坊</span> - 传统手工艺体验，感受非遗魅力</p>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -423,9 +423,25 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* 6张小图 */}
+              {/* 资源列表 */}
               <div className="p-4">
-                <div className="grid grid-cols-3 gap-2 mb-4">
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">研讨空间</span> - 舒适的学术交流环境，促进深度交流</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">党史专家讲座</span> - 专业党史知识分享，强化党建学习</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">专业研学课程</span> - 定制化培训项目，提升团队能力</p>
+                  </div>
+                </div>
+
+                {/* 6张小图 */}
+                <div className="grid grid-cols-3 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/浙江省博物馆.png" alt="学术教育" className="w-full h-full object-cover" />
                   </div>
@@ -445,22 +461,6 @@ export default function AboutPage() {
                     <img src="/浙江省博物馆.png" alt="学术教育" className="w-full h-full object-cover" />
                   </div>
                 </div>
-
-                {/* 资源列表 */}
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">研讨空间</span> - 舒适的学术交流环境，促进深度交流</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">党史专家讲座</span> - 专业党史知识分享，强化党建学习</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">专业研学课程</span> - 定制化培训项目，提升团队能力</p>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -475,9 +475,25 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* 6张小图 */}
+              {/* 资源列表 */}
               <div className="p-4">
-                <div className="grid grid-cols-3 gap-2 mb-4">
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">多功能报告厅</span> - 多种规格会议室，满足不同规模需求</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">会议空间</span> - 灵活组合的会议场地，适应多样化场景</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">户外景观公园</span> - 自然环境会议室，提供户外活动空间</p>
+                  </div>
+                </div>
+
+                {/* 6张小图 */}
+                <div className="grid grid-cols-3 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/浙江省图书馆.png" alt="会议活动" className="w-full h-full object-cover" />
                   </div>
@@ -497,22 +513,6 @@ export default function AboutPage() {
                     <img src="/浙江省图书馆.png" alt="会议活动" className="w-full h-full object-cover" />
                   </div>
                 </div>
-
-                {/* 资源列表 */}
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">多功能报告厅</span> - 多种规格会议室，满足不同规模需求</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">会议空间</span> - 灵活组合的会议场地，适应多样化场景</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">户外景观公园</span> - 自然环境会议室，提供户外活动空间</p>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -527,9 +527,25 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* 6张小图 */}
+              {/* 资源列表 */}
               <div className="p-4">
-                <div className="grid grid-cols-3 gap-2 mb-4">
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">餐饮茶歇</span> - 高品质餐饮服务，提供多样化餐饮选择</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">交通协调</span> - 便捷的交通指引，确保活动顺利进行</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0" />
+                    <p className="text-sm text-[#333333]"><span className="font-semibold">专业活动统筹团队</span> - 全流程活动管理，提供一站式服务</p>
+                  </div>
+                </div>
+
+                {/* 6张小图 */}
+                <div className="grid grid-cols-3 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/浙江省图书馆.png" alt="综合服务" className="w-full h-full object-cover" />
                   </div>
@@ -547,22 +563,6 @@ export default function AboutPage() {
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/研学中心.png" alt="综合服务" className="w-full h-full object-cover" />
-                  </div>
-                </div>
-
-                {/* 资源列表 */}
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">餐饮茶歇</span> - 高品质餐饮服务，提供多样化餐饮选择</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">交通协调</span> - 便捷的交通指引，确保活动顺利进行</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#FF9F43] flex-shrink-0" />
-                    <p className="text-xs text-[#333333]"><span className="font-semibold">专业活动统筹团队</span> - 全流程活动管理，提供一站式服务</p>
                   </div>
                 </div>
               </div>
