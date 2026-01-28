@@ -375,6 +375,15 @@ export default function Home() {
             <p className="text-[#666666]">已为众多知名企业提供服务</p>
           </div>
 
+          {/* Logo墙展示 */}
+          <div className="mb-10 md:mb-12">
+            <img
+              src="/logo.png"
+              alt="合作伙伴logo墙"
+              className="w-full h-auto rounded-2xl shadow-lg"
+            />
+          </div>
+
           <div className="overflow-hidden">
             <div className="flex items-center gap-4 animate-marquee-fast whitespace-nowrap">
               {[...Array(2)].map((_, i) => (
