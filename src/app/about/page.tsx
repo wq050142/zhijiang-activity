@@ -66,7 +66,7 @@ export default function AboutPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
+      <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
         {/* 大图横幅占位符 */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] opacity-95">
           <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
@@ -78,14 +78,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             关于我们
           </h1>
-          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">
-            <Sparkles className="h-4 w-4 text-[#FFE15D]" />
-            全国最大的省级文化综合体
-          </div>
           <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium">
             依托之江文化中心四大场馆资源
             <br />
@@ -160,7 +156,7 @@ export default function AboutPage() {
               四馆一中心
             </h2>
             <p className="text-sm md:text-lg text-[#666666] max-w-2xl mx-auto">
-              每一座场馆都是文化的殿堂，为您活动提供独特文化空间（注：目前无公共服务中心）
+              每一座场馆都是文化的殿堂，为您活动提供独特文化空间
             </p>
           </div>
 
@@ -302,47 +298,42 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* 研学中心 - 单独展示 */}
+          {/* 公共服务中心 - 单独展示 */}
           <div className="mt-12">
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group">
               <div className="md:flex">
                 <div className="md:w-1/2">
                   <div className="aspect-[16/9] md:aspect-auto md:h-full min-h-[300px] relative overflow-hidden">
-                    <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
+                    <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/公共服务中心.png")' }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                     <div className="absolute top-4 left-4">
                       <span className="bg-[#FFC107] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
-                        之江文化中心研学中心
+                        之江文化中心公共服务中心
                       </span>
                     </div>
                   </div>
                 </div>
                 <div className="md:w-1/2 p-6 md:p-8">
                   <div className="inline-flex items-center gap-2 mb-4">
-                    <span className="bg-[#FF9F43] text-white text-xs font-semibold px-3 py-1 rounded-full">专属服务</span>
+                    <span className="bg-[#FF9F43] text-white text-xs font-semibold px-3 py-1 rounded-full">综合服务</span>
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#333333]">之江文化中心研学中心</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#333333]">之江文化中心公共服务中心</h3>
                   <div className="space-y-3 text-sm text-[#666666]">
                     <div className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
-                      <p>专业研学活动场地，支持多样化教育体验项目</p>
+                      <p>多功能服务空间，支持各类公共文化服务活动</p>
                     </div>
                     <div className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
-                      <p>连接四大场馆资源，打造沉浸式研学体验</p>
+                      <p>连接四大场馆资源，提供便捷的导览咨询服务</p>
                     </div>
                     <div className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
-                      <p>定制化研学课程，满足不同年龄段学习需求</p>
+                      <p>完善的配套设施，满足多样化的活动需求</p>
                     </div>
                     <div className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
-                      <p>配套专业导师团队，提供高质量研学指导</p>
-                    </div>
-                    <div className="mt-4 p-4 bg-[#FFC107]/10 rounded-lg border border-[#FFC107]/20">
-                      <p className="text-sm font-medium text-[#FF9F43]">
-                        <span className="font-bold">注：</span>之江文化中心研学中心为专业研学活动场地，非公共服务中心。目前中心内无公共服务中心设施。
-                      </p>
+                      <p>专业服务团队，提供全方位的活动支持</p>
                     </div>
                   </div>
                 </div>
