@@ -307,27 +307,52 @@ export default function ContactPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6">
-            {[
-              { step: '01', title: '需求对接', desc: '深入了解需求' },
-              { step: '02', title: '方案设计', desc: '定制活动方案' },
-              { step: '03', title: '确认签约', desc: '方案确认签约' },
-              { step: '04', title: '执行落地', desc: '专业执行服务' },
-              { step: '05', title: '后续评价', desc: '活动总结优化' }
-            ].map((item, index) => (
-              <div key={index} className="relative">
-                <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl md:rounded-2xl p-2 md:p-6 text-center">
-                  <div className="text-lg md:text-3xl font-bold text-white mb-1 md:mb-4">{item.step}</div>
-                  <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2">{item.title}</h3>
-                  <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal">{item.desc}</p>
-                </div>
-                {index < 4 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
-                    <ArrowRight className="h-6 w-6 text-[#FFE15D]" />
+          <div className="relative">
+            {/* 进度线 */}
+            <div className="hidden lg:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-[#FFE15D]/30 via-[#FFE15D] to-[#FF9F43]/30 z-0"></div>
+            
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6 relative z-10">
+              {[
+                { step: '01', title: '需求对接', desc: '深入了解需求' },
+                { step: '02', title: '方案设计', desc: '定制活动方案' },
+                { step: '03', title: '确认签约', desc: '方案确认签约' },
+                { step: '04', title: '执行落地', desc: '专业执行服务' },
+                { step: '05', title: '后续评价', desc: '活动总结优化' }
+              ].map((item, index) => (
+                <div key={index} className="relative group">
+                  {/* 流程卡片 */}
+                  <div className="bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl md:rounded-2xl p-3 md:p-6 text-center relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    {/* 装饰性圆点 */}
+                    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-white/50 rounded-full"></div>
+                    
+                    <div className="text-lg md:text-3xl font-bold text-white mb-1 md:mb-4 relative z-10">{item.step}</div>
+                    <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2 relative z-10">{item.title}</h3>
+                    <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal relative z-10">{item.desc}</p>
+                    
+                    {/* 渐变背景效果 */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                )}
-              </div>
-            ))}
+                  
+                  {/* 箭头 - 桌面端 */}
+                  {index < 4 && (
+                    <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                      <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-lg">
+                        <ArrowRight className="h-3.5 w-3.5 text-[#FF9F43]" />
+                      </div>
+                    </div>
+                  )}
+                  
+                  {/* 箭头 - 手机端（每行显示） */}
+                  {index % 2 === 0 && index < 4 && (
+                    <div className="lg:hidden absolute top-1/2 -right-2 transform -translate-y-1/2 z-10">
+                      <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center shadow-md">
+                        <ArrowRight className="h-2.5 w-2.5 text-[#FF9F43]" />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -344,7 +369,7 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:191-0658-3798"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-6 py-3 rounded-full text-base font-semibold transition-all shadow-lg hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all shadow-lg hover:scale-105"
             >
               <Phone className="h-4 w-4" />
               立即致电
