@@ -627,7 +627,7 @@ export default function Home() {
             href="/contact"
             className="inline-flex items-center justify-center gap-2 bg-white hover:shadow-xl text-[#FFC107] px-6 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all shadow-lg hover:scale-105 border-2 border-white"
           >
-            立即获取策划方案
+            立即咨询
             <ArrowRight className="h-5 w-5" />
           </Link>
         </div>
