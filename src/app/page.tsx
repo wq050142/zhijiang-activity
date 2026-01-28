@@ -117,17 +117,19 @@ export default function Home() {
               </div>
               <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#333333]">
                 之江文化中心
-                <Link
-                  href="/about"
-                  className="inline-flex items-center justify-center gap-1 ml-2 md:ml-3 bg-[#FFC107] hover:bg-[#FFD54F] text-white px-3 py-1 rounded-full text-xs md:text-sm font-semibold transition-all shadow-md hover:shadow-lg hover:scale-105 align-middle"
-                >
-                  了解更多
-                  <ArrowRight className="h-3 w-3 md:h-4 md:w-4" />
-                </Link>
               </h2>
-              <p className="text-sm md:text-lg text-[#666666] mb-6 font-semibold">
+              <p className="text-sm md:text-lg text-[#666666] mb-4 font-semibold">
                 全国最大的省级文化综合体
               </p>
+              <div className="mb-6">
+                <Link
+                  href="/about"
+                  className="inline-flex items-center justify-center gap-2 bg-[#FFC107] hover:bg-[#FFD54F] text-[#333333] px-6 py-2.5 rounded-full text-sm md:text-base font-semibold transition-all shadow-md hover:shadow-lg hover:scale-105"
+                >
+                  了解更多
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
               <div className="space-y-4 text-[#666666] leading-relaxed">
                 <p>
                   之江文化中心位于杭州市西湖区之江板块，是浙江省重点打造的文化地标项目，总建筑面积达32万平方米，是目前全国体量最大的省级现代复合文化综合体。
@@ -630,8 +632,8 @@ export default function Home() {
       {/* 页脚 */}
       <footer className="bg-[#333333] text-white py-8 px-6 md:py-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-8">
-            <div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-6 md:mb-8">
+            <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <img
                   src="/之江文化中心logo_画板 1.png"
