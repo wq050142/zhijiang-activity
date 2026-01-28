@@ -64,8 +64,8 @@ export default function CasesPage() {
       client: 'AITO问界汽车',
       title: '车主活动',
       category: 'VIP客户活动',
-      mainImage: '/AITO问界车主活动.png',
-      subImages: ['/浙江省博物馆.png', '/浙江省非遗馆.png', '/浙江省文学馆.png'],
+      mainImage: '/问界车主活动1.jpg',
+      subImages: ['/问界车主活动2.jpg', '/问界车主活动3.jpg', '/问界车主活动4.jpg'],
       description: '针对高端车主群体打造的专属非遗体验，将品牌理念与传统工艺深度结合。通过尊享感的文化定制服务，有效强化了车主对品牌的文化认同感与归属感。',
       highlights: ['非遗定制', '品牌理念', '尊享服务', '文化认同']
     },
@@ -74,8 +74,8 @@ export default function CasesPage() {
       client: '建发地产',
       title: '暑期非遗研学活动',
       category: 'VIP客户活动',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/建发地产活动1.png',
+      subImages: ['/建发地产活动2.jpg', '/建发地产活动3.jpg', '/建发地产活动4.jpg'],
       description: '配合建发地产总部接待全国各地业主家庭赴杭开展暑期研学。通过"行走中的非遗课堂"，让业主深度体验杭州文化底蕴，打造跨越山海的品牌尊享礼遇。',
       highlights: ['暑期研学', '非遗课堂', '文化底蕴', '品牌尊享']
     },
