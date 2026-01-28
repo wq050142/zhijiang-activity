@@ -608,15 +608,18 @@ export default function Home() {
           <h2 className="text-2xl md:text-4xl font-bold mb-8 text-white text-center">
             为您打造独一无二的文化体验
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col items-center gap-6 mb-12">
             <div className="flex items-center gap-2 text-white">
               <Phone className="h-5 w-5 text-white" />
               <span className="text-lg font-medium">191-0658-3798</span>
             </div>
-            <div className="hidden sm:block w-px h-6 bg-white/50"></div>
-            <div className="flex items-center gap-2 text-white">
-              <span className="text-lg">小助理微信：</span>
-              <span className="text-lg font-medium">zhijiang-culture</span>
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-white text-lg">扫码添加小助理微信</span>
+              <img
+                src="/小学妹.jpg"
+                alt="小助理微信二维码"
+                className="w-48 h-48 rounded-lg shadow-lg"
+              />
             </div>
           </div>
           <Link
@@ -632,7 +635,7 @@ export default function Home() {
       {/* 页脚 */}
       <footer className="bg-[#333333] text-white py-8 px-6 md:py-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6 mb-6 md:mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 mb-6 md:mb-8">
             <div className="col-span-2 md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <img
@@ -663,10 +666,6 @@ export default function Home() {
                 <li className="flex items-start gap-2">
                   <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
                   <span>191-0658-3798</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Mail className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
-                  <span>service@zhijiang-culture.com</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
