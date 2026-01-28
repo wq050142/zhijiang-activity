@@ -602,12 +602,12 @@ export default function Home() {
       {/* CTA 区域 */}
       <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#FFC107] to-[#FF9F43]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white text-center">
-            依托之江文化中心四大场馆资源
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
+            让文化赋能您的企业活动
           </h2>
-          <h2 className="text-2xl md:text-4xl font-bold mb-8 text-white text-center">
-            为您打造独一无二的文化体验
-          </h2>
+          <p className="text-sm md:text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+            依托之江文化中心四大场馆资源，为您打造独一无二的文化体验
+          </p>
           <div className="flex flex-col items-center gap-6 mb-12">
             <div className="flex items-center gap-2 text-white">
               <Phone className="h-5 w-5 text-white" />
@@ -618,7 +618,7 @@ export default function Home() {
               <img
                 src="/小学妹.jpg"
                 alt="小助理微信二维码"
-                className="w-48 h-48 rounded-lg shadow-lg"
+                className="w-48 h-48 rounded-lg shadow-lg object-cover"
               />
             </div>
           </div>
