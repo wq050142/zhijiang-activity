@@ -498,6 +498,9 @@ export default function AboutPage() {
                     <img src="/会议活动资源1.jpg" alt="会议活动" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
+                    <img src="/会议活动资源2.png" alt="会议活动" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/会议活动资源3.png" alt="会议活动" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
@@ -508,9 +511,6 @@ export default function AboutPage() {
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/会议活动资源6.png" alt="会议活动" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/会议活动资源2.png" alt="会议活动" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
