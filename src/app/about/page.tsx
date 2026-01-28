@@ -303,7 +303,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group">
               <div className="md:flex">
                 <div className="md:w-1/2">
-                  <div className="aspect-[16/9] md:aspect-auto md:h-full min-h-[300px] relative overflow-hidden">
+                  <div className="aspect-[16/9] relative overflow-hidden">
                     <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                     <div className="absolute top-4 left-4">
