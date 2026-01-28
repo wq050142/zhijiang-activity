@@ -375,29 +375,119 @@ export default function Home() {
             <p className="text-[#666666]">已为众多知名企业提供服务</p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
-            {[
-              { name: '浙江省教育厅', icon: '🏛️' },
-              { name: '海康威视', icon: '📷' },
-              { name: '厦门航空', icon: '✈️' },
-              { name: '中国移动', icon: '📱' },
-              { name: '中国建设银行', icon: '🏦' },
-              { name: '阿里巴巴', icon: '🛒' },
-              { name: '浙江大学', icon: '🎓' },
-              { name: '浙江省交通投资集团', icon: '🚗' },
-              { name: '吉利控股集团', icon: '🚙' },
-              { name: '网易', icon: '🎮' },
-              { name: '华为', icon: '💻' },
-              { name: '腾讯', icon: '💬' }
-            ].map((partner, j) => (
-              <div
-                key={j}
-                className="flex flex-col items-center justify-center gap-2 md:gap-3 px-4 md:px-6 py-4 md:py-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all"
-              >
-                <span className="text-3xl md:text-4xl">{partner.icon}</span>
-                <span className="text-[#2D2D2D] font-medium text-xs md:text-sm text-center whitespace-nowrap">{partner.name}</span>
-              </div>
-            ))}
+          <div className="overflow-hidden">
+            <div className="flex items-center gap-4 animate-marquee whitespace-nowrap">
+              {[...Array(2)].map((_, i) => (
+                <>
+                  {[
+                    { name: '浙江省教育厅', icon: '🏛️' },
+                    { name: '海康威视', icon: '📷' },
+                    { name: '厦门航空', icon: '✈️' },
+                    { name: '中国移动', icon: '📱' },
+                    { name: '中国建设银行', icon: '🏦' },
+                    { name: '阿里巴巴', icon: '🛒' },
+                    { name: '浙江大学', icon: '🎓' },
+                    { name: '浙江省交通投资集团', icon: '🚗' },
+                    { name: '吉利控股集团', icon: '🚙' },
+                    { name: '网易', icon: '🎮' },
+                    { name: '华为', icon: '💻' },
+                    { name: '腾讯', icon: '💬' }
+                  ].map((partner, j) => (
+                    <div
+                      key={`${i}-${j}`}
+                      className="flex items-center gap-2 md:gap-3 px-3 md:px-5 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                    >
+                      <span className="text-xl md:text-3xl">{partner.icon}</span>
+                      <span className="text-[#2D2D2D] font-medium text-[10px] md:text-sm whitespace-nowrap">{partner.name}</span>
+                    </div>
+                  ))}
+                </>
+              ))}
+            </div>
+            <div className="flex items-center gap-4 animate-marquee-reverse whitespace-nowrap mt-3">
+              {[...Array(2)].map((_, i) => (
+                <>
+                  {[
+                    { name: '浙江省教育厅', icon: '🏛️' },
+                    { name: '海康威视', icon: '📷' },
+                    { name: '厦门航空', icon: '✈️' },
+                    { name: '中国移动', icon: '📱' },
+                    { name: '中国建设银行', icon: '🏦' },
+                    { name: '阿里巴巴', icon: '🛒' },
+                    { name: '浙江大学', icon: '🎓' },
+                    { name: '浙江省交通投资集团', icon: '🚗' },
+                    { name: '吉利控股集团', icon: '🚙' },
+                    { name: '网易', icon: '🎮' },
+                    { name: '华为', icon: '💻' },
+                    { name: '腾讯', icon: '💬' }
+                  ].map((partner, j) => (
+                    <div
+                      key={`reverse-${i}-${j}`}
+                      className="flex items-center gap-2 md:gap-3 px-3 md:px-5 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                    >
+                      <span className="text-xl md:text-3xl">{partner.icon}</span>
+                      <span className="text-[#2D2D2D] font-medium text-[10px] md:text-sm whitespace-nowrap">{partner.name}</span>
+                    </div>
+                  ))}
+                </>
+              ))}
+            </div>
+            <div className="flex items-center gap-4 animate-marquee whitespace-nowrap mt-3">
+              {[...Array(2)].map((_, i) => (
+                <>
+                  {[
+                    { name: '浙江省教育厅', icon: '🏛️' },
+                    { name: '海康威视', icon: '📷' },
+                    { name: '厦门航空', icon: '✈️' },
+                    { name: '中国移动', icon: '📱' },
+                    { name: '中国建设银行', icon: '🏦' },
+                    { name: '阿里巴巴', icon: '🛒' },
+                    { name: '浙江大学', icon: '🎓' },
+                    { name: '浙江省交通投资集团', icon: '🚗' },
+                    { name: '吉利控股集团', icon: '🚙' },
+                    { name: '网易', icon: '🎮' },
+                    { name: '华为', icon: '💻' },
+                    { name: '腾讯', icon: '💬' }
+                  ].map((partner, j) => (
+                    <div
+                      key={`third-${i}-${j}`}
+                      className="flex items-center gap-2 md:gap-3 px-3 md:px-5 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                    >
+                      <span className="text-xl md:text-3xl">{partner.icon}</span>
+                      <span className="text-[#2D2D2D] font-medium text-[10px] md:text-sm whitespace-nowrap">{partner.name}</span>
+                    </div>
+                  ))}
+                </>
+              ))}
+            </div>
+            <div className="flex items-center gap-4 animate-marquee-reverse whitespace-nowrap mt-3">
+              {[...Array(2)].map((_, i) => (
+                <>
+                  {[
+                    { name: '浙江省教育厅', icon: '🏛️' },
+                    { name: '海康威视', icon: '📷' },
+                    { name: '厦门航空', icon: '✈️' },
+                    { name: '中国移动', icon: '📱' },
+                    { name: '中国建设银行', icon: '🏦' },
+                    { name: '阿里巴巴', icon: '🛒' },
+                    { name: '浙江大学', icon: '🎓' },
+                    { name: '浙江省交通投资集团', icon: '🚗' },
+                    { name: '吉利控股集团', icon: '🚙' },
+                    { name: '网易', icon: '🎮' },
+                    { name: '华为', icon: '💻' },
+                    { name: '腾讯', icon: '💬' }
+                  ].map((partner, j) => (
+                    <div
+                      key={`fourth-${i}-${j}`}
+                      className="flex items-center gap-2 md:gap-3 px-3 md:px-5 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                    >
+                      <span className="text-xl md:text-3xl">{partner.icon}</span>
+                      <span className="text-[#2D2D2D] font-medium text-[10px] md:text-sm whitespace-nowrap">{partner.name}</span>
+                    </div>
+                  ))}
+                </>
+              ))}
+            </div>
           </div>
         </div>
       </section>
