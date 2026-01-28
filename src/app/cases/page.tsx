@@ -84,8 +84,8 @@ export default function CasesPage() {
       client: '绿城地产',
       title: '业主社群活动',
       category: 'VIP客户活动',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/绿城业主活动1.png',
+      subImages: ['/绿城业主活动2.jpg', '/绿城业主活动3.jpg', '/绿城业主活动4.jpg'],
       description: '围绕"三十而趣"主题，通过非遗手作搭建高品质社群互动平台。以文化为媒，激活邻里社交活力，助力品牌构建有温度、有深度的生活服务体系。',
       highlights: ['社群互动', '非遗手作', '邻里社交', '服务体系']
     },
@@ -94,8 +94,8 @@ export default function CasesPage() {
       client: '浙江省直属机关工会委员会',
       title: '红娘荟·宋风雅集',
       category: '浪漫之约',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/红娘荟活动1.jpg',
+      subImages: ['/红娘荟活动2.jpg', '/红娘荟活动3.jpg', '/红娘荟活动4.jpg'],
       description: '摒弃传统相亲模式，创新打造极具江南韵味的"宋风雅集"交友局。通过非遗互动自然破冰，让单身青年在风雅的文化氛围中邂逅良缘，大幅提升牵手成功率。',
       highlights: ['交友活动', '宋韵文化', '非遗互动', '自然破冰']
     },
