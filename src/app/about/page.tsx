@@ -172,23 +172,23 @@ export default function AboutPage() {
                   </span>
                 </div>
               </div>
-              <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江图书馆（之江馆）</h3>
-                <div className="space-y-3 text-sm text-[#666666]">
+              <div className="p-4 md:p-6">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#333333]">浙江图书馆（之江馆）</h3>
+                <div className="space-y-2 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>8.5万平方米智慧图书馆，藏书超700万册</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>高端研讨空间，配备先进的会议设施</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>浓厚学术氛围，适合高端培训与知识分享</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>特色文创空间，可定制化活动场地</p>
                   </div>
                 </div>
@@ -206,23 +206,23 @@ export default function AboutPage() {
                   </span>
                 </div>
               </div>
-              <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省博物馆（之江馆）</h3>
-                <div className="space-y-3 text-sm text-[#666666]">
+              <div className="p-4 md:p-6">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#333333]">浙江省博物馆（之江馆）</h3>
+                <div className="space-y-2 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>10万平方米现代化空间，国家一级博物馆</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>"浙江一万年"等历史文化陈列，底蕴深厚</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>适合历史溯源与党性教育，红色文化浸润</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>专业讲解服务，沉浸式导览体验</p>
                   </div>
                 </div>
@@ -240,23 +240,23 @@ export default function AboutPage() {
                   </span>
                 </div>
               </div>
-              <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江省非物质文化遗产馆</h3>
-                <div className="space-y-3 text-sm text-[#666666]">
+              <div className="p-4 md:p-6">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#333333]">浙江省非物质文化遗产馆</h3>
+                <div className="space-y-2 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>全国首座大型区域综合性非遗馆</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>展示1000余项非遗项目，技艺传承活态呈现</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>非遗手作体验，传统技艺沉浸式学习</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>大师工作室，非遗匠人面对面交流</p>
                   </div>
                 </div>
@@ -274,23 +274,23 @@ export default function AboutPage() {
                   </span>
                 </div>
               </div>
-              <div className="p-6 md:p-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#333333]">浙江文学馆</h3>
-                <div className="space-y-3 text-sm text-[#666666]">
+              <div className="p-4 md:p-6">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#333333]">浙江文学馆</h3>
+                <div className="space-y-2 text-sm text-[#666666]">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>规模仅次于中国现代文学馆，浙江文学殿堂</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>文学沙龙空间，人文素养课程</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>诗歌朗诵、文学创作 workshop</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                     <p>浙江作家群展区，感受浙派文学魅力</p>
                   </div>
                 </div>
@@ -313,26 +313,26 @@ export default function AboutPage() {
                     </div>
                   </div>
                 </div>
-                <div className="md:w-1/2 p-6 md:p-8">
-                  <div className="inline-flex items-center gap-2 mb-4">
+                <div className="md:w-1/2 p-4 md:p-6">
+                  <div className="inline-flex items-center gap-2 mb-3">
                     <span className="bg-[#FF9F43] text-white text-xs font-semibold px-3 py-1 rounded-full">综合服务</span>
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#333333]">之江文化中心公共服务中心</h3>
-                  <div className="space-y-3 text-sm text-[#666666]">
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#333333]">之江文化中心公共服务中心</h3>
+                  <div className="space-y-2 text-sm text-[#666666]">
                     <div className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                       <p>多功能服务空间，支持各类公共文化服务活动</p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                       <p>连接四大场馆资源，提供便捷的导览咨询服务</p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                       <p>完善的配套设施，满足多样化的活动需求</p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-[#FFC107] mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-[#FFC107] mt-0.5 flex-shrink-0" />
                       <p>专业服务团队，提供全方位的活动支持</p>
                     </div>
                   </div>
