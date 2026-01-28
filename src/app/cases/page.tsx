@@ -164,8 +164,8 @@ export default function CasesPage() {
       client: '厦门航空',
       title: '红色剧本杀活动',
       category: '党建活动',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/红色剧本杀1.jpg',
+      subImages: ['/红色剧本杀2.jpg', '/红色剧本杀3.jpg', '/红色剧本杀4.jpg'],
       description: '打破枯燥的说教形式，引入沉浸式"红色剧本杀"。让党员在角色扮演中穿越历史烽烟，身临其境地感悟革命精神，实现党性教育入脑入心。',
       highlights: ['剧本杀', '红色故事', '角色扮演', '党性教育']
     },
@@ -174,8 +174,8 @@ export default function CasesPage() {
       client: '西湖大学',
       title: '余村两山理论红色行',
       category: '党建活动',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/余村.png',
+      subImages: ['/红色剧本杀2.jpg', '/红色剧本杀3.jpg', '/红色剧本杀4.jpg'],
       description: '组织高知群体深入"两山理论"发源地余村，开展实地调研与研学。将生态文明思想与现场教学紧密结合，在绿水青山间深刻领悟可持续发展的真谛。',
       highlights: ['两山理论', '实地调研', '生态文明', '可持续发展']
     },
@@ -184,8 +184,8 @@ export default function CasesPage() {
       client: '蒙牛迈胜（上海）',
       title: '企业年会',
       category: '专属定制',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/蒙牛迈胜年会1.jpg',
+      subImages: ['/蒙牛迈胜年会2.jpg', '/蒙牛迈胜年会3.jpg', '/蒙牛迈胜年会4.jpg'],
       description: '甄选独具格调的文化艺术空间作为年会场域，打破传统宴会厅的刻板印象。提供从空间美陈策划到落地执行的全案服务，以艺术氛围赋能商业盛典，为品牌注入独特的高端质感。',
       highlights: ['场地甄选', '策划布置', '全案执行', '高端质感']
     },
@@ -194,8 +194,8 @@ export default function CasesPage() {
       client: 'AFLAS（亚洲实验动物学会联合会）',
       title: '2025AFLAS文化活动',
       category: '中外文化交流',
-      mainImage: '/浙江省博物馆.png',
-      subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
+      mainImage: '/AFLAS1.jpg',
+      subImages: ['/AFLAS2.jpg', '/AFLAS3.jpg', '/AFLAS4.jpg'],
       description: '提供高规格的国际会议配套文化服务，精选代表性非遗项目与文艺展演。向国际专家学者生动展示"浙江韵味"，做好文化的传播者与国际交流的桥梁。',
       highlights: ['国际会议', '参访交流', '非遗体验', '文艺展演']
     }
