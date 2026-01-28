@@ -32,7 +32,7 @@ export default function CasesPage() {
     {
       id: 3,
       client: '浙江省财政厅&农商银行',
-      title: '联合节日活动',
+      title: '联合活动',
       category: '儿童节活动',
       mainImage: '/浙江省博物馆.png',
       subImages: ['/浙江省非遗馆.png', '/浙江省文学馆.png', '/浙江省图书馆.png'],
