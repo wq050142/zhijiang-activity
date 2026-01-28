@@ -466,8 +466,12 @@ export default function AboutPage() {
       </section>
 
       {/* 页脚 */}
-      <footer className="bg-[#333333] text-white py-8 px-6 md:py-12">
-        <div className="max-w-7xl mx-auto">
+      <footer className="relative text-white py-8 px-6 md:py-12">
+        {/* 背景图 */}
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
+          <div className="absolute inset-0 bg-[#333333]/90"></div>
+        </div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 mb-6 md:mb-8">
             <div className="col-span-2 md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
