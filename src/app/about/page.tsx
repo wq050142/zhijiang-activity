@@ -394,14 +394,14 @@ export default function AboutPage() {
       </section>
 
       {/* 核心优势 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
+      <section className="py-8 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 mb-4">
+          <div className="text-center mb-6 md:mb-12">
+            <div className="inline-flex items-center gap-2 mb-2 md:mb-4">
               <Sparkles className="h-6 w-6 text-[#FFC107]" />
               <span className="text-[#FFC107] font-semibold">核心优势</span>
             </div>
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">
+            <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white">
               选择我们的理由
             </h2>
             <p className="text-sm md:text-lg text-white/90 max-w-2xl mx-auto">
@@ -409,45 +409,45 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="w-14 h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-6">
-                <Award className="h-7 w-7 text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-8 border border-white/20">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-3 md:mb-6">
+                <Award className="h-6 w-6 md:h-7 md:w-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">地标级场馆</h3>
-              <p className="text-white/90 leading-relaxed">
+              <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-white">地标级场馆</h3>
+              <p className="text-sm md:text-base text-white/90 leading-relaxed">
                 全国体量最大的省级公共文化设施集聚群，独特的文化地标，彰显活动品质
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="w-14 h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-6">
-                <Users className="h-7 w-7 text-white" />
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-8 border border-white/20">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-3 md:mb-6">
+                <Users className="h-6 w-6 md:h-7 md:w-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">一站式服务</h3>
-              <p className="text-white/90 leading-relaxed">
+              <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-white">一站式服务</h3>
+              <p className="text-sm md:text-base text-white/90 leading-relaxed">
                 国有文化企业专业团队统筹，提供从策划到执行的全案服务，解决多供应商对接烦恼
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="w-14 h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-6">
-                <Sparkles className="h-7 w-7 text-white" />
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-8 border border-white/20">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-[#FFC107] rounded-xl flex items-center justify-center mb-3 md:mb-6">
+                <Sparkles className="h-6 w-6 md:h-7 md:w-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">高端定制</h3>
-              <p className="text-white/90 leading-relaxed">
+              <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-white">高端定制</h3>
+              <p className="text-sm md:text-base text-white/90 leading-relaxed">
                 打破传统模式，提供"文化+"沉浸式体验，涵盖艺术展览、非遗手作、学术研讨等多场景
               </p>
             </div>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-6 md:mt-12">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:shadow-xl text-[#FFC107] px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:scale-105 border-2 border-white"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:shadow-xl text-[#FFC107] px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all shadow-lg hover:scale-105 border-2 border-white"
             >
               立即咨询
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
             </Link>
           </div>
         </div>
