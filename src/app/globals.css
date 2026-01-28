@@ -146,20 +146,27 @@ body {
     }
   }
 
-  @keyframes marquee-reverse {
-    0% {
-      transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
   .animate-marquee {
     animation: marquee 30s linear infinite;
   }
 
-  .animate-marquee-reverse {
-    animation: marquee-reverse 30s linear infinite;
+  .animate-marquee-fast {
+    animation: marquee 25s linear infinite;
+    animation-delay: 0s;
+  }
+
+  .animate-marquee-medium {
+    animation: marquee 35s linear infinite;
+    animation-delay: -5s;
+  }
+
+  .animate-marquee-slow {
+    animation: marquee 45s linear infinite;
+    animation-delay: -10s;
+  }
+
+  .animate-marquee-extra-slow {
+    animation: marquee 55s linear infinite;
+    animation-delay: -15s;
   }
 }

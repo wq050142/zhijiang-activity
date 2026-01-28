@@ -376,7 +376,7 @@ export default function Home() {
           </div>
 
           <div className="overflow-hidden">
-            <div className="flex items-center gap-4 animate-marquee whitespace-nowrap">
+            <div className="flex items-center gap-4 animate-marquee-fast whitespace-nowrap">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -404,7 +404,7 @@ export default function Home() {
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-4 animate-marquee-reverse whitespace-nowrap mt-3">
+            <div className="flex items-center gap-4 animate-marquee-medium whitespace-nowrap mt-3">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -432,7 +432,7 @@ export default function Home() {
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-4 animate-marquee whitespace-nowrap mt-3">
+            <div className="flex items-center gap-4 animate-marquee-slow whitespace-nowrap mt-3">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -460,7 +460,7 @@ export default function Home() {
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-4 animate-marquee-reverse whitespace-nowrap mt-3">
+            <div className="flex items-center gap-4 animate-marquee-extra-slow whitespace-nowrap mt-3">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
@@ -496,10 +496,6 @@ export default function Home() {
       <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 md:mb-16">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <Award className="h-6 w-6 text-[#FFC107]" />
-              <span className="text-[#FF9F43] font-semibold">成功案例</span>
-            </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#333333]">
               精选案例
             </h2>
