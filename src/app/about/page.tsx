@@ -495,7 +495,7 @@ export default function AboutPage() {
                 {/* 6张小图 */}
                 <div className="grid grid-cols-3 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                    <img src="/会议活动资源2.png" alt="会议活动" className="w-full h-full object-cover" />
+                    <img src="/会议活动资源1.jpg" alt="会议活动" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
                     <img src="/会议活动资源3.png" alt="会议活动" className="w-full h-full object-cover" />
