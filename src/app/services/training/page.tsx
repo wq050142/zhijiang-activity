@@ -397,6 +397,77 @@ export default function TrainingPage() {
         </div>
       </section>
 
+      {/* 培训场景展示 */}
+      <section className="py-12 px-4 md:px-6 md:py-16 bg-[#F8FAFC]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Award className="h-6 w-6 text-[#FFE15D]" />
+              <span className="text-[#FF9F43] font-semibold">培训场景</span>
+            </div>
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+              沉浸式学习体验
+            </h2>
+            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
+              在文化地标中学习，感受浙江文化的深厚底蕴
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#2D2D2D]">
+                    高品质学习环境
+                  </h3>
+                  <p className="text-[#6B7280] leading-relaxed mb-4">
+                    依托之江文化中心四大场馆资源，提供沉浸式学习体验。现代化的设施设备，舒适的学习环境，让培训效果更上一层楼。
+                  </p>
+                  <p className="text-[#6B7280] leading-relaxed">
+                    无论是大型讲座、专业培训，还是小班研讨，我们都能提供合适的场地支持，确保每一次培训都能获得最佳体验。
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white rounded-xl p-4 border border-gray-200">
+                    <div className="text-2xl font-bold text-[#FFE15D] mb-1">100+</div>
+                    <div className="text-sm text-[#6B7280]">服务企业</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 border border-gray-200">
+                    <div className="text-2xl font-bold text-[#FFE15D] mb-1">500+</div>
+                    <div className="text-sm text-[#6B7280]">培训场次</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 border border-gray-200">
+                    <div className="text-2xl font-bold text-[#FFE15D] mb-1">98%</div>
+                    <div className="text-sm text-[#6B7280]">满意度</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 border border-gray-200">
+                    <div className="text-2xl font-bold text-[#FFE15D] mb-1">5000+</div>
+                    <div className="text-sm text-[#6B7280]">参训人次</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="order-1 lg:order-2">
+              <div className="relative">
+                <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    src="/图片3.png"
+                    alt="访学培训场景"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-6 shadow-xl hidden md:block">
+                  <div className="text-4xl font-bold text-white mb-1">专业</div>
+                  <div className="text-sm text-white/90">品质保障</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
         <div className="max-w-4xl mx-auto text-center">
