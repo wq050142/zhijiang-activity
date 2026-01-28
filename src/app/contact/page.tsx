@@ -302,12 +302,8 @@ export default function ContactPage() {
       <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <Calendar className="h-6 w-6 text-[#FFE15D]" />
-              <span className="text-[#FF9F43] font-semibold">服务流程</span>
-            </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
-              5步标准流程
+              服务流程
             </h2>
           </div>
 
@@ -348,9 +344,9 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:191-0658-3798"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-6 py-3 rounded-full text-base font-semibold transition-all shadow-lg hover:scale-105"
             >
-              <Phone className="h-5 w-5" />
+              <Phone className="h-4 w-4" />
               立即致电
             </a>
           </div>
