@@ -520,79 +520,41 @@ export default function CasesPage() {
                 <img
                   src="/之江文化中心logo_画板 1.png"
                   alt="之江文化中心 logo"
-                  className="h-10 md:h-12 w-auto"
+                  className="h-10 w-auto"
                 />
                 <div>
-                  <span className="text-base md:text-lg font-bold">之江文化中心</span>
-                  <p className="text-xs text-white/50">企业活动服务</p>
+                  <span className="text-xl font-bold">之江文化中心</span>
+                  <p className="text-xs text-[#FFC107]">企业活动服务</p>
                 </div>
               </div>
-              <p className="text-sm text-white/70 mb-4">
-                依托之江文化中心四大场馆资源，为企业提供党建、团建、培训、定制活动一站式服务
-              </p>
-              <div className="flex items-center gap-4">
-                <a href="tel:191-0658-3798" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#FFC107] transition-colors">
-                  <Phone className="h-4 w-4" />
-                  191-0658-3798
-                </a>
-              </div>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-3 text-[#FFC107]">服务</h4>
-              <ul className="space-y-2 text-sm text-white/70">
-                <li>
-                  <Link href="/services/party" className="hover:text-[#FFC107] transition-colors">
-                    主题党建
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/team" className="hover:text-[#FFC107] transition-colors">
-                    团建拓展
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/training" className="hover:text-[#FFC107] transition-colors">
-                    访学培训
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/custom" className="hover:text-[#FFC107] transition-colors">
-                    定制活动
-                  </Link>
-                </li>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">服务内容</h3>
+              <ul className="space-y-2 text-white/70 text-sm">
+                <li><Link href="/services/party" className="hover:text-white transition-colors">主题党建</Link></li>
+                <li><Link href="/services/team" className="hover:text-white transition-colors">团建拓展</Link></li>
+                <li><Link href="/services/training" className="hover:text-white transition-colors">访学培训</Link></li>
+                <li><Link href="/services/custom" className="hover:text-white transition-colors">定制活动</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-3 text-[#FFC107]">关于</h4>
-              <ul className="space-y-2 text-sm text-white/70">
-                <li>
-                  <Link href="/about" className="hover:text-[#FFC107] transition-colors">
-                    关于我们
-                  </Link>
+              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">联系方式</h3>
+              <ul className="space-y-3 text-white/70 text-sm">
+                <li className="flex items-start gap-2">
+                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
+                  <span>191-0658-3798</span>
                 </li>
-                <li>
-                  <Link href="/cases" className="hover:text-[#FFC107] transition-colors">
-                    案例中心
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-3 text-[#FFC107]">联系</h4>
-              <ul className="space-y-2 text-sm text-white/70">
-                <li>
-                  <Link href="/contact" className="hover:text-[#FFC107] transition-colors">
-                    联系我们
-                  </Link>
+                <li className="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
+                  <span>浙江省杭州市西湖区<br />之江文化中心</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-white/10 pt-6 text-center">
+          <div className="border-t border-white/10 pt-8 text-center">
             <p className="text-white/50 text-sm">
               © 2024 浙江文化空间发展有限公司 | 之江文化中心企业活动服务 | 版权所有
             </p>
