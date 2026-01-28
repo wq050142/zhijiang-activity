@@ -328,6 +328,12 @@ export default function ContactPage() {
                     <ArrowRight className="h-3.5 w-3.5 text-[#FF9F43]" />
                   </div>
                 </div>
+                {/* 手机端右箭头 */}
+                <div className="md:hidden absolute top-1/2 -right-1.5 transform -translate-y-1/2 z-10">
+                  <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <ArrowRight className="h-2 w-2 text-[#FF9F43]" />
+                  </div>
+                </div>
               </div>
 
               <div className="relative group">
@@ -344,6 +350,12 @@ export default function ContactPage() {
                     <ArrowRight className="h-3.5 w-3.5 text-[#FF9F43]" />
                   </div>
                 </div>
+                {/* 手机端右箭头 */}
+                <div className="md:hidden absolute top-1/2 -right-1.5 transform -translate-y-1/2 z-10">
+                  <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <ArrowRight className="h-2 w-2 text-[#FF9F43]" />
+                  </div>
+                </div>
               </div>
 
               <div className="relative group">
@@ -358,6 +370,12 @@ export default function ContactPage() {
                 <div className="hidden md:block absolute -bottom-3 left-1/2 transform -translate-x-1/2 z-10">
                   <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-lg">
                     <ArrowRight className="h-3.5 w-3.5 text-[#FF9F43] rotate-90" />
+                  </div>
+                </div>
+                {/* 手机端下箭头 */}
+                <div className="md:hidden absolute -bottom-2 left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <ArrowRight className="h-2 w-2 text-[#FF9F43] rotate-90" />
                   </div>
                 </div>
               </div>
@@ -413,10 +431,10 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:191-0658-3798"
-              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-3 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-base font-semibold transition-all shadow-lg hover:scale-105"
+              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-3 py-1.5 sm:px-6 sm:py-3 rounded-full text-[10px] sm:text-base font-semibold transition-all shadow-lg hover:scale-105"
             >
-              <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">立即致电</span>
+              <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              立即致电
             </a>
           </div>
         </div>
