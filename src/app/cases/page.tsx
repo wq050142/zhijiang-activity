@@ -115,7 +115,7 @@ export default function CasesPage() {
       title: '脆皮打工人养生局',
       category: '养生团建',
       mainImage: '/脆皮打工人养生局1.jpg',
-      subImages: ['/脆皮打工人养生局2.jpg', '/脆皮打工人养生局3.jpg', '/脆皮打工人养生局4.jpg'],
+      subImages: ['/脆皮打工人养生局2.jpg', '/脆皮打工人养生局3.png', '/脆皮打工人养生局4.jpg'],
       description: '针对互联网及科技行业高压人群，定制"身心除锈"的疗愈专场。融合音疗放松与非遗慢生活体验，帮助员工释放职场压力，实现身心的深度充电。',
       highlights: ['养生疗愈', '音疗放松', '非遗体验', '释放压力']
     },
