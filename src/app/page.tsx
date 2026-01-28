@@ -385,105 +385,101 @@ export default function Home() {
           </div>
 
           <div className="overflow-hidden">
-            <div className="flex items-center gap-4 animate-marquee-fast whitespace-nowrap">
+            <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-marquee-fast whitespace-nowrap">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
-                    { name: '中共浙江省委党校', icon: '🏛️' },
-                    { name: '浙江省教育厅', icon: '🏛️' },
-                    { name: '浙江省财政厅', icon: '🏛️' },
-                    { name: '浙江省直属机关工会', icon: '🏛️' },
-                    { name: '浙江广播电视集团', icon: '📰' },
-                    { name: '浙江省大数据发展管理局', icon: '💻' },
-                    { name: '浙江省档案馆', icon: '🏛️' },
-                    { name: '杭州市城管局', icon: '🏛️' },
-                    { name: '杭州市上城区法院', icon: '⚖️' },
-                    { name: '杭州市西湖区总工会', icon: '🏛️' }
+                    '中共浙江省委党校',
+                    '浙江省教育厅',
+                    '浙江省财政厅',
+                    '浙江省直属机关工会',
+                    '浙江广播电视集团',
+                    '浙江省大数据发展管理局',
+                    '浙江省档案馆',
+                    '杭州市城管局',
+                    '杭州市上城区法院',
+                    '杭州市西湖区总工会'
                   ].map((partner, j) => (
                     <div
                       key={`${i}-${j}`}
-                      className="flex items-center gap-2 md:gap-3 px-3 md:px-5 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
                     >
-                      <span className="text-xl md:text-3xl">{partner.icon}</span>
-                      <span className="text-[#2D2D2D] font-medium text-[10px] md:text-sm whitespace-nowrap">{partner.name}</span>
+                      <span className="text-[#2D2D2D] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-4 animate-marquee-medium whitespace-nowrap mt-3">
+            <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-marquee-medium whitespace-nowrap mt-3">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
-                    { name: '杭州市萧山区团委', icon: '🏛️' },
-                    { name: '德清县关工委', icon: '🏛️' },
-                    { name: '浙江大学', icon: '🎓' },
-                    { name: '西湖大学', icon: '🎓' },
-                    { name: '浙江工业大学', icon: '🎓' },
-                    { name: '光明日报', icon: '📰' },
-                    { name: '浙教集团', icon: '🎓' },
-                    { name: '浙江数智交院', icon: '💻' },
-                    { name: '厦门航空', icon: '✈️' },
-                    { name: '海康威视', icon: '📷' }
+                    '杭州市萧山区团委',
+                    '德清县关工委',
+                    '浙江大学',
+                    '西湖大学',
+                    '浙江工业大学',
+                    '光明日报',
+                    '浙教集团',
+                    '浙江数智交院',
+                    '厦门航空',
+                    '海康威视'
                   ].map((partner, j) => (
                     <div
                       key={`reverse-${i}-${j}`}
-                      className="flex items-center gap-2 md:gap-3 px-3 md:px-5 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
                     >
-                      <span className="text-xl md:text-3xl">{partner.icon}</span>
-                      <span className="text-[#2D2D2D] font-medium text-[10px] md:text-sm whitespace-nowrap">{partner.name}</span>
+                      <span className="text-[#2D2D2D] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-4 animate-marquee-slow whitespace-nowrap mt-3">
+            <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-marquee-slow whitespace-nowrap mt-3">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
-                    { name: '博世电动', icon: '⚡' },
-                    { name: '华为问界', icon: '🚗' },
-                    { name: '北京奔驰', icon: '🚗' },
-                    { name: '华润置地', icon: '🏢' },
-                    { name: '银泰集团', icon: '🏢' },
-                    { name: '绿城物业', icon: '🏢' },
-                    { name: '宝龙集团', icon: '🏢' },
-                    { name: '富春山居集团', icon: '🏢' },
-                    { name: '建发集团', icon: '🏢' },
-                    { name: '中国移动', icon: '📱' }
+                    '博世电动',
+                    '华为问界',
+                    '北京奔驰',
+                    '华润置地',
+                    '银泰集团',
+                    '绿城物业',
+                    '宝龙集团',
+                    '富春山居集团',
+                    '建发集团',
+                    '中国移动'
                   ].map((partner, j) => (
                     <div
                       key={`third-${i}-${j}`}
-                      className="flex items-center gap-2 md:gap-3 px-3 md:px-5 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
                     >
-                      <span className="text-xl md:text-3xl">{partner.icon}</span>
-                      <span className="text-[#2D2D2D] font-medium text-[10px] md:text-sm whitespace-nowrap">{partner.name}</span>
+                      <span className="text-[#2D2D2D] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
               ))}
             </div>
-            <div className="flex items-center gap-4 animate-marquee-extra-slow whitespace-nowrap mt-3">
+            <div className="flex items-center gap-6 md:gap-8 lg:gap-10 animate-marquee-extra-slow whitespace-nowrap mt-3">
               {[...Array(2)].map((_, i) => (
                 <>
                   {[
-                    { name: '传播大脑', icon: '💻' },
-                    { name: '上海市政院', icon: '🏗️' },
-                    { name: '交通银行', icon: '🏦' },
-                    { name: '上海银行', icon: '🏦' },
-                    { name: '农商银行', icon: '🏦' },
-                    { name: '杭州联合银行', icon: '🏦' },
-                    { name: '工商银行', icon: '🏦' },
-                    { name: '中宏保险', icon: '🛡️' },
-                    { name: '南银法巴消费金融', icon: '🏦' },
-                    { name: '更多合作伙伴', icon: '➕' }
+                    '传播大脑',
+                    '上海市政院',
+                    '交通银行',
+                    '上海银行',
+                    '农商银行',
+                    '杭州联合银行',
+                    '工商银行',
+                    '中宏保险',
+                    '南银法巴消费金融',
+                    '更多合作伙伴'
                   ].map((partner, j) => (
                     <div
                       key={`fourth-${i}-${j}`}
-                      className="flex items-center gap-2 md:gap-3 px-3 md:px-5 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
+                      className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FFE15D] hover:shadow-md transition-all min-w-max"
                     >
-                      <span className="text-xl md:text-3xl">{partner.icon}</span>
-                      <span className="text-[#2D2D2D] font-medium text-[10px] md:text-sm whitespace-nowrap">{partner.name}</span>
+                      <span className="text-[#2D2D2D] font-medium text-xs md:text-sm whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
                 </>
