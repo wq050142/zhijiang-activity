@@ -7,7 +7,6 @@ import { Building2, Phone, BookOpen, Users, Calendar, Award, Sparkles, MapPin, S
 export default function CasesPage() {
   const [expandedImages, setExpandedImages] = useState<{ [key: number]: { isOpen: boolean; currentIndex: number } }>({});
   const scrollRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
-  const autoScrollTimers = useRef<{ [key: number]: NodeJS.Timeout | null }>({});
 
   const cases = [
     {
@@ -255,40 +254,6 @@ export default function CasesPage() {
     });
   };
 
-  // 自动轮播
-  useEffect(() => {
-    cases.forEach((caseItem) => {
-      const scrollContainer = scrollRefs.current[caseItem.id];
-      if (scrollContainer) {
-        // 清除之前的定时器
-        if (autoScrollTimers.current[caseItem.id]) {
-          clearInterval(autoScrollTimers.current[caseItem.id]!);
-        }
-
-        // 设置新的自动轮播
-        autoScrollTimers.current[caseItem.id] = setInterval(() => {
-          if (scrollContainer) {
-            const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-            const newScroll = scrollContainer.scrollLeft + scrollContainer.clientWidth;
-
-            if (newScroll >= maxScroll) {
-              scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
-            } else {
-              scrollContainer.scrollTo({ left: newScroll, behavior: 'smooth' });
-            }
-          }
-        }, 3000); // 每3秒滚动一次
-      }
-    });
-
-    // 清理定时器
-    return () => {
-      Object.values(autoScrollTimers.current).forEach(timer => {
-        if (timer) clearInterval(timer);
-      });
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
@@ -381,10 +346,10 @@ export default function CasesPage() {
                       {allImages.map((image, index) => (
                         <div
                           key={index}
-                          className="flex-shrink-0 w-[200px] snap-start cursor-pointer"
+                          className="flex-shrink-0 w-[400px] snap-start cursor-pointer"
                           onClick={() => openImage(caseItem.id, index)}
                         >
-                          <div className="aspect-[16/10] rounded-xl overflow-hidden bg-gray-100 hover:opacity-90 transition-opacity">
+                          <div className="aspect-[16/10] rounded-xl overflow-hidden bg-gray-100 hover:opacity-90 transition-opacity relative">
                             <img
                               src={image}
                               alt={`${caseItem.title} ${index + 1}`}
@@ -408,45 +373,44 @@ export default function CasesPage() {
                     </p>
 
                     {/* 关键词横向排布 */}
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="flex flex-wrap gap-3 mb-4">
                       {caseItem.highlights.slice(0, 3).map((highlight, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 bg-[#FFE15D]/20 text-[#2D2D2D] text-xs font-medium rounded-full"
-                        >
-                          {highlight}
-                        </span>
+                        <div key={index} className="flex items-center gap-2 text-xs text-[#6B7280]">
+                          <div className="w-1.5 h-1.5 bg-[#FFE15D] rounded-full flex-shrink-0" />
+                          <span>{highlight}</span>
+                        </div>
                       ))}
                     </div>
                   </div>
 
-                  {/* 图片放大模态框 */}
+                  {/* 图片放大浮动效果 */}
                   {expandedState?.isOpen && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4">
+                    <div className="absolute inset-0 z-50 bg-black/80 p-4 flex items-center justify-center" onClick={() => closeImage(caseItem.id)}>
                       <button
-                        onClick={() => closeImage(caseItem.id)}
+                        onClick={(e) => { e.stopPropagation(); closeImage(caseItem.id); }}
                         className="absolute top-4 right-4 text-white hover:text-[#FFC107] transition-colors"
                       >
                         <X className="h-8 w-8" />
                       </button>
 
                       <button
-                        onClick={() => prevImage(caseItem.id)}
+                        onClick={(e) => { e.stopPropagation(); prevImage(caseItem.id); }}
                         className="absolute left-4 text-white hover:text-[#FFC107] transition-colors"
                       >
                         <ChevronLeft className="h-12 w-12" />
                       </button>
 
-                      <div className="relative max-w-5xl max-h-[80vh]">
+                      <div className="relative max-w-full max-h-[70vh]">
                         <img
                           src={allImages[expandedState.currentIndex]}
                           alt={`${caseItem.title} ${expandedState.currentIndex + 1}`}
-                          className="max-w-full max-h-[80vh] object-contain"
+                          className="max-w-full max-h-[70vh] object-contain"
+                          onClick={(e) => e.stopPropagation()}
                         />
                       </div>
 
                       <button
-                        onClick={() => nextImage(caseItem.id)}
+                        onClick={(e) => { e.stopPropagation(); nextImage(caseItem.id); }}
                         className="absolute right-4 text-white hover:text-[#FFC107] transition-colors"
                       >
                         <ChevronRight className="h-12 w-12" />
@@ -456,7 +420,7 @@ export default function CasesPage() {
                         {allImages.map((_, index) => (
                           <button
                             key={index}
-                            onClick={() => openImage(caseItem.id, index)}
+                            onClick={(e) => { e.stopPropagation(); openImage(caseItem.id, index); }}
                             className={`w-2 h-2 rounded-full transition-colors ${
                               index === expandedState.currentIndex ? 'bg-[#FFC107]' : 'bg-white/50'
                             }`}
