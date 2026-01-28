@@ -431,9 +431,10 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:191-0658-3798"
-              className="inline-flex items-center justify-center bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
             >
-              立即咨询
+              <Phone className="h-4 w-4" />
+              立即致电
             </a>
           </div>
         </div>
