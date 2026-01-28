@@ -203,8 +203,17 @@ export default function CasesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC]">
-      {/* 顶部导航栏 */}
+    <>
+      <style jsx>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
+      <div className="min-h-screen bg-[#F8FAFC]">
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
@@ -281,17 +290,24 @@ export default function CasesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {cases.map((caseItem) => (
               <div key={caseItem.id} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-                {/* 主图 */}
-                <div className="aspect-[16/10] relative overflow-hidden">
-                  <img src={caseItem.mainImage} alt={caseItem.title} className="w-full h-full object-cover" />
-                </div>
-                {/* 3张辅图 */}
-                <div className="grid grid-cols-3 gap-2">
-                  {caseItem.subImages.map((subImage, index) => (
-                    <div key={index} className="aspect-square rounded-lg overflow-hidden bg-gray-100">
-                      <img src={subImage} alt={`${caseItem.title} ${index + 1}`} className="w-full h-full object-cover" />
+                {/* 图片滚动区域 */}
+                <div className="relative overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+                  <div className="flex gap-3 p-3">
+                    {/* 主图 */}
+                    <div className="flex-shrink-0 w-[280px] snap-start">
+                      <div className="aspect-[16/10] rounded-xl overflow-hidden bg-gray-100">
+                        <img src={caseItem.mainImage} alt={caseItem.title} className="w-full h-full object-cover" />
+                      </div>
                     </div>
-                  ))}
+                    {/* 3张辅图 */}
+                    {caseItem.subImages.map((subImage, index) => (
+                      <div key={index} className="flex-shrink-0 w-[120px] snap-start">
+                        <div className="aspect-square rounded-xl overflow-hidden bg-gray-100">
+                          <img src={subImage} alt={`${caseItem.title} ${index + 1}`} className="w-full h-full object-cover" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
@@ -426,6 +442,7 @@ export default function CasesPage() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
