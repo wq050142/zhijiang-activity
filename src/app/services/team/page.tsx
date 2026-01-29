@@ -127,8 +127,14 @@ export default function TeamBuildingPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-8 border border-[#FFE15D]/20">
-              <div className="space-y-4">
+            <div className="space-y-4">
+              <div className="inline-flex items-center gap-2 mb-4">
+                <Sparkles className="h-6 w-6 text-[#FFE15D]" />
+                <span className="text-[#FF9F43] font-semibold">活动亮点</span>
+              </div>
+              
+              <div className="bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-8 border border-[#FFE15D]/20">
+                <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
                     <Heart className="h-6 w-6 text-white" />
