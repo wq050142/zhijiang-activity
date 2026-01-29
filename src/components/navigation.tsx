@@ -93,7 +93,10 @@ export default function Navigation({ currentPath }: NavigationProps) {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-gray-100/30 backdrop-blur-none">
+        <div
+          className="lg:hidden border-t border-gray-200"
+          style={{ backgroundColor: 'rgba(243, 244, 246, 0.3)' }}
+        >
           <div className="px-3 py-3 space-y-1">
             {/* 首页选项 */}
             <Link
