@@ -9,21 +9,21 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 mb-6 md:mb-8">
           {/* Logo */}
           <div className="col-span-2 md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="relative h-10 w-auto">
-                <OptimizedImage
-                  src="/之江文化中心logo_画板 1.png"
-                  alt="之江文化中心 logo"
-                  fill
-                  className="object-contain"
-                  sizes="40px"
-                />
-              </div>
+            <Link href="/" className="flex items-center gap-3 mb-4">
+              <OptimizedImage
+                src="/assets/之江文化中心logo.png"
+                alt="之江文化中心 logo"
+                width={80}
+                height={80}
+                className="h-10 md:h-14 w-auto"
+                priority
+                sizes="(max-width: 768px) 40px, 56px"
+              />
               <div>
                 <span className="text-xl font-bold">之江文化中心</span>
                 <p className="text-xs text-[#FFC107]">企业活动服务</p>
               </div>
-            </div>
+            </Link>
             <p className="text-white/60 text-sm leading-relaxed">
               依托之江文化中心资源，提供主题党建、团建拓展、访学培训、定制活动等全方位企业活动服务，助力企业文化建设和团队发展。
             </p>

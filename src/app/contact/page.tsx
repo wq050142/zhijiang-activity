@@ -418,9 +418,9 @@ export default function ContactPage() {
             <div className="col-span-2 md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <img
-                  src="/之江文化中心logo_画板 1.png"
+                  src="/assets/之江文化中心logo.png"
                   alt="之江文化中心 logo"
-                  className="h-10 w-auto"
+                  className="h-10 md:h-14 w-auto"
                 />
                 <div>
                   <span className="text-xl font-bold">之江文化中心</span>
