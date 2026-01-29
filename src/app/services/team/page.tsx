@@ -183,11 +183,9 @@ export default function TeamBuildingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-11">
             {/* 产品 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Users className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/非遗体验.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">非遗体验</h3>
@@ -228,11 +226,9 @@ export default function TeamBuildingPage() {
 
             {/* 产品 2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Calendar className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/博物馆精讲.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">博物馆精讲</h3>
@@ -262,11 +258,9 @@ export default function TeamBuildingPage() {
 
             {/* 产品 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Sparkles className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/亲子研学.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">亲子研学</h3>
@@ -296,11 +290,9 @@ export default function TeamBuildingPage() {
 
             {/* 产品 4 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Heart className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/音乐疗愈.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">音乐疗愈</h3>
@@ -330,11 +322,9 @@ export default function TeamBuildingPage() {
 
             {/* 产品 5 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Smile className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/青年交友.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">青年交友</h3>
@@ -364,11 +354,9 @@ export default function TeamBuildingPage() {
 
             {/* 产品 6 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Award className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/读书会.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">文化读书会</h3>
@@ -398,11 +386,9 @@ export default function TeamBuildingPage() {
 
             {/* 产品 7 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Calendar className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/财富沙盘.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">财富沙盘活动</h3>
@@ -432,11 +418,9 @@ export default function TeamBuildingPage() {
 
             {/* 产品 8 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <MapPin className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/山野清修.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">山野清修（之江周边合作项目）</h3>
@@ -466,11 +450,9 @@ export default function TeamBuildingPage() {
 
             {/* 产品 9 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Sparkles className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/机器人体验.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">定制团建活动</h3>
