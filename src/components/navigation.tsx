@@ -40,7 +40,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
             alt="之江文化中心 logo"
             width={80}
             height={80}
-            className="h-10 md:h-14 w-auto mt-2 md:mt-3"
+            className="h-10 md:h-14 w-auto mt-4 md:mt-6"
             priority
             sizes="(max-width: 768px) 40px, 56px"
           />
@@ -95,7 +95,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
       {mobileMenuOpen && (
         <div
           className="lg:hidden border-t border-gray-200"
-          style={{ backgroundColor: 'rgba(243, 244, 246, 0.3)' }}
+          style={{ backgroundColor: 'rgba(243, 244, 246, 0.15) !important' }}
         >
           <div className="px-3 py-3 space-y-1">
             {/* 首页选项 */}
