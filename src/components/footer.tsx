@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Phone, MapPin } from 'lucide-react';
+import OptimizedImage from './optimized-image';
 
 export default function Footer() {
   return (
@@ -9,11 +10,15 @@ export default function Footer() {
           {/* Logo */}
           <div className="col-span-2 md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img
-                src="/之江文化中心logo_画板 1.png"
-                alt="之江文化中心 logo"
-                className="h-10 w-auto"
-              />
+              <div className="relative h-10 w-auto">
+                <OptimizedImage
+                  src="/之江文化中心logo_画板 1.png"
+                  alt="之江文化中心 logo"
+                  fill
+                  className="object-contain"
+                  sizes="40px"
+                />
+              </div>
               <div>
                 <span className="text-xl font-bold">之江文化中心</span>
                 <p className="text-xs text-[#FFC107]">企业活动服务</p>
