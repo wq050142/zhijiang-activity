@@ -107,7 +107,7 @@ export default function TrainingPage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div
                 className="relative aspect-[4/3] bg-cover bg-center"
-                style={{ backgroundImage: 'url("/首页背景.png")' }}
+                style={{ backgroundImage: 'url("/assets/访学培训服务介绍配图.jpg")' }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
@@ -296,7 +296,7 @@ export default function TrainingPage() {
                   针对特定行业或领域，提供系统化专业课程培训
                 </p>
                 <div className="mb-4 inline-block px-3 py-1.5 bg-[#FFE15D]/20 rounded-lg border border-[#FFE15D]/50">
-                  <span className="text-sm text-[#DC2626] font-bold">主题课时可定制</span>
+                  <span className="text-sm text-[#DC2626] font-bold">课程主题可定制</span>
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
