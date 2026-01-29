@@ -68,7 +68,7 @@ export default function TrainingPage() {
       {/* Hero Section */}
       <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
         {/* 背景图片 */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/assets/访学培训服务介绍配图.jpg")' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/80 to-[#FF9F43]/80">
             <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
@@ -183,11 +183,9 @@ export default function TrainingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* 产品 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/文旅创新融合.jpg" alt="文旅创新融合" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Calendar className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">文旅创新融合 ——公共文化空间一体化运营</h3>
@@ -217,11 +215,9 @@ export default function TrainingPage() {
 
             {/* 产品 2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/共富讲堂.jpg" alt="共富讲堂" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Sparkles className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">共富讲堂：传统工艺的活化与创新</h3>
@@ -251,11 +247,9 @@ export default function TrainingPage() {
 
             {/* 产品 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/名家讲堂.jpg" alt="文化讲座" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <BookOpen className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">文化讲座</h3>
@@ -288,11 +282,9 @@ export default function TrainingPage() {
 
             {/* 产品 4 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/系列专业课程培训.jpg" alt="系列专业课程培训" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <GraduationCap className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">系列专业课程培训</h3>
