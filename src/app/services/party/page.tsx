@@ -281,40 +281,6 @@ export default function PartyBuildingPage() {
 
             {/* 产品 4 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Calendar className="h-20 w-20 text-white" />
-                </div>
-              </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">两山理论研学（安吉余村合作项目）</h3>
-                <div className="flex items-center gap-2 mb-3">
-                  <Clock className="h-4 w-4 text-[#FFE15D]" />
-                  <span className="text-xs text-[#6B7280]">半日~一日</span>
-                </div>
-                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  余村实地调研，深入理解"两山"理论，领悟生态文明思想
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>实地走访调研</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>专业主题讲解</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>分组研讨交流</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 产品 5 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
@@ -347,7 +313,7 @@ export default function PartyBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 6 */}
+            {/* 产品 5 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
@@ -376,6 +342,40 @@ export default function PartyBuildingPage() {
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
                     <span>初心使命研讨</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 6 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Calendar className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">两山理论研学（安吉余村合作项目）</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">半日~一日</span>
+                </div>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  余村实地调研，深入理解"两山"理论，领悟生态文明思想
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>实地走访调研</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专业主题讲解</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>分组研讨交流</span>
                   </div>
                 </div>
               </div>
