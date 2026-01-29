@@ -381,11 +381,11 @@ export default function PartyBuildingPage() {
                   <Clock className="h-4 w-4 text-[#FFE15D]" />
                   <span className="text-xs text-[#6B7280]">1~1.5小时</span>
                 </div>
-                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
                   体验红色非遗手作，传承传统文化，弘扬工匠精神
                 </p>
-                <div className="mb-3">
-                  <span className="text-xs text-[#FFE15D] font-medium">多款手作项目可选</span>
+                <div className="mb-4 inline-block px-3 py-1.5 bg-[#FFE15D]/10 rounded-lg border border-[#FFE15D]/30">
+                  <span className="text-sm text-[#FFE15D] font-bold">多款手作项目可选</span>
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
@@ -406,11 +406,9 @@ export default function PartyBuildingPage() {
 
             {/* 产品 8 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/定制化党建活动.jpg" alt="定制化党建方案" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Sparkles className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">定制化党建方案</h3>
