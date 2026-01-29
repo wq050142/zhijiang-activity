@@ -193,7 +193,7 @@ export default function CasesPage() {
     {
       id: 19,
       client: 'AFLAS（亚洲实验动物学会联合会）',
-      title: '2025AFLAS文化活动',
+      title: '2025文化交流活动',
       category: '中外文化交流',
       mainImage: '/AFLAS1.jpg',
       subImages: ['/AFLAS2.jpg', '/AFLAS3.jpg', '/AFLAS4.jpg'],
