@@ -239,7 +239,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                 </div>
-                <div className="md:w-1/2 p-4 md:p-6">
+                <div className="md:w-1/2 p-4 md:p-6 flex flex-col justify-center">
                   <div className="inline-flex items-center gap-2 mb-3">
                     <span className="bg-[#FF9F43] text-white text-xs font-semibold px-3 py-1 rounded-full">综合服务</span>
                   </div>
