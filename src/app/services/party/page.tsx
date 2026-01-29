@@ -379,11 +379,14 @@ export default function PartyBuildingPage() {
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色非遗手作</h3>
                 <div className="flex items-center gap-2 mb-3">
                   <Clock className="h-4 w-4 text-[#FFE15D]" />
-                  <span className="text-xs text-[#6B7280]">1.5~2小时</span>
+                  <span className="text-xs text-[#6B7280]">1~1.5小时</span>
                 </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   体验红色非遗手作，传承传统文化，弘扬工匠精神
                 </p>
+                <div className="mb-3">
+                  <span className="text-xs text-[#FFE15D] font-medium">多款手作项目可选</span>
+                </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
