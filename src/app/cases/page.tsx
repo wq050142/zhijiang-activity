@@ -32,7 +32,7 @@ export default function CasesPage() {
     },
     {
       id: 3,
-      client: '浙江省财政厅&浙商银行',
+      client: '浙江省财政厅&农商银行',
       title: '联合活动',
       category: '儿童节活动',
       mainImage: '/财政厅农商行联合活动1.jpg',
@@ -440,7 +440,7 @@ export default function CasesPage() {
               '上海市政院',
               '交通银行',
               '上海银行',
-              '浙商银行',
+              '农商银行',
               '杭州联合银行',
               '工商银行',
               '中宏保险',
