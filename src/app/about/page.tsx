@@ -39,8 +39,8 @@ export default function AboutPage() {
       {/* 中心介绍 */}
       <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 items-center mb-8">
-            <div>
+          <div className="grid lg:grid-cols-12 gap-8 items-center mb-8">
+            <div className="lg:col-span-4">
               <div className="inline-flex items-center gap-2 mb-4">
                 <Building2 className="h-6 w-6 text-[#FFC107]" />
                 <span className="text-[#FF9F43] font-semibold">关于之江文化中心</span>
@@ -58,7 +58,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="space-y-3 lg:space-y-4">
+            <div className="lg:col-span-8 space-y-3 lg:space-y-4">
               {/* 主图片 */}
               <div className="aspect-[4/3] lg:aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl relative">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/之江文化中心全景.png")' }}>
