@@ -58,31 +58,11 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="lg:col-span-8">
+            <div className="lg:col-span-7">
               {/* 主图片 */}
-              <div className="mx-auto lg:max-w-4xl aspect-[4/3] lg:aspect-[21/9] lg:h-1/2 rounded-3xl overflow-hidden shadow-2xl relative">
+              <div className="mx-auto lg:max-w-full aspect-[4/3] lg:aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl relative">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/之江文化中心全景.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/10 via-transparent to-[#FF9F43]/10"></div>
-                </div>
-              </div>
-
-              {/* 数据展示 */}
-              <div className="grid grid-cols-4 gap-2 lg:gap-4 lg:h-1/2 lg:mt-3 lg:grid-rows-1 lg:grid-cols-4">
-                <div className="aspect-square lg:aspect-auto lg:h-full bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
-                  <span className="text-lg md:text-xl lg:text-2xl font-bold">32.1万</span>
-                  <span className="text-xs md:text-sm lg:text-sm opacity-90">㎡</span>
-                </div>
-                <div className="aspect-square lg:aspect-auto lg:h-full bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
-                  <span className="text-lg md:text-xl lg:text-2xl font-bold">4</span>
-                  <span className="text-xs md:text-sm lg:text-sm opacity-90">大场馆</span>
-                </div>
-                <div className="aspect-square lg:aspect-auto lg:h-full bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
-                  <span className="text-lg md:text-xl lg:text-2xl font-bold">1000+</span>
-                  <span className="text-xs md:text-sm lg:text-sm opacity-90">企业</span>
-                </div>
-                <div className="aspect-square lg:aspect-auto lg:h-full bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
-                  <span className="text-lg md:text-xl lg:text-2xl font-bold">100%</span>
-                  <span className="text-xs md:text-sm lg:text-sm opacity-90">满意度</span>
                 </div>
               </div>
             </div>
