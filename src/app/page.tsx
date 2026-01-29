@@ -161,7 +161,7 @@ export default function Home() {
               </div>
 
               {/* 移动端单独显示的公服中心 */}
-              <div className="lg:hidden aspect-[2/3] rounded-xl overflow-hidden shadow-lg relative group">
+              <div className="lg:hidden aspect-[8/3] rounded-xl overflow-hidden shadow-lg relative group">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/研学中心.png")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#FFC107]/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-2 left-2 right-2">
