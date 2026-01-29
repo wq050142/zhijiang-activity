@@ -180,156 +180,127 @@ export default function CustomEventsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-11">
             {/* 场景 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6">
-                <PartyPopper className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <PartyPopper className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">企业年会</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                在艺术空间替代传统宴会厅，打造独具文化特色的年度盛典
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>艺术空间场地</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>全案策划执行</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>文化节目表演</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">企业年会</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  在艺术空间替代传统宴会厅，打造独具文化特色的年度盛典
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>艺术空间场地</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>全案策划执行</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>文化节目表演</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* 场景 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
-                <Award className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Award className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">产品发布会</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                文化地标中的产品发布，彰显品牌实力与创新理念
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>专业发布场地</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>媒体邀约服务</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>发布会流程策划</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">产品发布会</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  文化地标中的产品发布，彰显品牌实力与创新理念
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专业发布场地</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>媒体邀约服务</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>发布会流程策划</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* 场景 3 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
-                <Users className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Users className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">客户答谢会</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                博物馆奇妙夜等特色活动，强化客户关系与品牌忠诚度
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>私人导览体验</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>定制文化活动</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>尊享服务礼遇</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">客户答谢会</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  文化体验增强客户粘性，让答谢活动更有温度
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>私人导览服务</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>文化体验环节</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>尊享礼遇服务</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* 场景 4 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6">
-                <Calendar className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">行业峰会</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                高端会议场地与专业服务，打造行业顶级峰会
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>高端会议场地</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>专业会议服务</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>嘉宾接待服务</span>
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Calendar className="h-20 w-20 text-white" />
                 </div>
               </div>
-            </div>
-
-            {/* 场景 5 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
-                <Sparkles className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">品牌活动</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                品牌庆典、上市活动、品牌发布会等，彰显品牌实力
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>品牌主题策划</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>创意视觉设计</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>全流程执行</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">行业峰会</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  高规格文化场地，打造行业顶级交流盛会
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>高规格场地</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>一站式服务</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>高端定制布置</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* 场景 6 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl flex items-center justify-center mb-6">
-                <Award className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">高端VIP活动</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                私人导览、专属文化体验，打造极致尊享服务
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>私人导览服务</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>专属文化体验</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>一对一服务团队</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

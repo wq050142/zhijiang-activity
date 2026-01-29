@@ -95,7 +95,7 @@ export default function TeamBuildingPage() {
               <span className="text-[#FF9F43] font-semibold">服务特色</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
-              文化沉浸团建，文化滋养体验
+              文化沉浸，心灵滋养
             </h2>
             <p className="text-base md:text-lg text-[#6B7280] max-w-3xl mx-auto">
               依托之江文化中心资源，将文化活动与团队建设深度融合，打造独具特色的团建体验
