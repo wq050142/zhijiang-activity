@@ -107,7 +107,7 @@ export default function TeamBuildingPage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div
                 className="relative aspect-[4/3] bg-cover bg-center"
-                style={{ backgroundImage: 'url("/首页背景.png")' }}
+                style={{ backgroundImage: 'url("/assets/团建拓展服务介绍配图.jpg")' }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
@@ -483,7 +483,7 @@ export default function TeamBuildingPage() {
             {/* 产品 10 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/机器人体验.jpg")' }}></div>
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/定制团建活动.jpg")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
