@@ -35,20 +35,18 @@ export default function Navigation({ currentPath }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 py-2 md:px-6 md:py-2.5 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex-shrink-0">
-            <OptimizedImage
-              src="/assets/之江文化中心logo.png"
-              alt="之江文化中心 logo"
-              width={80}
-              height={80}
-              className="h-14 md:h-20 w-auto"
-              priority
-              sizes="(max-width: 768px) 56px, 80px"
-            />
-          </div>
-          <div className="flex flex-col justify-center">
-            <span className="text-lg md:text-2xl font-bold text-[#2D2D2D] leading-tight">之江文化中心</span>
-            <p className="text-xs text-[#6B7280] leading-tight">企业活动服务</p>
+          <OptimizedImage
+            src="/assets/之江文化中心logo.png"
+            alt="之江文化中心 logo"
+            width={80}
+            height={80}
+            className="h-10 md:h-14 w-auto"
+            priority
+            sizes="(max-width: 768px) 40px, 56px"
+          />
+          <div>
+            <span className="text-xl font-bold text-[#2D2D2D]">之江文化中心</span>
+            <p className="text-xs text-[#6B7280]">企业活动服务</p>
           </div>
         </Link>
 
