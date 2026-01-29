@@ -4,7 +4,7 @@ import { Building2, Phone, ArrowRight, Users, Heart, Sparkles, CheckCircle2, Cal
 
 export const metadata: Metadata = {
   title: '团建拓展 - 之江文化中心 | 企业活动服务',
-  description: '之江文化中心团建拓展服务，提供非遗手作、养生疗愈、青年交友等特色团建活动，心灵滋养与精神升华，提升团队文化软实力。',
+  description: '之江文化中心团建拓展服务，提供非遗手作、养生疗愈、青年交友等特色团建活动，文化滋养与精神升华，提升团队文化软实力。',
   keywords: '团建拓展,企业团建,杭州团建活动策划,非遗手作团建,养生疗愈团建',
 };
 
@@ -95,7 +95,7 @@ export default function TeamBuildingPage() {
               <span className="text-[#FF9F43] font-semibold">服务特色</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
-              文化沉浸团建，心灵滋养体验
+              文化沉浸团建，文化滋养体验
             </h2>
             <p className="text-base md:text-lg text-[#6B7280] max-w-3xl mx-auto">
               依托之江文化中心资源，将文化活动与团队建设深度融合，让团建更有温度和深度
@@ -115,7 +115,7 @@ export default function TeamBuildingPage() {
                     <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-full flex items-center justify-center">
                       <Heart className="h-5 w-5 text-white" />
                     </div>
-                    <span className="font-semibold text-lg">心灵滋养 · 团队共创</span>
+                    <span className="font-semibold text-lg">文化滋养 · 团队共创</span>
                   </div>
                 </div>
               </div>
@@ -134,7 +134,7 @@ export default function TeamBuildingPage() {
                     <Heart className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">心灵滋养</h3>
+                    <h3 className="text-base font-bold text-[#2D2D2D]">文化滋养</h3>
                     <p className="text-[#6B7280] text-sm">文化体验中放松身心，缓解压力</p>
                   </div>
                 </div>
