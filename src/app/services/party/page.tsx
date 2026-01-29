@@ -87,81 +87,75 @@ export default function PartyBuildingPage() {
       </section>
 
       {/* 服务介绍 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
+      <section className="py-12 px-4 md:px-6 md:py-12 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 mb-4">
-                <Star className="h-6 w-6 text-[#FFE15D]" />
-                <span className="text-[#FF9F43] font-semibold">服务特色</span>
-              </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">
-                创新党建模式，沉浸式学习体验
-              </h2>
-              <div className="space-y-4 text-[#6B7280] leading-relaxed">
-                <p>
-                  依托之江文化中心浙江省博物馆、浙江省非物质文化遗产馆等场馆资源，我们打破传统会议室模式，将党建活动与文化体验深度融合。
-                </p>
-                <p>
-                  通过沉浸式党课、红色剧本杀、实地研学等形式，让党员在文化浸润中感悟革命精神，在亲身体验中强化理想信念，提升党建活动的感染力和实效性。
-                </p>
-              </div>
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Star className="h-6 w-6 text-[#FFE15D]" />
+              <span className="text-[#FF9F43] font-semibold">服务特色</span>
+            </div>
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+              创新党建模式，沉浸式学习体验
+            </h2>
+            <p className="text-base md:text-lg text-[#6B7280] max-w-3xl mx-auto">
+              依托之江文化中心资源，将党建活动与文化体验深度融合，提升党建活动感染力和实效性
+            </p>
+          </div>
 
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>沉浸式体验</span>
-                </div>
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>专业讲解团队</span>
-                </div>
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>文化场馆资源</span>
-                </div>
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>定制化方案</span>
+          <div className="grid lg:grid-cols-2 gap-8 items-center mb-6">
+            {/* 左侧：图片 */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div
+                className="relative aspect-[4/3] bg-cover bg-center"
+                style={{ backgroundImage: 'url("/首页背景.png")' }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/60 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  <div className="flex items-center gap-3 text-white">
+                    <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-full flex items-center justify-center">
+                      <BookOpen className="h-5 w-5 text-white" />
+                    </div>
+                    <span className="font-semibold text-lg">文化赋能 · 教育实效</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-8 border border-[#FFE15D]/20">
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <BookOpen className="h-6 w-6 text-white" />
+            {/* 右侧：活动亮点 */}
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 mb-6">
+                <Sparkles className="h-6 w-6 text-[#FFE15D]" />
+                <span className="text-[#FF9F43] font-semibold">活动亮点</span>
+              </div>
+              
+              <div className="space-y-5">
+                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <BookOpen className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">文化赋能</h3>
-                    <p className="text-[#6B7280] text-sm">
-                      将党建活动与文化体验深度融合，在文化地标中开展学习教育
-                    </p>
+                    <h3 className="text-base font-bold text-[#2D2D2D]">文化赋能</h3>
+                    <p className="text-[#6B7280] text-sm">将党建活动与文化体验深度融合</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Users className="h-6 w-6 text-white" />
+                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">互动性强</h3>
-                    <p className="text-[#6B7280] text-sm">
-                      通过角色扮演、实地调研等形式，增强党员参与感和代入感
-                    </p>
+                    <h3 className="text-base font-bold text-[#2D2D2D]">互动性强</h3>
+                    <p className="text-[#6B7280] text-sm">通过角色扮演、实地调研增强参与感</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Award className="h-6 w-6 text-white" />
+                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Award className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">教育实效</h3>
-                    <p className="text-[#6B7280] text-sm">
-                      沉浸式学习让党史教育入脑入心，提升党员理想信念
-                    </p>
+                    <h3 className="text-base font-bold text-[#2D2D2D]">教育实效</h3>
+                    <p className="text-[#6B7280] text-sm">沉浸式学习让党史教育入脑入心</p>
                   </div>
                 </div>
               </div>
@@ -171,7 +165,7 @@ export default function PartyBuildingPage() {
       </section>
 
       {/* 服务内容 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-[#F8FAFC]">
+      <section className="pt-8 pb-12 px-4 md:px-6 md:pt-12 md:pb-16 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
@@ -186,10 +180,10 @@ export default function PartyBuildingPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-11">
             {/* 产品 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <BookOpen className="h-20 w-20 text-white" />
@@ -219,7 +213,7 @@ export default function PartyBuildingPage() {
 
             {/* 产品 2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <Users className="h-20 w-20 text-white" />
@@ -249,7 +243,7 @@ export default function PartyBuildingPage() {
 
             {/* 产品 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <Calendar className="h-20 w-20 text-white" />
@@ -279,7 +273,7 @@ export default function PartyBuildingPage() {
 
             {/* 产品 4 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <Star className="h-20 w-20 text-white" />
@@ -309,7 +303,7 @@ export default function PartyBuildingPage() {
 
             {/* 产品 5 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <Award className="h-20 w-20 text-white" />
@@ -339,7 +333,7 @@ export default function PartyBuildingPage() {
 
             {/* 产品 6 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <Sparkles className="h-20 w-20 text-white" />

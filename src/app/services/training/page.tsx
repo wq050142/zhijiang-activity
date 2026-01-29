@@ -87,81 +87,75 @@ export default function TrainingPage() {
       </section>
 
       {/* 服务介绍 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
+      <section className="py-12 px-4 md:px-6 md:py-12 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 mb-4">
-                <BookOpen className="h-6 w-6 text-[#FFE15D]" />
-                <span className="text-[#FF9F43] font-semibold">服务特色</span>
-              </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">
-                高端培训课程，专业赋能成长
-              </h2>
-              <div className="space-y-4 text-[#6B7280] leading-relaxed">
-                <p>
-                  依托之江文化中心图书馆、博物馆、文学馆等场馆资源，我们提供名家讲座、专业培训、行业交流等全方位培训服务。
-                </p>
-                <p>
-                  聚焦浙江文化探源、文旅融合创新、现代治理等前沿课题，邀请知名专家学者授课，为企业和机构提供高端培训课程，助力组织发展。
-                </p>
-              </div>
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <BookOpen className="h-6 w-6 text-[#FFE15D]" />
+              <span className="text-[#FF9F43] font-semibold">服务特色</span>
+            </div>
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+              高端培训课程，专业赋能成长
+            </h2>
+            <p className="text-base md:text-lg text-[#6B7280] max-w-3xl mx-auto">
+              依托之江文化中心资源，提供名家讲座、专业培训、行业交流等全方位培训服务
+            </p>
+          </div>
 
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>名家讲座</span>
-                </div>
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>专业课程</span>
-                </div>
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>行业交流</span>
-                </div>
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>定制化培训</span>
+          <div className="grid lg:grid-cols-2 gap-8 items-center mb-6">
+            {/* 左侧：图片 */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div
+                className="relative aspect-[4/3] bg-cover bg-center"
+                style={{ backgroundImage: 'url("/首页背景.png")' }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/60 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  <div className="flex items-center gap-3 text-white">
+                    <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-full flex items-center justify-center">
+                      <BookOpen className="h-5 w-5 text-white" />
+                    </div>
+                    <span className="font-semibold text-lg">高端课程 · 学习成果</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-8 border border-[#FFE15D]/20">
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <GraduationCap className="h-6 w-6 text-white" />
+            {/* 右侧：活动亮点 */}
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 mb-6">
+                <Sparkles className="h-6 w-6 text-[#FFE15D]" />
+                <span className="text-[#FF9F43] font-semibold">活动亮点</span>
+              </div>
+              
+              <div className="space-y-5">
+                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <GraduationCap className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">高端课程</h3>
-                    <p className="text-[#6B7280] text-sm">
-                      知名专家学者授课，提供前沿知识和实用技能
-                    </p>
+                    <h3 className="text-base font-bold text-[#2D2D2D]">高端课程</h3>
+                    <p className="text-[#6B7280] text-sm">知名专家学者授课，提供前沿知识</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Users className="h-6 w-6 text-white" />
+                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">行业交流</h3>
-                    <p className="text-[#6B7280] text-sm">
-                      搭建行业交流平台，促进企业间合作与学习
-                    </p>
+                    <h3 className="text-base font-bold text-[#2D2D2D]">行业交流</h3>
+                    <p className="text-[#6B7280] text-sm">搭建行业交流平台，促进企业合作</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Award className="h-6 w-6 text-white" />
+                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Award className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">学习成果</h3>
-                    <p className="text-[#6B7280] text-sm">
-                      系统化学习体系，确保培训实效与成果落地
-                    </p>
+                    <h3 className="text-base font-bold text-[#2D2D2D]">学习成果</h3>
+                    <p className="text-[#6B7280] text-sm">系统化学习体系，确保培训实效</p>
                   </div>
                 </div>
               </div>
@@ -171,7 +165,7 @@ export default function TrainingPage() {
       </section>
 
       {/* 服务内容 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-[#F8FAFC]">
+      <section className="pt-8 pb-12 px-4 md:px-6 md:pt-12 md:pb-16 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
@@ -511,7 +505,7 @@ export default function TrainingPage() {
 
             <div className="order-1 lg:order-2">
               <div className="relative">
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl overflow-hidden shadow-2xl">
+                <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src="/图片3.png"
                     alt="访学培训场景"
