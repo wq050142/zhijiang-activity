@@ -309,6 +309,22 @@ export default function CustomEventsPage() {
               </div>
             </div>
 
+            {/* 备注提示 */}
+            <div className="col-span-1 md:col-span-2 lg:col-span-3 mt-6">
+              <div className="bg-gradient-to-r from-[#FFE15D]/10 to-[#FF9F43]/10 border border-[#FFE15D]/30 rounded-xl p-5 md:p-6">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0">
+                    <MapPin className="h-5 w-5 text-[#FF9F43] mt-0.5" />
+                  </div>
+                  <div>
+                    <p className="text-sm md:text-base text-[#2D2D2D] leading-relaxed">
+                      根据定制需求，部分活动场地可安排在之江文化中心周边场所
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
