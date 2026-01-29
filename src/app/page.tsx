@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import React from 'react';
 import { Building2, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Star, Users, Calendar, Award, BookOpen, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -396,7 +397,7 @@ export default function Home() {
           <div className="overflow-hidden">
             <div className="flex items-center gap-2 md:gap-3 lg:gap-4 animate-marquee-fast whitespace-nowrap">
               {[...Array(2)].map((_, i) => (
-                <>
+                <React.Fragment key={i}>
                   {[
                     '中共浙江省委党校',
                     '浙江省教育厅',
@@ -416,12 +417,12 @@ export default function Home() {
                       <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
-                </>
+                </React.Fragment>
               ))}
             </div>
             <div className="flex items-center gap-3 md:gap-4 lg:gap-5 animate-marquee-medium whitespace-nowrap mt-1">
               {[...Array(2)].map((_, i) => (
-                <>
+                <React.Fragment key={i}>
                   {[
                     '杭州市萧山区团委',
                     '德清县关工委',
@@ -441,12 +442,12 @@ export default function Home() {
                       <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
-                </>
+                </React.Fragment>
               ))}
             </div>
             <div className="flex items-center gap-4 md:gap-5 lg:gap-6 animate-marquee-slow whitespace-nowrap mt-1">
               {[...Array(2)].map((_, i) => (
-                <>
+                <React.Fragment key={i}>
                   {[
                     '博世电动',
                     '华为问界',
@@ -466,12 +467,12 @@ export default function Home() {
                       <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
-                </>
+                </React.Fragment>
               ))}
             </div>
             <div className="flex items-center gap-2.5 md:gap-3.5 lg:gap-4.5 animate-marquee-extra-slow whitespace-nowrap mt-0.5">
               {[...Array(2)].map((_, i) => (
-                <>
+                <React.Fragment key={i}>
                   {[
                     '传播大脑',
                     '上海市政院',
@@ -491,7 +492,7 @@ export default function Home() {
                       <span className="text-[#666666] font-medium text-sm md:text-base whitespace-nowrap">{partner}</span>
                     </div>
                   ))}
-                </>
+                </React.Fragment>
               ))}
             </div>
           </div>
