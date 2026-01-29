@@ -47,16 +47,15 @@ export default function Navigation({ currentPath }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-12 md:h-16 w-auto">
-            <OptimizedImage
-              src="/之江文化中心logo_画板 1.png"
-              alt="之江文化中心 logo"
-              fill
-              className="object-contain"
-              priority
-              sizes="(max-width: 768px) 48px, 64px"
-            />
-          </div>
+          <OptimizedImage
+            src="/之江文化中心logo_画板 1.png"
+            alt="之江文化中心 logo"
+            width={64}
+            height={64}
+            className="h-12 md:h-16 w-auto"
+            priority
+            sizes="(max-width: 768px) 48px, 64px"
+          />
           <div>
             <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
             <p className="text-xs text-[#6B7280]">企业活动服务</p>
@@ -84,8 +83,15 @@ export default function Navigation({ currentPath }: NavigationProps) {
         <div className="flex items-center gap-4">
           {/* Search Button */}
           <button
-            onClick={() => setSearchOpen(!searchOpen)}
-            className="hidden md:flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 hover:border-[#FFE15D] hover:bg-[#FFE15D]/10 transition-all"
+            onClick={() => {
+              if (window.innerWidth >= 1024) {
+                setSearchOpen(!searchOpen);
+              } else {
+                // 移动端直接打开移动菜单并聚焦到搜索框
+                setMobileMenuOpen(true);
+              }
+            }}
+            className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 hover:border-[#FFE15D] hover:bg-[#FFE15D]/10 transition-all"
             aria-label="搜索"
           >
             <Search className="h-5 w-5 text-[#2D2D2D]" />
