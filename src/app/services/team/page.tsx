@@ -102,7 +102,7 @@ export default function TeamBuildingPage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+          <div className="grid lg:grid-cols-2 gap-8 items-center mb-6">
             {/* 左侧：图片 */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div
