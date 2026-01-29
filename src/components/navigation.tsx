@@ -58,8 +58,8 @@ export default function Navigation({ currentPath }: NavigationProps) {
               href={item.href}
               className={`transition-colors font-medium ${
                 isActive(item.href)
-                  ? 'text-[#FFE15D] font-bold'
-                  : 'text-[#2D2D2D] hover:text-[#FFE15D]'
+                  ? 'text-[#D97706] font-bold'
+                  : 'text-[#2D2D2D] hover:text-[#D97706]'
               }`}
             >
               {item.name}
@@ -93,7 +93,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-white/50 backdrop-blur-none">
+        <div className="lg:hidden border-t border-gray-200 bg-gray-100/30 backdrop-blur-none">
           <div className="px-3 py-3 space-y-1">
             {/* 首页选项 */}
             <Link
@@ -101,7 +101,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
               onClick={() => setMobileMenuOpen(false)}
               className={`block px-3 py-2.5 rounded-lg transition-colors font-medium text-sm ${
                 isActive('/') && pathname === '/'
-                  ? 'bg-[#FFE15D]/20 text-[#FFE15D]'
+                  ? 'bg-[#FFE15D]/20 text-[#D97706]'
                   : 'text-[#2D2D2D] hover:bg-gray-100'
               }`}
             >
@@ -114,7 +114,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`block px-3 py-2.5 rounded-lg transition-colors font-medium text-sm ${
                   isActive(item.href)
-                    ? 'bg-[#FFE15D]/20 text-[#FFE15D]'
+                    ? 'bg-[#FFE15D]/20 text-[#D97706]'
                     : 'text-[#2D2D2D] hover:bg-gray-100'
                 }`}
               >
