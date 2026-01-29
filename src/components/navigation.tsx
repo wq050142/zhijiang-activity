@@ -32,21 +32,23 @@ export default function Navigation({ currentPath }: NavigationProps) {
 
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-2 md:px-6 md:py-2.5 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <OptimizedImage
-            src="/assets/之江文化中心logo.png"
-            alt="之江文化中心 logo"
-            width={80}
-            height={80}
-            className="h-14 md:h-20 w-auto"
-            priority
-            sizes="(max-width: 768px) 56px, 80px"
-          />
-          <div>
-            <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
-            <p className="text-xs text-[#6B7280]">企业活动服务</p>
+          <div className="flex-shrink-0">
+            <OptimizedImage
+              src="/assets/之江文化中心logo.png"
+              alt="之江文化中心 logo"
+              width={80}
+              height={80}
+              className="h-14 md:h-20 w-auto"
+              priority
+              sizes="(max-width: 768px) 56px, 80px"
+            />
+          </div>
+          <div className="flex flex-col justify-center">
+            <span className="text-lg md:text-2xl font-bold text-[#2D2D2D] leading-tight">之江文化中心</span>
+            <p className="text-xs text-[#6B7280] leading-tight">企业活动服务</p>
           </div>
         </Link>
 
@@ -93,7 +95,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-white">
+        <div className="lg:hidden border-t border-gray-200 bg-gray-50">
           <div className="px-3 py-3 space-y-1">
             {navItems.map((item) => (
               <Link
