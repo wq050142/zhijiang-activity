@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, Phone, ArrowRight, Star, Users, BookOpen, Sparkles, CheckCircle2, Calendar, Award, MapPin } from 'lucide-react';
+import { Building2, Phone, ArrowRight, Star, Users, BookOpen, Sparkles, CheckCircle2, Calendar, Award, MapPin, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: '主题党建 - 之江文化中心 | 企业活动服务',
@@ -190,7 +190,11 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色溯源·浙江精神</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色溯源·浙江精神</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">2~3小时</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   参观浙江省博物馆"浙江一万年"陈列，了解浙江红色革命历史，弘扬浙江精神
                 </p>
@@ -216,7 +220,11 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色剧本杀</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色剧本杀</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">2~3小时</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   沉浸式角色扮演，通过剧本演绎感悟革命精神，在互动中学习党史
                 </p>
@@ -246,7 +254,11 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">两山理论研学（安吉余村合作项目）</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">两山理论研学（安吉余村合作项目）</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">半日~一日</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   余村实地调研，深入理解"两山"理论，领悟生态文明思想
                 </p>
@@ -276,7 +288,11 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色主题展览（结合当前临展）</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色主题展览（结合当前临展）</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">半日</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   依托博物馆红色文化展区，开展主题展览学习，感受革命精神
                 </p>
@@ -306,7 +322,11 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">革命精神讲座</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">革命精神讲座</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">2~3小时</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   学习红船精神、浙江精神，在文化浸润中感悟初心使命
                 </p>
@@ -336,7 +356,11 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">定制化党建方案</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">定制化党建方案</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">时长可定制</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   根据单位需求，量身定制特色党建活动方案
                 </p>
