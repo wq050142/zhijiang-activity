@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { ArrowRight, Users, Heart, Sparkles, CheckCircle2, Clock } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowRight, Users, Heart, Sparkles, CheckCircle2, Clock, Award } from 'lucide-react';
 import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
 
