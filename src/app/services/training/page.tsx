@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, Phone, ArrowRight, BookOpen, GraduationCap, Sparkles, CheckCircle2, Calendar, Award, Users, MapPin } from 'lucide-react';
+import { Building2, Phone, ArrowRight, BookOpen, GraduationCap, Sparkles, CheckCircle2, Calendar, Award, Users, MapPin, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: '访学培训 - 之江文化中心 | 企业活动服务',
