@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { Search, Clock, Tag, ArrowRight } from 'lucide-react';
 import Navigation from '@/components/navigation';
@@ -14,7 +14,7 @@ interface SearchResult {
   category: string;
 }
 
-export default function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
   const [isLoading, setIsLoading] = useState(false);
@@ -211,5 +211,25 @@ export default function SearchPage() {
         </div>
       </main>
     </div>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#F8FAFC]">
+        <Navigation />
+        <main className="pt-24 pb-16 px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center py-12">
+              <div className="inline-block animate-spin rounded-full h-8 w-8 border-4 border-[#FFE15D] border-t-transparent"></div>
+              <p className="mt-4 text-[#666666]">加载中...</p>
+            </div>
+          </div>
+        </main>
+      </div>
+    }>
+      <SearchContent />
+    </Suspense>
   );
 }
