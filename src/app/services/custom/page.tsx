@@ -185,7 +185,7 @@ export default function CustomEventsPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <img
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7599663298044362793/image/generate_image_3ca284f9-99cf-490f-a7de-2c3e89894d38.jpeg?sign=1772244353-18d59769e0-0-de24664a5bd1ce04dac794559eff154ced9812ebda409dbc98625ed479b10eb9"
+                  src="/assets/企业年会.png"
                   alt="企业年会"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -249,7 +249,7 @@ export default function CustomEventsPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <img
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7599663298044362793/image/generate_image_3e0580f0-149e-45cc-85db-46572f878c35.jpeg?sign=1772244363-58f19f61ed-0-906e7483b2f6a570aa9f06d5b4eae0d615af31efe6cf6bc8b92451c5d11b1b38"
+                  src="/assets/客户答谢.png"
                   alt="客户答谢会"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
