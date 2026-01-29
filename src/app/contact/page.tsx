@@ -1,52 +1,10 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
-import { Building2, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Calendar, Sparkles, Award } from 'lucide-react';
+import { Phone, MapPin, Building2, ArrowRight } from 'lucide-react';
 import Navigation from '@/components/navigation';
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    phone: '',
-    email: '',
-    service: '',
-    message: ''
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        alert('感谢您的咨询！我们会尽快与您联系。');
-        setFormData({
-          name: '',
-          company: '',
-          phone: '',
-          email: '',
-          service: '',
-          message: ''
-        });
-      } else {
-        alert(result.message || '提交失败，请稍后重试。');
-      }
-    } catch (error) {
-      console.error('表单提交错误:', error);
-      alert('网络错误，请稍后重试。');
-    }
-  };
 
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
@@ -75,212 +33,96 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* 联系方式与表单 */}
+      {/* 联系方式 */}
       <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-3 gap-12">
-            {/* 联系方式和地图 - 右侧 */}
-            <div className="lg:col-span-1 order-2 lg:order-2">
-              <div className="inline-flex items-center gap-2 mb-4">
-                <Phone className="h-6 w-6 text-[#FFE15D]" />
-                <span className="text-[#FF9F43] font-semibold">联系方式</span>
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#2D2D2D]">
-                随时为您服务
-              </h2>
+          <div className="text-center mb-10 md:mb-14">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+              联系我们
+            </h2>
+            <p className="text-sm md:text-base text-[#6B7280]">
+              期待与您的沟通，为您提供专业的活动服务
+            </p>
+          </div>
 
-              <div className="space-y-4 md:space-y-5">
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-5 w-5 text-white" />
+          <div className="grid md:grid-cols-3 gap-8 md:gap-10">
+            {/* 联系方式卡片 */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
+              <div className="flex items-center gap-3 mb-6">
+                <Phone className="h-7 w-7 text-[#FF9F43]" />
+                <h3 className="text-xl md:text-2xl font-bold text-[#2D2D2D]">联系方式</h3>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-sm md:text-base font-bold text-[#2D2D2D] mb-1">咨询热线</h3>
-                    <p className="text-sm md:text-base text-[#6B7280] font-semibold">191-0658-3798</p>
-                    <p className="text-xs md:text-sm text-[#6B7280] mt-1">工作日 9:00-18:00</p>
+                    <h4 className="text-base font-bold text-[#2D2D2D] mb-1">咨询热线</h4>
+                    <p className="text-xl font-bold text-[#FF9F43] mb-1">191-0658-3798</p>
+                    <p className="text-sm text-[#6B7280]">工作日 9:00-18:00</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-sm md:text-base font-bold text-[#2D2D2D] mb-1">微信</h3>
-                    <p className="text-sm md:text-base text-[#6B7280] font-semibold">之学小助理</p>
-                    <p className="text-xs md:text-sm text-[#6B7280] mt-1">添加微信，快速沟通</p>
+                    <h4 className="text-base font-bold text-[#2D2D2D] mb-1">微信</h4>
+                    <p className="text-base font-semibold text-[#2D2D2D] mb-1">之学小助理</p>
+                    <p className="text-sm text-[#6B7280]">添加微信，快速沟通</p>
                   </div>
                 </div>
 
-                {/* 微信二维码 */}
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-4 border border-gray-100 shadow-sm">
-                  <p className="text-center text-xs md:text-sm text-[#6B7280] mb-3">微信二维码</p>
-                  <div className="aspect-square max-w-[180px] mx-auto bg-white rounded-lg shadow-sm flex items-center justify-center overflow-hidden">
-                    <img src="/xiaoxuemei.jpg" alt="微信二维码" className="w-full h-full object-cover" />
-                  </div>
-                  <p className="text-center text-xs text-[#6B7280] mt-3">扫描添加微信</p>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-5 w-5 text-white" />
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-sm md:text-base font-bold text-[#2D2D2D] mb-1">地址</h3>
-                    <p className="text-sm md:text-base text-[#6B7280]">浙江省杭州市西湖区<br />之江文化中心</p>
+                    <h4 className="text-base font-bold text-[#2D2D2D] mb-1">地址</h4>
+                    <p className="text-base text-[#6B7280]">浙江省杭州市西湖区<br />之江文化中心</p>
                   </div>
-                </div>
-              </div>
-
-              {/* 地图 */}
-              <div className="mt-6 bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
-                <div className="p-3 border-b border-gray-100">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 text-[#FF9F43]" />
-                    <span className="text-sm font-semibold text-[#2D2D2D]">之江文化中心位置</span>
-                  </div>
-                </div>
-                <div className="aspect-video w-full">
-                  <img
-                    src="/contact-map.png"
-                    alt="之江文化中心地图"
-                    className="w-full h-full object-cover"
-                  />
                 </div>
               </div>
             </div>
 
-            {/* 联系表单 - 左侧 */}
-            <div className="lg:col-span-2 order-1 lg:order-1">
-              <div className="inline-flex items-center gap-2 mb-4">
-                <Sparkles className="h-6 w-6 text-[#FFE15D]" />
-                <span className="text-[#FF9F43] font-semibold">在线咨询</span>
+            {/* 微信二维码卡片 */}
+            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
+              <div className="flex items-center gap-3 mb-6">
+                <svg className="h-7 w-7 text-[#FF9F43]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+                <h3 className="text-xl md:text-2xl font-bold text-[#2D2D2D]">微信咨询</h3>
               </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-8 text-[#2D2D2D]">
-                告诉我们您的需求
-              </h2>
-
-              <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label className="block text-[#2D2D2D] font-semibold mb-2">
-                      联系人 <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
-                      placeholder="请输入您的姓名"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-[#2D2D2D] font-semibold mb-2">
-                      公司名称
-                    </label>
-                    <input
-                      type="text"
-                      value={formData.company}
-                      onChange={(e) => setFormData({...formData, company: e.target.value})}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
-                      placeholder="请输入公司名称"
-                    />
-                  </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="aspect-square w-full max-w-[220px] bg-white rounded-2xl shadow-md flex items-center justify-center overflow-hidden mb-4">
+                  <img src="/xiaoxuemei.jpg" alt="微信二维码" className="w-full h-full object-cover" />
                 </div>
+                <p className="text-center text-sm text-[#6B7280]">扫描二维码添加微信</p>
+                <p className="text-center text-base font-semibold text-[#2D2D2D] mt-2">之学小助理</p>
+              </div>
+            </div>
 
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label className="block text-[#2D2D2D] font-semibold mb-2">
-                      联系电话 <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      required
-                      value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
-                      placeholder="请输入您的手机号"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-[#2D2D2D] font-semibold mb-2">
-                      电子邮箱
-                    </label>
-                    <input
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
-                      placeholder="请输入您的邮箱"
-                    />
-                  </div>
+            {/* 地图卡片 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+              <div className="p-6 border-b border-gray-100">
+                <div className="flex items-center gap-3">
+                  <MapPin className="h-7 w-7 text-[#FF9F43]" />
+                  <h3 className="text-xl md:text-2xl font-bold text-[#2D2D2D]">位置地图</h3>
                 </div>
-
-                <div className="mb-6">
-                  <label className="block text-[#2D2D2D] font-semibold mb-2">
-                    服务类型
-                  </label>
-                  <select
-                    value={formData.service}
-                    onChange={(e) => setFormData({...formData, service: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all bg-white"
-                  >
-                    <option value="">请选择服务类型</option>
-                    <option value="主题党建">主题党建</option>
-                    <option value="团建拓展">团建拓展</option>
-                    <option value="访学培训">访学培训</option>
-                    <option value="定制活动">定制活动</option>
-                    <option value="其他">其他</option>
-                  </select>
-                </div>
-
-                <div className="mb-6">
-                  <label className="block text-[#2D2D2D] font-semibold mb-2">
-                    活动需求
-                  </label>
-                  <textarea
-                    rows={5}
-                    value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all resize-none"
-                    placeholder="请简要描述您的活动需求、时间、人数等信息"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-xl text-[#2D2D2D] px-6 py-4 rounded-xl text-lg font-semibold transition-all shadow-lg hover:scale-105"
-                >
-                  提交咨询
-                  <ArrowRight className="inline-block ml-2 h-5 w-5" />
-                </button>
-
-                <p className="text-sm text-[#6B7280] text-center mt-4">
-                  提交后我们会在24小时内与您联系
-                </p>
-
-                {/* 提交须知 */}
-                <div className="mt-6 pt-6 border-t border-gray-100">
-                  <div className="bg-gradient-to-br from-[#FFF7ED] to-[#FFFBEB] rounded-xl p-4 border border-[#FFE15D]/20">
-                    <div className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0 mt-0.5" />
-                      <div>
-                        <h4 className="text-sm font-semibold text-[#2D2D2D] mb-2">温馨提示</h4>
-                        <ul className="text-xs md:text-sm text-[#6B7280] space-y-1">
-                          <li>• 为确保服务品质，我们提供一对一专属顾问服务</li>
-                          <li>• 所有咨询信息严格保密，仅用于活动方案定制</li>
-                          <li>• 工作日9:00-18:00内，我们将优先回复您的咨询</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
+              </div>
+              <div className="aspect-video w-full">
+                <img
+                  src="/contact-map.png"
+                  alt="之江文化中心地图"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
