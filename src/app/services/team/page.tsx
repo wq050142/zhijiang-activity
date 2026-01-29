@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, Phone, ArrowRight, Users, Heart, Sparkles, CheckCircle2, Calendar, Award, Smile, MapPin } from 'lucide-react';
+import { Building2, Phone, ArrowRight, Users, Heart, Sparkles, CheckCircle2, Calendar, Award, Smile, MapPin, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: '团建拓展 - 之江文化中心 | 企业活动服务',
@@ -190,7 +190,11 @@ export default function TeamBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">非遗手作</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">非遗体验</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1~2小时</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   分组协作完成非遗作品，在动手实践中感受传统文化魅力，打破部门壁垒
                 </p>
@@ -213,7 +217,7 @@ export default function TeamBuildingPage() {
                     href="https://www.kdocs.cn/l/ckyInDq87fV1"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF9F43] hover:text-[#FFE15D] transition-colors"
+                    className="inline-flex items-center justify-center gap-2 w-full px-4 py-3 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] font-bold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all text-sm"
                   >
                     了解更多手作项目
                     <ArrowRight className="h-4 w-4" />
@@ -227,101 +231,15 @@ export default function TeamBuildingPage() {
               <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Heart className="h-20 w-20 text-white" />
-                </div>
-              </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">音乐疗愈</h3>
-                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  颂钵手碟体验，音乐冥想，在声音疗愈中放松身心，释放压力
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>颂钵手碟体验</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>音乐冥想</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>身心放松</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 产品 3 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Smile className="h-20 w-20 text-white" />
-                </div>
-              </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">青年交友</h3>
-                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  "宋风雅颂"非遗交友局、MBTI社交专场，在文化体验中轻松交友
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>文化主题社交</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>趣味互动游戏</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>轻松交友氛围</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 产品 4 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Award className="h-20 w-20 text-white" />
-                </div>
-              </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">文化读书会</h3>
-                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  开展主题读书会，分享阅读心得，提升团队文化素养
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>精选图书推荐</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>深度阅读分享</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>思想碰撞交流</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 产品 5 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <Calendar className="h-20 w-20 text-white" />
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">博物馆精讲</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">博物馆精讲</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1~2小时</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   专业讲解员带领深度参观博物馆，了解藏品背后的历史文化故事
                 </p>
@@ -342,7 +260,7 @@ export default function TeamBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 6 */}
+            {/* 产品 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
@@ -351,7 +269,11 @@ export default function TeamBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">亲子研学</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">亲子研学</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1~2小时</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   亲子共同参与文化探索活动，在互动中增进亲子关系，拓展视野
                 </p>
@@ -372,16 +294,156 @@ export default function TeamBuildingPage() {
               </div>
             </div>
 
+            {/* 产品 4 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Heart className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">音乐疗愈</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1小时</span>
+                </div>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  颂钵手碟体验，音乐冥想，在声音疗愈中放松身心，释放压力
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>颂钵手碟体验</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>音乐冥想</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>身心放松</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 5 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Smile className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">青年交友</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">2~3小时</span>
+                </div>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  "宋风雅颂"非遗交友局、MBTI社交专场，在文化体验中轻松交友
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>文化主题社交</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>趣味互动游戏</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>轻松交友氛围</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 6 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Award className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">文化读书会</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1~2小时</span>
+                </div>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  开展主题读书会，分享阅读心得，提升团队文化素养
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>精选图书推荐</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>深度阅读分享</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>思想碰撞交流</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* 产品 7 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Calendar className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">财富沙盘活动</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">2~3小时</span>
+                </div>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  通过沙盘模拟财富管理，提升团队财商意识，增强决策能力
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>沙盘模拟体验</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>财商知识学习</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>决策能力提升</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 8 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <MapPin className="h-20 w-20 text-white" />
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">山野清修（之江周边合作项目）</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">山野清修（之江周边合作项目）</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">一日</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   走进自然，在山野中感受宁静，通过户外活动净化心灵，缓解压力
                 </p>
@@ -397,6 +459,40 @@ export default function TeamBuildingPage() {
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
                     <span>团队协作挑战</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 9 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <Sparkles className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">定制团建活动</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">时长可定制</span>
+                </div>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  根据团队特点和需求，量身定制特色团建方案
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>团队需求分析</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专属方案设计</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>全程专业执行</span>
                   </div>
                 </div>
               </div>
