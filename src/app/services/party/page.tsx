@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, Phone, ArrowRight, Star, Users, BookOpen, Sparkles, CheckCircle2, Calendar, Award, MapPin, Clock, Music } from 'lucide-react';
+import { Building2, Phone, ArrowRight, Star, Users, BookOpen, Sparkles, CheckCircle2, Calendar, Award, MapPin, Clock, Music, PenTool } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: '主题党建 - 之江文化中心 | 企业活动服务',
@@ -381,7 +381,41 @@ export default function PartyBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 7 */}
+            {/* 产品 8 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#F59E0B] to-[#D97706] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <PenTool className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色非遗手作</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1.5~2小时</span>
+                </div>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  体验红色非遗手作，传承传统文化，弘扬工匠精神
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>红色主题手工</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>非遗技艺体验</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>作品带走留念</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 8 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
