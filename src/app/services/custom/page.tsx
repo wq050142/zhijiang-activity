@@ -16,9 +16,9 @@ export default function CustomEventsPage() {
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/客户答谢.png"
-              alt="定制活动"
-              className="h-12 md:h-16 w-auto rounded-lg"
+              src="/之江文化中心logo_画板 1.png"
+              alt="之江文化中心 logo"
+              className="h-12 md:h-16 w-auto"
             />
             <div>
               <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
@@ -107,7 +107,7 @@ export default function CustomEventsPage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div
                 className="relative aspect-[4/3] bg-cover bg-center"
-                style={{ backgroundImage: 'url("/首页背景.png")' }}
+                style={{ backgroundImage: 'url("/客户答谢.png")' }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
