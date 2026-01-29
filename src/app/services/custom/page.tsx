@@ -68,7 +68,7 @@ export default function CustomEventsPage() {
       {/* Hero Section */}
       <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
         {/* 背景图片 */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/高端格调尊享体验.png")' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/80 to-[#FF9F43]/80">
             <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
@@ -281,7 +281,7 @@ export default function CustomEventsPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <img
-                  src="/assets/高端格调尊享体验.png"
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7599663298044362793/image/generate_image_eddfdebb-a981-41bd-8385-5e8f4e651282.jpeg?sign=1772244353-9943e7abcd-0-968dee96e7e860b78f25748c8ebc3041abdf900b25c41348079e9b07566dbfb6"
                   alt="行业峰会"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
