@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Building2, Phone, ArrowRight, Users, Heart, Sparkles, CheckCircle2, Calendar, Award, Smile, MapPin, Clock } from 'lucide-react';
+import { ArrowRight, Users, Heart, Sparkles, CheckCircle2, Clock } from 'lucide-react';
+import Navigation from '@/components/navigation';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: '团建拓展 - 之江文化中心 | 企业活动服务',
@@ -11,59 +12,7 @@ export const metadata: Metadata = {
 export default function TeamBuildingPage() {
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
-      {/* 顶部导航栏 */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <img
-              src="/之江文化中心logo_画板 1.png"
-              alt="之江文化中心 logo"
-              className="h-12 md:h-16 w-auto"
-            />
-            <div>
-              <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
-              <p className="text-xs text-[#6B7280]">企业活动服务</p>
-            </div>
-          </Link>
-
-          <div className="hidden lg:flex items-center gap-8">
-            <Link href="/about" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              关于我们
-            </Link>
-            <Link href="/services/party" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              主题党建
-            </Link>
-            <Link href="/services/team" className="text-[#FFE15D] font-bold">
-              团建拓展
-            </Link>
-            <Link href="/services/training" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              访学培训
-            </Link>
-            <Link href="/services/custom" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              定制活动
-            </Link>
-            <Link href="/cases" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              案例中心
-            </Link>
-            <Link href="/contact" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              联系我们
-            </Link>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <a href="tel:191-0658-3798" className="hidden md:flex items-center gap-2 text-[#2D2D2D] font-medium">
-              <Phone className="h-4 w-4" />
-              191-0658-3798
-            </a>
-            <Link
-              href="/contact"
-              className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
-            >
-              立即咨询
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPath="/services/team" />
 
       {/* Hero Section */}
       <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
@@ -652,59 +601,7 @@ export default function TeamBuildingPage() {
       </section>
 
       {/* 页脚 */}
-      <footer className="relative text-white py-8 px-6 md:py-12">
-        {/* 背景图 */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
-          <div className="absolute inset-0 bg-[#333333]/90"></div>
-        </div>
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 mb-6 md:mb-8">
-            <div className="col-span-2 md:col-span-2">
-              <div className="flex items-center gap-3 mb-4">
-                <img
-                  src="/之江文化中心logo_画板 1.png"
-                  alt="之江文化中心 logo"
-                  className="h-10 w-auto"
-                />
-                <div>
-                  <span className="text-xl font-bold">之江文化中心</span>
-                  <p className="text-xs text-[#FFC107]">企业活动服务</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">服务内容</h3>
-              <ul className="space-y-2 text-white/70 text-sm">
-                <li><Link href="/services/party" className="hover:text-white transition-colors">主题党建</Link></li>
-                <li><Link href="/services/team" className="hover:text-white transition-colors">团建拓展</Link></li>
-                <li><Link href="/services/training" className="hover:text-white transition-colors">访学培训</Link></li>
-                <li><Link href="/services/custom" className="hover:text-white transition-colors">定制活动</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-4 text-[#FFC107]">联系方式</h3>
-              <ul className="space-y-3 text-white/70 text-sm">
-                <li className="flex items-start gap-2">
-                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
-                  <span>191-0658-3798</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-[#FFC107]" />
-                  <span>浙江省杭州市西湖区<br />之江文化中心</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-white/10 pt-8 text-center">
-            <p className="text-white/50 text-sm">
-              © 2024 浙江文化空间发展有限公司 | 之江文化中心企业活动服务 | 版权所有
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
