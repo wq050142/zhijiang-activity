@@ -16,9 +16,9 @@ export default function CustomEventsPage() {
         <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/之江文化中心logo_画板 1.png"
-              alt="之江文化中心 logo"
-              className="h-12 md:h-16 w-auto"
+              src="/客户答谢.png"
+              alt="定制活动"
+              className="h-12 md:h-16 w-auto rounded-lg"
             />
             <div>
               <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
