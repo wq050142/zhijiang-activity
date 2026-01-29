@@ -78,34 +78,44 @@ export default function PartyBuildingPage() {
                 <span className="text-[#FF9F43] font-semibold">活动亮点</span>
               </div>
               
-              <div className="space-y-5">
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <BookOpen className="h-5 w-5 text-white" />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <BookOpen className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">文化赋能</h3>
-                    <p className="text-[#6B7280] text-sm">将党建活动与文化体验深度融合</p>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">文化赋能</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">将党建活动与文化体验深度融合</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Users className="h-5 w-5 text-white" />
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">互动性强</h3>
-                    <p className="text-[#6B7280] text-sm">通过角色扮演、实地调研增强参与感</p>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">互动性强</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">通过角色扮演、实地调研增强参与感</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Award className="h-5 w-5 text-white" />
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Award className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">教育实效</h3>
-                    <p className="text-[#6B7280] text-sm">沉浸式学习让党史教育入脑入心</p>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">教育实效</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">沉浸式学习让党史教育入脑入心</p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Target className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">定制服务</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">根据企业需求量身定制专属党建方案</p>
                   </div>
                 </div>
               </div>
