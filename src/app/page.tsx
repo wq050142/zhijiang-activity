@@ -519,6 +519,34 @@ export default function Home() {
               </div>
             </div>
 
+            {/* 案例 3 */}
+            <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img
+                  src="/财政厅农商行联合活动1.jpg"
+                  alt="浙江省财政厅&农商银行联合活动"
+                  className="w-full h-full object-cover brightness-[1.15]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+                <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 z-10">
+                  <span className="inline-block px-2 md:px-3 py-1 bg-white/90 backdrop-blur text-[#333333] text-[10px] md:text-xs font-bold rounded-full mb-2">
+                    儿童节活动
+                  </span>
+                  <h3 className="text-white text-lg md:text-xl font-bold line-clamp-2 drop-shadow-md">浙江省财政厅&农商银行联合活动</h3>
+                </div>
+              </div>
+              <div className="p-3 md:p-4">
+                <p className="text-[#666666] mb-3 md:mb-4 text-sm md:text-base leading-relaxed line-clamp-2">
+                  策划跨界联动的节日活动，巧妙融合非遗手作与现代科技体验，包含公益捐助项目，促进政企文化深度交流。
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">非遗手作</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">科技体验</span>
+                  <span className="inline-block px-2 py-1 bg-[#FFE15D]/20 text-[#333333] text-xs rounded-full">公益捐助</span>
+                </div>
+              </div>
+            </div>
+
             {/* 案例 4 */}
             <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="aspect-[16/10] relative overflow-hidden">
