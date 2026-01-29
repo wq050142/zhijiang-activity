@@ -40,7 +40,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
             alt="之江文化中心 logo"
             width={80}
             height={80}
-            className="h-10 md:h-14 w-auto mt-1.5 md:mt-2"
+            className="h-10 md:h-14 w-auto mt-4 md:mt-5"
             priority
             sizes="(max-width: 768px) 40px, 56px"
           />
