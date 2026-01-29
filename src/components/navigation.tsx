@@ -93,8 +93,16 @@ export default function Navigation({ currentPath }: NavigationProps) {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-gray-50/95 backdrop-blur-sm">
-          <div className="px-3 py-3 space-y-1">
+        <>
+          {/* 遮罩层 */}
+          <div
+            className="lg:hidden fixed inset-0 bg-black/50 z-40"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+
+          {/* 菜单内容 */}
+          <div className="lg:hidden border-t border-gray-200 bg-gray-50/95 backdrop-blur-sm relative z-50">
+            <div className="px-3 py-3 space-y-1">
             {/* 首页选项 */}
             <Link
               href="/"
@@ -139,6 +147,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
             </div>
           </div>
         </div>
+        </>
       )}
     </nav>
   );
