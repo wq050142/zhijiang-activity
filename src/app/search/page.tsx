@@ -109,7 +109,7 @@ function SearchContent() {
         <div className="max-w-4xl mx-auto">
           {/* 搜索标题 */}
           <div className="mb-8">
-            <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-2">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-2 mt-12 md:mt-16">
               搜索结果
             </h1>
             {query && (

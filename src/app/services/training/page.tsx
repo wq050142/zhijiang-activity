@@ -25,7 +25,7 @@ export default function TrainingPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 mt-8 md:mt-12 text-white">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 mt-12 md:mt-16 text-white">
             访学培训
           </h1>
           <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium">

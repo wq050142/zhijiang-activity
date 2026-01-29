@@ -24,7 +24,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/10 via-transparent to-[#FFC107]/10"></div>
         </div>
-        <div className="max-w-7xl mx-auto text-center relative z-10 pt-8 md:pt-12">
+        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-5 text-white leading-tight">
             文化赋能 · 企业活动
             <br />

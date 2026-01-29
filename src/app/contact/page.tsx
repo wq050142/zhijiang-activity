@@ -63,7 +63,7 @@ export default function ContactPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto text-center relative z-10 pt-4 md:pt-8">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-12 md:mt-16 text-white">
             联系我们
           </h1>
           <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium">
