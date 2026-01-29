@@ -66,38 +66,23 @@ export default function TeamBuildingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-28 pb-12 px-4 md:px-6 md:pb-16 relative overflow-hidden">
-        {/* 大图横幅 */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/团建拓展.png")' }}>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20"></div>
-        </div>
-        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
-          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-[#2D2D2D] text-sm font-medium mb-6 shadow-lg border border-gray-200">
-            <Heart className="h-4 w-4 text-[#FFE15D]" />
-            心灵滋养 · 精神升华
+      <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
+        {/* 背景图片 */}
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/80 to-[#FF9F43]/80">
+            <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+        </div>
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 mt-8 md:mt-12 text-white">
             团建拓展
           </h1>
-          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium mb-8">
-            在文化沉浸中提升团队文化软实力，打破传统模式
+          <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-medium">
+            在文化沉浸中提升团队文化软实力
+            <br />
+            打破传统模式
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
-            >
-              立即预约
-              <ArrowRight className="h-5 w-5" />
-            </Link>
-            <Link
-              href="/cases"
-              className="inline-flex items-center justify-center gap-2 bg-white/90 backdrop-blur hover:bg-white text-[#2D2D2D] px-5 py-2.5 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-medium transition-all border-2 border-white/30 hover:border-[#FFE15D]"
-            >
-              查看案例
-            </Link>
-          </div>
         </div>
       </section>
 
