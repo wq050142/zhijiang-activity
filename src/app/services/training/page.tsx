@@ -115,7 +115,7 @@ export default function TrainingPage() {
                 <span className="text-[#FF9F43] font-semibold">活动亮点</span>
               </div>
               
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
                 <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
                     <GraduationCap className="h-6 w-6 text-white" />
