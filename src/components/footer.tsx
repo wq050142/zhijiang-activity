@@ -4,7 +4,7 @@ import OptimizedImage from './optimized-image';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2D2D2D] text-white pt-8 pb-5 px-4 md:px-6">
+    <footer className="bg-[#2D2D2D] text-white pt-8 pb-8 px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 mb-6 md:mb-8">
           {/* Logo */}
