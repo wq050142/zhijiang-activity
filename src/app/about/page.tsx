@@ -39,7 +39,7 @@ export default function AboutPage() {
       {/* 中心介绍 */}
       <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-12 gap-8 items-center mb-8">
+          <div className="grid lg:grid-cols-12 gap-8 lg:items-start mb-8">
             <div className="lg:col-span-4">
               <div className="inline-flex items-center gap-2 mb-4">
                 <Building2 className="h-6 w-6 text-[#FFC107]" />
@@ -58,31 +58,31 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="lg:col-span-8 space-y-3 lg:space-y-4">
+            <div className="lg:col-span-8">
               {/* 主图片 */}
-              <div className="aspect-[4/3] lg:aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl relative">
+              <div className="aspect-[4/3] lg:aspect-[21/9] lg:h-1/2 rounded-3xl overflow-hidden shadow-2xl relative">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/之江文化中心全景.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/10 via-transparent to-[#FF9F43]/10"></div>
                 </div>
               </div>
 
               {/* 数据展示 */}
-              <div className="grid grid-cols-4 gap-2 lg:gap-3">
-                <div className="aspect-square lg:max-h-16 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
-                  <span className="text-lg md:text-lg font-bold">32.1万</span>
-                  <span className="text-xs lg:text-[10px] opacity-90">㎡</span>
+              <div className="grid grid-cols-4 gap-2 lg:gap-4 lg:h-1/2 lg:mt-3 lg:grid-rows-1 lg:grid-cols-4">
+                <div className="aspect-square lg:aspect-auto lg:h-full bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
+                  <span className="text-lg md:text-xl lg:text-2xl font-bold">32.1万</span>
+                  <span className="text-xs md:text-sm lg:text-sm opacity-90">㎡</span>
                 </div>
-                <div className="aspect-square lg:max-h-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
-                  <span className="text-lg md:text-lg font-bold">4</span>
-                  <span className="text-xs lg:text-[10px] opacity-90">大场馆</span>
+                <div className="aspect-square lg:aspect-auto lg:h-full bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
+                  <span className="text-lg md:text-xl lg:text-2xl font-bold">4</span>
+                  <span className="text-xs md:text-sm lg:text-sm opacity-90">大场馆</span>
                 </div>
-                <div className="aspect-square lg:max-h-16 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
-                  <span className="text-lg md:text-lg font-bold">1000+</span>
-                  <span className="text-xs lg:text-[10px] opacity-90">企业</span>
+                <div className="aspect-square lg:aspect-auto lg:h-full bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
+                  <span className="text-lg md:text-xl lg:text-2xl font-bold">1000+</span>
+                  <span className="text-xs md:text-sm lg:text-sm opacity-90">企业</span>
                 </div>
-                <div className="aspect-square lg:max-h-16 bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
-                  <span className="text-lg md:text-lg font-bold">100%</span>
-                  <span className="text-xs lg:text-[10px] opacity-90">满意度</span>
+                <div className="aspect-square lg:aspect-auto lg:h-full bg-gradient-to-br from-[#FFC107] to-[#FF9F43] rounded-xl flex flex-col items-center justify-center text-white shadow-lg">
+                  <span className="text-lg md:text-xl lg:text-2xl font-bold">100%</span>
+                  <span className="text-xs md:text-sm lg:text-sm opacity-90">满意度</span>
                 </div>
               </div>
             </div>
