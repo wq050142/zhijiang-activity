@@ -104,19 +104,6 @@ export default function TrainingPage() {
 
           {/* 培训场景展示 */}
           <div className="mb-12">
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 mb-4">
-                <Award className="h-6 w-6 text-[#FFE15D]" />
-                <span className="text-[#FF9F43] font-semibold">培训场景</span>
-              </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
-                沉浸式学习体验
-              </h2>
-              <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
-                在文化地标中学习，感受浙江文化的深厚底蕴
-              </p>
-            </div>
-
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div className="order-2 lg:order-1">
                 <div className="space-y-6">
