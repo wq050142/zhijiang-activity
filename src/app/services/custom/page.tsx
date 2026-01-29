@@ -78,34 +78,44 @@ export default function CustomEventsPage() {
                 <span className="text-[#FF9F43] font-semibold">活动亮点</span>
               </div>
               
-              <div className="space-y-5">
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Award className="h-5 w-5 text-white" />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Award className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">高端格调</h3>
-                    <p className="text-[#6B7280] text-sm">文化地标加持，彰显品牌实力</p>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">高端格调</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">文化地标加持，彰显品牌实力</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Users className="h-5 w-5 text-white" />
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">尊享体验</h3>
-                    <p className="text-[#6B7280] text-sm">私人导览服务，一对一专属服务</p>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">尊享体验</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">私人导览服务，一对一专属服务</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="h-5 w-5 text-white" />
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">专业策划</h3>
-                    <p className="text-[#6B7280] text-sm">从策划到执行，全流程专业服务</p>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">专业策划</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">从策划到执行，全流程专业服务</p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Trophy className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">品质保障</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">一流团队执行，确保完美呈现</p>
                   </div>
                 </div>
               </div>

@@ -109,40 +109,50 @@ export default function TrainingPage() {
           </div>
 
           {/* 右侧：活动亮点 */}
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 mb-6">
                 <Sparkles className="h-6 w-6 text-[#FFE15D]" />
                 <span className="text-[#FF9F43] font-semibold">活动亮点</span>
               </div>
               
-              <div className="space-y-5">
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <GraduationCap className="h-5 w-5 text-white" />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <GraduationCap className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">高端课程</h3>
-                    <p className="text-[#6B7280] text-sm">知名专家学者授课，提供前沿知识</p>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">高端课程</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">知名专家学者授课，提供前沿知识</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Users className="h-5 w-5 text-white" />
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">行业交流</h3>
-                    <p className="text-[#6B7280] text-sm">搭建行业交流平台，促进企业合作</p>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">行业交流</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">搭建行业交流平台，促进企业合作</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-4 rounded-lg bg-gradient-to-r from-[#FFE15D]/8 to-transparent border-l-2 border-[#FFE15D]/60 hover:from-[#FFE15D]/12 hover:border-[#FFE15D] transition-all">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Award className="h-5 w-5 text-white" />
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Award className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#2D2D2D]">学习成果</h3>
-                    <p className="text-[#6B7280] text-sm">系统化学习体系，确保培训实效</p>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">学习成果</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">系统化学习体系，确保培训实效</p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-[#FFE15D]/8 to-[#FFC107]/4 border border-[#FFE15D]/20 hover:from-[#FFE15D]/12 hover:border-[#FFE15D]/40 transition-all text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Search className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-[#2D2D2D] mb-1">实战导向</h3>
+                    <p className="text-[#6B7280] text-xs leading-relaxed">理论与实践结合，快速应用</p>
                   </div>
                 </div>
               </div>
