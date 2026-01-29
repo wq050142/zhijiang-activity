@@ -607,10 +607,10 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/cases"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-5 py-3 md:px-8 md:py-3.5 rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-6 py-4 md:px-10 md:py-5 rounded-full text-base md:text-xl font-bold transition-all shadow-xl hover:shadow-2xl hover:scale-110"
             >
               查看更多案例
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="h-6 w-6" />
             </Link>
           </div>
         </div>

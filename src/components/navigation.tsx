@@ -50,11 +50,11 @@ export default function Navigation({ currentPath }: NavigationProps) {
           <OptimizedImage
             src="/之江文化中心logo_画板 1.png"
             alt="之江文化中心 logo"
-            width={64}
-            height={64}
-            className="h-12 md:h-16 w-auto"
+            width={80}
+            height={80}
+            className="h-14 md:h-20 w-auto"
             priority
-            sizes="(max-width: 768px) 48px, 64px"
+            sizes="(max-width: 768px) 56px, 80px"
           />
           <div>
             <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
@@ -141,16 +141,16 @@ export default function Navigation({ currentPath }: NavigationProps) {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-gray-200 bg-white">
-          <div className="px-4 py-4 space-y-3">
+          <div className="px-3 py-3 space-y-1">
             {/* Mobile Search */}
-            <div className="relative">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+            <div className="relative mb-2">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="搜索..."
-                className="w-full pl-12 pr-4 py-3 bg-gray-100 rounded-lg focus:outline-none"
+                className="w-full pl-10 pr-3 py-2.5 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFE15D]/30"
               />
             </div>
 
@@ -159,7 +159,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block px-4 py-3 rounded-lg transition-colors font-medium ${
+                className={`block px-3 py-2.5 rounded-lg transition-colors font-medium text-sm ${
                   isActive(item.href)
                     ? 'bg-[#FFE15D]/20 text-[#FFE15D]'
                     : 'text-[#2D2D2D] hover:bg-gray-100'
@@ -168,10 +168,10 @@ export default function Navigation({ currentPath }: NavigationProps) {
                 {item.name}
               </Link>
             ))}
-            <div className="pt-4 border-t border-gray-200">
+            <div className="pt-2 mt-2 border-t border-gray-200 space-y-1">
               <a
                 href="tel:191-0658-3798"
-                className="flex items-center gap-2 px-4 py-3 text-[#2D2D2D] font-medium"
+                className="flex items-center gap-2 px-3 py-2 text-[#2D2D2D] font-medium text-sm"
               >
                 <Phone className="h-4 w-4" />
                 191-0658-3798
@@ -179,7 +179,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block mt-2 text-center w-full bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-6 py-3 rounded-lg font-semibold"
+                className="block mt-1 text-center w-full bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] text-[#2D2D2D] px-6 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition-shadow"
               >
                 立即咨询
               </Link>

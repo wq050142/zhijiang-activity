@@ -23,10 +23,26 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // 图片加载优化
+    unoptimized: false,
+    loader: 'default',
   },
   // 启用图片优化缓存
   experimental: {
     optimizePackageImports: ['lucide-react'],
+    optimizeCss: true,
+  },
+  // 压缩配置
+  compress: true,
+  // 生成静态页面
+  output: 'standalone',
+  // 缓存配置
+  generateEtags: true,
+  // 优化打包
+  modularizeImports: {
+    'lucide-react': {
+      transform: 'lucide-react/dist/esm/icons/{{kebabCase member}}',
+    },
   },
 };
 
