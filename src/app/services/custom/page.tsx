@@ -217,7 +217,7 @@ export default function CustomEventsPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <img
-                  src="https://coze-coding-project.tos.coze.site/coze_storage_7599663298044362793/image/generate_image_1deb30f9-4dfe-471f-8b2b-59cfbeaffb3c.jpeg?sign=1772244362-e66ec03b1c-0-2de850ee58365ac177e46ea3da23eb9fed61ccf8ed1c8220ff3d8dc1e5137844"
+                  src="/assets/发布会.png"
                   alt="产品发布会"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
