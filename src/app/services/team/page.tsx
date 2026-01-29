@@ -259,6 +259,38 @@ export default function TeamBuildingPage() {
             {/* 产品 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/机器人体验.jpg")' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">机器人体验</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1~2小时</span>
+                </div>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  体验前沿科技魅力，了解机器人工作原理，在互动中激发创新思维
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>机器人互动体验</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>科技知识学习</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>团队协作编程</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 4 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/亲子研学.jpg")' }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
@@ -288,7 +320,7 @@ export default function TeamBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 4 */}
+            {/* 产品 5 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/音乐疗愈.jpg")' }}></div>
@@ -320,7 +352,7 @@ export default function TeamBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 5 */}
+            {/* 产品 6 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/青年交友.jpg")' }}></div>
@@ -352,7 +384,7 @@ export default function TeamBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 6 */}
+            {/* 产品 7 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/读书会.jpg")' }}></div>
@@ -384,7 +416,7 @@ export default function TeamBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 7 */}
+            {/* 产品 8 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/财富沙盘.jpg")' }}></div>
@@ -416,7 +448,7 @@ export default function TeamBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 8 */}
+            {/* 产品 9 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/山野清修.jpg")' }}></div>
@@ -448,7 +480,7 @@ export default function TeamBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 9 */}
+            {/* 产品 10 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/assets/机器人体验.jpg")' }}></div>
