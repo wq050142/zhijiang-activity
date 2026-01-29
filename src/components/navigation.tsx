@@ -32,7 +32,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
 
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-1 md:px-6 md:py-1.25 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-0.5 md:px-6 md:py-0.75 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <OptimizedImage
@@ -40,7 +40,7 @@ export default function Navigation({ currentPath }: NavigationProps) {
             alt="之江文化中心 logo"
             width={80}
             height={80}
-            className="h-10 md:h-14 w-auto mt-4 md:mt-5"
+            className="h-10 md:h-14 w-auto mt-2 md:mt-3"
             priority
             sizes="(max-width: 768px) 40px, 56px"
           />
