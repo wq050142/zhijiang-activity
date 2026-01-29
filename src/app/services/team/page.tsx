@@ -161,26 +161,6 @@ export default function TeamBuildingPage() {
               </div>
             </div>
           </div>
-
-          {/* 服务标签 */}
-          <div className="flex flex-wrap justify-center gap-4 pt-8 border-t border-gray-100">
-            <div className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFE15D]/20 to-[#FF9F43]/20 rounded-full text-[#2D2D2D] font-medium hover:from-[#FFE15D]/30 hover:to-[#FF9F43]/30 transition-all">
-              <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-              <span>非遗手作体验</span>
-            </div>
-            <div className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFE15D]/20 to-[#FF9F43]/20 rounded-full text-[#2D2D2D] font-medium hover:from-[#FFE15D]/30 hover:to-[#FF9F43]/30 transition-all">
-              <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-              <span>养生疗愈课程</span>
-            </div>
-            <div className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFE15D]/20 to-[#FF9F43]/20 rounded-full text-[#2D2D2D] font-medium hover:from-[#FFE15D]/30 hover:to-[#FF9F43]/30 transition-all">
-              <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-              <span>青年社交活动</span>
-            </div>
-            <div className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFE15D]/20 to-[#FF9F43]/20 rounded-full text-[#2D2D2D] font-medium hover:from-[#FFE15D]/30 hover:to-[#FF9F43]/30 transition-all">
-              <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-              <span>定制化团建</span>
-            </div>
-          </div>
         </div>
       </section>
 
