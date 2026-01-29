@@ -208,6 +208,17 @@ export default function TeamBuildingPage() {
                     <span>作品带走留念</span>
                   </div>
                 </div>
+                <div className="mt-4 pt-4 border-t border-gray-100">
+                  <a
+                    href="https://www.kdocs.cn/l/ckyInDq87fV1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF9F43] hover:text-[#FFE15D] transition-colors"
+                  >
+                    了解更多手作项目
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -220,22 +231,22 @@ export default function TeamBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">养生疗愈</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">音乐疗愈</h3>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  音疗放松、八段锦、中医讲座，针对高压人群"身心除锈"
+                  颂钵手碟体验，音乐冥想，在声音疗愈中放松身心，释放压力
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>音疗放松课程</span>
+                    <span>颂钵手碟体验</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>八段锦教学</span>
+                    <span>音乐冥想</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>中医养生讲座</span>
+                    <span>身心放松</span>
                   </div>
                 </div>
               </div>
@@ -282,7 +293,7 @@ export default function TeamBuildingPage() {
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">文化读书会</h3>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  在浙江图书馆开展主题读书会，分享阅读心得，提升团队文化素养
+                  开展主题读书会，分享阅读心得，提升团队文化素养
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
@@ -310,22 +321,22 @@ export default function TeamBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">艺术体验</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">博物馆精讲</h3>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  参观艺术展览，参与艺术创作，在审美中陶冶情操，提升艺术修养
+                  专业讲解员带领深度参观博物馆，了解藏品背后的历史文化故事
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>艺术展览导览</span>
+                    <span>专业讲解服务</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>艺术创作 workshop</span>
+                    <span>深度文化解读</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>美学鉴赏课程</span>
+                    <span>互动问答交流</span>
                   </div>
                 </div>
               </div>
@@ -340,22 +351,52 @@ export default function TeamBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">定制化团建</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">亲子研学</h3>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  根据团队特点和需求，量身定制特色团建方案
+                  亲子共同参与文化探索活动，在互动中增进亲子关系，拓展视野
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>团队需求分析</span>
+                    <span>互动体验活动</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>专属方案设计</span>
+                    <span>文化知识学习</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>全程专业执行</span>
+                    <span>亲子协作挑战</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 7 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <MapPin className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">山野清修（之江周边合作项目）</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  走进自然，在山野中感受宁静，通过户外活动净化心灵，缓解压力
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>自然风光体验</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>户外冥想修行</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>团队协作挑战</span>
                   </div>
                 </div>
               </div>
