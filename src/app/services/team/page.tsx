@@ -122,7 +122,7 @@ export default function TeamBuildingPage() {
             </div>
 
             {/* 右侧：活动亮点 */}
-            <div className="space-y-8">
+            <div className="space-y-6">
               <div className="inline-flex items-center gap-2 mb-6">
                 <Sparkles className="h-6 w-6 text-[#FFE15D]" />
                 <span className="text-[#FF9F43] font-semibold">活动亮点</span>
