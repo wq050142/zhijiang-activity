@@ -140,7 +140,7 @@ export default function CustomEventsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-11">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-11">
             {/* 场景 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
@@ -270,7 +270,7 @@ export default function CustomEventsPage() {
             </div>
 
             {/* 备注提示 */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-3 mt-6">
+            <div className="col-span-1 lg:col-span-4 mt-6">
               <div className="bg-gradient-to-r from-[#FFE15D]/5 to-[#FF9F43]/5 border border-[#FFE15D]/20 rounded-lg p-4 md:p-5">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0">
