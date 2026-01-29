@@ -68,7 +68,7 @@ export default function PartyBuildingPage() {
       {/* Hero Section */}
       <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
         {/* 背景图片 */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/assets/主题党建服务介绍配图.jpg")' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/80 to-[#FF9F43]/80">
             <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
@@ -384,8 +384,8 @@ export default function PartyBuildingPage() {
                 <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
                   体验红色非遗手作，传承传统文化，弘扬工匠精神
                 </p>
-                <div className="mb-4 inline-block px-3 py-1.5 bg-[#FFE15D]/10 rounded-lg border border-[#FFE15D]/30">
-                  <span className="text-sm text-[#FFE15D] font-bold">多款手作项目可选</span>
+                <div className="mb-4 inline-block px-3 py-1.5 bg-[#FFE15D]/20 rounded-lg border border-[#FFE15D]/50">
+                  <span className="text-sm text-[#DC2626] font-bold">多款手作项目可选</span>
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
