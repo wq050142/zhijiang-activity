@@ -165,7 +165,7 @@ export default function TeamBuildingPage() {
       </section>
 
       {/* 服务内容 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-[#F8FAFC]">
+      <section className="pt-8 pb-12 px-4 md:px-6 md:pt-12 md:pb-16 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
