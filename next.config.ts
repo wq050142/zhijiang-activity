@@ -34,8 +34,6 @@ const nextConfig: NextConfig = {
   },
   // 压缩配置
   compress: true,
-  // 生成静态页面
-  output: 'standalone',
   // 缓存配置
   generateEtags: true,
   // 优化打包
