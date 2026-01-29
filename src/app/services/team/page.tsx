@@ -89,89 +89,96 @@ export default function TeamBuildingPage() {
       {/* 服务介绍 */}
       <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 mb-4">
-                <Users className="h-6 w-6 text-[#FFE15D]" />
-                <span className="text-[#FF9F43] font-semibold">服务特色</span>
-              </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D2D2D]">
-                文化沉浸团建，心灵滋养体验
-              </h2>
-              <div className="space-y-4 text-[#6B7280] leading-relaxed">
-                <p>
-                  依托之江文化中心非遗馆、图书馆等场馆资源，我们打破传统团建模式，将文化活动与团队建设深度融合。
-                </p>
-                <p>
-                  通过非遗手作、养生疗愈、青年交友等形式，在文化体验中增强团队凝聚力，在身心放松中提升团队软实力，让团建活动更有温度和深度。
-                </p>
-              </div>
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Users className="h-6 w-6 text-[#FFE15D]" />
+              <span className="text-[#FF9F43] font-semibold">服务特色</span>
+            </div>
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+              文化沉浸团建，心灵滋养体验
+            </h2>
+            <p className="text-base md:text-lg text-[#6B7280] max-w-3xl mx-auto">
+              依托之江文化中心资源，将文化活动与团队建设深度融合，让团建更有温度和深度
+            </p>
+          </div>
 
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>非遗手作体验</span>
-                </div>
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>养生疗愈课程</span>
-                </div>
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>青年社交活动</span>
-                </div>
-                <div className="flex items-center gap-2 text-[#2D2D2D] font-medium">
-                  <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
-                  <span>定制化团建</span>
+          <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+            {/* 左侧：图片 */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div
+                className="relative aspect-[4/3] bg-cover bg-center"
+                style={{ backgroundImage: 'url("/首页背景.png")' }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/60 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  <div className="flex items-center gap-3 text-white">
+                    <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-full flex items-center justify-center">
+                      <Heart className="h-5 w-5 text-white" />
+                    </div>
+                    <span className="font-semibold text-lg">心灵滋养 · 团队共创</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 mb-4">
+            {/* 右侧：活动亮点 */}
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 mb-2">
                 <Sparkles className="h-6 w-6 text-[#FFE15D]" />
                 <span className="text-[#FF9F43] font-semibold">活动亮点</span>
               </div>
               
-              <div className="bg-gradient-to-br from-[#FFE15D]/10 to-[#FFE15D]/5 rounded-2xl p-8 border border-[#FFE15D]/20">
-                <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Heart className="h-6 w-6 text-white" />
+              <div className="space-y-4">
+                <div className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-[#FFE15D]/10 to-transparent border-l-4 border-[#FFE15D] hover:from-[#FFE15D]/20 transition-all">
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Heart className="h-7 w-7 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">心灵滋养</h3>
-                    <p className="text-[#6B7280] text-sm">
-                      在文化体验中放松身心，缓解工作压力，实现心灵滋养
-                    </p>
+                    <h3 className="text-lg font-bold text-[#2D2D2D]">心灵滋养</h3>
+                    <p className="text-[#6B7280] text-sm">文化体验中放松身心，缓解压力</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Users className="h-6 w-6 text-white" />
+                <div className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-[#FFE15D]/10 to-transparent border-l-4 border-[#FFE15D] hover:from-[#FFE15D]/20 transition-all">
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Users className="h-7 w-7 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">团队共创</h3>
-                    <p className="text-[#6B7280] text-sm">
-                      通过协作完成非遗作品，打破部门壁垒，增强团队凝聚力
-                    </p>
+                    <h3 className="text-lg font-bold text-[#2D2D2D]">团队共创</h3>
+                    <p className="text-[#6B7280] text-sm">协作完成非遗作品，增强凝聚力</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Award className="h-6 w-6 text-white" />
+                <div className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-[#FFE15D]/10 to-transparent border-l-4 border-[#FFE15D] hover:from-[#FFE15D]/20 transition-all">
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Award className="h-7 w-7 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#2D2D2D] mb-2">软实力提升</h3>
-                    <p className="text-[#6B7280] text-sm">
-                      文化浸润提升团队人文素养，打造有文化底蕴的团队
-                    </p>
+                    <h3 className="text-lg font-bold text-[#2D2D2D]">软实力提升</h3>
+                    <p className="text-[#6B7280] text-sm">文化浸润提升人文素养</p>
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
+          </div>
+
+          {/* 服务标签 */}
+          <div className="flex flex-wrap justify-center gap-4 pt-8 border-t border-gray-100">
+            <div className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFE15D]/20 to-[#FF9F43]/20 rounded-full text-[#2D2D2D] font-medium hover:from-[#FFE15D]/30 hover:to-[#FF9F43]/30 transition-all">
+              <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
+              <span>非遗手作体验</span>
+            </div>
+            <div className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFE15D]/20 to-[#FF9F43]/20 rounded-full text-[#2D2D2D] font-medium hover:from-[#FFE15D]/30 hover:to-[#FF9F43]/30 transition-all">
+              <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
+              <span>养生疗愈课程</span>
+            </div>
+            <div className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFE15D]/20 to-[#FF9F43]/20 rounded-full text-[#2D2D2D] font-medium hover:from-[#FFE15D]/30 hover:to-[#FF9F43]/30 transition-all">
+              <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
+              <span>青年社交活动</span>
+            </div>
+            <div className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#FFE15D]/20 to-[#FF9F43]/20 rounded-full text-[#2D2D2D] font-medium hover:from-[#FFE15D]/30 hover:to-[#FF9F43]/30 transition-all">
+              <CheckCircle2 className="h-5 w-5 text-[#FFE15D]" />
+              <span>定制化团建</span>
             </div>
           </div>
         </div>
