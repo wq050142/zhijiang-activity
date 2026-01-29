@@ -32,7 +32,7 @@ export default function CasesPage() {
     },
     {
       id: 3,
-      client: '浙江省财政厅&农商银行',
+      client: '浙江省财政厅&浙商银行',
       title: '联合活动',
       category: '儿童节活动',
       mainImage: '/财政厅农商行联合活动1.jpg',
@@ -52,12 +52,12 @@ export default function CasesPage() {
     },
     {
       id: 5,
-      client: '浙江省档案馆&农商银行',
+      client: '浙江省档案馆&浙商银行',
       title: '三八共建活动',
       category: '妇女节团建活动',
       mainImage: '/档案馆三八活动1.jpg',
       subImages: ['/档案馆三八活动2.jpg', '/档案馆三八活动3.jpg', '/档案馆三八活动4.jpg'],
-      description: '组织浙江省档案馆与农商银行两大单位共同走出办公楼，走进非遗馆开展跨界共建活动。让职工在沉浸式的非遗空间中体验传统技艺，通过文化纽带深化了双方单位的联谊与交流。',
+      description: '组织浙江省档案馆与浙商银行两大单位共同走出办公楼，走进非遗馆开展跨界共建活动。让职工在沉浸式的非遗空间中体验传统技艺，通过文化纽带深化了双方单位的联谊与交流。',
       highlights: ['跨界共建', '非遗空间', '传统技艺', '文化交流']
     },
     {
@@ -440,7 +440,7 @@ export default function CasesPage() {
               '上海市政院',
               '交通银行',
               '上海银行',
-              '农商银行',
+              '浙商银行',
               '杭州联合银行',
               '工商银行',
               '中宏保险',
