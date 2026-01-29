@@ -276,6 +276,41 @@ export default function PartyBuildingPage() {
             {/* 产品 4 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/红色非遗手作.png" alt="红色非遗手作" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色非遗手作</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1~1.5小时</span>
+                </div>
+                <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
+                  体验红色非遗手作，传承传统文化，弘扬工匠精神
+                </p>
+                <div className="mb-4 inline-block px-3 py-1.5 bg-[#FFE15D]/20 rounded-lg border border-[#FFE15D]/50">
+                  <span className="text-sm text-[#DC2626] font-bold">多款手作项目可选</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>红色主题手工</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>非遗技艺体验</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>作品带走留念</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 5 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] relative overflow-hidden">
                 <img src="/assets/红色主题展览.jpg" alt="红色主题展览" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
               </div>
@@ -305,7 +340,7 @@ export default function PartyBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 5 */}
+            {/* 产品 6 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <img src="/assets/革命精神讲座.jpg" alt="革命精神讲座" className="w-full h-full object-cover" />
@@ -337,7 +372,7 @@ export default function PartyBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 6 */}
+            {/* 产品 7 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <img src="/assets/两山理论研学.jpg" alt="两山理论研学" className="w-full h-full object-cover" />
@@ -364,41 +399,6 @@ export default function PartyBuildingPage() {
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
                     <span>分组研讨交流</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 产品 7 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] relative overflow-hidden">
-                <img src="/assets/红色非遗手作.png" alt="红色非遗手作" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-              </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色非遗手作</h3>
-                <div className="flex items-center gap-2 mb-3">
-                  <Clock className="h-4 w-4 text-[#FFE15D]" />
-                  <span className="text-xs text-[#6B7280]">1~1.5小时</span>
-                </div>
-                <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
-                  体验红色非遗手作，传承传统文化，弘扬工匠精神
-                </p>
-                <div className="mb-4 inline-block px-3 py-1.5 bg-[#FFE15D]/20 rounded-lg border border-[#FFE15D]/50">
-                  <span className="text-sm text-[#DC2626] font-bold">多款手作项目可选</span>
-                </div>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>红色主题手工</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>非遗技艺体验</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>作品带走留念</span>
                   </div>
                 </div>
               </div>
