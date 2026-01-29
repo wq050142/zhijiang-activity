@@ -16,7 +16,7 @@ export default function PartyBuildingPage() {
       <Navigation currentPath="/services/party" />
 
       {/* Hero Section */}
-      <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
+      <section className="pt-28 md:pt-32 pb-12 px-4 md:px-6 relative overflow-hidden">
         {/* 背景图片 */}
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/assets/主题党建服务介绍配图.jpg")' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/80 to-[#FF9F43]/80">

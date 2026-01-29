@@ -18,7 +18,7 @@ export default function Home() {
       <Navigation />
 
       {/* Hero 区域 */}
-      <section className="pt-24 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden min-h-[420px] md:min-h-[480px]">
+      <section className="pt-28 md:pt-32 pb-12 px-4 md:px-6 relative overflow-hidden min-h-[420px] md:min-h-[480px]">
         {/* 大图横幅背景 */}
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>

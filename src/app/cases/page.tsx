@@ -261,7 +261,7 @@ export default function CasesPage() {
       <Navigation currentPath="/cases" />
 
       {/* Hero Section */}
-      <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
+      <section className="pt-28 md:pt-32 pb-12 px-4 md:px-6 relative overflow-hidden">
         {/* 背景图片 */}
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/首页背景.png")' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/80 to-[#FF9F43]/80">
@@ -269,7 +269,7 @@ export default function CasesPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#FFC107]/30 via-transparent to-[#FF9F43]/30"></div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto text-center relative z-10 pt-12 md:pt-16">
+        <div className="max-w-7xl mx-auto text-center relative z-10">
           <h1 className="text-3xl md:text-5xl font-bold mb-6 mt-12 md:mt-16 text-white">
             精选案例
           </h1>
