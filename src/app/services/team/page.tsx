@@ -171,6 +171,7 @@ export default function TeamBuildingPage() {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
           </div>
         </div>
