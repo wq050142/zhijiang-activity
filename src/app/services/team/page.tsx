@@ -87,7 +87,7 @@ export default function TeamBuildingPage() {
       </section>
 
       {/* 服务介绍 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-white">
+      <section className="py-12 px-4 md:px-6 md:py-12 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
@@ -180,7 +180,7 @@ export default function TeamBuildingPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
             {/* 产品 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[4/3] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
