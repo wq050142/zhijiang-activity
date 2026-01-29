@@ -190,7 +190,7 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色溯源</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色溯源·浙江精神</h3>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   参观浙江省博物馆"浙江一万年"陈列，了解浙江红色革命历史，弘扬浙江精神
                 </p>
@@ -202,10 +202,6 @@ export default function PartyBuildingPage() {
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
                     <span>沉浸式导览体验</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>红色文化主题座谈</span>
                   </div>
                 </div>
               </div>
@@ -227,7 +223,7 @@ export default function PartyBuildingPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>专业剧本开发</span>
+                    <span>真实革命历史故事</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
@@ -250,7 +246,7 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">两山理论研学</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">两山理论研学（安吉余村合作项目）</h3>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   余村实地调研，深入理解"两山"理论，领悟生态文明思想
                 </p>
@@ -261,7 +257,7 @@ export default function PartyBuildingPage() {
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>专家现场授课</span>
+                    <span>专业主题讲解</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
@@ -280,7 +276,7 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色主题展览</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">红色主题展览（结合当前临展）</h3>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   依托博物馆红色文化展区，开展主题展览学习，感受革命精神
                 </p>
@@ -310,7 +306,7 @@ export default function PartyBuildingPage() {
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">革命精神学习</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">革命精神讲座</h3>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   学习红船精神、浙江精神，在文化浸润中感悟初心使命
                 </p>
