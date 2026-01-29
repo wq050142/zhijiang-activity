@@ -107,7 +107,7 @@ export default function PartyBuildingPage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div
                 className="relative aspect-[4/3] bg-cover bg-center"
-                style={{ backgroundImage: 'url("/首页背景.png")' }}
+                style={{ backgroundImage: 'url("/assets/主题党建服务介绍配图.jpg")' }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
@@ -183,11 +183,9 @@ export default function PartyBuildingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-11">
             {/* 产品 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/浙江精神.jpg" alt="红色溯源·浙江精神" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <BookOpen className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色溯源·浙江精神</h3>
@@ -213,11 +211,9 @@ export default function PartyBuildingPage() {
 
             {/* 产品 2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/红色剧本杀.jpg" alt="红色剧本杀" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Users className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色剧本杀</h3>
@@ -247,11 +243,9 @@ export default function PartyBuildingPage() {
 
             {/* 产品 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#EF4444] to-[#DC2626] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/红色音乐会.jpg" alt="红色音乐会" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Music className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色音乐会</h3>
@@ -281,11 +275,9 @@ export default function PartyBuildingPage() {
 
             {/* 产品 4 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/红色主题展览.jpg" alt="红色主题展览" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Star className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色主题展览（结合当前临展）</h3>
@@ -315,11 +307,9 @@ export default function PartyBuildingPage() {
 
             {/* 产品 5 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/革命精神讲座.jpg" alt="革命精神讲座" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Award className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">革命精神讲座</h3>
@@ -349,11 +339,9 @@ export default function PartyBuildingPage() {
 
             {/* 产品 6 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/两山理论研学.jpg" alt="两山理论研学" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Calendar className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">两山理论研学（安吉余村合作项目）</h3>
@@ -381,13 +369,11 @@ export default function PartyBuildingPage() {
               </div>
             </div>
 
-            {/* 产品 8 */}
+            {/* 产品 7 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#F59E0B] to-[#D97706] relative overflow-hidden">
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img src="/assets/红色非遗手作.png" alt="红色非遗手作" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <PenTool className="h-20 w-20 text-white" />
-                </div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">红色非遗手作</h3>
