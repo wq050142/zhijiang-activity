@@ -180,137 +180,21 @@ export default function TrainingPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* 产品 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <BookOpen className="h-20 w-20 text-white" />
-                </div>
-              </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">名家讲座</h3>
-                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  邀请知名专家学者开展专题讲座，分享前沿知识与行业洞察
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>专家学者授课</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>前沿知识分享</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>互动问答交流</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 产品 2 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <GraduationCap className="h-20 w-20 text-white" />
-                </div>
-              </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">专业课程培训</h3>
-                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  针对特定行业或领域，提供系统化专业课程培训
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>课程体系完善</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>实战案例分析</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>课后跟踪辅导</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 产品 3 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Users className="h-20 w-20 text-white" />
-                </div>
-              </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">行业交流论坛</h3>
-                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  搭建行业交流平台，促进企业间合作与经验分享
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>企业经验分享</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>资源对接合作</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>人脉拓展交流</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 产品 4 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Award className="h-20 w-20 text-white" />
-                </div>
-              </div>
-              <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">非遗与共同富裕</h3>
-                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  探索非遗传承与乡村振兴、共同富裕的实践路径
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>非遗传承实践</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>乡村振兴案例</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>共同富裕路径</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 产品 5 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <Calendar className="h-20 w-20 text-white" />
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">文旅融合创新</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">文旅创新融合 ——公共文化空间一体化运营</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1~2小时</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
                   学习"之江模式"的文旅融合创新经验与实践
                 </p>
@@ -331,31 +215,109 @@ export default function TrainingPage() {
               </div>
             </div>
 
-            {/* 产品 6 */}
+            {/* 产品 2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
                   <Sparkles className="h-20 w-20 text-white" />
                 </div>
               </div>
               <div className="p-5 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">定制化培训</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">共富讲堂：传统工艺的活化与创新</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1~2小时</span>
+                </div>
                 <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
-                  根据企业需求和特点，量身定制培训课程方案
+                  探索传统工艺的活化与创新路径，传承非遗文化
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>需求深度调研</span>
+                    <span>传统工艺展示</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>专属课程设计</span>
+                    <span>创新案例分析</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
                     <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                    <span>全程专业执行</span>
+                    <span>现场互动体验</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 3 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <BookOpen className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">文化讲座</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">1~2小时</span>
+                </div>
+                <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
+                  邀请知名专家学者开展专题讲座，分享前沿知识与行业洞察
+                </p>
+                <div className="mb-4 inline-block px-3 py-1.5 bg-[#FFE15D]/20 rounded-lg border border-[#FFE15D]/50">
+                  <span className="text-sm text-[#DC2626] font-bold">讲座主题、专家可定制邀约</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专家学者授课</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>前沿知识分享</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>互动问答交流</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 产品 4 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <GraduationCap className="h-20 w-20 text-white" />
+                </div>
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-[#2D2D2D]">系列专业课程培训</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-4 w-4 text-[#FFE15D]" />
+                  <span className="text-xs text-[#6B7280]">时长可定制</span>
+                </div>
+                <p className="text-[#6B7280] mb-3 leading-relaxed text-sm">
+                  针对特定行业或领域，提供系统化专业课程培训
+                </p>
+                <div className="mb-4 inline-block px-3 py-1.5 bg-[#FFE15D]/20 rounded-lg border border-[#FFE15D]/50">
+                  <span className="text-sm text-[#DC2626] font-bold">主题课时可定制</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>课程体系完善</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>实战案例分析</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>课后跟踪辅导</span>
                   </div>
                 </div>
               </div>
