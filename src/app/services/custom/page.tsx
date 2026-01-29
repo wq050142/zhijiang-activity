@@ -183,11 +183,13 @@ export default function CustomEventsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-11">
             {/* 场景 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <PartyPopper className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7599663298044362793/image/generate_image_3ca284f9-99cf-490f-a7de-2c3e89894d38.jpeg?sign=1772244353-18d59769e0-0-de24664a5bd1ce04dac794559eff154ced9812ebda409dbc98625ed479b10eb9"
+                  alt="企业年会"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">企业年会</h3>
@@ -213,11 +215,13 @@ export default function CustomEventsPage() {
 
             {/* 场景 2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Award className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7599663298044362793/image/generate_image_1deb30f9-4dfe-471f-8b2b-59cfbeaffb3c.jpeg?sign=1772244362-e66ec03b1c-0-2de850ee58365ac177e46ea3da23eb9fed61ccf8ed1c8220ff3d8dc1e5137844"
+                  alt="产品发布会"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">产品发布会</h3>
@@ -243,11 +247,13 @@ export default function CustomEventsPage() {
 
             {/* 场景 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Users className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7599663298044362793/image/generate_image_3e0580f0-149e-45cc-85db-46572f878c35.jpeg?sign=1772244363-58f19f61ed-0-906e7483b2f6a570aa9f06d5b4eae0d615af31efe6cf6bc8b92451c5d11b1b38"
+                  alt="客户答谢会"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">客户答谢会</h3>
@@ -273,11 +279,13 @@ export default function CustomEventsPage() {
 
             {/* 场景 4 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
-              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
-                  <Calendar className="h-20 w-20 text-white" />
-                </div>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img
+                  src="https://coze-coding-project.tos.coze.site/coze_storage_7599663298044362793/image/generate_image_eddfdebb-a981-41bd-8385-5e8f4e651282.jpeg?sign=1772244353-9943e7abcd-0-968dee96e7e860b78f25748c8ebc3041abdf900b25c41348079e9b07566dbfb6"
+                  alt="行业峰会"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">行业峰会</h3>
