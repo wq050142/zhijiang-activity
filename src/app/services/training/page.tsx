@@ -182,26 +182,31 @@ export default function TrainingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* 产品 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl flex items-center justify-center mb-6">
-                <BookOpen className="h-8 w-8 text-white" />
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
+              <div className="aspect-[16/10] bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:scale-105 transition-transform duration-300">
+                  <BookOpen className="h-20 w-20 text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#2D2D2D]">名家讲座</h3>
-              <p className="text-[#6B7280] mb-6 leading-relaxed">
-                邀请知名专家学者开展专题讲座，分享前沿知识与行业洞察
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>专家学者授课</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>前沿知识分享</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-[#6B7280]">
-                  <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
-                  <span>互动问答交流</span>
+              <div className="p-5 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-[#2D2D2D]">名家讲座</h3>
+                <p className="text-[#6B7280] mb-4 leading-relaxed text-sm">
+                  邀请知名专家学者开展专题讲座，分享前沿知识与行业洞察
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>专家学者授课</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>前沿知识分享</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-[#6B7280]">
+                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <span>互动问答交流</span>
+                  </div>
                 </div>
               </div>
             </div>
