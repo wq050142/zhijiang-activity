@@ -60,7 +60,7 @@ export default function AboutPage() {
 
             <div className="lg:col-span-8">
               {/* 主图片 */}
-              <div className="mx-auto lg:max-w-5xl aspect-[4/3] lg:aspect-[21/9] lg:h-1/2 rounded-3xl overflow-hidden shadow-2xl relative">
+              <div className="mx-auto lg:max-w-4xl aspect-[4/3] lg:aspect-[21/9] lg:h-1/2 rounded-3xl overflow-hidden shadow-2xl relative">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/之江文化中心全景.png")' }}>
                   <div className="absolute inset-0 bg-gradient-to-br from-[#FFC107]/10 via-transparent to-[#FF9F43]/10"></div>
                 </div>
