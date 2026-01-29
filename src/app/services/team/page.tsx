@@ -98,7 +98,7 @@ export default function TeamBuildingPage() {
               文化沉浸团建，文化滋养体验
             </h2>
             <p className="text-base md:text-lg text-[#6B7280] max-w-3xl mx-auto">
-              依托之江文化中心资源，将文化活动与团队建设深度融合，让团建更有温度和深度
+              依托之江文化中心资源，将文化活动与团队建设深度融合，打造独具特色的团建体验
             </p>
           </div>
 
@@ -485,7 +485,7 @@ export default function TeamBuildingPage() {
       <section className="py-12 px-4 md:px-6 md:py-16 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
-            让团建活动更有温度和深度
+            打造独具特色的团建活动
           </h2>
           <p className="text-sm md:text-lg text-white/80 mb-8 max-w-2xl mx-auto">
             依托之江文化中心资源，为您打造独具特色的团建活动
