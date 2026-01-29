@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, Users, Heart, Sparkles, CheckCircle2, Clock, Award } from 'lucide-react';
+import { ArrowRight, Users, Heart, Sparkles, CheckCircle2, Clock, Award, BookOpen, Palette, Gift, MapPin, Eye, MessageSquare, Cpu, Zap, Code, GraduationCap, Target, Music } from 'lucide-react';
 import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
 
@@ -148,15 +148,15 @@ export default function TeamBuildingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <BookOpen className="h-4 w-4 text-[#FFE15D]" />
                     <span>大师现场教学</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Palette className="h-4 w-4 text-[#FFE15D]" />
                     <span>团队协作体验</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Gift className="h-4 w-4 text-[#FFE15D]" />
                     <span>作品带走留念</span>
                   </div>
                 </div>
@@ -191,15 +191,15 @@ export default function TeamBuildingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <MapPin className="h-4 w-4 text-[#FFE15D]" />
                     <span>专业讲解服务</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Eye className="h-4 w-4 text-[#FFE15D]" />
                     <span>深度文化解读</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <MessageSquare className="h-4 w-4 text-[#FFE15D]" />
                     <span>互动问答交流</span>
                   </div>
                 </div>
@@ -223,15 +223,15 @@ export default function TeamBuildingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Cpu className="h-4 w-4 text-[#FFE15D]" />
                     <span>机器人互动体验</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Zap className="h-4 w-4 text-[#FFE15D]" />
                     <span>科技知识学习</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Code className="h-4 w-4 text-[#FFE15D]" />
                     <span>团队协作编程</span>
                   </div>
                 </div>
@@ -255,15 +255,15 @@ export default function TeamBuildingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Users className="h-4 w-4 text-[#FFE15D]" />
                     <span>互动体验活动</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <GraduationCap className="h-4 w-4 text-[#FFE15D]" />
                     <span>文化知识学习</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Target className="h-4 w-4 text-[#FFE15D]" />
                     <span>亲子协作挑战</span>
                   </div>
                 </div>
@@ -287,15 +287,15 @@ export default function TeamBuildingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Music className="h-4 w-4 text-[#FFE15D]" />
                     <span>颂钵手碟体验</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Heart className="h-4 w-4 text-[#FFE15D]" />
                     <span>音乐冥想</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Sparkles className="h-4 w-4 text-[#FFE15D]" />
                     <span>身心放松</span>
                   </div>
                 </div>

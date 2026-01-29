@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, Phone, ArrowRight, BookOpen, GraduationCap, Sparkles, CheckCircle2, Calendar, Award, Users, MapPin, Clock } from 'lucide-react';
+import { Building2, Phone, ArrowRight, BookOpen, GraduationCap, Sparkles, CheckCircle2, Calendar, Award, Users, MapPin, Clock, Lightbulb, Search, Compass, FileText, MessageSquare, Globe } from 'lucide-react';
+import Navigation from '@/components/navigation';
 
 export const metadata: Metadata = {
   title: '访学培训 - 之江文化中心 | 企业活动服务',
@@ -12,58 +13,7 @@ export default function TrainingPage() {
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <img
-              src="/之江文化中心logo_画板 1.png"
-              alt="之江文化中心 logo"
-              className="h-12 md:h-16 w-auto"
-            />
-            <div>
-              <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
-              <p className="text-xs text-[#6B7280]">企业活动服务</p>
-            </div>
-          </Link>
-
-          <div className="hidden lg:flex items-center gap-8">
-            <Link href="/about" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              关于我们
-            </Link>
-            <Link href="/services/party" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              主题党建
-            </Link>
-            <Link href="/services/team" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              团建拓展
-            </Link>
-            <Link href="/services/training" className="text-[#FFE15D] font-bold">
-              访学培训
-            </Link>
-            <Link href="/services/custom" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              定制活动
-            </Link>
-            <Link href="/cases" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              案例中心
-            </Link>
-            <Link href="/contact" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              联系我们
-            </Link>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <a href="tel:191-0658-3798" className="hidden md:flex items-center gap-2 text-[#2D2D2D] font-medium">
-              <Phone className="h-4 w-4" />
-              191-0658-3798
-            </a>
-            <Link
-              href="/contact"
-              className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
-            >
-              立即咨询
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPath="/services/training" />
 
       {/* Hero Section */}
       <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
@@ -234,15 +184,15 @@ export default function TrainingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Lightbulb className="h-4 w-4 text-[#FFE15D]" />
                     <span>之江模式解析</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Compass className="h-4 w-4 text-[#FFE15D]" />
                     <span>创新实践分享</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <MapPin className="h-4 w-4 text-[#FFE15D]" />
                     <span>实地走访调研</span>
                   </div>
                 </div>
@@ -266,15 +216,15 @@ export default function TrainingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Search className="h-4 w-4 text-[#FFE15D]" />
                     <span>传统工艺展示</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <FileText className="h-4 w-4 text-[#FFE15D]" />
                     <span>创新案例分析</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Users className="h-4 w-4 text-[#FFE15D]" />
                     <span>现场互动体验</span>
                   </div>
                 </div>
@@ -301,15 +251,15 @@ export default function TrainingPage() {
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <GraduationCap className="h-4 w-4 text-[#FFE15D]" />
                     <span>专家学者授课</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Globe className="h-4 w-4 text-[#FFE15D]" />
                     <span>前沿知识分享</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <MessageSquare className="h-4 w-4 text-[#FFE15D]" />
                     <span>互动问答交流</span>
                   </div>
                 </div>

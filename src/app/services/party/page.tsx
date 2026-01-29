@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, Phone, ArrowRight, Star, Users, BookOpen, Sparkles, CheckCircle2, Calendar, Award, MapPin, Clock, Music, PenTool } from 'lucide-react';
+import { Building2, Phone, ArrowRight, Star, Users, BookOpen, Sparkles, CheckCircle2, Calendar, Award, MapPin, Clock, Music, PenTool, Eye, Palette, Heart, Gift, GraduationCap, Target, Trophy } from 'lucide-react';
+import Navigation from '@/components/navigation';
 
 export const metadata: Metadata = {
   title: '主题党建 - 之江文化中心 | 企业活动服务',
@@ -12,58 +13,7 @@ export default function PartyBuildingPage() {
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* 顶部导航栏 */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <img
-              src="/之江文化中心logo_画板 1.png"
-              alt="之江文化中心 logo"
-              className="h-12 md:h-16 w-auto"
-            />
-            <div>
-              <span className="text-lg md:text-2xl font-bold text-[#2D2D2D]">之江文化中心</span>
-              <p className="text-xs text-[#6B7280]">企业活动服务</p>
-            </div>
-          </Link>
-
-          <div className="hidden lg:flex items-center gap-8">
-            <Link href="/about" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              关于我们
-            </Link>
-            <Link href="/services/party" className="text-[#FFE15D] font-bold">
-              主题党建
-            </Link>
-            <Link href="/services/team" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              团建拓展
-            </Link>
-            <Link href="/services/training" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              访学培训
-            </Link>
-            <Link href="/services/custom" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              定制活动
-            </Link>
-            <Link href="/cases" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              案例中心
-            </Link>
-            <Link href="/contact" className="text-[#2D2D2D] hover:text-[#FFE15D] transition-colors font-medium">
-              联系我们
-            </Link>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <a href="tel:191-0658-3798" className="hidden md:flex items-center gap-2 text-[#2D2D2D] font-medium">
-              <Phone className="h-4 w-4" />
-              191-0658-3798
-            </a>
-            <Link
-              href="/contact"
-              className="bg-gradient-to-r from-[#FFE15D] to-[#FF9F43] hover:shadow-lg text-[#2D2D2D] px-6 py-2 rounded-full transition-all font-semibold hover:scale-105"
-            >
-              立即咨询
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPath="/services/party" />
 
       {/* Hero Section */}
       <section className="pt-20 pb-8 px-4 md:px-6 md:pb-12 relative overflow-hidden">
@@ -198,11 +148,11 @@ export default function PartyBuildingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <MapPin className="h-4 w-4 text-[#FFE15D]" />
                     <span>专业讲解服务</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Eye className="h-4 w-4 text-[#FFE15D]" />
                     <span>沉浸式导览体验</span>
                   </div>
                 </div>
@@ -226,15 +176,15 @@ export default function PartyBuildingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <PenTool className="h-4 w-4 text-[#FFE15D]" />
                     <span>真实革命历史故事</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Users className="h-4 w-4 text-[#FFE15D]" />
                     <span>沉浸式角色扮演</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Star className="h-4 w-4 text-[#FFE15D]" />
                     <span>团队协作体验</span>
                   </div>
                 </div>
@@ -258,15 +208,15 @@ export default function PartyBuildingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Music className="h-4 w-4 text-[#FFE15D]" />
                     <span>经典红歌演唱</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Sparkles className="h-4 w-4 text-[#FFE15D]" />
                     <span>合唱互动体验</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Award className="h-4 w-4 text-[#FFE15D]" />
                     <span>革命故事讲述</span>
                   </div>
                 </div>
@@ -293,15 +243,15 @@ export default function PartyBuildingPage() {
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Palette className="h-4 w-4 text-[#FFE15D]" />
                     <span>红色主题手工</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Heart className="h-4 w-4 text-[#FFE15D]" />
                     <span>非遗技艺体验</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Gift className="h-4 w-4 text-[#FFE15D]" />
                     <span>作品带走留念</span>
                   </div>
                 </div>
@@ -325,15 +275,15 @@ export default function PartyBuildingPage() {
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <GraduationCap className="h-4 w-4 text-[#FFE15D]" />
                     <span>主题展览讲解</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Target className="h-4 w-4 text-[#FFE15D]" />
                     <span>互动体验环节</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#6B7280]">
-                    <CheckCircle2 className="h-4 w-4 text-[#FFE15D]" />
+                    <Trophy className="h-4 w-4 text-[#FFE15D]" />
                     <span>党史知识竞赛</span>
                   </div>
                 </div>
