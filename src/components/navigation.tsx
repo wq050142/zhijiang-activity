@@ -95,8 +95,20 @@ export default function Navigation({ currentPath }: NavigationProps) {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-gray-50">
+        <div className="lg:hidden border-t border-gray-200 bg-gray-50/95 backdrop-blur-sm">
           <div className="px-3 py-3 space-y-1">
+            {/* 首页选项 */}
+            <Link
+              href="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block px-3 py-2.5 rounded-lg transition-colors font-medium text-sm ${
+                isActive('/') && pathname === '/'
+                  ? 'bg-[#FFE15D]/20 text-[#FFE15D]'
+                  : 'text-[#2D2D2D] hover:bg-gray-100'
+              }`}
+            >
+              首页
+            </Link>
             {navItems.map((item) => (
               <Link
                 key={item.href}
