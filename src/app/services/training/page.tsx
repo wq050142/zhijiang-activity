@@ -102,27 +102,77 @@ export default function TrainingPage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 items-center mb-6">
-            {/* 左侧：图片 */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <div
-                className="relative aspect-[4/3] bg-cover bg-center"
-                style={{ backgroundImage: 'url("/assets/访学培训服务介绍配图.jpg")' }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/60 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                  <div className="flex items-center gap-3 text-white">
-                    <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-full flex items-center justify-center">
-                      <BookOpen className="h-5 w-5 text-white" />
+          {/* 培训场景展示 */}
+          <div className="mb-12">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 mb-4">
+                <Award className="h-6 w-6 text-[#FFE15D]" />
+                <span className="text-[#FF9F43] font-semibold">培训场景</span>
+              </div>
+              <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
+                沉浸式学习体验
+              </h2>
+              <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
+                在文化地标中学习，感受浙江文化的深厚底蕴
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#2D2D2D]">
+                      高品质学习环境
+                    </h3>
+                    <p className="text-[#6B7280] leading-relaxed mb-4">
+                      依托之江文化中心四大场馆资源，提供沉浸式学习体验。现代化的设施设备，舒适的学习环境，让培训效果更上一层楼。
+                    </p>
+                    <p className="text-[#6B7280] leading-relaxed">
+                      无论是大型讲座、专业培训，还是小班研讨，我们都能提供合适的场地支持，确保每一次培训都能获得最佳体验。
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-white rounded-xl p-4 border border-gray-200">
+                      <div className="text-2xl font-bold text-[#FFE15D] mb-1">100+</div>
+                      <div className="text-sm text-[#6B7280]">服务企业</div>
                     </div>
-                    <span className="font-semibold text-lg">高端课程 · 学习成果</span>
+                    <div className="bg-white rounded-xl p-4 border border-gray-200">
+                      <div className="text-2xl font-bold text-[#FFE15D] mb-1">500+</div>
+                      <div className="text-sm text-[#6B7280]">培训场次</div>
+                    </div>
+                    <div className="bg-white rounded-xl p-4 border border-gray-200">
+                      <div className="text-2xl font-bold text-[#FFE15D] mb-1">98%</div>
+                      <div className="text-sm text-[#6B7280]">满意度</div>
+                    </div>
+                    <div className="bg-white rounded-xl p-4 border border-gray-200">
+                      <div className="text-2xl font-bold text-[#FFE15D] mb-1">5000+</div>
+                      <div className="text-sm text-[#6B7280]">参训人次</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl overflow-hidden shadow-2xl">
+                    <img
+                      src="/图片3.png"
+                      alt="访学培训场景"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-6 shadow-xl hidden md:block">
+                    <div className="text-4xl font-bold text-white mb-1">专业</div>
+                    <div className="text-sm text-white/90">品质保障</div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* 右侧：活动亮点 */}
-            <div className="space-y-6">
+          {/* 右侧：活动亮点 */}
+          <div className="max-w-3xl mx-auto">
               <div className="inline-flex items-center gap-2 mb-6">
                 <Sparkles className="h-6 w-6 text-[#FFE15D]" />
                 <span className="text-[#FF9F43] font-semibold">活动亮点</span>
@@ -159,7 +209,6 @@ export default function TrainingPage() {
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
@@ -428,77 +477,6 @@ export default function TrainingPage() {
                   <h3 className="text-[10px] md:text-lg font-bold text-white mb-0.5 md:mb-2 relative z-10">后续评价</h3>
                   <p className="text-[8px] md:text-sm text-white/90 leading-tight md:leading-normal relative z-10">培训总结优化</p>
                   <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 培训场景展示 */}
-      <section className="py-12 px-4 md:px-6 md:py-16 bg-[#F8FAFC]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <Award className="h-6 w-6 text-[#FFE15D]" />
-              <span className="text-[#FF9F43] font-semibold">培训场景</span>
-            </div>
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#2D2D2D]">
-              沉浸式学习体验
-            </h2>
-            <p className="text-sm md:text-lg text-[#6B7280] max-w-2xl mx-auto">
-              在文化地标中学习，感受浙江文化的深厚底蕴
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#2D2D2D]">
-                    高品质学习环境
-                  </h3>
-                  <p className="text-[#6B7280] leading-relaxed mb-4">
-                    依托之江文化中心四大场馆资源，提供沉浸式学习体验。现代化的设施设备，舒适的学习环境，让培训效果更上一层楼。
-                  </p>
-                  <p className="text-[#6B7280] leading-relaxed">
-                    无论是大型讲座、专业培训，还是小班研讨，我们都能提供合适的场地支持，确保每一次培训都能获得最佳体验。
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white rounded-xl p-4 border border-gray-200">
-                    <div className="text-2xl font-bold text-[#FFE15D] mb-1">100+</div>
-                    <div className="text-sm text-[#6B7280]">服务企业</div>
-                  </div>
-                  <div className="bg-white rounded-xl p-4 border border-gray-200">
-                    <div className="text-2xl font-bold text-[#FFE15D] mb-1">500+</div>
-                    <div className="text-sm text-[#6B7280]">培训场次</div>
-                  </div>
-                  <div className="bg-white rounded-xl p-4 border border-gray-200">
-                    <div className="text-2xl font-bold text-[#FFE15D] mb-1">98%</div>
-                    <div className="text-sm text-[#6B7280]">满意度</div>
-                  </div>
-                  <div className="bg-white rounded-xl p-4 border border-gray-200">
-                    <div className="text-2xl font-bold text-[#FFE15D] mb-1">5000+</div>
-                    <div className="text-sm text-[#6B7280]">参训人次</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="order-1 lg:order-2">
-              <div className="relative">
-                <div className="aspect-[16/10] bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-2xl overflow-hidden shadow-2xl">
-                  <img
-                    src="/图片3.png"
-                    alt="访学培训场景"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-2xl p-6 shadow-xl hidden md:block">
-                  <div className="text-4xl font-bold text-white mb-1">专业</div>
-                  <div className="text-sm text-white/90">品质保障</div>
                 </div>
               </div>
             </div>
