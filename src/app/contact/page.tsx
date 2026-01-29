@@ -78,68 +78,68 @@ export default function ContactPage() {
       {/* 联系方式与表单 */}
       <section className="py-12 px-4 md:px-6 md:py-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* 联系方式 */}
-            <div>
+          <div className="grid lg:grid-cols-3 gap-12">
+            {/* 联系方式和地图 - 右侧 */}
+            <div className="lg:col-span-1 order-2 lg:order-2">
               <div className="inline-flex items-center gap-2 mb-4">
                 <Phone className="h-6 w-6 text-[#FFE15D]" />
                 <span className="text-[#FF9F43] font-semibold">联系方式</span>
               </div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-8 text-[#2D2D2D]">
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#2D2D2D]">
                 随时为您服务
               </h2>
 
-              <div className="space-y-4 md:space-y-6">
-                <div className="flex items-start gap-3 md:gap-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-5 w-5 md:h-6 md:w-6 text-white" />
+              <div className="space-y-4 md:space-y-5">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#FFE15D] to-[#FF9F43] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base md:text-lg font-bold text-[#2D2D2D] mb-1">咨询热线</h3>
-                    <p className="text-sm md:text-base text-[#6B7280]">191-0658-3798</p>
+                    <h3 className="text-sm md:text-base font-bold text-[#2D2D2D] mb-1">咨询热线</h3>
+                    <p className="text-sm md:text-base text-[#6B7280] font-semibold">191-0658-3798</p>
                     <p className="text-xs md:text-sm text-[#6B7280] mt-1">工作日 9:00-18:00</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 md:gap-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <svg className="h-5 w-5 md:h-6 md:w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#2D2D2D] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-base md:text-lg font-bold text-[#2D2D2D] mb-1">微信</h3>
-                    <p className="text-sm md:text-base text-[#6B7280]">之学小助理</p>
+                    <h3 className="text-sm md:text-base font-bold text-[#2D2D2D] mb-1">微信</h3>
+                    <p className="text-sm md:text-base text-[#6B7280] font-semibold">之学小助理</p>
                     <p className="text-xs md:text-sm text-[#6B7280] mt-1">添加微信，快速沟通</p>
                   </div>
                 </div>
 
                 {/* 微信二维码 */}
-                <div className="mt-3 md:mt-4 bg-white rounded-2xl p-3 md:p-4 border border-gray-100">
-                  <p className="text-center text-xs md:text-sm text-[#6B7280] mb-2 md:mb-3">微信二维码</p>
-                  <div className="aspect-square max-w-[150px] md:max-w-[200px] mx-auto bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-4 border border-gray-100 shadow-sm">
+                  <p className="text-center text-xs md:text-sm text-[#6B7280] mb-3">微信二维码</p>
+                  <div className="aspect-square max-w-[180px] mx-auto bg-white rounded-lg shadow-sm flex items-center justify-center overflow-hidden">
                     <img src="/xiaoxuemei.jpg" alt="微信二维码" className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-center text-[10px] md:text-xs text-[#6B7280] mt-2">扫描添加微信</p>
+                  <p className="text-center text-xs text-[#6B7280] mt-3">扫描添加微信</p>
                 </div>
 
-                <div className="flex items-start gap-3 md:gap-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-5 w-5 md:h-6 md:w-6 text-white" />
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[#6B7280] to-[#4B5563] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-base md:text-lg font-bold text-[#2D2D2D] mb-1">地址</h3>
-                    <p className="text-sm md:text-base text-[#6B7280]">浙江省杭州市西湖区之江文化中心</p>
+                    <h3 className="text-sm md:text-base font-bold text-[#2D2D2D] mb-1">地址</h3>
+                    <p className="text-sm md:text-base text-[#6B7280]">浙江省杭州市西湖区<br />之江文化中心</p>
                   </div>
                 </div>
               </div>
 
               {/* 地图 */}
-              <div className="mt-8 bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
-                <div className="p-4 border-b border-gray-100">
+              <div className="mt-6 bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                <div className="p-3 border-b border-gray-100">
                   <div className="flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-[#FF9F43]" />
-                    <span className="text-[#2D2D2D] font-semibold">之江文化中心位置</span>
+                    <MapPin className="h-4 w-4 text-[#FF9F43]" />
+                    <span className="text-sm font-semibold text-[#2D2D2D]">之江文化中心位置</span>
                   </div>
                 </div>
                 <div className="aspect-video w-full">
@@ -152,8 +152,8 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* 联系表单 */}
-            <div>
+            {/* 联系表单 - 左侧 */}
+            <div className="lg:col-span-2 order-1 lg:order-1">
               <div className="inline-flex items-center gap-2 mb-4">
                 <Sparkles className="h-6 w-6 text-[#FFE15D]" />
                 <span className="text-[#FF9F43] font-semibold">在线咨询</span>
@@ -162,7 +162,7 @@ export default function ContactPage() {
                 告诉我们您的需求
               </h2>
 
-              <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label className="block text-[#2D2D2D] font-semibold mb-2">
@@ -208,14 +208,14 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-[#2D2D2D] font-semibold mb-2 text-sm md:text-base">
+                    <label className="block text-[#2D2D2D] font-semibold mb-2">
                       电子邮箱
                     </label>
                     <input
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full px-3 py-2.5 md:px-4 md:py-3 text-sm md:text-base border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all bg-white"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all"
                       placeholder="请输入您的邮箱"
                     />
                   </div>
@@ -244,7 +244,7 @@ export default function ContactPage() {
                     活动需求
                   </label>
                   <textarea
-                    rows={4}
+                    rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFE15D] focus:border-transparent transition-all resize-none"
@@ -263,6 +263,23 @@ export default function ContactPage() {
                 <p className="text-sm text-[#6B7280] text-center mt-4">
                   提交后我们会在24小时内与您联系
                 </p>
+
+                {/* 提交须知 */}
+                <div className="mt-6 pt-6 border-t border-gray-100">
+                  <div className="bg-gradient-to-br from-[#FFF7ED] to-[#FFFBEB] rounded-xl p-4 border border-[#FFE15D]/20">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-[#FF9F43] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <h4 className="text-sm font-semibold text-[#2D2D2D] mb-2">温馨提示</h4>
+                        <ul className="text-xs md:text-sm text-[#6B7280] space-y-1">
+                          <li>• 为确保服务品质，我们提供一对一专属顾问服务</li>
+                          <li>• 所有咨询信息严格保密，仅用于活动方案定制</li>
+                          <li>• 工作日9:00-18:00内，我们将优先回复您的咨询</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
