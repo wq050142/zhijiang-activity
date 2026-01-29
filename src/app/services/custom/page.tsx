@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Building2, Phone, ArrowRight, Calendar, Sparkles, CheckCircle2, Award, Users, PartyPopper, MapPin } from 'lucide-react';
+import { Building2, Phone, ArrowRight, Calendar, Sparkles, CheckCircle2, Award, Users, PartyPopper, Info, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: '定制活动 - 之江文化中心 | 企业活动服务',
@@ -311,13 +311,13 @@ export default function CustomEventsPage() {
 
             {/* 备注提示 */}
             <div className="col-span-1 md:col-span-2 lg:col-span-3 mt-6">
-              <div className="bg-gradient-to-r from-[#FFE15D]/10 to-[#FF9F43]/10 border border-[#FFE15D]/30 rounded-xl p-5 md:p-6">
+              <div className="bg-gradient-to-r from-[#FFE15D]/5 to-[#FF9F43]/5 border border-[#FFE15D]/20 rounded-lg p-4 md:p-5">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0">
-                    <MapPin className="h-5 w-5 text-[#FF9F43] mt-0.5" />
+                    <Info className="h-4 w-4 text-[#6B7280] mt-0.5" />
                   </div>
                   <div>
-                    <p className="text-sm md:text-base text-[#2D2D2D] leading-relaxed">
+                    <p className="text-xs md:text-sm text-[#6B7280] leading-relaxed">
                       根据定制需求，部分活动场地可安排在之江文化中心周边场所
                     </p>
                   </div>
