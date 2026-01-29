@@ -56,8 +56,8 @@ export default function PartyBuildingPage() {
             {/* 左侧：图片 */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div
-                className="relative aspect-[4/3] bg-cover bg-center"
-                style={{ backgroundImage: 'url("/assets/主题党建服务介绍配图.jpg")' }}
+                className="relative aspect-[4/3] bg-cover"
+                style={{ backgroundImage: 'url("/assets/主题党建服务介绍配图.jpg")', backgroundPosition: 'center 20%' }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
