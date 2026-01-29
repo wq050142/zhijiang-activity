@@ -249,7 +249,7 @@ export default function CustomEventsPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
                 <img
-                  src="/assets/客户答谢.png"
+                  src="/assets/微信图片_20260129104720_1826_46.jpg"
                   alt="客户答谢会"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
