@@ -5,26 +5,12 @@ import { X, Sparkles, Calendar, Phone, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FloatingAdModal() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [isMinimized, setIsMinimized] = useState(false);
-
-  useEffect(() => {
-    // 检查是否已经关闭过弹窗
-    const hasClosed = localStorage.getItem('ad-modal-closed');
-    if (!hasClosed) {
-      // 延迟 3 秒后显示弹窗
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 3000);
-      return () => clearTimeout(timer);
-    }
-  }, []);
 
   const handleClose = () => {
     setIsVisible(false);
     setIsMinimized(true);
-    // 记录已关闭状态
-    localStorage.setItem('ad-modal-closed', 'true');
   };
 
   const handleExpand = () => {
