@@ -5,8 +5,16 @@ import { X, Sparkles, Calendar, Phone, ChevronUp, Flower2 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FloatingAdModal() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
+
+  // 延迟2秒后显示弹窗
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleClose = () => {
     setIsVisible(false);
