@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { X, Sparkles, Calendar, Phone, ChevronDown } from 'lucide-react';
+import { X, Sparkles, Calendar, Phone, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FloatingAdModal() {
@@ -18,16 +18,16 @@ export default function FloatingAdModal() {
     setIsMinimized(false);
   };
 
-  // 缩小到固定位置的按钮（右上角）
+  // 缩小到固定位置的按钮（右下角）
   if (isMinimized) {
     return (
       <button
         onClick={handleExpand}
-        className="fixed top-4 right-4 z-50 inline-flex items-center gap-2 bg-gradient-to-r from-[#FF6B9D] to-[#FF69B4] hover:from-[#FF5A90] hover:to-[#FF5AA0] text-white px-4 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+        className="fixed bottom-20 right-4 z-50 inline-flex items-center gap-2 bg-gradient-to-r from-[#FF6B9D] to-[#FF69B4] hover:from-[#FF5A90] hover:to-[#FF5AA0] text-white px-4 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
       >
         <Sparkles className="w-4 h-4" />
         <span className="text-sm">妇女节活动</span>
-        <ChevronDown className="w-4 h-4" />
+        <ChevronUp className="w-4 h-4" />
       </button>
     );
   }
@@ -42,8 +42,8 @@ export default function FloatingAdModal() {
         onClick={handleClose}
       />
 
-      {/* 弹窗内容 */}
-      <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
+      {/* 弹窗内容 - 缩小尺寸 */}
+      <div className="relative w-[90vw] md:w-[80vw] lg:max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden max-h-[70vh] flex flex-col">
         {/* 关闭按钮 */}
         <button
           onClick={handleClose}
@@ -53,10 +53,10 @@ export default function FloatingAdModal() {
           <X className="w-5 h-5 text-gray-600" />
         </button>
 
-        {/* 图片区域 - 占2/3高度 */}
-        <div className="aspect-[2/3] bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: 'url("/点翠.png")' }}>
-          {/* 左上角标签和标题 */}
-          <div className="absolute top-4 left-4 right-16 z-10">
+        {/* 图片区域 - 缩小尺寸，占2/3高度 */}
+        <div className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/点翠.png")', minHeight: '50%' }}>
+          {/* 左上角标签和标题 - 向右向下移动 */}
+          <div className="absolute top-6 left-6 right-16 z-10">
             {/* 标签 */}
             <div className="inline-flex items-center gap-1.5 bg-[#FF69B4] text-white px-4 py-2 rounded-full mb-3">
               <Sparkles className="w-4 h-4" />
@@ -66,14 +66,14 @@ export default function FloatingAdModal() {
             </div>
 
             {/* 标题 */}
-            <h2 className="text-white text-2xl md:text-3xl font-bold leading-tight drop-shadow-lg">
+            <h2 className="text-white text-xl md:text-2xl font-bold leading-tight drop-shadow-lg">
               妇女节仿点翠DIY手作体验
             </h2>
           </div>
         </div>
 
         {/* 内容区域 - 占1/3高度 */}
-        <div className="p-4">
+        <div className="p-4 flex-1 flex flex-col justify-center">
           {/* 亮点列表 */}
           <div className="space-y-2 mb-4">
             <div className="flex items-start gap-2">
