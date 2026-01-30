@@ -4,6 +4,7 @@ import React from 'react';
 import { Building2, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Star, Users, Calendar, Award, BookOpen, Sparkles } from 'lucide-react';
 import Navigation from '@/components/navigation';
 import OptimizedImage from '@/components/optimized-image';
+import FloatingAdModal from '@/components/floating-ad-modal';
 
 export const metadata: Metadata = {
   title: '之江文化中心 | 文化赋能 · 企业活动一站式解决方案',
@@ -750,6 +751,9 @@ export default function Home() {
           animation: marquee 30s linear infinite;
         }
       `}</style>
+
+      {/* 浮动广告弹窗 */}
+      <FloatingAdModal />
     </div>
   );
 }
