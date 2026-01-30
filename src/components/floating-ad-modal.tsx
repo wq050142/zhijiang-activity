@@ -21,14 +21,29 @@ export default function FloatingAdModal() {
   // 缩小到固定位置的按钮（右下角）
   if (isMinimized) {
     return (
-      <button
-        onClick={handleExpand}
-        className="fixed bottom-20 right-4 z-50 inline-flex items-center gap-2 bg-gradient-to-r from-[#FF6B9D] to-[#FF69B4] hover:from-[#FF5A90] hover:to-[#FF5AA0] text-white px-4 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
-      >
-        <Sparkles className="w-4 h-4" />
-        <span className="text-sm">妇女节活动</span>
-        <ChevronUp className="w-4 h-4" />
-      </button>
+      <div className="fixed bottom-20 right-4 z-50">
+        {/* 装饰圆点 */}
+        <div className="absolute -top-2 -right-2 w-4 h-4 bg-[#FFD700] rounded-full animate-pulse shadow-md"></div>
+        <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-[#FF69B4] rounded-full animate-bounce shadow-md"></div>
+        
+        {/* 主按钮 */}
+        <button
+          onClick={handleExpand}
+          className="relative inline-flex items-center gap-3 bg-gradient-to-r from-[#FF1493] via-[#FF69B4] to-[#FF1493] hover:from-[#FF1493] hover:to-[#FF69B4] text-white px-6 py-3 rounded-2xl font-semibold transition-all shadow-2xl hover:shadow-[0_0_20px_rgba(255,105,180,0.6)] hover:scale-105 group overflow-hidden"
+        >
+          {/* 背景流光效果 */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+          
+          {/* 花朵图标 */}
+          <Flower2 className="w-6 h-6 animate-[rotate_3s_ease-in-out_infinite]" />
+          
+          {/* 文字 */}
+          <span className="text-sm relative z-10">妇女节活动</span>
+          
+          {/* 向上箭头 */}
+          <ChevronUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
+        </button>
+      </div>
     );
   }
 
@@ -57,29 +72,11 @@ export default function FloatingAdModal() {
         <div className="relative aspect-[4/3] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/点翠.png")' }}>
           {/* 左上角标签和标题 - 向右向下移动 */}
           <div className="absolute top-6 left-6 right-16 z-10">
-            {/* 标签 - 特殊样式 */}
-            <div className="inline-flex items-center gap-2 relative group mb-3">
-              {/* 左侧装饰 */}
-              <div className="absolute -left-1 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-r-[12px] border-r-[#FF1493] border-b-[10px] border-b-transparent"></div>
-              
-              {/* 标签主体 */}
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#FF1493] via-[#FF69B4] to-[#FF1493] text-white px-5 py-2 rounded-full shadow-lg relative overflow-hidden">
-                {/* 背景光效 */}
-                <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-[shimmer_2s_infinite]"></div>
-                
-                <Flower2 className="w-5 h-5 relative z-10" />
-                <span className="text-sm font-bold relative z-10">
-                  限时团队定制
-                </span>
-              </div>
-              
-              {/* 右侧装饰 */}
-              <div className="absolute -right-1 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-[#FF1493] border-l-[12px] border-l-transparent border-b-[10px] border-b-[#FF1493]"></div>
-              
-              {/* 装饰点 */}
-              <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#FFD700] rounded-full shadow-md animate-pulse"></div>
-              <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#FFD700] rounded-full shadow-md animate-pulse"></div>
+            {/* 标签 */}
+            <div className="inline-flex items-center gap-1.5 bg-[#FF69B4] text-white px-4 py-2 rounded-full mb-3">
+              <span className="text-sm font-bold">
+                限时团队定制
+              </span>
             </div>
 
             {/* 标题 */}
@@ -142,8 +139,8 @@ export default function FloatingAdModal() {
           </div>
         </div>
       </div>
-      
-      {/* 动画样式 */}
+
+      {/* 自定义动画样式 */}
       <style>{`
         @keyframes shimmer {
           0% {
@@ -153,8 +150,13 @@ export default function FloatingAdModal() {
             transform: translateX(100%);
           }
         }
-        .animate-shimmer {
-          animation: shimmer 2s infinite;
+        @keyframes rotate {
+          0%, 100% {
+            transform: rotate(0deg);
+          }
+          50% {
+            transform: rotate(15deg);
+          }
         }
       `}</style>
     </div>
