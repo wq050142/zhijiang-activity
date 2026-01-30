@@ -1,34 +1,50 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { X, Sparkles, Calendar, Phone } from 'lucide-react';
+import { X, Sparkles, Calendar, Phone, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FloatingAdModal() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(false);
 
   useEffect(() => {
     // 检查是否已经关闭过弹窗
     const hasClosed = localStorage.getItem('ad-modal-closed');
     if (!hasClosed) {
-      // 延迟 5 秒后显示弹窗
+      // 延迟 3 秒后显示弹窗
       const timer = setTimeout(() => {
         setIsVisible(true);
-      }, 5000);
+      }, 3000);
       return () => clearTimeout(timer);
     }
   }, []);
 
   const handleClose = () => {
     setIsVisible(false);
-    // 记录已关闭状态，24 小时后不再显示
+    setIsMinimized(true);
+    // 记录已关闭状态
     localStorage.setItem('ad-modal-closed', 'true');
   };
 
-  // 清除 localStorage（用于测试）
-  // useEffect(() => {
-  //   localStorage.removeItem('ad-modal-closed');
-  // }, []);
+  const handleExpand = () => {
+    setIsVisible(true);
+    setIsMinimized(false);
+  };
+
+  // 缩小到固定位置的按钮
+  if (isMinimized) {
+    return (
+      <button
+        onClick={handleExpand}
+        className="fixed bottom-20 left-4 md:left-8 z-50 inline-flex items-center gap-2 bg-gradient-to-r from-[#FFC107] to-[#FF9F43] hover:from-[#FFB300] hover:to-[#FF8F33] text-white px-4 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+      >
+        <Sparkles className="w-4 h-4" />
+        <span className="text-sm">三八节活动</span>
+        <ChevronUp className="w-4 h-4" />
+      </button>
+    );
+  }
 
   if (!isVisible) return null;
 
@@ -52,25 +68,56 @@ export default function FloatingAdModal() {
         </button>
 
         {/* 图片区域 */}
-        <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/点翠.png")' }}>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+        <div className="aspect-[4/3] bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: 'url("/点翠.png")' }}>
+          {/* 左上角标签和标题 */}
+          <div className="absolute top-4 left-4 right-16 z-10">
+            {/* 标签 */}
+            <div className="inline-flex items-center gap-1.5 bg-[#FF9F43] text-white px-3 py-1 rounded-full mb-3">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span className="text-xs font-semibold">
+                限时活动 · 团队定制
+              </span>
+            </div>
+
+            {/* 标题 */}
+            <h2 className="text-white text-lg md:text-xl font-bold leading-tight drop-shadow-lg">
+              三八节仿点翠DIY手作体验
+            </h2>
+          </div>
+
+          {/* 底部渐变遮罩 */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
         </div>
 
         {/* 内容区域 */}
         <div className="p-6">
-          {/* 顶部标签 */}
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <Sparkles className="w-4 h-4 text-[#FF9F43]" />
-            <span className="text-xs font-semibold text-[#FF9F43] tracking-wider">
-              限时活动
-            </span>
-            <Sparkles className="w-4 h-4 text-[#FF9F43]" />
+          {/* 亮点列表 */}
+          <div className="space-y-3 mb-6">
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#FFF3E0] flex items-center justify-center">
+                <Sparkles className="w-3.5 h-3.5 text-[#FF9F43]" />
+              </div>
+              <span className="text-sm text-gray-700 leading-relaxed">
+                传统工艺与现代审美的完美融合
+              </span>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#FFF3E0] flex items-center justify-center">
+                <Calendar className="w-3.5 h-3.5 text-[#FF9F43]" />
+              </div>
+              <span className="text-sm text-gray-700 leading-relaxed">
+                之江文化中心专业场地支持
+              </span>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#FFF3E0] flex items-center justify-center">
+                <Sparkles className="w-3.5 h-3.5 text-[#FF9F43]" />
+              </div>
+              <span className="text-sm text-gray-700 leading-relaxed">
+                专业导师全程指导，零基础也能完成作品
+              </span>
+            </div>
           </div>
-
-          {/* 标题 */}
-          <h2 className="text-xl md:text-2xl font-bold text-center mb-4 text-[#2D2D2D] leading-tight">
-            三八节仿点翠DIY手作体验
-          </h2>
 
           {/* 按钮区域 */}
           <div className="flex flex-col sm:flex-row gap-3">
