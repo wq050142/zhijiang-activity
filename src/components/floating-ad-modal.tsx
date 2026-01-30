@@ -53,8 +53,8 @@ export default function FloatingAdModal() {
           <X className="w-5 h-5 text-gray-600" />
         </button>
 
-        {/* 图片区域 - 缩小尺寸，占2/3高度 */}
-        <div className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/点翠.png")', minHeight: '50%' }}>
+        {/* 图片区域 - 固定宽高比 */}
+        <div className="relative aspect-[4/3] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/点翠.png")' }}>
           {/* 左上角标签和标题 - 向右向下移动 */}
           <div className="absolute top-6 left-6 right-16 z-10">
             {/* 标签 */}
