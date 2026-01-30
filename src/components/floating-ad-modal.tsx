@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { X, Sparkles, Calendar, Phone, ChevronUp } from 'lucide-react';
+import { X, Sparkles, Calendar, Phone, ChevronUp, Flower2 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FloatingAdModal() {
@@ -57,12 +57,29 @@ export default function FloatingAdModal() {
         <div className="relative aspect-[4/3] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/点翠.png")' }}>
           {/* 左上角标签和标题 - 向右向下移动 */}
           <div className="absolute top-6 left-6 right-16 z-10">
-            {/* 标签 */}
-            <div className="inline-flex items-center gap-1.5 bg-[#FF69B4] text-white px-4 py-2 rounded-full mb-3">
-              <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-bold">
-                限时团队定制
-              </span>
+            {/* 标签 - 特殊样式 */}
+            <div className="inline-flex items-center gap-2 relative group mb-3">
+              {/* 左侧装饰 */}
+              <div className="absolute -left-1 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-r-[12px] border-r-[#FF1493] border-b-[10px] border-b-transparent"></div>
+              
+              {/* 标签主体 */}
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#FF1493] via-[#FF69B4] to-[#FF1493] text-white px-5 py-2 rounded-full shadow-lg relative overflow-hidden">
+                {/* 背景光效 */}
+                <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-[shimmer_2s_infinite]"></div>
+                
+                <Flower2 className="w-5 h-5 relative z-10" />
+                <span className="text-sm font-bold relative z-10">
+                  限时团队定制
+                </span>
+              </div>
+              
+              {/* 右侧装饰 */}
+              <div className="absolute -right-1 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-[#FF1493] border-l-[12px] border-l-transparent border-b-[10px] border-b-[#FF1493]"></div>
+              
+              {/* 装饰点 */}
+              <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#FFD700] rounded-full shadow-md animate-pulse"></div>
+              <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#FFD700] rounded-full shadow-md animate-pulse"></div>
             </div>
 
             {/* 标题 */}
@@ -125,6 +142,21 @@ export default function FloatingAdModal() {
           </div>
         </div>
       </div>
+      
+      {/* 动画样式 */}
+      <style>{`
+        @keyframes shimmer {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
+        }
+        .animate-shimmer {
+          animation: shimmer 2s infinite;
+        }
+      `}</style>
     </div>
   );
 }
