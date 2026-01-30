@@ -21,7 +21,7 @@ export default function FloatingAdModal() {
   // 缩小到固定位置的按钮（右下角）
   if (isMinimized) {
     return (
-      <div className="fixed bottom-20 right-4 z-50">
+      <div className="fixed bottom-12 right-3 z-50">
         {/* 装饰圆点 */}
         <div className="absolute -top-2 -right-2 w-4 h-4 bg-[#FFD700] rounded-full animate-pulse shadow-md"></div>
         <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-[#FF69B4] rounded-full animate-bounce shadow-md"></div>
@@ -29,19 +29,19 @@ export default function FloatingAdModal() {
         {/* 主按钮 */}
         <button
           onClick={handleExpand}
-          className="relative inline-flex items-center gap-3 bg-gradient-to-r from-[#FF1493] via-[#FF69B4] to-[#FF1493] hover:from-[#FF1493] hover:to-[#FF69B4] text-white px-6 py-3 rounded-2xl font-semibold transition-all shadow-2xl hover:shadow-[0_0_20px_rgba(255,105,180,0.6)] hover:scale-105 group overflow-hidden"
+          className="relative inline-flex items-center gap-2 bg-gradient-to-r from-[#FF1493] via-[#FF69B4] to-[#FF1493] hover:from-[#FF1493] hover:to-[#FF69B4] text-white px-4 py-2 rounded-2xl font-semibold transition-all shadow-2xl hover:shadow-[0_0_20px_rgba(255,105,180,0.6)] hover:scale-105 group overflow-hidden"
         >
           {/* 背景流光效果 */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
           
           {/* 花朵图标 */}
-          <Flower2 className="w-6 h-6 animate-[rotate_3s_ease-in-out_infinite]" />
+          <Flower2 className="w-5 h-5 animate-[rotate_3s_ease-in-out_infinite]" />
           
           {/* 文字 */}
-          <span className="text-sm relative z-10">妇女节活动</span>
+          <span className="text-xs relative z-10">妇女节活动</span>
           
           {/* 向上箭头 */}
-          <ChevronUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
+          <ChevronUp className="w-3.5 h-3.5 group-hover:-translate-y-1 transition-transform" />
         </button>
       </div>
     );
