@@ -303,7 +303,7 @@ export default function PartyBuildingPage() {
             {/* 产品 6 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group">
               <div className="aspect-[16/10] relative overflow-hidden">
-                <img src="/assets/革命精神讲座.jpg" alt="革命精神讲座" className="w-full h-full object-cover" style={{ objectPosition: 'top' }} />
+                <img src="/assets/革命精神讲座.png" alt="革命精神讲座" className="w-full h-full object-cover" style={{ objectPosition: 'top' }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
               </div>
               <div className="p-5 md:p-6">
